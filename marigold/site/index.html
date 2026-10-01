@@ -1,0 +1,1554 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Marigold — Scheduling, clients and payments for small service businesses
+    </title>
+    <meta
+      name="description"
+      content="Marigold holds every appointment, client record and payment for your salon, clinic or studio in one place. Thirty days free, no card, diary migration included."
+    />
+    <meta
+      name="keywords"
+      content="appointment scheduling software, salon booking system, clinic practice management, client records, service business software"
+    />
+    <meta name="author" content="Marigold Software Ltd." />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Marigold — Run the day, not the paperwork"
+    />
+    <meta
+      property="og:description"
+      content="Scheduling, client records and payments for small service businesses. Thirty days free, no card required."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Marigold — Run the day, not the paperwork"
+    />
+    <meta
+      name="twitter:description"
+      content="Scheduling, client records and payments for small service businesses."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-outfit-QGYvz_MVcBeNP4NJuktqQ4E.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-outfit-QGYvz_MVcBeNP4NJtEtq.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "system";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.6641a65ad1.css" />
+  </head>
+  <body>
+    <div
+      id="is4oufc"
+      data-swebsy-block-id="announcement-bar"
+      data-swebsy-block='{"tags":["cta"],"description":"A compact dark announcement bar pairing a product update with a direct text link."}'
+      class="bg-stone-900 py-2.5 [--text-color-default:var(--color-stone-50)] [--background-color-emphasis:var(--color-stone-600)]"
+    >
+      <div
+        class="container mx-auto max-w-6xl px-6 flex flex-wrap justify-center items-center gap-x-3 gap-y-1"
+      >
+        <span class="text-xs md:text-sm text-stone-300"
+          >Deposits, waitlists and card on file are now on every plan.</span
+        ><a
+          href="./product.html"
+          class="text-xs md:text-sm font-semibold text-secondary underline underline-offset-4"
+          >See what's new</a
+        >
+      </div>
+    </div>
+    <nav
+      data-navbar-collapse-on="md"
+      id="iluz"
+      data-swebsy-block-id="navbar-primary"
+      data-swebsy-block='{"tags":["navigation"],"description":"A bordered responsive navbar with serif wordmark, five page links, and a prominent signup button."}'
+      class="navbar navbar-expand-sm bg-default border-b border-emphasis py-4"
+    >
+      <div data-navbar-part="container" id="ig341w" class="container px-6">
+        <a
+          href="#"
+          data-navbar-part="brand"
+          id="i3s618"
+          class="navbar-brand font-serif text-2xl text-emphasis no-underline"
+          >Marigold</a
+        ><button
+          type="button"
+          data-navbar-part="toggler"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="ihcg9g"
+          class="btn btn-icon navbar-toggler"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="imrjff"
+            class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="navbarMenu"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse"
+        >
+          <ul
+            data-navbar-part="links"
+            id="is5vlf"
+            class="navbar-nav ms-auto items-center"
+          >
+            <li id="ixif7q" class="nav-item">
+              <a
+                href="./index.html"
+                id="iwgtxt"
+                class="nav-link active"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li id="i5lshr" class="nav-item">
+              <a href="./product.html" id="icrij9" class="nav-link">Product</a>
+            </li>
+            <li id="iy2imi" class="nav-item">
+              <a href="./pricing.html" id="ivndvo" class="nav-link">Pricing</a>
+            </li>
+            <li id="im0hu3" class="nav-item">
+              <a href="./customers.html" id="ifaqus" class="nav-link"
+                >Customers</a
+              >
+            </li>
+            <li id="i62ium" class="nav-item">
+              <a href="./contact.html" id="ix6jmq" class="nav-link">Contact</a>
+            </li>
+            <li id="ik0ewk" class="nav-item ms-3">
+              <a href="./pricing.html" id="i0xiy6" class="btn btn-primary"
+                >Start free</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="i1bhcd5"
+      data-swebsy-block-id="hero-product-dashboard"
+      data-swebsy-block='{"tags":["hero","cta"],"description":"A dramatic dark product hero with editorial headline, dual CTAs, trust copy, and a dashboard-style visual."}'
+      class="bg-stone-900 dark:bg-stone-950 pt-16 pb-16 [--text-color-default:var(--color-stone-50)] [--background-color-emphasis:var(--color-stone-500)] [--background-color-muted:var(--color-stone-700)] bg-[radial-gradient(120%_85%_at_78%_28%,color-mix(in_srgb,var(--color-blue-500)_55%,transparent)_0%,transparent_62%),radial-gradient(85%_70%_at_10%_4%,color-mix(in_srgb,var(--color-indigo-600)_48%,transparent)_0%,transparent_66%),radial-gradient(140%_90%_at_50%_118%,color-mix(in_srgb,var(--color-blue-700)_42%,transparent)_0%,transparent_58%),linear-gradient(115deg,transparent_34%,color-mix(in_srgb,var(--color-blue-300)_14%,transparent)_50%,transparent_64%),linear-gradient(180deg,var(--color-stone-950)_0%,var(--color-stone-900)_42%,var(--color-stone-950)_100%)]"
+    >
+      <div id="itfb5i8" class="container mx-auto max-w-6xl px-6 text-center">
+        <div
+          class="inline-flex flex-wrap justify-center items-center gap-2 rounded-full border border-stone-700 px-4 py-1.5 mb-8"
+        >
+          <span
+            class="text-xs font-semibold uppercase tracking-widest text-secondary"
+            >New</span
+          ><span class="text-xs text-stone-300"
+            >Take a deposit on every booking, no extra charge</span
+          >
+        </div>
+        <h1 class="text-4xl md:text-6xl text-stone-50 mb-6 max-w-3xl mx-auto">
+          <span>Run the day, </span
+          ><span class="text-secondary">not the paperwork.</span>
+        </h1>
+        <p class="text-base md:text-lg text-stone-300 max-w-xl mx-auto mb-8">
+          Marigold holds every appointment, client record and payment for your
+          service business in one place — so the front desk stops being a second
+          job.
+        </p>
+        <div class="flex flex-wrap justify-center gap-3 mb-6">
+          <a href="./pricing.html" class="btn btn-primary btn-lg"
+            >Start free for 30 days</a
+          ><a href="./product.html" class="btn btn-outline-neutral btn-lg"
+            >See how a day runs</a
+          >
+        </div>
+        <div class="flex flex-wrap justify-center items-center gap-2 mb-14">
+          <span class="inline-block w-1.5 h-1.5 rounded-full bg-primary"></span
+          ><span class="text-sm text-stone-400"
+            >Trusted by 9,400 independent businesses across the UK and
+            Ireland</span
+          >
+        </div>
+        <div id="iz8eekt" class="rounded-2xl border border-stone-700 p-2">
+          <img
+            alt="Marigold calendar showing a day of bookings across five staff columns, with today's takings and the waitlist alongside"
+            id="idvdj"
+            src="assets/b284ff6a-5f8d-4f80-8d4e-2c9270f46d24.webp"
+            class="w-full block rounded-xl"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      id="inhf4ix"
+      data-swebsy-block-id="logo-strip"
+      data-swebsy-block='{"tags":["logos"],"description":"A clean bordered logo strip introducing the tools and brands that integrate with the product."}'
+      class="bg-default py-12 border-b border-default"
+    >
+      <div class="container mx-auto max-w-6xl px-6">
+        <p
+          id="i0qmj"
+          class="text-xs font-semibold uppercase tracking-widest text-subtle text-center mb-8"
+        >
+          Works with the tools you already use
+        </p>
+        <div
+          class="flex flex-wrap justify-center items-center gap-x-12 gap-y-8"
+        >
+          <img
+            alt="Stripe"
+            src="assets/7457f2a1-96ae-4b15-a48d-54c02dd1d440.svg"
+            class="h-8 w-auto opacity-60 dark:invert"
+          /><img
+            alt="Google Calendar"
+            src="assets/f042a104-fbd9-4725-9c4a-65ac2e406856.svg"
+            class="h-8 w-auto opacity-60 dark:invert"
+          /><img
+            alt="Xero"
+            src="assets/d5d6fe69-1c39-4034-96f2-0484ebd5f722.svg"
+            class="h-8 w-auto opacity-60 dark:invert"
+          /><img
+            alt="QuickBooks"
+            src="assets/39d7105d-c13e-4a3f-a652-f1c5b0301e19.svg"
+            class="h-8 w-auto opacity-60 dark:invert"
+          /><img
+            alt="Square"
+            src="assets/2bc0996d-dffd-4ce8-88ac-2988b7b2c5ff.svg"
+            class="h-8 w-auto opacity-60 dark:invert"
+          /><img
+            alt="Mailchimp"
+            src="assets/9fc52833-5035-4faa-96ca-985cc314b5be.svg"
+            class="h-8 w-auto opacity-60 dark:invert"
+          /><img
+            alt="WhatsApp"
+            src="assets/88a259bf-c3ff-49bc-8933-fd1f96687cc1.svg"
+            class="h-8 w-auto opacity-60 dark:invert"
+          /><img
+            alt="Zapier"
+            src="assets/7b358e8f-b535-4318-978d-9b1fd23f98ab.svg"
+            class="h-8 w-auto opacity-60 dark:invert"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      id="ildd82h"
+      data-swebsy-block-id="problem-stats"
+      data-swebsy-block='{"tags":["stats","content"],"description":"A muted problem statement section followed by three editorial impact statistics."}'
+      class="bg-muted py-16 md:py-24"
+    >
+      <div class="container px-6">
+        <div class="row">
+          <div class="col-12 mb-12 text-center">
+            <p
+              class="text-xs font-semibold uppercase tracking-widest text-primary mb-4"
+            >
+              The problem
+            </p>
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl text-emphasis mb-4 max-w-2xl mx-auto"
+            >
+              A no-show costs more than the slot.
+            </h2>
+            <p class="text-lg text-muted max-w-2xl mx-auto">
+              The gap nobody filled. The deposit nobody took. The regular whose
+              colour formula lived in someone's head until she left. It all
+              comes out of the same margin, and none of it shows up on a
+              spreadsheet.
+            </p>
+          </div>
+        </div>
+        <div class="row g-6">
+          <div class="col-12 md:col-4">
+            <div class="h-full rounded-xl bg-default border border-default p-8">
+              <span
+                class="inline-block text-4xl md:text-5xl font-semibold text-emphasis mb-3"
+                >1 in 7</span
+              >
+              <p class="text-muted">
+                Appointments booked by phone are never confirmed in writing.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 md:col-4">
+            <div class="h-full rounded-xl bg-default border border-default p-8">
+              <span
+                class="inline-block text-4xl md:text-5xl font-semibold text-emphasis mb-3"
+                >£4,800</span
+              >
+              <p class="text-muted">
+                Median yearly revenue a two-chair salon loses to empty slots.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 md:col-4">
+            <div class="h-full rounded-xl bg-default border border-default p-8">
+              <span
+                class="inline-block text-4xl md:text-5xl font-semibold text-emphasis mb-3"
+                >6 hrs</span
+              >
+              <p class="text-muted">
+                Spent every week on admin that a calendar should be doing
+                itself.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="isqxq5j"
+      data-swebsy-block-id="capabilities-four-up"
+      data-swebsy-block='{"tags":["features"],"description":"A spacious four-part capability overview explaining the product&apos;s core jobs."}'
+      class="bg-default"
+    >
+      <div class="container px-6 py-16 md:py-24 lg:py-32">
+        <div id="injglhk" class="row">
+          <div class="col-12 mb-12 text-center">
+            <p
+              class="text-xs font-semibold uppercase tracking-widest text-primary mb-4"
+            >
+              The whole job
+            </p>
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl text-emphasis mb-4 max-w-2xl mx-auto"
+            >
+              Four things, done properly.
+            </h2>
+            <p class="text-lg text-muted max-w-2xl mx-auto">
+              Marigold is not a platform. It is the four jobs a service business
+              actually has to get right, and nothing bolted on beside them.
+            </p>
+          </div>
+        </div>
+        <div class="border-t border-l border-emphasis">
+          <div class="row g-0">
+            <div
+              class="col-12 md:col-6 lg:col-3 border-b border-r border-emphasis p-8"
+            >
+              <span
+                data-icon-pack="stroke"
+                data-icon-name="calendar-days"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                class="inline-flex items-center leading-none size-8 text-primary mb-5 [--icon-stroke:2]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M8 2v4" />
+                  <path d="M16 2v4" />
+                  <rect width="18" height="18" x="3" y="4" rx="2" />
+                  <path d="M3 10h18" />
+                  <path d="M8 14h.01" />
+                  <path d="M12 14h.01" />
+                  <path d="M16 14h.01" />
+                  <path d="M8 18h.01" />
+                  <path d="M12 18h.01" />
+                  <path d="M16 18h.01" /></svg
+              ></span>
+              <h3 class="text-xl text-emphasis mb-3">The calendar</h3>
+              <p class="text-muted">
+                Every chair, room and technician in one view. Drag an
+                appointment to move it and the client knows before you've let
+                go.
+              </p>
+            </div>
+            <div
+              class="col-12 md:col-6 lg:col-3 border-b border-r border-emphasis p-8"
+            >
+              <span
+                data-icon-pack="stroke"
+                data-icon-name="contact"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                class="inline-flex items-center leading-none size-8 text-primary mb-5 [--icon-stroke:2]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M16 2v2" />
+                  <path d="M7 22v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2" />
+                  <path d="M8 2v2" />
+                  <circle cx="12" cy="11" r="3" />
+                  <rect x="3" y="4" width="18" height="18" rx="2" /></svg
+              ></span>
+              <h3 class="text-xl text-emphasis mb-3">The client record</h3>
+              <p class="text-muted">
+                Notes, allergies, colour formulas, every past visit. Whoever is
+                on the desk knows what the regular wants.
+              </p>
+            </div>
+            <div
+              class="col-12 md:col-6 lg:col-3 border-b border-r border-emphasis p-8"
+            >
+              <span
+                data-icon-pack="stroke"
+                data-icon-name="credit-card"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                class="inline-flex items-center leading-none size-8 text-primary mb-5 [--icon-stroke:2]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect width="20" height="14" x="2" y="5" rx="2" />
+                  <line x1="2" x2="22" y1="10" y2="10" /></svg
+              ></span>
+              <h3 class="text-xl text-emphasis mb-3">The money</h3>
+              <p class="text-muted">
+                Deposits at booking, balance at checkout, tips split at close.
+                Marigold chases the rest so you don't have to.
+              </p>
+            </div>
+            <div
+              class="col-12 md:col-6 lg:col-3 border-b border-r border-emphasis p-8"
+            >
+              <span
+                data-icon-pack="stroke"
+                data-icon-name="message-square-dot"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                class="inline-flex items-center leading-none size-8 text-primary mb-5 [--icon-stroke:2]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12.7 3H4a2 2 0 0 0-2 2v16.286a.71.71 0 0 0 1.212.502l2.202-2.202A2 2 0 0 1 6.828 19H20a2 2 0 0 0 2-2v-4.7"
+                  />
+                  <circle cx="19" cy="6" r="3" /></svg
+              ></span>
+              <h3 class="text-xl text-emphasis mb-3">The reminders</h3>
+              <p class="text-muted">
+                Texts timed to the window where people still reschedule instead
+                of vanishing. Reply to move; no app to install.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="i9p2yvh"
+      data-swebsy-block-id="product-spotlights"
+      data-swebsy-block='{"tags":["features","content"],"description":"An alternating product spotlight section pairing detailed feature copy with interface visuals."}'
+      class="bg-muted py-16 md:py-24"
+    >
+      <div class="container px-6">
+        <div class="row">
+          <div class="col-12 mb-12 text-center">
+            <p
+              class="text-xs font-semibold uppercase tracking-widest text-primary mb-4"
+            >
+              Inside the product
+            </p>
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl text-emphasis mb-4 max-w-2xl mx-auto"
+            >
+              Everything the front desk was doing by hand.
+            </h2>
+            <p class="text-lg text-muted max-w-2xl mx-auto">
+              Three screens carry the whole day. Nothing here needs you to
+              remember it.
+            </p>
+          </div>
+        </div>
+        <div id="itx94w6" class="flex flex-col gap-6">
+          <div
+            class="rounded-2xl bg-default border border-default overflow-hidden"
+          >
+            <div class="row g-0 items-center">
+              <div class="col-12 lg:col-5 p-8 md:p-10">
+                <p
+                  class="text-xs font-semibold uppercase tracking-widest text-primary mb-4"
+                >
+                  Scheduling
+                </p>
+                <h3 class="text-2xl md:text-3xl text-emphasis mb-4">
+                  Fill the day without touching a spreadsheet
+                </h3>
+                <p class="text-muted mb-6">
+                  Every chair, room and technician on one grid. Drag to move an
+                  appointment and the client has the new time before you have
+                  let go of the mouse.
+                </p>
+                <a href="./product.html" class="font-semibold text-primary-dark"
+                  >See the calendar →</a
+                >
+              </div>
+              <div class="col-12 lg:col-7 p-6 md:p-8">
+                <img
+                  alt="A week of bookings across six days, colour-coded by service"
+                  src="assets/2fb9ffeb-74f4-4389-a4d8-a4e8d74a6355.webp"
+                  id="ihk3cj"
+                  class="w-full block rounded-xl border border-default"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-2xl bg-default border border-default overflow-hidden"
+          >
+            <div class="row g-0 items-center">
+              <div class="col-12 lg:col-7 p-6 md:p-8">
+                <img
+                  alt="A client record showing visit history, notes and the colour formula on file"
+                  src="assets/a5e2170a-af1c-449b-b6aa-607cf64ee891.webp"
+                  id="ii5nsx"
+                  class="w-full block rounded-xl border border-default"
+                />
+              </div>
+              <div class="col-12 lg:col-5 p-8 md:p-10">
+                <p
+                  class="text-xs font-semibold uppercase tracking-widest text-primary mb-4"
+                >
+                  Clients
+                </p>
+                <h3 class="text-2xl md:text-3xl text-emphasis mb-4">
+                  The regular's history, already on the desk
+                </h3>
+                <p class="text-muted mb-6">
+                  Formula, allergies, what they said last time. Whoever opens
+                  the record knows what the person in the chair is expecting.
+                </p>
+                <a href="./product.html" class="font-semibold text-primary-dark"
+                  >See client records →</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded-2xl bg-default border border-default overflow-hidden"
+          >
+            <div class="row g-0 items-center">
+              <div class="col-12 lg:col-5 p-8 md:p-10">
+                <p
+                  class="text-xs font-semibold uppercase tracking-widest text-primary mb-4"
+                >
+                  Payments
+                </p>
+                <h3 class="text-2xl md:text-3xl text-emphasis mb-4">
+                  Paid before they reach the door
+                </h3>
+                <p class="text-muted mb-6">
+                  Deposit at booking, balance on the card you already hold, tip
+                  split at close. The receipt and the next booking go out
+                  together.
+                </p>
+                <a href="./pricing.html" class="font-semibold text-primary-dark"
+                  >See pricing →</a
+                >
+              </div>
+              <div class="col-12 lg:col-7 p-6 md:p-8">
+                <img
+                  alt="Checkout showing line items, tip selection and the card already on file"
+                  src="assets/89fde7e4-c949-44bf-8dca-496ed1d09a3e.webp"
+                  id="iisgr1"
+                  class="w-full block rounded-xl border border-default"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="industry-grid"
+      data-swebsy-block='{"tags":["features","card"],"description":"A bright industry-use-case grid for appointment-based businesses."}'
+      class="bg-default py-16 md:py-24"
+    >
+      <div class="container px-6">
+        <div class="row">
+          <div class="col-12 mb-12 text-center">
+            <p
+              class="text-xs font-semibold uppercase tracking-widest text-primary mb-4"
+            >
+              Who it is for
+            </p>
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl text-emphasis mb-4 max-w-2xl mx-auto"
+            >
+              Built for businesses that sell time.
+            </h2>
+            <p class="text-lg text-muted max-w-2xl mx-auto">
+              If the day is a grid of appointments and someone has to own the
+              diary, Marigold already fits.
+            </p>
+          </div>
+        </div>
+        <div
+          class="border-t border-l border-emphasis rounded-lg overflow-hidden"
+        >
+          <div class="row g-0">
+            <div
+              class="col-6 md:col-4 border-b border-r border-emphasis p-6 flex items-center gap-3"
+            >
+              <span
+                data-icon-pack="stroke"
+                data-icon-name="scissors"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                class="inline-flex items-center leading-none size-5 text-primary shrink-0 [--icon-stroke:2]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="6" cy="6" r="3" />
+                  <path d="M8.12 8.12 12 12" />
+                  <path d="M20 4 8.12 15.88" />
+                  <circle cx="6" cy="18" r="3" />
+                  <path d="M14.8 14.8 20 20" /></svg></span
+              ><span class="text-sm font-medium text-emphasis"
+                >Salons and barbershops</span
+              >
+            </div>
+            <div
+              class="col-6 md:col-4 border-b border-r border-emphasis p-6 flex items-center gap-3"
+            >
+              <span
+                data-icon-pack="stroke"
+                data-icon-name="heart-pulse"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                class="inline-flex items-center leading-none size-5 text-primary shrink-0 [--icon-stroke:2]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"
+                  />
+                  <path
+                    d="M3.22 13H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"
+                  /></svg></span
+              ><span class="text-sm font-medium text-emphasis"
+                >Dental clinics</span
+              >
+            </div>
+            <div
+              class="col-6 md:col-4 border-b border-r border-emphasis p-6 flex items-center gap-3"
+            >
+              <span
+                data-icon-pack="stroke"
+                data-icon-name="activity"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                class="inline-flex items-center leading-none size-5 text-primary shrink-0 [--icon-stroke:2]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"
+                  /></svg></span
+              ><span class="text-sm font-medium text-emphasis"
+                >Physiotherapy</span
+              >
+            </div>
+            <div
+              class="col-6 md:col-4 border-b border-r border-emphasis p-6 flex items-center gap-3"
+            >
+              <span
+                data-icon-pack="stroke"
+                data-icon-name="star"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                class="inline-flex items-center leading-none size-5 text-primary shrink-0 [--icon-stroke:2]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                  /></svg></span
+              ><span class="text-sm font-medium text-emphasis"
+                >Tattoo studios</span
+              >
+            </div>
+            <div
+              class="col-6 md:col-4 border-b border-r border-emphasis p-6 flex items-center gap-3"
+            >
+              <span
+                data-icon-pack="stroke"
+                data-icon-name="paw-print"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                class="inline-flex items-center leading-none size-5 text-primary shrink-0 [--icon-stroke:2]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="11" cy="4" r="2" />
+                  <circle cx="18" cy="8" r="2" />
+                  <circle cx="20" cy="16" r="2" />
+                  <path
+                    d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"
+                  /></svg></span
+              ><span class="text-sm font-medium text-emphasis"
+                >Veterinary practices</span
+              >
+            </div>
+            <div
+              class="col-6 md:col-4 border-b border-r border-emphasis p-6 flex items-center gap-3"
+            >
+              <span
+                data-icon-pack="stroke"
+                data-icon-name="car"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                class="inline-flex items-center leading-none size-5 text-primary shrink-0 [--icon-stroke:2]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"
+                  />
+                  <circle cx="7" cy="17" r="2" />
+                  <path d="M9 17h6" />
+                  <circle cx="17" cy="17" r="2" /></svg></span
+              ><span class="text-sm font-medium text-emphasis"
+                >Driving schools</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="i58im6y"
+      data-swebsy-block-id="stats-dark"
+      data-swebsy-block='{"tags":["stats"],"description":"A high-contrast dark band presenting four large proof-point metrics."}'
+      class="bg-stone-900 dark:bg-stone-950"
+    >
+      <div class="container px-6 py-16 md:py-24 lg:py-32">
+        <div id="ivdoqbq" class="row g-10">
+          <div class="col-12 md:col-6 lg:col-3">
+            <span
+              class="inline-block font-semibold text-5xl lg:text-6xl text-secondary mb-3"
+              >31%</span
+            >
+            <p class="text-stone-300">
+              Fewer no-shows in the first quarter after switching.
+            </p>
+          </div>
+          <div class="col-12 md:col-6 lg:col-3">
+            <span
+              id="i7werj"
+              class="inline-block font-semibold text-5xl lg:text-6xl text-secondary mb-3"
+              >6 hrs</span
+            >
+            <p class="text-stone-300">
+              Of admin handed back every week, per location.
+            </p>
+          </div>
+          <div class="col-12 md:col-6 lg:col-3">
+            <span
+              class="inline-block font-semibold text-5xl lg:text-6xl text-secondary mb-3"
+              >9,400</span
+            >
+            <p class="text-stone-300">
+              Independent businesses run their week on Marigold.
+            </p>
+          </div>
+          <div class="col-12 md:col-6 lg:col-3">
+            <span
+              class="inline-block font-semibold text-5xl lg:text-6xl text-secondary mb-3"
+              >4.8</span
+            >
+            <p class="text-stone-300">
+              Average rating across 1,240 verified reviews.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="i6jwaai"
+      data-swebsy-block-id="integration-grid"
+      data-swebsy-block='{"tags":["features","logos"],"description":"A muted integration showcase with supporting copy and a grid of familiar connected tools."}'
+      class="bg-muted py-16 md:py-24"
+    >
+      <div class="container px-6">
+        <div class="row">
+          <div class="col-12 mb-12 text-center">
+            <p
+              class="text-xs font-semibold uppercase tracking-widest text-primary mb-4"
+            >
+              Integrations
+            </p>
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl text-emphasis mb-4 max-w-2xl mx-auto"
+            >
+              It plugs into the tools you already pay for.
+            </h2>
+            <p class="text-lg text-muted max-w-2xl mx-auto">
+              No rip and replace. Marigold sits in the middle of the card
+              reader, the calendar and the books you already keep.
+            </p>
+          </div>
+        </div>
+        <div
+          class="border-t border-l border-emphasis rounded-lg overflow-hidden"
+        >
+          <div class="row g-0">
+            <div
+              class="col-6 md:col-3 border-b border-r border-emphasis p-6 flex items-center gap-3"
+            >
+              <img
+                alt="Stripe"
+                src="assets/7457f2a1-96ae-4b15-a48d-54c02dd1d440.svg"
+                class="h-6 w-6 shrink-0 dark:invert"
+              /><span class="text-sm font-medium text-emphasis">Stripe</span>
+            </div>
+            <div
+              class="col-6 md:col-3 border-b border-r border-emphasis p-6 flex items-center gap-3"
+            >
+              <img
+                alt="Square"
+                src="assets/2bc0996d-dffd-4ce8-88ac-2988b7b2c5ff.svg"
+                class="h-6 w-6 shrink-0 dark:invert"
+              /><span class="text-sm font-medium text-emphasis">Square</span>
+            </div>
+            <div
+              class="col-6 md:col-3 border-b border-r border-emphasis p-6 flex items-center gap-3"
+            >
+              <img
+                alt="Google Calendar"
+                src="assets/f042a104-fbd9-4725-9c4a-65ac2e406856.svg"
+                class="h-6 w-6 shrink-0 dark:invert"
+              /><span class="text-sm font-medium text-emphasis"
+                >Google Calendar</span
+              >
+            </div>
+            <div
+              class="col-6 md:col-3 border-b border-r border-emphasis p-6 flex items-center gap-3"
+            >
+              <img
+                alt="Xero"
+                src="assets/d5d6fe69-1c39-4034-96f2-0484ebd5f722.svg"
+                class="h-6 w-6 shrink-0 dark:invert"
+              /><span class="text-sm font-medium text-emphasis">Xero</span>
+            </div>
+            <div
+              class="col-6 md:col-3 border-b border-r border-emphasis p-6 flex items-center gap-3"
+            >
+              <img
+                alt="QuickBooks"
+                src="assets/39d7105d-c13e-4a3f-a652-f1c5b0301e19.svg"
+                class="h-6 w-6 shrink-0 dark:invert"
+              /><span class="text-sm font-medium text-emphasis"
+                >QuickBooks</span
+              >
+            </div>
+            <div
+              class="col-6 md:col-3 border-b border-r border-emphasis p-6 flex items-center gap-3"
+            >
+              <img
+                alt="Mailchimp"
+                src="assets/9fc52833-5035-4faa-96ca-985cc314b5be.svg"
+                class="h-6 w-6 shrink-0 dark:invert"
+              /><span class="text-sm font-medium text-emphasis">Mailchimp</span>
+            </div>
+            <div
+              class="col-6 md:col-3 border-b border-r border-emphasis p-6 flex items-center gap-3"
+            >
+              <img
+                alt="WhatsApp"
+                src="assets/88a259bf-c3ff-49bc-8933-fd1f96687cc1.svg"
+                class="h-6 w-6 shrink-0 dark:invert"
+              /><span class="text-sm font-medium text-emphasis">WhatsApp</span>
+            </div>
+            <div
+              class="col-6 md:col-3 border-b border-r border-emphasis p-6 flex items-center gap-3"
+            >
+              <img
+                alt="Zapier"
+                src="assets/7b358e8f-b535-4318-978d-9b1fd23f98ab.svg"
+                class="h-6 w-6 shrink-0 dark:invert"
+              /><span class="text-sm font-medium text-emphasis">Zapier</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="iynv2ou"
+      data-swebsy-block-id="testimonial-cards"
+      data-swebsy-block='{"tags":["testimonials","card"],"description":"An editorial customer-proof section with three substantial testimonial cards."}'
+      class="bg-default py-16 md:py-24"
+    >
+      <div class="container px-6">
+        <div class="row">
+          <div class="col-12 mb-12 text-center">
+            <p
+              class="text-xs font-semibold uppercase tracking-widest text-primary mb-4"
+            >
+              Customers
+            </p>
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl text-emphasis mb-4 max-w-2xl mx-auto"
+            >
+              People who stopped working Sundays.
+            </h2>
+            <p class="text-lg text-muted max-w-2xl mx-auto">
+              9,400 independent businesses run their week on Marigold. These
+              three moved off paper.
+            </p>
+          </div>
+        </div>
+        <div id="ii0sbai" class="row g-6">
+          <div class="col-12 md:col-4">
+            <div
+              class="h-full rounded-2xl bg-muted border border-default p-8 flex flex-col"
+            >
+              <p class="text-lg text-emphasis mb-6 grow">
+                “We kept the whole salon in a paper diary and three group chats.
+                Marigold replaced all of it in a weekend, and I stopped working
+                Sundays.”
+              </p>
+              <div id="iryvdh" class="flex items-center gap-3">
+                <div
+                  class="shrink-0 w-10 h-10 rounded-full bg-primary flex items-center justify-center"
+                >
+                  <span class="text-sm font-semibold text-stone-50">PR</span>
+                </div>
+                <div>
+                  <p
+                    id="i5he3f"
+                    class="text-sm font-semibold text-emphasis mb-0"
+                  >
+                    Priya Raman
+                  </p>
+                  <p class="text-xs text-muted mb-0">
+                    Owner, Fold & Fringe · Leeds
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 md:col-4">
+            <div
+              class="h-full rounded-2xl bg-muted border border-default p-8 flex flex-col"
+            >
+              <p class="text-lg text-emphasis mb-6 grow">
+                “Recalls used to be a spreadsheet and a prayer. Now the reminder
+                goes out, the slot fills itself, and nobody on the desk is
+                chasing anyone.”
+              </p>
+              <div id="iwbcgf" class="flex items-center gap-3">
+                <div
+                  class="shrink-0 w-10 h-10 rounded-full bg-primary flex items-center justify-center"
+                >
+                  <span class="text-sm font-semibold text-stone-50">AH</span>
+                </div>
+                <div>
+                  <p
+                    id="ich62r"
+                    class="text-sm font-semibold text-emphasis mb-0"
+                  >
+                    Aled Harborne
+                  </p>
+                  <p class="text-xs text-muted mb-0">
+                    Principal, Harborne Dental · Cardiff
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 md:col-4">
+            <div
+              class="h-full rounded-2xl bg-muted border border-default p-8 flex flex-col"
+            >
+              <p class="text-lg text-emphasis mb-6 grow">
+                “Three sites, one diary. I can see who is free this afternoon
+                without ringing round the practices to find out.”
+              </p>
+              <div id="itszwf" class="flex items-center gap-3">
+                <div
+                  class="shrink-0 w-10 h-10 rounded-full bg-primary flex items-center justify-center"
+                >
+                  <span class="text-sm font-semibold text-stone-50">MO</span>
+                </div>
+                <div>
+                  <p
+                    id="i22aga"
+                    class="text-sm font-semibold text-emphasis mb-0"
+                  >
+                    Mel Okafor
+                  </p>
+                  <p class="text-xs text-muted mb-0">
+                    Two Rivers Veterinary · Bristol
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="ixls3w"
+      data-swebsy-block-id="cta-dark"
+      data-swebsy-block='{"tags":["cta"],"description":"A full-width dark call-to-action band with supporting copy and two conversion buttons."}'
+      class="bg-stone-900 [--text-color-default:var(--color-stone-50)] [--background-color-emphasis:var(--color-stone-600)] [--background-color-muted:var(--color-stone-700)] border-b border-stone-700"
+    >
+      <div id="i0nxzh" class="container mx-auto max-w-6xl px-6 py-16 md:py-20">
+        <div id="i1tr8r" class="row g-6 items-center">
+          <div id="ix7i94" class="col-12 lg:col-7">
+            <h2 id="iaczrv" class="text-3xl md:text-5xl text-stone-50 mb-4">
+              Your next quiet Sunday starts here.
+            </h2>
+            <p id="i743rh" class="text-lg text-stone-300 max-w-xl">
+              Thirty days, every feature, no card. Bring your diary across and
+              we will match it appointment for appointment.
+            </p>
+          </div>
+          <div id="i10ywb" class="col-12 lg:col-5 mt-8 lg:mt-0">
+            <div
+              id="idn50p"
+              class="flex flex-wrap items-center gap-3 lg:justify-end"
+            >
+              <a href="#" id="ivibmg" class="btn btn-primary btn-lg"
+                >Start free for 30 days</a
+              ><a href="#" id="i697py" class="btn btn-outline-neutral btn-lg"
+                >Talk to us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="footer-multi-column"
+      data-swebsy-block='{"tags":["footer","navigation"],"description":"A dark multi-column footer with brand statement, navigation groups, social links, and legal copy."}'
+      id="iyteto-2"
+      class="bg-stone-900 dark:bg-stone-950"
+    >
+      <div id="itwny9-2" class="container py-16 md:py-20">
+        <div id="ii465lv-2-2" class="row g-10">
+          <div id="idw9dws-2-2" class="col-12 lg:col-4">
+            <span
+              id="i472ra2-2-2"
+              class="inline-block font-serif text-3xl text-stone-50 mb-4"
+              >Marigold</span
+            >
+            <p id="i1jnfs6-2-2" class="text-stone-400 max-w-xs mb-6">
+              Scheduling, client records and payments for small service
+              businesses. Built in Bristol.
+            </p>
+            <div
+              data-dark-mode-switch="true"
+              data-mode="system"
+              data-switch-style="icon"
+              role="group"
+              id="i7o6255-2-2"
+              class="dark-mode-switch btn-group"
+            >
+              <button
+                type="button"
+                data-theme-cycle-button="true"
+                aria-label="Theme: System. Click to switch to Light."
+                title="Theme: System. Click to switch to Light."
+                id="i9hfjvo-2"
+                class="btn btn-outline-neutral dark-mode-switch__cycle inline-flex items-center justify-center dark"
+              >
+                <span
+                  data-theme-mode-icon="system"
+                  id="iyl5mlc-2"
+                  class="inline-flex items-center justify-center leading-none size-4"
+                  ><span
+                    data-icon-pack="stroke"
+                    data-icon-name="monitor"
+                    data-icon-decorative="false"
+                    data-icon-label="System theme"
+                    role="img"
+                    aria-label="System theme"
+                    id="ipw26hd-2"
+                    class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <rect width="20" height="14" x="2" y="3" rx="2" />
+                      <line x1="8" x2="16" y1="21" y2="21" />
+                      <line
+                        x1="12"
+                        x2="12"
+                        y1="17"
+                        y2="21"
+                      /></svg></span></span
+                ><span
+                  data-theme-mode-icon="light"
+                  hidden
+                  id="ihxyce5-2"
+                  class="inline-flex items-center justify-center leading-none size-4"
+                  ><span
+                    data-icon-pack="stroke"
+                    data-icon-name="sun"
+                    data-icon-decorative="false"
+                    data-icon-label="Light theme"
+                    role="img"
+                    aria-label="Light theme"
+                    id="izlhhz8-2"
+                    class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="4" />
+                      <path d="M12 2v2" />
+                      <path d="M12 20v2" />
+                      <path d="m4.93 4.93 1.41 1.41" />
+                      <path d="m17.66 17.66 1.41 1.41" />
+                      <path d="M2 12h2" />
+                      <path d="M20 12h2" />
+                      <path d="m6.34 17.66-1.41 1.41" />
+                      <path d="m19.07 4.93-1.41 1.41" /></svg></span></span
+                ><span
+                  data-theme-mode-icon="dark"
+                  hidden
+                  id="i9s06pa-2"
+                  class="inline-flex items-center justify-center leading-none size-4"
+                  ><span
+                    data-icon-pack="stroke"
+                    data-icon-name="moon"
+                    data-icon-decorative="false"
+                    data-icon-label="Dark theme"
+                    role="img"
+                    aria-label="Dark theme"
+                    id="ina6d8n-2"
+                    class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
+                      /></svg></span
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div id="ix316uw-2-2" class="col-12 sm:col-4 lg:col-2">
+            <span
+              id="io8hmkk-2-2"
+              class="inline-block text-sm uppercase tracking-widest text-stone-400 mb-4"
+              >Product</span
+            >
+            <ul id="ivxy9ox-2-2" class="list-none p-0 m-0 flex flex-col gap-3">
+              <li id="ipj5j7c-2-2">
+                <a href="#" id="i5ju2be-2-2" class="text-stone-300 no-underline"
+                  >Overview</a
+                >
+              </li>
+              <li id="igym2wk-2-2">
+                <a href="#" id="ie6v2g3-2-2" class="text-stone-300 no-underline"
+                  >Pricing</a
+                >
+              </li>
+              <li id="iybhjte-2-2">
+                <a href="#" id="i7u0wvh-2-2" class="text-stone-300 no-underline"
+                  >Customers</a
+                >
+              </li>
+              <li id="ipmdygr-2-2">
+                <a href="#" id="iju2inn-2-2" class="text-stone-300 no-underline"
+                  >What's new</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="iewxxhe-2-2" class="col-12 sm:col-4 lg:col-2">
+            <span
+              id="ipr7xun-2-2"
+              class="inline-block text-sm uppercase tracking-widest text-stone-400 mb-4"
+              >Company</span
+            >
+            <ul id="iwy7qgu-2-2" class="list-none p-0 m-0 flex flex-col gap-3">
+              <li id="iy90blx-2-2">
+                <a href="#" id="io4k5te-2-2" class="text-stone-300 no-underline"
+                  >About</a
+                >
+              </li>
+              <li id="i6cc98e-2-2">
+                <a href="#" id="ipy9kqq-2-2" class="text-stone-300 no-underline"
+                  >Careers</a
+                >
+              </li>
+              <li id="i25e7d7-2-2">
+                <a href="#" id="im7fng8-2-2" class="text-stone-300 no-underline"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="ihofy1d-2-2" class="col-12 sm:col-4 lg:col-2">
+            <span
+              id="iyaekwr-2-2"
+              class="inline-block text-sm uppercase tracking-widest text-stone-400 mb-4"
+              >Support</span
+            >
+            <ul id="ilinu0m-2-2" class="list-none p-0 m-0 flex flex-col gap-3">
+              <li id="imyphi1-2-2">
+                <a href="#" id="i9g8cxf-2-2" class="text-stone-300 no-underline"
+                  >Help centre</a
+                >
+              </li>
+              <li id="ir614y2-2-2">
+                <a href="#" id="id2k3d5-2-2" class="text-stone-300 no-underline"
+                  >Import your diary</a
+                >
+              </li>
+              <li id="i2j8tnp-2-2">
+                <a href="#" id="iv57nl8-2-2" class="text-stone-300 no-underline"
+                  >Status</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="i6nml06-2-2" class="col-12 lg:col-2">
+            <span
+              id="i7jsfqt-2-2"
+              class="inline-block text-sm uppercase tracking-widest text-stone-400 mb-4"
+              >Follow</span
+            >
+            <div id="ivymz7d-2-2" class="flex items-center gap-3">
+              <a
+                href="#"
+                aria-label="Marigold on Instagram"
+                id="i37le7f-2-2"
+                class="text-stone-300 inline-flex"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faInstagram"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="ipso63q-2-2"
+                  class="inline-flex items-center leading-none size-5"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="instagram"
+                    class="svg-inline--fa fa-instagram"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    ></path></svg></span></a
+              ><a
+                href="#"
+                aria-label="Marigold on LinkedIn"
+                id="i67ai7q-2-2"
+                class="text-stone-300 inline-flex"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faLinkedin"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="iq5y4mi-2-2"
+                  class="inline-flex items-center leading-none size-5"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="linkedin"
+                    class="svg-inline--fa fa-linkedin"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z"
+                    ></path></svg></span
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div
+          id="i07r31d-2-2"
+          class="border-t border-stone-700 mt-12 pt-6 flex flex-wrap items-center justify-between gap-4"
+        >
+          <span id="ifi9qqq-2-2" class="inline-block text-sm text-stone-400"
+            >© 2026 Marigold Software Ltd.</span
+          ><span id="iqtvhum-2-2" class="inline-block text-sm text-stone-400"
+            >Privacy · Terms · Cookies</span
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/swebsy-components.04453deeb1.js" defer></script>
+  <a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

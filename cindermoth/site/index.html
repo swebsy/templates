@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cindermoth — a hand-painted metroidvania</title>
+    <meta
+      name="description"
+      content="Cindermoth is a hand-painted metroidvania about a lamplighter who cannot go home. Out now on Steam, Nintendo Switch, and iOS."
+    />
+    <meta
+      name="keywords"
+      content="indie game, metroidvania, press kit, hand-painted, Steam, Nintendo Switch, iOS"
+    />
+    <meta name="author" content="Ninefold Lantern" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Cindermoth — a hand-painted metroidvania"
+    />
+    <meta
+      property="og:description"
+      content="A lamplighter who cannot go home. Hand-painted, 12 hours, no combat. Out now on Steam, Switch, and iOS."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Cindermoth — a hand-painted metroidvania"
+    />
+    <meta
+      name="twitter:description"
+      content="A lamplighter who cannot go home. Hand-painted, 12 hours, no combat. Out now on Steam, Switch, and iOS."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-martianmono-2V0PKIcADoYhV6w87xrTKjs4CYElh_VS9YA4TlTnaTe9wWmm.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-martianmono-2V0PKIcADoYhV6w87xrTKjs4CYElh_VS9YA4TlTnaT69wWmm.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-martianmono-2V0PKIcADoYhV6w87xrTKjs4CYElh_VS9YA4TlTnaTS9wWmm.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-martianmono-2V0PKIcADoYhV6w87xrTKjs4CYElh_VS9YA4TlTnaTq9wQ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-spacegrotesk-V8mDoQDjQSkFtoMM3T6r8E7mPb54C-s0.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-spacegrotesk-V8mDoQDjQSkFtoMM3T6r8E7mPb94C-s0.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-spacegrotesk-V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/css/glightbox.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/js/glightbox.min.js"
+      defer
+    ></script>
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "light";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.f71ec4eb32.css" />
+  </head>
+  <body>
+    <nav
+      data-navbar-collapse-on="sm"
+      data-swebsy-block-id="compact-dark-navbar"
+      data-swebsy-block='{"tags":["navigation"],"description":"A compact dark navbar with wordmark, active-page links, support access, and social icons."}'
+      id="if1q7w2-2-6"
+      class="navbar navbar-expand-sm bg-subtle border-b border-subtle"
+    >
+      <div data-navbar-part="container" id="i4xg968-2" class="container">
+        <a
+          href="#"
+          data-navbar-part="brand"
+          id="ilf9t6g-2"
+          class="navbar-brand no-underline"
+          ><span id="i3d7r44-2" class="font-mono text-sm text-emphasis"
+            >CINDERMOTH</span
+          ></a
+        ><button
+          type="button"
+          data-navbar-part="toggler"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="ifw3y6f-2"
+          class="btn btn-icon navbar-toggler"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="ihf9mt9-2"
+            class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="navbarMenu-6-2"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse"
+        >
+          <ul
+            data-navbar-part="links"
+            id="ifen6xj-2"
+            class="navbar-nav mx-auto items-center"
+          >
+            <li id="iykxezk-2" class="nav-item">
+              <a
+                href="./index.html"
+                id="im81byj-2"
+                class="nav-link font-mono text-sm active"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li id="incv52g-2" class="nav-item hidden md:block">
+              <span
+                aria-hidden="true"
+                id="if2k8ap-2"
+                class="inline-block px-2 text-primary"
+                >✦</span
+              >
+            </li>
+            <li id="ibflxbm-2" class="nav-item">
+              <a
+                href="./press.html"
+                id="id8cjbr-2"
+                class="nav-link font-mono text-sm"
+                >Press Kit</a
+              >
+            </li>
+            <li id="i3qa6p2-2" class="nav-item hidden md:block">
+              <span
+                aria-hidden="true"
+                id="iwgjpcd-2"
+                class="inline-block px-2 text-primary"
+                >✦</span
+              >
+            </li>
+            <li id="ikv7cbl-2" class="nav-item">
+              <a
+                href="./support.html"
+                id="i7q973n-2"
+                class="nav-link font-mono text-sm"
+                >Support</a
+              >
+            </li>
+            <li id="idryloi-2" class="nav-item hidden md:block">
+              <span
+                aria-hidden="true"
+                id="ijhp31q-2"
+                class="inline-block px-2 text-primary"
+                >✦</span
+              >
+            </li>
+            <li id="igdtiwf-2" class="nav-item">
+              <div id="ity1bub-2" class="flex items-center gap-1">
+                <a
+                  href="#"
+                  aria-label="Ninefold Lantern on Bluesky"
+                  id="i1osczx-2"
+                  class="btn btn-icon btn-text-neutral btn-sm"
+                  ><span
+                    data-icon-pack="brands"
+                    data-icon-name="faBluesky"
+                    data-icon-decorative="true"
+                    data-icon-label=""
+                    aria-hidden="true"
+                    id="ii91bbq-2"
+                    class="inline-flex items-center leading-none size-4"
+                    ><svg
+                      width="100%"
+                      height="100%"
+                      data-prefix="fab"
+                      data-icon="bluesky"
+                      class="svg-inline--fa fa-bluesky"
+                      role="img"
+                      viewBox="0 0 576 512"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M407.8 294.7c-3.3-.4-6.7-.8-10-1.3 3.4 .4 6.7 .9 10 1.3zM288 227.1C261.9 176.4 190.9 81.9 124.9 35.3 61.6-9.4 37.5-1.7 21.6 5.5 3.3 13.8 0 41.9 0 58.4S9.1 194 15 213.9c19.5 65.7 89.1 87.9 153.2 80.7 3.3-.5 6.6-.9 10-1.4-3.3 .5-6.6 1-10 1.4-93.9 14-177.3 48.2-67.9 169.9 120.3 124.6 164.8-26.7 187.7-103.4 22.9 76.7 49.2 222.5 185.6 103.4 102.4-103.4 28.1-156-65.8-169.9-3.3-.4-6.7-.8-10-1.3 3.4 .4 6.7 .9 10 1.3 64.1 7.1 133.6-15.1 153.2-80.7 5.9-19.9 15-138.9 15-155.5s-3.3-44.7-21.6-52.9c-15.8-7.1-40-14.9-103.2 29.8-66.1 46.6-137.1 141.1-163.2 191.8z"
+                      ></path></svg></span></a
+                ><a
+                  href="#"
+                  aria-label="Cindermoth on YouTube"
+                  id="iypdjjs-2"
+                  class="btn btn-icon btn-text-neutral btn-sm"
+                  ><span
+                    data-icon-pack="brands"
+                    data-icon-name="faYoutube"
+                    data-icon-decorative="true"
+                    data-icon-label=""
+                    aria-hidden="true"
+                    id="i0g83gg-2"
+                    class="inline-flex items-center leading-none size-4"
+                    ><svg
+                      width="100%"
+                      height="100%"
+                      data-prefix="fab"
+                      data-icon="youtube"
+                      class="svg-inline--fa fa-youtube"
+                      role="img"
+                      viewBox="0 0 576 512"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z"
+                      ></path></svg></span></a
+                ><a
+                  href="#"
+                  aria-label="Ninefold Lantern on Discord"
+                  id="igy20s6-2"
+                  class="btn btn-icon btn-text-neutral btn-sm"
+                  ><span
+                    data-icon-pack="brands"
+                    data-icon-name="faDiscord"
+                    data-icon-decorative="true"
+                    data-icon-label=""
+                    aria-hidden="true"
+                    id="iclwyri-2"
+                    class="inline-flex items-center leading-none size-4"
+                    ><svg
+                      width="100%"
+                      height="100%"
+                      data-prefix="fab"
+                      data-icon="discord"
+                      class="svg-inline--fa fa-discord"
+                      role="img"
+                      viewBox="0 0 576 512"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1 .1s-.6 .4-.8 .8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2c-41.3 7.1-81.6 19.6-119.7 37.1-.3 .1-.6 .4-.8 .7-76.2 113.8-97.1 224.9-86.9 334.5 0 .3 .1 .5 .2 .8s.3 .4 .5 .6c44.4 32.9 94 58 146.8 74.2 .4 .1 .8 .1 1.1 0s.7-.4 .9-.7c11.3-15.4 21.4-31.8 30-48.8 .1-.2 .2-.5 .2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6 .2-.9 .3-.5 .6-.7c3.1-2.3 6.2-4.7 9.1-7.1 .3-.2 .6-.4 .9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1 .7-.2 1-.2s.7 .2 .9 .4c2.9 2.4 6 4.9 9.1 7.2 .2 .2 .4 .4 .6 .7s.2 .6 .2 .9-.1 .6-.3 .9-.4 .5-.6 .6c-14.7 8.6-30 15.9-45.9 21.8-.2 .1-.5 .2-.7 .4s-.3 .4-.4 .7-.1 .5-.1 .8 .1 .5 .2 .8c8.8 17 18.8 33.3 30 48.8 .2 .3 .6 .6 .9 .7s.8 .1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2 .2-.2 .4-.4 .5-.6s.2-.5 .2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2zm195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2z"
+                      ></path></svg></span
+                ></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="imc0axh"
+      data-swebsy-block-id="centered-key-art-hero"
+      data-swebsy-block='{"tags":["hero","cta"],"description":"A centered game-launch hero with platform labels, purchase buttons, cinematic key art, and a concise premise."}'
+      class="py-16 md:py-24 lg:py-32 text-center"
+    >
+      <div class="container">
+        <div class="row g-6">
+          <div class="col-12 lg:col-8 mx-auto">
+            <h1
+              id="isszv"
+              class="text-4xl md:text-6xl lg:text-7xl text-emphasis mb-8"
+            >
+              Cindermoth
+            </h1>
+            <div
+              class="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 mb-8"
+            >
+              <span class="font-mono text-sm text-muted">STEAM</span
+              ><span aria-hidden="true" class="text-primary">✦</span
+              ><span class="font-mono text-sm text-muted">SWITCH</span
+              ><span aria-hidden="true" class="text-primary">✦</span
+              ><span class="font-mono text-sm text-muted">iOS</span
+              ><span aria-hidden="true" class="text-primary">✦</span
+              ><span class="font-mono text-sm text-muted">MACOS</span>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-3 mb-12">
+              <a href="#buy" class="btn btn-primary btn-lg">Buy on Steam</a
+              ><a href="#" class="btn btn-outline-neutral btn-lg">App Store</a
+              ><a href="#" class="btn btn-outline-neutral btn-lg"
+                >Nintendo eShop</a
+              >
+            </div>
+          </div>
+          <div class="col-12 lg:col-10 mx-auto">
+            <img
+              alt="Key art: a lamplighter in a long coat holds a lantern at the mouth of a flooded stone tunnel, moths circling the flame"
+              src="assets/a4ff6cd9-e691-49d8-a3c0-9df8c7b5b30d.webp"
+              class="w-full aspect-video object-cover mb-10"
+            />
+          </div>
+          <div class="col-12 lg:col-7 mx-auto">
+            <p class="text-lg md:text-xl text-default mb-0">
+              A hand-painted metroidvania about a lamplighter walking home
+              across a drowned coast. Nothing can kill you. Your lantern burns
+              down, the weather closes the roads, and the map stays blank until
+              you draw it yourself.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="irh775"
+      data-swebsy-block-id="accolade-badge-strip"
+      data-swebsy-block='{"tags":["testimonials","logos"],"description":"A compact award-badge strip with illustrated emblems, award names, and source labels."}'
+      class="py-10 md:py-14 bg-subtle border-y border-subtle"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div
+              aria-label="Awards and accolades"
+              id="ixtezt"
+              class="flex flex-wrap justify-center gap-x-10 gap-y-8 md:gap-x-14"
+            >
+              <div
+                class="shrink-0 flex flex-col items-center gap-3 text-center"
+              >
+                <img
+                  alt="Best Debut award badge — Develop:Brighton"
+                  src="assets/f48c84ed-2530-4f56-9d39-2a058bd0cf2a.webp"
+                  class="w-20 h-20 object-contain"
+                />
+                <div>
+                  <span class="block font-mono text-sm text-emphasis"
+                    >Best Debut</span
+                  ><span class="block font-mono text-sm text-muted"
+                    >Develop:Brighton</span
+                  >
+                </div>
+              </div>
+              <div
+                class="shrink-0 flex flex-col items-center gap-3 text-center"
+              >
+                <img
+                  alt="Visual Art nominee badge — Independent Games Festival"
+                  src="assets/924c5913-8e47-4ac8-ab7c-64dd39aea261.webp"
+                  class="w-20 h-20 object-contain"
+                />
+                <div>
+                  <span class="block font-mono text-sm text-emphasis"
+                    >Visual Art</span
+                  ><span class="block font-mono text-sm text-muted"
+                    >IGF Nominee</span
+                  >
+                </div>
+              </div>
+              <div
+                class="shrink-0 flex flex-col items-center gap-3 text-center"
+              >
+                <img
+                  alt="Official Selection badge — Day of the Devs"
+                  src="assets/edfb2d6f-cde6-4503-b929-386ec5cd529a.webp"
+                  class="w-20 h-20 object-contain"
+                />
+                <div>
+                  <span class="block font-mono text-sm text-emphasis"
+                    >Official Selection</span
+                  ><span class="block font-mono text-sm text-muted"
+                    >Day of the Devs</span
+                  >
+                </div>
+              </div>
+              <div
+                class="shrink-0 flex flex-col items-center gap-3 text-center"
+              >
+                <img
+                  alt="Art Direction award badge — Golden Joystick Awards"
+                  src="assets/ee7046d2-c4a9-4691-bb3e-1f260c0ac687.webp"
+                  class="w-20 h-20 object-contain"
+                />
+                <div>
+                  <span class="block font-mono text-sm text-emphasis"
+                    >Art Direction</span
+                  ><span class="block font-mono text-sm text-muted"
+                    >Golden Joystick</span
+                  >
+                </div>
+              </div>
+              <div
+                class="shrink-0 flex flex-col items-center gap-3 text-center"
+              >
+                <img
+                  alt="Accessibility award badge — Can I Play That"
+                  src="assets/0f60948d-5f71-4792-a392-e3bcaf6001f6.webp"
+                  class="w-20 h-20 object-contain"
+                />
+                <div>
+                  <span class="block font-mono text-sm text-emphasis"
+                    >Accessibility</span
+                  ><span class="block font-mono text-sm text-muted"
+                    >Can I Play That</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="trailer"
+      data-swebsy-block-id="centered-trailer-launch"
+      data-swebsy-block='{"tags":["video","content"],"description":"A centered trailer section with a restrained label, framed video embed, and generous dark spacing."}'
+      class="py-16 md:py-24 text-center"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12 lg:col-10 mx-auto">
+            <iframe
+              controls="true"
+              playsinline="true"
+              referrerpolicy="strict-origin-when-cross-origin"
+              title="Cindermoth launch trailer"
+              id="igj1i8"
+              class="aspect-video object-cover w-full mb-4"
+              src="https://www.youtube.com/embed/Ub1MUHJuEYE?&amp;rel=0"
+            ></iframe
+            ><span class="block font-mono text-sm text-muted"
+              >LAUNCH TRAILER</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="iegb7e"
+      data-swebsy-block-id="feature-image-left"
+      data-swebsy-block='{"tags":["features","content"],"description":"An alternating feature section with cinematic media on the left and focused product copy on the right."}'
+      class="py-16 md:py-24 bg-subtle"
+    >
+      <div class="container">
+        <div class="row g-6 items-center">
+          <div class="col-12 md:col-6">
+            <img
+              alt="The lantern casts a cone of warm light across a dark cistern, revealing a ledge that was invisible a moment before"
+              src="assets/748c6348-0014-4b64-a2c7-47e359c7d28d.webp"
+              class="w-full aspect-video object-cover"
+            />
+          </div>
+          <div class="col-12 md:col-6 mt-6 md:mt-0">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl text-emphasis mb-4">
+              Light the Way
+            </h2>
+            <p class="text-lg text-default mb-0">
+              The lantern is not a lamp, it is the level design. Ledges,
+              handholds and doorways only exist where the light falls, and the
+              flame burns down as you walk. Every route is a decision about how
+              much dark you can afford.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="iyrpfg"
+      data-swebsy-block-id="feature-image-right"
+      data-swebsy-block='{"tags":["features","content"],"description":"An alternating feature section with focused product copy on the left and cinematic media on the right."}'
+      class="py-16 md:py-24"
+    >
+      <div class="container">
+        <div class="row g-6 items-center">
+          <div class="col-12 md:col-6 order-2 md:order-1">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl text-emphasis mb-4">
+              Draw Your Own Map
+            </h2>
+            <p class="text-lg text-default mb-0">
+              Nothing is filled in for you. The map opens blank and stays that
+              way until you ink it yourself, room by room, in whatever shorthand
+              you invent. Your marks are the only record the game keeps.
+            </p>
+          </div>
+          <div class="col-12 md:col-6 order-1 md:order-2">
+            <img
+              alt="The hand-drawn map screen covered in the player's own ink marks and hand-lettered place names"
+              src="assets/41c6d933-860e-49e3-b887-045843469a44.webp"
+              class="w-full aspect-video object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="ii8lb8" class="py-16 md:py-24 bg-subtle">
+      <div class="container">
+        <div class="row g-6 items-center">
+          <div class="col-12 md:col-6">
+            <img
+              alt="The lamplighter shelters under an awning as rain moves across a painted harbour town at dusk"
+              src="assets/bc637d2e-b1ab-48ae-a7a2-ed1decb0b39c.webp"
+              class="w-full aspect-video object-cover"
+            />
+          </div>
+          <div class="col-12 md:col-6 mt-6 md:mt-0">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl text-emphasis mb-4">
+              Walk, Don’t Fight
+            </h2>
+            <p class="text-lg text-default mb-0">
+              There is no combat and no death screen. The pressure comes from
+              weather that closes roads on its own clock, from fuel you have to
+              ration, and from the distance still between you and home.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="three-quote-acclaim"
+      data-swebsy-block='{"tags":["testimonials"],"description":"A three-column critical-acclaim section with short pull quotes and publication labels."}'
+      class="py-16 md:py-24 text-center"
+    >
+      <div class="container">
+        <div class="row g-6">
+          <div id="i4icm78" class="col-12">
+            <h2 class="text-2xl md:text-3xl text-emphasis mb-10">
+              Critical Acclaim
+            </h2>
+          </div>
+          <div class="col-12 md:col-4">
+            <blockquote class="m-0">
+              <span aria-hidden="true" class="block text-primary mb-3">✦</span>
+              <p class="text-lg text-emphasis mb-3">
+                “The rare metroidvania that trusts you to just look at it.”
+              </p>
+              <span class="block font-mono text-sm text-muted">EUROGAMER</span>
+            </blockquote>
+          </div>
+          <div class="col-12 md:col-4 mt-8 md:mt-0">
+            <blockquote class="m-0">
+              <span aria-hidden="true" class="block text-primary mb-3">✦</span>
+              <p class="text-lg text-emphasis mb-3">
+                “I finished it in two sittings and immediately started marking a
+                second map.”
+              </p>
+              <span class="block font-mono text-sm text-muted"
+                >ROCK PAPER SHOTGUN</span
+              >
+            </blockquote>
+          </div>
+          <div class="col-12 md:col-4 mt-8 md:mt-0">
+            <blockquote class="m-0">
+              <span aria-hidden="true" class="block text-primary mb-3">✦</span>
+              <p class="text-lg text-emphasis mb-3">
+                “Removing combat did not make it gentle. It made every wrong
+                turn cost something.”
+              </p>
+              <span class="block font-mono text-sm text-muted">EDGE</span>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="i5f44p"
+      data-swebsy-block-id="six-image-lightbox-gallery"
+      data-swebsy-block='{"tags":["gallery","lightbox"],"description":"A responsive six-image cinematic gallery with consistent widescreen crops and lightbox viewing."}'
+      class="py-16 md:py-24 bg-subtle"
+    >
+      <div class="container">
+        <div class="row g-6">
+          <div class="col-12 text-center">
+            <h2 class="text-2xl md:text-3xl text-emphasis mb-10">Gallery</h2>
+          </div>
+          <div class="col-12">
+            <div
+              data-swebsy-gallery="true"
+              id="ilfxpt"
+              data-swebsy-gallery-id="gal-9397f1c7"
+              class="grid grid-cols-1 gap-4 swebsy-gallery md:grid-cols-3"
+            >
+              <a
+                data-swebsy-lightbox="true"
+                data-glightbox=""
+                data-type="image"
+                src="assets/b761c9cb-4faa-4835-b14e-1862cddb6538.webp"
+                id="im0w9l"
+                data-swebsy-lightbox-id="lbx-cd19ed45"
+                title="Saltgate Cistern"
+                ><img
+                  alt="The flooded cistern, lantern light on green water"
+                  src="assets/b761c9cb-4faa-4835-b14e-1862cddb6538.webp"
+                  class="w-full aspect-video object-cover" /></a
+              ><a
+                data-swebsy-lightbox="true"
+                data-glightbox=""
+                data-type="image"
+                src="assets/e83799fb-0dfd-4fb2-9103-5dbfe8435ab6.webp"
+                id="i6lmyy"
+                data-swebsy-lightbox-id="lbx-030ab3de"
+                title="Saltgate at Dusk"
+                ><img
+                  alt="A painted harbour town at dusk, lamps being lit one by one along the sea wall"
+                  src="assets/e83799fb-0dfd-4fb2-9103-5dbfe8435ab6.webp"
+                  class="w-full aspect-video object-cover" /></a
+              ><a
+                data-swebsy-lightbox="true"
+                data-glightbox=""
+                data-type="image"
+                src="assets/b0ef26ed-491b-4288-848a-db30abf7674e.webp"
+                id="iemwtq"
+                data-swebsy-lightbox-id="lbx-95c07528"
+                title="The Canopy"
+                ><img
+                  alt="A vast moth canopy overhead, wings catching lantern light in the dark"
+                  src="assets/b0ef26ed-491b-4288-848a-db30abf7674e.webp"
+                  class="w-full aspect-video object-cover" /></a
+              ><a
+                data-swebsy-lightbox="true"
+                data-glightbox=""
+                data-type="image"
+                src="assets/97fb0306-ef46-422f-a394-d57fae9a2717.webp"
+                id="iktrxl"
+                data-swebsy-lightbox-id="lbx-4c9528c8"
+                title="The Long Span"
+                ><img
+                  alt="A rope bridge strung between two cliffs in heavy rain"
+                  src="assets/97fb0306-ef46-422f-a394-d57fae9a2717.webp"
+                  class="w-full aspect-video object-cover" /></a
+              ><a
+                data-swebsy-lightbox="true"
+                data-glightbox=""
+                data-type="image"
+                src="assets/fb8d7ea6-6a3b-4ed4-9037-1051b0cdc7c7.webp"
+                id="iry7ee"
+                data-swebsy-lightbox-id="lbx-0a5b9a03"
+                title="Ninefold Light"
+                ><img
+                  alt="An abandoned lighthouse interior, spiral stair lit only by the lantern"
+                  src="assets/fb8d7ea6-6a3b-4ed4-9037-1051b0cdc7c7.webp"
+                  class="w-full aspect-video object-cover" /></a
+              ><a
+                data-swebsy-lightbox="true"
+                data-glightbox=""
+                data-type="image"
+                src="assets/58d23834-6c73-4961-9619-e6484b520eac.webp"
+                id="iaf5pb"
+                data-swebsy-lightbox-id="lbx-532a95b6"
+                title="Homeward"
+                ><img
+                  alt="A painted horizon of chimneys under a low orange sky"
+                  src="assets/58d23834-6c73-4961-9619-e6484b520eac.webp"
+                  class="w-full aspect-video object-cover"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="buy"
+      data-swebsy-block-id="purchase-cta-band"
+      data-swebsy-block='{"tags":["cta"],"description":"A centered purchase call-to-action with supporting copy, storefront buttons, and compact platform badges."}'
+      class="py-16 md:py-24 lg:py-32 text-center"
+    >
+      <div class="container">
+        <div class="row g-6">
+          <div class="col-12 lg:col-8 mx-auto">
+            <h2
+              id="i4ya6y"
+              class="text-3xl md:text-4xl lg:text-5xl text-emphasis mb-4"
+            >
+              Out Now
+            </h2>
+            <p class="text-lg text-default mb-10">
+              Buy it once. No subscription, no in-app purchases, and the same
+              save file across iOS and macOS.
+            </p>
+            <div class="flex flex-wrap items-center justify-center gap-3 mb-10">
+              <a href="#" class="btn btn-primary btn-lg">Steam</a
+              ><a href="#" class="btn btn-outline-neutral btn-lg"
+                >Nintendo eShop</a
+              ><a href="#" class="btn btn-outline-neutral btn-lg">App Store</a
+              ><a href="#" class="btn btn-outline-neutral btn-lg">itch.io</a>
+            </div>
+            <div
+              class="flex flex-wrap items-center justify-center gap-x-3 gap-y-2"
+            >
+              <span
+                class="border border-muted px-3 py-1 font-mono text-sm text-muted"
+                >PEGI 7</span
+              ><span
+                class="border border-muted px-3 py-1 font-mono text-sm text-muted"
+                >ESRB E10+</span
+              ><span
+                class="border border-muted px-3 py-1 font-mono text-sm text-muted"
+                >SINGLE PLAYER</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="compact-maker-credit"
+      data-swebsy-block='{"tags":["about"],"description":"A compact maker credit band with studio name, team summary, and location."}'
+      class="py-12 md:py-16 text-center border-t border-subtle"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <span class="block font-mono text-sm text-subtle mb-3">MADE BY</span
+            ><span
+              class="block font-mono text-xl md:text-2xl text-emphasis mb-2"
+              >NINEFOLD LANTERN</span
+            >
+            <p class="text-muted mb-0">
+              Two people in a rented room above a print shop in Bristol.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="social-legal-footer"
+      data-swebsy-block='{"tags":["footer","copyright"],"description":"A dark footer with social icons, utility links, and a compact copyright line."}'
+      id="icg4bdg"
+      class="py-10 md:py-12 bg-subtle border-t border-subtle text-center"
+    >
+      <div id="izjw3nd" class="container">
+        <div id="inj1c4i" class="row g-6">
+          <div id="i2e53ng" class="col-12">
+            <div
+              id="ib517gk"
+              class="flex flex-wrap items-center justify-center gap-3 mb-6"
+            >
+              <a
+                href="#"
+                aria-label="Ninefold Lantern on Bluesky"
+                id="iwmesw9"
+                class="btn btn-icon btn-text-neutral"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faBluesky"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="ig22r6z"
+                  class="inline-flex items-center leading-none size-5"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="bluesky"
+                    class="svg-inline--fa fa-bluesky"
+                    role="img"
+                    viewBox="0 0 576 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M407.8 294.7c-3.3-.4-6.7-.8-10-1.3 3.4 .4 6.7 .9 10 1.3zM288 227.1C261.9 176.4 190.9 81.9 124.9 35.3 61.6-9.4 37.5-1.7 21.6 5.5 3.3 13.8 0 41.9 0 58.4S9.1 194 15 213.9c19.5 65.7 89.1 87.9 153.2 80.7 3.3-.5 6.6-.9 10-1.4-3.3 .5-6.6 1-10 1.4-93.9 14-177.3 48.2-67.9 169.9 120.3 124.6 164.8-26.7 187.7-103.4 22.9 76.7 49.2 222.5 185.6 103.4 102.4-103.4 28.1-156-65.8-169.9-3.3-.4-6.7-.8-10-1.3 3.4 .4 6.7 .9 10 1.3 64.1 7.1 133.6-15.1 153.2-80.7 5.9-19.9 15-138.9 15-155.5s-3.3-44.7-21.6-52.9c-15.8-7.1-40-14.9-103.2 29.8-66.1 46.6-137.1 141.1-163.2 191.8z"
+                    ></path></svg></span></a
+              ><a
+                href="#"
+                aria-label="Ninefold Lantern on Mastodon"
+                id="i7wrgyc"
+                class="btn btn-icon btn-text-neutral"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faMastodon"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="i1nmuom"
+                  class="inline-flex items-center leading-none size-5"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="mastodon"
+                    class="svg-inline--fa fa-mastodon"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zM357.9 304.3l-46.6 0 0-114.2c0-49.7-64-51.6-64 6.9l0 62.5-46.3 0 0-62.5c0-58.5-64-56.6-64-6.9l0 114.2-46.7 0c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175l0 0z"
+                    ></path></svg></span></a
+              ><a
+                href="#"
+                aria-label="Cindermoth on YouTube"
+                id="icalzsf"
+                class="btn btn-icon btn-text-neutral"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faYoutube"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="isy2o8i"
+                  class="inline-flex items-center leading-none size-5"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="youtube"
+                    class="svg-inline--fa fa-youtube"
+                    role="img"
+                    viewBox="0 0 576 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z"
+                    ></path></svg></span></a
+              ><a
+                href="#"
+                aria-label="Ninefold Lantern on Discord"
+                id="iopkfgv"
+                class="btn btn-icon btn-text-neutral"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faDiscord"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="imamp5y"
+                  class="inline-flex items-center leading-none size-5"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="discord"
+                    class="svg-inline--fa fa-discord"
+                    role="img"
+                    viewBox="0 0 576 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1 .1s-.6 .4-.8 .8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2c-41.3 7.1-81.6 19.6-119.7 37.1-.3 .1-.6 .4-.8 .7-76.2 113.8-97.1 224.9-86.9 334.5 0 .3 .1 .5 .2 .8s.3 .4 .5 .6c44.4 32.9 94 58 146.8 74.2 .4 .1 .8 .1 1.1 0s.7-.4 .9-.7c11.3-15.4 21.4-31.8 30-48.8 .1-.2 .2-.5 .2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6 .2-.9 .3-.5 .6-.7c3.1-2.3 6.2-4.7 9.1-7.1 .3-.2 .6-.4 .9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1 .7-.2 1-.2s.7 .2 .9 .4c2.9 2.4 6 4.9 9.1 7.2 .2 .2 .4 .4 .6 .7s.2 .6 .2 .9-.1 .6-.3 .9-.4 .5-.6 .6c-14.7 8.6-30 15.9-45.9 21.8-.2 .1-.5 .2-.7 .4s-.3 .4-.4 .7-.1 .5-.1 .8 .1 .5 .2 .8c8.8 17 18.8 33.3 30 48.8 .2 .3 .6 .6 .9 .7s.8 .1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2 .2-.2 .4-.4 .5-.6s.2-.5 .2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2zm195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2z"
+                    ></path></svg></span
+              ></a>
+            </div>
+            <div
+              id="iwtzggg"
+              class="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 mb-6"
+            >
+              <a
+                href="./press.html"
+                id="ibqdjo1"
+                class="font-mono text-sm text-muted no-underline"
+                >Press Kit</a
+              ><span aria-hidden="true" id="i0z8unu" class="text-primary"
+                >✦</span
+              ><a
+                href="./support.html"
+                id="ixi4nru"
+                class="font-mono text-sm text-muted no-underline"
+                >Support</a
+              ><span aria-hidden="true" id="il3ms2b" class="text-primary"
+                >✦</span
+              ><a
+                href="./privacy.html"
+                id="ik8ahm9"
+                class="font-mono text-sm text-muted no-underline"
+                >Privacy Policy</a
+              ><span aria-hidden="true" id="i32r9uj" class="text-primary"
+                >✦</span
+              ><a
+                href="./terms.html"
+                id="iuspsjk"
+                class="font-mono text-sm text-muted no-underline"
+                >Terms of Use</a
+              >
+            </div>
+            <p id="itv4w5j" class="font-mono text-sm text-subtle mb-0">
+              © 2026 Ninefold Lantern Ltd. Cindermoth and the moth mark are
+              trademarks of Ninefold Lantern Ltd.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/swebsy-components.25073555dd.js" defer></script>
+  <a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cindermoth — a hand-painted metroidvania</title>
+    <meta
+      name="description"
+      content="Cindermoth is a hand-painted metroidvania about a lamplighter who cannot go home. Out now on Steam, Nintendo Switch, and iOS."
+    />
+    <meta
+      name="keywords"
+      content="indie game, metroidvania, press kit, hand-painted, Steam, Nintendo Switch, iOS"
+    />
+    <meta name="author" content="Ninefold Lantern" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Cindermoth — a hand-painted metroidvania"
+    />
+    <meta
+      property="og:description"
+      content="A lamplighter who cannot go home. Hand-painted, 12 hours, no combat. Out now on Steam, Switch, and iOS."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Cindermoth — a hand-painted metroidvania"
+    />
+    <meta
+      name="twitter:description"
+      content="A lamplighter who cannot go home. Hand-painted, 12 hours, no combat. Out now on Steam, Switch, and iOS."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-martianmono-2V0PKIcADoYhV6w87xrTKjs4CYElh_VS9YA4TlTnaTe9wWmm.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-martianmono-2V0PKIcADoYhV6w87xrTKjs4CYElh_VS9YA4TlTnaT69wWmm.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-martianmono-2V0PKIcADoYhV6w87xrTKjs4CYElh_VS9YA4TlTnaTS9wWmm.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-martianmono-2V0PKIcADoYhV6w87xrTKjs4CYElh_VS9YA4TlTnaTq9wQ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-spacegrotesk-V8mDoQDjQSkFtoMM3T6r8E7mPb54C-s0.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-spacegrotesk-V8mDoQDjQSkFtoMM3T6r8E7mPb94C-s0.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-spacegrotesk-V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "light";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.f71ec4eb32.css" />
+  </head>
+  <body>
+    <nav
+      data-navbar-collapse-on="sm"
+      data-swebsy-block-id="compact-dark-navbar"
+      data-swebsy-block='{"tags":["navigation"],"description":"A compact dark navbar with wordmark, active-page links, support access, and social icons."}'
+      id="if1q7w2-2-4"
+      class="navbar navbar-expand-sm bg-subtle border-b border-subtle"
+    >
+      <div data-navbar-part="container" id="i4xg968-5" class="container">
+        <a
+          href="#"
+          data-navbar-part="brand"
+          id="ilf9t6g-5"
+          class="navbar-brand no-underline"
+          ><span id="i3d7r44-5" class="font-mono text-sm text-emphasis"
+            >CINDERMOTH</span
+          ></a
+        ><button
+          type="button"
+          data-navbar-part="toggler"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="ifw3y6f-5"
+          class="btn btn-icon navbar-toggler"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="ihf9mt9-5"
+            class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="navbarMenu-6-5"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse"
+        >
+          <ul
+            data-navbar-part="links"
+            id="ifen6xj-5"
+            class="navbar-nav mx-auto items-center"
+          >
+            <li id="iykxezk-5" class="nav-item">
+              <a
+                href="./index.html"
+                id="im81byj-5"
+                class="nav-link font-mono text-sm"
+                >Home</a
+              >
+            </li>
+            <li id="incv52g-5" class="nav-item hidden md:block">
+              <span
+                aria-hidden="true"
+                id="if2k8ap-5"
+                class="inline-block px-2 text-primary"
+                >✦</span
+              >
+            </li>
+            <li id="ibflxbm-5" class="nav-item">
+              <a
+                href="./press.html"
+                id="id8cjbr-5"
+                class="nav-link font-mono text-sm"
+                >Press Kit</a
+              >
+            </li>
+            <li id="i3qa6p2-5" class="nav-item hidden md:block">
+              <span
+                aria-hidden="true"
+                id="iwgjpcd-5"
+                class="inline-block px-2 text-primary"
+                >✦</span
+              >
+            </li>
+            <li id="ikv7cbl-5" class="nav-item">
+              <a
+                href="./support.html"
+                id="i7q973n-5"
+                class="nav-link font-mono text-sm"
+                >Support</a
+              >
+            </li>
+            <li id="idryloi-5" class="nav-item hidden md:block">
+              <span
+                aria-hidden="true"
+                id="ijhp31q-5"
+                class="inline-block px-2 text-primary"
+                >✦</span
+              >
+            </li>
+            <li id="igdtiwf-5" class="nav-item">
+              <div id="ity1bub-5" class="flex items-center gap-1">
+                <a
+                  href="#"
+                  aria-label="Ninefold Lantern on Bluesky"
+                  id="i1osczx-5"
+                  class="btn btn-icon btn-text-neutral btn-sm"
+                  ><span
+                    data-icon-pack="brands"
+                    data-icon-name="faBluesky"
+                    data-icon-decorative="true"
+                    data-icon-label=""
+                    aria-hidden="true"
+                    id="ii91bbq-5"
+                    class="inline-flex items-center leading-none size-4"
+                    ><svg
+                      width="100%"
+                      height="100%"
+                      data-prefix="fab"
+                      data-icon="bluesky"
+                      class="svg-inline--fa fa-bluesky"
+                      role="img"
+                      viewBox="0 0 576 512"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M407.8 294.7c-3.3-.4-6.7-.8-10-1.3 3.4 .4 6.7 .9 10 1.3zM288 227.1C261.9 176.4 190.9 81.9 124.9 35.3 61.6-9.4 37.5-1.7 21.6 5.5 3.3 13.8 0 41.9 0 58.4S9.1 194 15 213.9c19.5 65.7 89.1 87.9 153.2 80.7 3.3-.5 6.6-.9 10-1.4-3.3 .5-6.6 1-10 1.4-93.9 14-177.3 48.2-67.9 169.9 120.3 124.6 164.8-26.7 187.7-103.4 22.9 76.7 49.2 222.5 185.6 103.4 102.4-103.4 28.1-156-65.8-169.9-3.3-.4-6.7-.8-10-1.3 3.4 .4 6.7 .9 10 1.3 64.1 7.1 133.6-15.1 153.2-80.7 5.9-19.9 15-138.9 15-155.5s-3.3-44.7-21.6-52.9c-15.8-7.1-40-14.9-103.2 29.8-66.1 46.6-137.1 141.1-163.2 191.8z"
+                      ></path></svg></span></a
+                ><a
+                  href="#"
+                  aria-label="Cindermoth on YouTube"
+                  id="iypdjjs-5"
+                  class="btn btn-icon btn-text-neutral btn-sm"
+                  ><span
+                    data-icon-pack="brands"
+                    data-icon-name="faYoutube"
+                    data-icon-decorative="true"
+                    data-icon-label=""
+                    aria-hidden="true"
+                    id="i0g83gg-5"
+                    class="inline-flex items-center leading-none size-4"
+                    ><svg
+                      width="100%"
+                      height="100%"
+                      data-prefix="fab"
+                      data-icon="youtube"
+                      class="svg-inline--fa fa-youtube"
+                      role="img"
+                      viewBox="0 0 576 512"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z"
+                      ></path></svg></span></a
+                ><a
+                  href="#"
+                  aria-label="Ninefold Lantern on Discord"
+                  id="igy20s6-5"
+                  class="btn btn-icon btn-text-neutral btn-sm"
+                  ><span
+                    data-icon-pack="brands"
+                    data-icon-name="faDiscord"
+                    data-icon-decorative="true"
+                    data-icon-label=""
+                    aria-hidden="true"
+                    id="iclwyri-5"
+                    class="inline-flex items-center leading-none size-4"
+                    ><svg
+                      width="100%"
+                      height="100%"
+                      data-prefix="fab"
+                      data-icon="discord"
+                      class="svg-inline--fa fa-discord"
+                      role="img"
+                      viewBox="0 0 576 512"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1 .1s-.6 .4-.8 .8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2c-41.3 7.1-81.6 19.6-119.7 37.1-.3 .1-.6 .4-.8 .7-76.2 113.8-97.1 224.9-86.9 334.5 0 .3 .1 .5 .2 .8s.3 .4 .5 .6c44.4 32.9 94 58 146.8 74.2 .4 .1 .8 .1 1.1 0s.7-.4 .9-.7c11.3-15.4 21.4-31.8 30-48.8 .1-.2 .2-.5 .2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6 .2-.9 .3-.5 .6-.7c3.1-2.3 6.2-4.7 9.1-7.1 .3-.2 .6-.4 .9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1 .7-.2 1-.2s.7 .2 .9 .4c2.9 2.4 6 4.9 9.1 7.2 .2 .2 .4 .4 .6 .7s.2 .6 .2 .9-.1 .6-.3 .9-.4 .5-.6 .6c-14.7 8.6-30 15.9-45.9 21.8-.2 .1-.5 .2-.7 .4s-.3 .4-.4 .7-.1 .5-.1 .8 .1 .5 .2 .8c8.8 17 18.8 33.3 30 48.8 .2 .3 .6 .6 .9 .7s.8 .1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2 .2-.2 .4-.4 .5-.6s.2-.5 .2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2zm195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2z"
+                      ></path></svg></span
+                ></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="iiilutj"
+      data-swebsy-block-id="legal-page-header"
+      data-swebsy-block='{"tags":["header"],"description":"A compact legal page header with policy title, organization name, and last-updated metadata."}'
+      class="py-16 md:py-24 text-center"
+    >
+      <div class="container">
+        <div class="row g-6">
+          <div class="col-12 lg:col-8 mx-auto">
+            <h1 class="text-3xl md:text-5xl text-emphasis mb-4">
+              Privacy Policy
+            </h1>
+            <span class="block font-mono text-sm text-subtle"
+              >NINEFOLD LANTERN LTD · LAST UPDATED AUGUST 2026</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="legal-summary-callout"
+      data-swebsy-block='{"tags":["intro","content"],"description":"A highlighted plain-language legal summary with an eyebrow label and two short explanatory paragraphs."}'
+      class="py-12 md:py-16 bg-subtle"
+    >
+      <div class="container">
+        <div class="row g-6">
+          <div class="col-12 lg:col-8 mx-auto">
+            <div class="border border-muted p-6 md:p-8">
+              <span class="block font-mono text-sm text-subtle mb-3"
+                >THE SHORT VERSION</span
+              >
+              <p class="text-lg text-default mb-4">
+                Cindermoth has no accounts, no advertising, no analytics SDK and
+                no third-party trackers. It does not know who you are and never
+                sends us your gameplay.
+              </p>
+              <p class="text-muted mb-0">
+                Two things leave your device, and only if you allow them: a
+                crash report when the game falls over, and your save file if you
+                have cloud sync switched on. Everything below is the detail of
+                those two things.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="longform-legal-content"
+      data-swebsy-block='{"tags":["content"],"description":"A narrow long-form legal content layout with clear subsection headings, paragraphs, and inline links."}'
+      class="py-16 md:py-24"
+    >
+      <div class="container">
+        <div class="row g-6">
+          <div class="col-12 lg:col-8">
+            <div class="border-l-2 border-primary ps-5 mb-10">
+              <h2 class="text-xl md:text-2xl text-emphasis mb-3">Who we are</h2>
+              <p class="text-default mb-0">
+                Ninefold Lantern Ltd, registered in England and Wales, at Unit
+                4, Bath Buildings, Bristol BS6 5PT. For the purposes of UK and
+                EU data protection law we are the data controller for anything
+                described here. You can reach us at
+                privacy@ninefoldlantern.example.
+              </p>
+            </div>
+            <div class="border-l-2 border-muted ps-5 mb-10">
+              <h2 class="text-xl md:text-2xl text-emphasis mb-3">
+                What the game does not collect
+              </h2>
+              <p class="text-default mb-3">
+                Cindermoth contains no advertising, no advertising identifier,
+                no analytics or telemetry SDK, no social login, and no
+                third-party code that reports back to anyone. We do not build a
+                profile of you and we have nothing to sell.
+              </p>
+              <p class="text-default mb-0">
+                There is no account to create, so we hold no name, email
+                address, age or location for any player. We cannot see how far
+                you got, how long you played, or what you marked on your map.
+              </p>
+            </div>
+            <div class="border-l-2 border-muted ps-5 mb-10">
+              <h2 class="text-xl md:text-2xl text-emphasis mb-3">
+                Crash reports
+              </h2>
+              <p class="text-default mb-3">
+                If the game crashes, your platform may offer to send us a
+                diagnostic report. This is the operating system’s own mechanism
+                — Apple’s, Valve’s or Nintendo’s — and it only happens if you
+                have opted in at the system level. We do not run our own crash
+                reporter.
+              </p>
+              <p class="text-default mb-0">
+                The report contains the game version, your device model and OS
+                version, and a technical stack trace. It does not contain your
+                name, your save file, or anything you typed. We use it only to
+                fix the crash, and we delete reports after a year.
+              </p>
+            </div>
+            <div class="border-l-2 border-muted ps-5 mb-10">
+              <h2 class="text-xl md:text-2xl text-emphasis mb-3">
+                Save files and cloud sync
+              </h2>
+              <p class="text-default mb-0">
+                Your save lives on your device. If you use iCloud on iOS or
+                macOS, or Steam Cloud on Steam, a copy is stored in your own
+                account with that provider so it syncs between your machines. It
+                is your storage, governed by their privacy policy, and we have
+                no access to it. Turning cloud sync off in your system settings
+                stops this entirely.
+              </p>
+            </div>
+            <div class="border-l-2 border-muted ps-5 mb-10">
+              <h2 class="text-xl md:text-2xl text-emphasis mb-3">
+                Buying the game
+              </h2>
+              <p class="text-default mb-0">
+                We never see your payment details. Steam, Apple, Nintendo and
+                itch.io take the payment and hold the receipt; we receive only
+                aggregate sales figures with no personal information in them. If
+                you need a refund or a purchase looked up, it has to go through
+                the store, because they hold the record and we do not.
+              </p>
+            </div>
+            <div class="border-l-2 border-muted ps-5 mb-10">
+              <h2 class="text-xl md:text-2xl text-emphasis mb-3">
+                When you email us
+              </h2>
+              <p class="text-default mb-0">
+                If you write to support or press, we keep your message and
+                address so we can reply and so we recognise a follow-up. We use
+                it for nothing else, we do not add you to a mailing list, and we
+                delete support threads a couple of years after they close. Our
+                email is hosted in the EU.
+              </p>
+            </div>
+            <div class="border-l-2 border-muted ps-5 mb-10">
+              <h2 class="text-xl md:text-2xl text-emphasis mb-3">
+                This website
+              </h2>
+              <p class="text-default mb-0">
+                This site sets no cookies and runs no analytics, which is why
+                you were not asked to consent to any. Our host keeps standard
+                server logs containing IP addresses for security purposes and
+                discards them shortly after. Trailers open on YouTube, which is
+                Google’s service and Google’s privacy policy — nothing from
+                YouTube loads until you click through.
+              </p>
+            </div>
+            <div class="border-l-2 border-muted ps-5 mb-10">
+              <h2 class="text-xl md:text-2xl text-emphasis mb-3">Children</h2>
+              <p class="text-default mb-0">
+                Cindermoth is rated PEGI 7 and ESRB E10+ and is suitable for
+                children, but it is not directed to children as its primary
+                audience and is not in the App Store Kids Category. Because the
+                game collects nothing and has no chat, no ads and no purchases
+                inside it, there is no personal information of a child for us to
+                hold. If you believe we hold something about a child, email us
+                and we will delete it.
+              </p>
+            </div>
+            <div class="border-l-2 border-muted ps-5 mb-10">
+              <h2 class="text-xl md:text-2xl text-emphasis mb-3">
+                Your rights
+              </h2>
+              <p class="text-default mb-3">
+                Under UK and EU data protection law you can ask for a copy of
+                what we hold about you, ask us to correct or delete it, or
+                object to our using it. In practice the only thing we are likely
+                to hold is an email thread. Ask at
+                privacy@ninefoldlantern.example and we will answer within a
+                month.
+              </p>
+              <p class="text-default mb-0">
+                If you are unhappy with how we handled it, you can complain to
+                the Information Commissioner’s Office at ico.org.uk, or to your
+                own national supervisory authority in the EU.
+              </p>
+            </div>
+            <div class="border-l-2 border-muted ps-5 mb-0">
+              <h2 class="text-xl md:text-2xl text-emphasis mb-3">
+                Changes to this policy
+              </h2>
+              <p class="text-default mb-0">
+                If we change anything material we will update the date at the
+                top of this page and note what changed in the game’s patch
+                notes. We will not quietly start collecting something this
+                policy says we do not.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 lg:col-4 mt-8 lg:mt-0">
+            <div class="border border-muted p-6">
+              <span class="block font-mono text-sm text-subtle mb-3"
+                >DATA PROTECTION CONTACT</span
+              ><a
+                href="mailto:privacy@ninefoldlantern.example"
+                class="block text-primary mb-4"
+                >privacy@ninefoldlantern.example</a
+              >
+              <p class="text-muted mb-0">
+                Ninefold Lantern Ltd, Unit 4, Bath Buildings, Bristol BS6 5PT,
+                United Kingdom.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="social-legal-footer"
+      data-swebsy-block='{"tags":["footer","copyright"],"description":"A dark footer with social icons, utility links, and a compact copyright line."}'
+      id="iyq52xi"
+      class="py-10 md:py-12 bg-subtle border-t border-subtle text-center"
+    >
+      <div id="i8c0iaf" class="container">
+        <div id="i6hrxb8" class="row g-6">
+          <div id="iyd71hb" class="col-12">
+            <div
+              id="icqvq3i"
+              class="flex flex-wrap items-center justify-center gap-3 mb-6"
+            >
+              <a
+                href="#"
+                aria-label="Ninefold Lantern on Bluesky"
+                id="ifvp2p4"
+                class="btn btn-icon btn-text-neutral"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faBluesky"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="ioexwao"
+                  class="inline-flex items-center leading-none size-5"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="bluesky"
+                    class="svg-inline--fa fa-bluesky"
+                    role="img"
+                    viewBox="0 0 576 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M407.8 294.7c-3.3-.4-6.7-.8-10-1.3 3.4 .4 6.7 .9 10 1.3zM288 227.1C261.9 176.4 190.9 81.9 124.9 35.3 61.6-9.4 37.5-1.7 21.6 5.5 3.3 13.8 0 41.9 0 58.4S9.1 194 15 213.9c19.5 65.7 89.1 87.9 153.2 80.7 3.3-.5 6.6-.9 10-1.4-3.3 .5-6.6 1-10 1.4-93.9 14-177.3 48.2-67.9 169.9 120.3 124.6 164.8-26.7 187.7-103.4 22.9 76.7 49.2 222.5 185.6 103.4 102.4-103.4 28.1-156-65.8-169.9-3.3-.4-6.7-.8-10-1.3 3.4 .4 6.7 .9 10 1.3 64.1 7.1 133.6-15.1 153.2-80.7 5.9-19.9 15-138.9 15-155.5s-3.3-44.7-21.6-52.9c-15.8-7.1-40-14.9-103.2 29.8-66.1 46.6-137.1 141.1-163.2 191.8z"
+                    ></path></svg></span></a
+              ><a
+                href="#"
+                aria-label="Ninefold Lantern on Mastodon"
+                id="ixgb1ti"
+                class="btn btn-icon btn-text-neutral"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faMastodon"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="ief8nk7"
+                  class="inline-flex items-center leading-none size-5"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="mastodon"
+                    class="svg-inline--fa fa-mastodon"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zM357.9 304.3l-46.6 0 0-114.2c0-49.7-64-51.6-64 6.9l0 62.5-46.3 0 0-62.5c0-58.5-64-56.6-64-6.9l0 114.2-46.7 0c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175l0 0z"
+                    ></path></svg></span></a
+              ><a
+                href="#"
+                aria-label="Cindermoth on YouTube"
+                id="ip6wtlp"
+                class="btn btn-icon btn-text-neutral"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faYoutube"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="ikcrt3r"
+                  class="inline-flex items-center leading-none size-5"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="youtube"
+                    class="svg-inline--fa fa-youtube"
+                    role="img"
+                    viewBox="0 0 576 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z"
+                    ></path></svg></span></a
+              ><a
+                href="#"
+                aria-label="Ninefold Lantern on Discord"
+                id="i9qrdai"
+                class="btn btn-icon btn-text-neutral"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faDiscord"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="ichotdd"
+                  class="inline-flex items-center leading-none size-5"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="discord"
+                    class="svg-inline--fa fa-discord"
+                    role="img"
+                    viewBox="0 0 576 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1 .1s-.6 .4-.8 .8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2c-41.3 7.1-81.6 19.6-119.7 37.1-.3 .1-.6 .4-.8 .7-76.2 113.8-97.1 224.9-86.9 334.5 0 .3 .1 .5 .2 .8s.3 .4 .5 .6c44.4 32.9 94 58 146.8 74.2 .4 .1 .8 .1 1.1 0s.7-.4 .9-.7c11.3-15.4 21.4-31.8 30-48.8 .1-.2 .2-.5 .2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6 .2-.9 .3-.5 .6-.7c3.1-2.3 6.2-4.7 9.1-7.1 .3-.2 .6-.4 .9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1 .7-.2 1-.2s.7 .2 .9 .4c2.9 2.4 6 4.9 9.1 7.2 .2 .2 .4 .4 .6 .7s.2 .6 .2 .9-.1 .6-.3 .9-.4 .5-.6 .6c-14.7 8.6-30 15.9-45.9 21.8-.2 .1-.5 .2-.7 .4s-.3 .4-.4 .7-.1 .5-.1 .8 .1 .5 .2 .8c8.8 17 18.8 33.3 30 48.8 .2 .3 .6 .6 .9 .7s.8 .1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2 .2-.2 .4-.4 .5-.6s.2-.5 .2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2zm195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2z"
+                    ></path></svg></span
+              ></a>
+            </div>
+            <div
+              id="i5chx8h"
+              class="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 mb-6"
+            >
+              <a
+                href="./press.html"
+                id="if6md7g"
+                class="font-mono text-sm text-muted no-underline"
+                >Press Kit</a
+              ><span aria-hidden="true" id="iqzk7a2" class="text-primary"
+                >✦</span
+              ><a
+                href="./support.html"
+                id="iftwhta"
+                class="font-mono text-sm text-muted no-underline"
+                >Support</a
+              ><span aria-hidden="true" id="i0f6rkt" class="text-primary"
+                >✦</span
+              ><a
+                href="./privacy.html"
+                id="irdnxvv"
+                class="font-mono text-sm text-muted no-underline"
+                >Privacy Policy</a
+              ><span aria-hidden="true" id="iwr6n1v" class="text-primary"
+                >✦</span
+              ><a
+                href="./terms.html"
+                id="igiv6ux"
+                class="font-mono text-sm text-muted no-underline"
+                >Terms of Use</a
+              >
+            </div>
+            <p id="i76xitd" class="font-mono text-sm text-subtle mb-0">
+              © 2026 Ninefold Lantern Ltd. Cindermoth and the moth mark are
+              trademarks of Ninefold Lantern Ltd.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/swebsy-components.25073555dd.js" defer></script>
+  <a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

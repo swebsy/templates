@@ -1,0 +1,1751 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IRONSIDE — Barber Co.</title>
+    <meta
+      name="description"
+      content="Independent barbershop. Sharp cuts, no small talk. Fades, beard work, hot-towel shaves. Book your chair."
+    />
+    <meta
+      name="keywords"
+      content="barbershop, barber, fades, haircut, beard trim, hot towel shave, grooming"
+    />
+    <meta name="author" content="IRONSIDE Barber Co." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="IRONSIDE — Barber Co." />
+    <meta
+      property="og:description"
+      content="Sharp cuts. No small talk. Book your chair at IRONSIDE."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="IRONSIDE — Barber Co." />
+    <meta
+      name="twitter:description"
+      content="Sharp cuts. No small talk. Book your chair at IRONSIDE."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-bricolagegrotesque-3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawDFXplDs.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-bricolagegrotesque-3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawDVXplDs.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-bricolagegrotesque-3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawA1Xp.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-oswald-TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlbHYjedg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-oswald-TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlSHYjedg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-oswald-TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlZHYjedg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-oswald-TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlYHYjedg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-oswald-TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlWHYg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-yesevaone-OpNJno4ck8vc-xYpwWWxliBVWyXD.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-yesevaone-OpNJno4ck8vc-xYpwWWxlilVWyXD.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-yesevaone-OpNJno4ck8vc-xYpwWWxliJVWyXD.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-yesevaone-OpNJno4ck8vc-xYpwWWxliNVWyXD.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-yesevaone-OpNJno4ck8vc-xYpwWWxli1VWw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "system";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.5e8cc39bb3.css" />
+  </head>
+  <body>
+    <nav
+      data-navbar-collapse-on="sm"
+      data-swebsy-block-id="navbar-mono"
+      data-swebsy-block='{"tags":["navigation"],"description":"Sticky top navbar with a square logo mark, uppercase mono links, and a bordered Book CTA button."}'
+      id="ici4"
+      class="navbar navbar-expand-sm bg-default sticky top-0 z-50 border-b-2 border-default"
+    >
+      <div
+        data-navbar-part="container"
+        id="ivhw"
+        class="container flex items-center justify-between py-1"
+      >
+        <a
+          href="./index.html"
+          data-navbar-part="brand"
+          id="icei"
+          class="navbar-brand flex items-center gap-2 no-underline"
+          ><span
+            id="i9cd"
+            class="size-7 bg-secondary border-2 border-default inline-block"
+          ></span
+          ><strong
+            id="iuw6"
+            class="font-serif font-black text-xl tracking-tight uppercase text-default leading-none"
+            >Ironside</strong
+          ></a
+        ><button
+          type="button"
+          data-navbar-part="toggler"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="iprcv"
+          class="btn btn-icon navbar-toggler"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="ilsfs"
+            class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="navbarMenu"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse"
+        >
+          <ul
+            data-navbar-part="links"
+            id="i1rp1"
+            class="navbar-nav ms-auto items-center gap-1"
+          >
+            <li id="ioues" class="nav-item">
+              <a
+                href="./index.html"
+                id="iji4o"
+                class="nav-link font-mono uppercase text-xs tracking-widest active"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li id="i1hn2" class="nav-item">
+              <a
+                href="./services.html"
+                id="iyjmg"
+                class="nav-link font-mono uppercase text-xs tracking-widest"
+                >Services</a
+              >
+            </li>
+            <li id="isgrz" class="nav-item">
+              <a
+                href="./barbers.html"
+                id="ijkjh"
+                class="nav-link font-mono uppercase text-xs tracking-widest"
+                >Barbers</a
+              >
+            </li>
+            <li id="ivz5h" class="nav-item">
+              <a
+                href="./gallery.html"
+                id="i9olj"
+                class="nav-link font-mono uppercase text-xs tracking-widest"
+                >Gallery</a
+              >
+            </li>
+            <li id="inmfb" class="nav-item ms-2">
+              <a
+                href="./book.html"
+                id="iiwvx"
+                class="btn btn-primary btn-sm font-mono uppercase tracking-widest"
+                >Book a Chair</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="ivvs3x8"
+      data-swebsy-block-id="hero-split"
+      data-swebsy-block='{"tags":["hero"],"description":"Two-column hero with an eyebrow label, oversized serif headline, supporting copy and a CTA."}'
+      class="bg-default border-b-2 border-default"
+    >
+      <div id="iubnc" class="container py-16 md:py-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div>
+            <div
+              id="ixjhvtd"
+              class="inline-flex items-center gap-2 font-mono uppercase text-xs tracking-widest text-default mb-6 border-2 border-default px-3 py-1 bg-subtle"
+            >
+              <span class="size-2 bg-secondary inline-block"></span
+              ><span>Est. 2016 · No.7 · Eastside</span>
+            </div>
+            <h1
+              id="i4pbd1l"
+              class="text-6xl md:text-7xl lg:text-8xl font-black uppercase leading-none tracking-tight text-default"
+            >
+              <span id="i0qhwdd" class="block">Sharp cuts.</span
+              ><span class="block">No small talk.</span>
+            </h1>
+            <p class="mt-6 text-lg text-muted max-w-md">
+              Precision fades, straight-razor shaves, and honest beard work.
+              Walk-ins welcome, appointments respected — one chair, your name on
+              it.
+            </p>
+            <div class="flex flex-wrap gap-4 mt-9">
+              <a
+                href="./book.html"
+                class="btn btn-primary btn-lg font-mono uppercase tracking-widest"
+                >Book a Chair</a
+              ><a
+                href="./services.html"
+                class="btn btn-outline-primary btn-lg font-mono uppercase tracking-widest"
+                >See the Cuts</a
+              >
+            </div>
+          </div>
+          <div>
+            <div
+              class="relative w-full aspect-[4/5] bg-muted border-2 border-default flex items-center justify-center overflow-hidden"
+            >
+              <div
+                id="ica3v"
+                class="absolute top-0 left-0 bg-secondary border-r-2 border-b-2 border-default px-2 py-1 font-mono text-xs font-bold uppercase text-default"
+              >
+                <span>Skin fade</span>
+              </div>
+              <img
+                alt="Image"
+                src="assets/bdadac8e-4d5f-494a-9a15-4101064828b4.webp"
+                id="imx8vwc"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="font-bold font-sans text-2xl uppercase overflow-hidden py-3 bg-subtle border-b-2 border-default"
+      data-marquee="true"
+      data-marquee-items="Skin Fades|Straight-Razor Shaves|Beard Sculpting|Hot Towel|Walk-Ins Welcome|Est. 2016|Skin Fades|Straight-Razor Shaves|Beard Sculpting|Hot Towel|Walk-Ins Welcome|Est. 2016"
+      data-marquee-divider="◆"
+      data-marquee-duration="120"
+      id="ic92bzi"
+    >
+      <div class="flex w-max">
+        <div
+          class="inline-flex shrink-0 items-center gap-8 pr-8 whitespace-nowrap animate-marquee"
+          style="animation-duration: 120s"
+        >
+          <span>Skin Fades</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Straight-Razor Shaves</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Beard Sculpting</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Hot Towel</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Walk-Ins Welcome</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Est. 2016</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Skin Fades</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Straight-Razor Shaves</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Beard Sculpting</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Hot Towel</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Walk-Ins Welcome</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Est. 2016</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Skin Fades</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Straight-Razor Shaves</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Beard Sculpting</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Hot Towel</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Walk-Ins Welcome</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Est. 2016</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Skin Fades</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Straight-Razor Shaves</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Beard Sculpting</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Hot Towel</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Walk-Ins Welcome</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Est. 2016</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Skin Fades</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Straight-Razor Shaves</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Beard Sculpting</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Hot Towel</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Walk-Ins Welcome</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Est. 2016</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Skin Fades</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Straight-Razor Shaves</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Beard Sculpting</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Hot Towel</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Walk-Ins Welcome</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Est. 2016</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Skin Fades</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Straight-Razor Shaves</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Beard Sculpting</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Hot Towel</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Walk-Ins Welcome</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Est. 2016</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Skin Fades</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Straight-Razor Shaves</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Beard Sculpting</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Hot Towel</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Walk-Ins Welcome</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Est. 2016</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span>
+        </div>
+        <div
+          class="inline-flex shrink-0 items-center gap-8 pr-8 whitespace-nowrap animate-marquee"
+          style="animation-duration: 120s"
+          aria-hidden="true"
+        >
+          <span>Skin Fades</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Straight-Razor Shaves</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Beard Sculpting</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Hot Towel</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Walk-Ins Welcome</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Est. 2016</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Skin Fades</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Straight-Razor Shaves</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Beard Sculpting</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Hot Towel</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Walk-Ins Welcome</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Est. 2016</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Skin Fades</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Straight-Razor Shaves</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Beard Sculpting</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Hot Towel</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Walk-Ins Welcome</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Est. 2016</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Skin Fades</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Straight-Razor Shaves</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Beard Sculpting</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Hot Towel</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Walk-Ins Welcome</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Est. 2016</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Skin Fades</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Straight-Razor Shaves</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Beard Sculpting</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Hot Towel</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Walk-Ins Welcome</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Est. 2016</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Skin Fades</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Straight-Razor Shaves</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Beard Sculpting</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Hot Towel</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Walk-Ins Welcome</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Est. 2016</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Skin Fades</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Straight-Razor Shaves</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Beard Sculpting</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Hot Towel</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Walk-Ins Welcome</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Est. 2016</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Skin Fades</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Straight-Razor Shaves</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Beard Sculpting</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Hot Towel</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Walk-Ins Welcome</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span
+          ><span>Est. 2016</span
+          ><span class="text-secondary select-none" aria-hidden="true">◆</span>
+        </div>
+      </div>
+    </div>
+    <div
+      id="iuhdsif"
+      data-swebsy-block-id="services-menu"
+      data-swebsy-block='{"tags":["features","pricing"],"description":"Two-column services menu with a section label, heading, and a priced list of specialties."}'
+      class="bg-subtle border-b-2 border-default py-16"
+    >
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-end gap-4 mb-10">
+          <div>
+            <div
+              class="font-mono uppercase text-xs tracking-widest text-secondary mb-3"
+            >
+              // The Cuts
+            </div>
+            <h2
+              class="text-4xl md:text-6xl font-black uppercase leading-none tracking-tight text-default"
+            >
+              House Specialties
+            </h2>
+          </div>
+          <div class="md:text-end">
+            <a
+              href="./services.html"
+              class="font-mono uppercase text-xs tracking-widest text-default border-b-2 border-secondary pb-1 no-underline"
+              >Full Menu →</a
+            >
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="h-full bg-default border-2 border-default p-6 flex flex-col"
+          >
+            <div
+              class="flex justify-between items-start gap-3 border-b-2 border-default pb-4 mb-4"
+            >
+              <h3
+                class="text-2xl font-black uppercase leading-none text-default"
+              >
+                Skin Fade
+              </h3>
+              <span class="font-mono text-xl font-bold text-secondary shrink-0"
+                >$35</span
+              >
+            </div>
+            <p id="i3hvdy" class="text-highlight text-sm mb-6">
+              Tight, blended, and razor-clean through the sides. Finished with a
+              hot-towel neck shave.
+            </p>
+            <div class="mt-auto flex items-center justify-between">
+              <span
+                id="i9awep"
+                class="text-emphasis font-mono text-xs uppercase tracking-widest"
+                >≈ 45 min</span
+              ><a
+                href="./book.html"
+                class="font-mono text-xs font-bold uppercase tracking-widest text-default no-underline"
+                >Book →</a
+              >
+            </div>
+          </div>
+          <div
+            class="h-full bg-default border-2 border-default p-6 flex flex-col"
+          >
+            <div
+              class="flex justify-between items-start gap-3 border-b-2 border-default pb-4 mb-4"
+            >
+              <h3
+                class="text-2xl font-black uppercase leading-none text-default"
+              >
+                Beard Sculpt
+              </h3>
+              <span class="font-mono text-xl font-bold text-secondary shrink-0"
+                >$25</span
+              >
+            </div>
+            <p id="ipk1nl" class="text-highlight text-sm mb-6">
+              Line-up, shape, and condition. Straight-razor edges and a
+              beard-oil finish that lasts.
+            </p>
+            <div class="mt-auto flex items-center justify-between">
+              <span
+                id="isdcxz"
+                class="text-emphasis font-mono text-xs uppercase tracking-widest"
+                >≈ 30 min</span
+              ><a
+                href="./book.html"
+                class="font-mono text-xs font-bold uppercase tracking-widest text-default no-underline"
+                >Book →</a
+              >
+            </div>
+          </div>
+          <div
+            id="iakoei"
+            class="h-full bg-default border-2 border-default p-6 flex flex-col"
+          >
+            <div
+              class="flex justify-between items-start gap-3 border-b-2 border-default pb-4 mb-4"
+            >
+              <h3
+                class="text-2xl font-black uppercase leading-none text-default"
+              >
+                The Full Service
+              </h3>
+              <span class="font-mono text-xl font-bold text-secondary shrink-0"
+                >$55</span
+              >
+            </div>
+            <p id="in1vtt" class="text-highlight text-sm mb-6">
+              Cut, beard, and a traditional hot-towel straight-razor shave. The
+              whole chair, start to finish.
+            </p>
+            <div class="mt-auto flex items-center justify-between">
+              <span
+                id="igz8bv"
+                class="text-emphasis font-mono text-xs uppercase tracking-widest"
+                >≈ 75 min</span
+              ><a
+                href="./book.html"
+                class="font-mono text-xs font-bold uppercase tracking-widest text-default no-underline"
+                >Book →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="ieci03n"
+      data-swebsy-block-id="team-grid"
+      data-swebsy-block='{"tags":["team"],"description":"Team section with a section label, heading, and a row of barber profile cards."}'
+      class="bg-default border-b-2 border-default py-16"
+    >
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-end gap-4 mb-10">
+          <div>
+            <div
+              class="font-mono uppercase text-xs tracking-widest text-secondary mb-3"
+            >
+              // The Chairs
+            </div>
+            <h2
+              class="text-4xl md:text-6xl font-black uppercase leading-none tracking-tight text-default"
+            >
+              Meet the Barbers
+            </h2>
+          </div>
+          <div class="md:text-end">
+            <a
+              href="./barbers.html"
+              class="font-mono uppercase text-xs tracking-widest text-default border-b-2 border-secondary pb-1 no-underline"
+              >All Barbers →</a
+            >
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="h-full bg-default border-2 border-default flex flex-col">
+            <div
+              id="i47tsh"
+              class="relative aspect-[4/5] bg-muted border-b-2 border-default flex items-center justify-center"
+            >
+              <div
+                id="i785nt"
+                class="absolute top-0 left-0 bg-secondary border-r-2 border-b-2 border-default px-2 py-1 font-mono text-xs font-bold text-default"
+              >
+                <span id="i0svw5i">MARCUS</span>
+              </div>
+              <img
+                alt="Image"
+                src="assets/a99550c8-2681-4ed6-95b7-3f3211206dbb.webp"
+                id="ii55chp"
+              />
+            </div>
+            <div class="p-5">
+              <h3
+                class="text-xl font-black uppercase leading-none text-default mb-2"
+              >
+                Marcus “Ace” Rivera
+              </h3>
+              <div
+                class="font-mono text-xs uppercase tracking-widest text-secondary mb-4"
+              >
+                Fades & Line Work
+              </div>
+              <a
+                href="./book.html"
+                class="font-mono text-xs font-bold uppercase tracking-widest text-default no-underline"
+                >Book with Ace →</a
+              >
+            </div>
+          </div>
+          <div class="h-full bg-default border-2 border-default flex flex-col">
+            <div
+              class="relative aspect-[4/5] bg-muted border-b-2 border-default flex items-center justify-center"
+            >
+              <div
+                id="ies5qjm"
+                class="absolute top-0 left-0 bg-secondary border-r-2 border-b-2 border-default px-2 py-1 font-mono text-xs font-bold text-default"
+              >
+                <span>THEO</span>
+              </div>
+              <img
+                alt="Image"
+                src="assets/b2e6f7e5-c243-4a51-96b0-9c06ec7c942c.webp"
+                id="ii55chp-2-2"
+              />
+            </div>
+            <div class="p-5">
+              <h3
+                class="text-xl font-black uppercase leading-none text-default mb-2"
+              >
+                Theo Voss
+              </h3>
+              <div
+                class="font-mono text-xs uppercase tracking-widest text-secondary mb-4"
+              >
+                Scissor & Texture
+              </div>
+              <a
+                href="./book.html"
+                class="font-mono text-xs font-bold uppercase tracking-widest text-default no-underline"
+                >Book with Theo →</a
+              >
+            </div>
+          </div>
+          <div class="h-full bg-default border-2 border-default flex flex-col">
+            <div
+              id="iqsw4k"
+              class="relative aspect-[4/5] bg-muted border-b-2 border-default flex items-center justify-center"
+            >
+              <div
+                id="ipcxgkg"
+                class="absolute top-0 left-0 bg-secondary border-r-2 border-b-2 border-default px-2 py-1 font-mono text-xs font-bold text-default"
+              >
+                <span>DOM</span>
+              </div>
+              <img
+                alt="Image"
+                src="assets/e7eae5af-fbad-4c85-8e80-0cdd895c4e4e.webp"
+                id="ii55chp-2"
+              />
+            </div>
+            <div class="p-5">
+              <h3
+                class="text-xl font-black uppercase leading-none text-default mb-2"
+              >
+                Dom Salt
+              </h3>
+              <div
+                class="font-mono text-xs uppercase tracking-widest text-secondary mb-4"
+              >
+                Beards & Hot Shaves
+              </div>
+              <a
+                href="./book.html"
+                class="font-mono text-xs font-bold uppercase tracking-widest text-default no-underline"
+                >Book with Dom →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="gallery-grid"
+      data-swebsy-block='{"tags":["gallery"],"description":"Photo gallery grid with a section label, heading, and a full-gallery link."}'
+      class="bg-subtle border-b-2 border-default py-16 md:py-24"
+    >
+      <div class="container">
+        <div
+          id="ipvgg82"
+          class="grid grid-cols-1 md:grid-cols-2 md:items-end gap-4 mb-10"
+        >
+          <div id="iwbtqby">
+            <div
+              id="i3bhbdy"
+              class="font-mono uppercase text-xs tracking-widest text-secondary mb-3"
+            >
+              <span>// The Work</span>
+            </div>
+            <h2
+              class="text-4xl md:text-6xl font-black uppercase leading-none tracking-tight text-default"
+            >
+              Fresh Off the Chair
+            </h2>
+          </div>
+          <div id="igsnoeq" class="text-end">
+            <a
+              href="./gallery.html"
+              class="font-mono uppercase text-xs tracking-widest text-default border-b-2 border-secondary pb-1 no-underline"
+              >Full Gallery →</a
+            >
+          </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div
+            class="relative aspect-square bg-muted border-2 border-default flex items-center justify-center"
+          >
+            <img
+              alt="Image"
+              src="assets/90388442-557d-478f-8d70-281f0c59d04a.webp"
+              id="ibnh5hk"
+              class="h-full w-full object-cover"
+            />
+          </div>
+          <div
+            class="relative aspect-square bg-muted border-2 border-default flex items-center justify-center"
+          >
+            <img
+              alt="Image"
+              src="assets/082a288b-5c06-4be2-9834-3a0ccdec8f88.webp"
+              id="ibnh5hk-2"
+              class="h-full w-full object-cover"
+            />
+          </div>
+          <div
+            id="ibkiow"
+            class="relative aspect-square bg-muted border-2 border-default flex items-center justify-center"
+          >
+            <img
+              alt="Image"
+              src="assets/41c0c7b5-c079-4f48-8729-d0b4017b48e2.webp"
+              id="ibnh5hk-2-2"
+              class="h-full w-full object-cover"
+            />
+          </div>
+          <div
+            id="i7dxcw"
+            class="aspect-square bg-secondary border-2 border-default flex flex-col items-center justify-center text-center p-4"
+          >
+            <div
+              id="i767ivm"
+              class="text-2xl font-black uppercase leading-none text-default mb-2"
+            >
+              <span>@ironside</span>
+            </div>
+            <div
+              id="ip96bzr"
+              class="font-mono text-xs uppercase tracking-widest text-default"
+            >
+              <span id="indmus">Tag us — get reposted</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="ifho3hs"
+      data-swebsy-block-id="testimonials-quotes"
+      data-swebsy-block='{"tags":["testimonials"],"description":"Testimonials block with a section label, heading, and quoted customer reviews."}'
+      class="bg-default border-b-2 border-default py-16"
+    >
+      <div class="container">
+        <div class="mb-10">
+          <div
+            class="font-mono uppercase text-xs tracking-widest text-secondary mb-3"
+          >
+            // Word on the Street
+          </div>
+          <h2
+            class="text-4xl md:text-6xl font-black uppercase leading-none tracking-tight text-default"
+          >
+            Regulars Don’t Lie
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="h-full bg-subtle border-2 border-default p-6 flex flex-col"
+          >
+            <div id="in03c96-2" class="text-secondary flex gap-1 mb-5">
+              <span
+                data-icon-pack="solid"
+                data-icon-name="faStar"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="ihpsqsg-6"
+                class="inline-flex items-center leading-none size-6 [--icon-stroke:2]"
+                ><svg
+                  width="100%"
+                  height="100%"
+                  data-prefix="fas"
+                  data-icon="star"
+                  class="svg-inline--fa fa-star"
+                  role="img"
+                  viewBox="0 0 576 512"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
+                  ></path></svg></span
+              ><span
+                data-icon-pack="solid"
+                data-icon-name="faStar"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="ihpsqsg-5-2"
+                class="inline-flex items-center leading-none size-6 [--icon-stroke:2]"
+                ><svg
+                  width="100%"
+                  height="100%"
+                  data-prefix="fas"
+                  data-icon="star"
+                  class="svg-inline--fa fa-star"
+                  role="img"
+                  viewBox="0 0 576 512"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
+                  ></path></svg></span
+              ><span
+                data-icon-pack="solid"
+                data-icon-name="faStar"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="ihpsqsg-4-2"
+                class="inline-flex items-center leading-none size-6 [--icon-stroke:2]"
+                ><svg
+                  width="100%"
+                  height="100%"
+                  data-prefix="fas"
+                  data-icon="star"
+                  class="svg-inline--fa fa-star"
+                  role="img"
+                  viewBox="0 0 576 512"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
+                  ></path></svg></span
+              ><span
+                data-icon-pack="solid"
+                data-icon-name="faStar"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="ihpsqsg-3-2"
+                class="inline-flex items-center leading-none size-6 [--icon-stroke:2]"
+                ><svg
+                  width="100%"
+                  height="100%"
+                  data-prefix="fas"
+                  data-icon="star"
+                  class="svg-inline--fa fa-star"
+                  role="img"
+                  viewBox="0 0 576 512"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
+                  ></path></svg></span
+              ><span
+                data-icon-pack="solid"
+                data-icon-name="faStar"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="ihpsqsg-2-2"
+                class="inline-flex items-center leading-none size-6 [--icon-stroke:2]"
+                ><svg
+                  width="100%"
+                  height="100%"
+                  data-prefix="fas"
+                  data-icon="star"
+                  class="svg-inline--fa fa-star"
+                  role="img"
+                  viewBox="0 0 576 512"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
+                  ></path></svg
+              ></span>
+            </div>
+            <blockquote class="text-lg font-medium text-default mb-6">
+              “Best fade in the city, full stop. In and out in forty minutes and
+              it held sharp for three weeks.”
+            </blockquote>
+            <div
+              id="iqnbnk"
+              class="text-highlight font-sans mt-auto text-xs uppercase tracking-widest"
+            >
+              Ray T. — regular since ’18
+            </div>
+          </div>
+          <div
+            class="h-full bg-subtle border-2 border-default p-6 flex flex-col"
+          >
+            <div id="in03c96-3" class="text-secondary flex gap-1 mb-5">
+              <span
+                data-icon-pack="solid"
+                data-icon-name="faStar"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="ihpsqsg-7"
+                class="inline-flex items-center leading-none size-6 [--icon-stroke:2]"
+                ><svg
+                  width="100%"
+                  height="100%"
+                  data-prefix="fas"
+                  data-icon="star"
+                  class="svg-inline--fa fa-star"
+                  role="img"
+                  viewBox="0 0 576 512"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
+                  ></path></svg></span
+              ><span
+                data-icon-pack="solid"
+                data-icon-name="faStar"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="ihpsqsg-5-3"
+                class="inline-flex items-center leading-none size-6 [--icon-stroke:2]"
+                ><svg
+                  width="100%"
+                  height="100%"
+                  data-prefix="fas"
+                  data-icon="star"
+                  class="svg-inline--fa fa-star"
+                  role="img"
+                  viewBox="0 0 576 512"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
+                  ></path></svg></span
+              ><span
+                data-icon-pack="solid"
+                data-icon-name="faStar"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="ihpsqsg-4-3"
+                class="inline-flex items-center leading-none size-6 [--icon-stroke:2]"
+                ><svg
+                  width="100%"
+                  height="100%"
+                  data-prefix="fas"
+                  data-icon="star"
+                  class="svg-inline--fa fa-star"
+                  role="img"
+                  viewBox="0 0 576 512"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
+                  ></path></svg></span
+              ><span
+                data-icon-pack="solid"
+                data-icon-name="faStar"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="ihpsqsg-3-3"
+                class="inline-flex items-center leading-none size-6 [--icon-stroke:2]"
+                ><svg
+                  width="100%"
+                  height="100%"
+                  data-prefix="fas"
+                  data-icon="star"
+                  class="svg-inline--fa fa-star"
+                  role="img"
+                  viewBox="0 0 576 512"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
+                  ></path></svg></span
+              ><span
+                data-icon-pack="solid"
+                data-icon-name="faStar"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="ihpsqsg-2-3"
+                class="inline-flex items-center leading-none size-6 [--icon-stroke:2]"
+                ><svg
+                  width="100%"
+                  height="100%"
+                  data-prefix="fas"
+                  data-icon="star"
+                  class="svg-inline--fa fa-star"
+                  role="img"
+                  viewBox="0 0 576 512"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
+                  ></path></svg
+              ></span>
+            </div>
+            <blockquote class="text-lg font-medium text-default mb-6">
+              “Theo actually listens. First barber who got my texture right on
+              the very first try.”
+            </blockquote>
+            <div
+              id="i4s7xg"
+              class="text-highlight font-sans mt-auto text-xs uppercase tracking-widest"
+            >
+              Priya M. — first-timer, now hooked
+            </div>
+          </div>
+          <div
+            class="h-full bg-subtle border-2 border-default p-6 flex flex-col"
+          >
+            <div id="in03c96" class="text-secondary flex gap-1 mb-5">
+              <span
+                data-icon-pack="solid"
+                data-icon-name="faStar"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="ihpsqsg"
+                class="inline-flex items-center leading-none size-6 [--icon-stroke:2]"
+                ><svg
+                  width="100%"
+                  height="100%"
+                  data-prefix="fas"
+                  data-icon="star"
+                  class="svg-inline--fa fa-star"
+                  role="img"
+                  viewBox="0 0 576 512"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
+                  ></path></svg></span
+              ><span
+                data-icon-pack="solid"
+                data-icon-name="faStar"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="ihpsqsg-5"
+                class="inline-flex items-center leading-none size-6 [--icon-stroke:2]"
+                ><svg
+                  width="100%"
+                  height="100%"
+                  data-prefix="fas"
+                  data-icon="star"
+                  class="svg-inline--fa fa-star"
+                  role="img"
+                  viewBox="0 0 576 512"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
+                  ></path></svg></span
+              ><span
+                data-icon-pack="solid"
+                data-icon-name="faStar"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="ihpsqsg-4"
+                class="inline-flex items-center leading-none size-6 [--icon-stroke:2]"
+                ><svg
+                  width="100%"
+                  height="100%"
+                  data-prefix="fas"
+                  data-icon="star"
+                  class="svg-inline--fa fa-star"
+                  role="img"
+                  viewBox="0 0 576 512"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
+                  ></path></svg></span
+              ><span
+                data-icon-pack="solid"
+                data-icon-name="faStar"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="ihpsqsg-3"
+                class="inline-flex items-center leading-none size-6 [--icon-stroke:2]"
+                ><svg
+                  width="100%"
+                  height="100%"
+                  data-prefix="fas"
+                  data-icon="star"
+                  class="svg-inline--fa fa-star"
+                  role="img"
+                  viewBox="0 0 576 512"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
+                  ></path></svg></span
+              ><span
+                data-icon-pack="solid"
+                data-icon-name="faStar"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="ihpsqsg-2"
+                class="inline-flex items-center leading-none size-6 [--icon-stroke:2]"
+                ><svg
+                  width="100%"
+                  height="100%"
+                  data-prefix="fas"
+                  data-icon="star"
+                  class="svg-inline--fa fa-star"
+                  role="img"
+                  viewBox="0 0 576 512"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M309.5-18.9c-4.1-8-12.4-13.1-21.4-13.1s-17.3 5.1-21.4 13.1L193.1 125.3 33.2 150.7c-8.9 1.4-16.3 7.7-19.1 16.3s-.5 18 5.8 24.4l114.4 114.5-25.2 159.9c-1.4 8.9 2.3 17.9 9.6 23.2s16.9 6.1 25 2L288.1 417.6 432.4 491c8 4.1 17.7 3.3 25-2s11-14.2 9.6-23.2L441.7 305.9 556.1 191.4c6.4-6.4 8.6-15.8 5.8-24.4s-10.1-14.9-19.1-16.3L383 125.3 309.5-18.9z"
+                  ></path></svg
+              ></span>
+            </div>
+            <blockquote class="text-lg font-medium text-default mb-6">
+              “Walked in on a Saturday, no wait, no fuss. Left looking like the
+              best version of myself.”
+            </blockquote>
+            <div
+              id="iw36vr"
+              class="text-highlight font-sans mt-auto text-xs uppercase tracking-widest"
+            >
+              Dev K. — Saturday walk-in
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="i4ulk7"
+      data-swebsy-block-id="location-hours"
+      data-swebsy-block='{"tags":["contact"],"description":"Location section with heading, a weekly hours list, and address/contact details."}'
+      class="bg-subtle border-b-2 border-default py-16 md:py-24"
+    >
+      <div class="container">
+        <div
+          id="itpehap"
+          class="font-mono uppercase text-xs tracking-widest text-secondary mb-3"
+        >
+          <span>// Find Us</span>
+        </div>
+        <h2
+          id="it3vd8"
+          class="text-4xl md:text-6xl font-black uppercase leading-none tracking-tight text-default mb-10"
+        >
+          The Shop
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div
+            id="i9awsi"
+            class="md:col-span-2 h-72 bg-muted border-2 border-default flex items-center justify-center"
+          >
+            <a
+              href="https://maps.google.com/"
+              data-link-block="true"
+              id="ir26dkr"
+              target="_blank"
+              class="block no-underline text-inherit hover:text-inherit hover:underline h-full w-full"
+              ><img
+                alt="Image"
+                src="assets/cab6fc4c-b36a-46bb-8602-3aff4630fc19.webp"
+                id="ibnh5hk-3"
+                class="h-full w-full object-cover"
+            /></a>
+          </div>
+          <div id="iuqew1" class="bg-default border-2 border-default p-6">
+            <div
+              id="iiadxeo"
+              class="font-mono text-xs uppercase tracking-widest text-secondary mb-4 border-b-2 border-default pb-3"
+            >
+              <span>Hours</span>
+            </div>
+            <div
+              id="ioslsv"
+              class="font-semibold flex flex-col gap-2 text-sm text-default"
+            >
+              <div class="flex justify-between gap-4">
+                <span id="i7noxy">Tue–Fri</span
+                ><span id="if7j33" class="text-highlight">9–7</span>
+              </div>
+              <div class="flex justify-between gap-4">
+                <span>Saturday</span
+                ><span id="irnw6o" class="text-highlight">8–6</span>
+              </div>
+              <div class="flex justify-between gap-4">
+                <span>Sunday</span
+                ><span id="igva72" class="text-highlight">10–4</span>
+              </div>
+              <div id="ihe1fg" class="flex justify-between gap-4">
+                <span id="i8ad5k">Monday</span
+                ><span class="text-secondary font-bold">Closed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+          <div class="bg-default border-2 border-default p-6">
+            <div
+              id="iuwjewa"
+              class="font-mono text-xs tracking-widest text-secondary mb-3"
+            >
+              <span>Address</span>
+            </div>
+            <p class="text-lg font-bold text-default leading-tight">
+              47 Anvil Street, Eastside
+            </p>
+            <p class="text-sm text-muted mt-1">
+              Free lot round back · near the rail line
+            </p>
+          </div>
+          <div class="bg-default border-2 border-default p-6">
+            <div
+              id="ihuy99v"
+              class="font-mono text-xs uppercase tracking-widest text-secondary mb-3"
+            >
+              <span>Contact</span>
+            </div>
+            <a
+              href="tel:+15550182016"
+              class="block text-lg font-bold text-default no-underline"
+              >(555) 018-2016</a
+            ><a
+              href="mailto:hello@ironside.co"
+              class="block text-sm text-muted mt-1 no-underline"
+              >hello@ironside.co</a
+            >
+          </div>
+          <div class="bg-secondary border-2 border-default p-6">
+            <div
+              id="ilddpzi"
+              class="font-mono text-xs uppercase tracking-widest text-default mb-3"
+            >
+              <span>Walk-Ins</span>
+            </div>
+            <p class="text-lg font-black uppercase leading-tight text-default">
+              Welcome. Chairs held 10 min past your slot.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="cta-band"
+      data-swebsy-block='{"tags":["cta"],"description":"Full-width call-to-action band with a bold heading, supporting line, and a Book button."}'
+      id="ipydrd"
+      class="bg-secondary border-b-2 border-default py-16 md:py-24"
+    >
+      <div id="i49vma" class="container">
+        <div
+          id="iy4stu"
+          class="grid grid-cols-1 md:grid-cols-2 gap-6 md:items-center"
+        >
+          <div id="i6b2f3">
+            <h2
+              id="ibmchk"
+              class="text-5xl md:text-6xl font-black uppercase leading-none tracking-tight text-default"
+            >
+              Ready when you are.
+            </h2>
+            <p
+              id="ipu8tk"
+              class="block mt-6 font-mono uppercase text-sm tracking-widest text-default max-w-md"
+            >
+              No apps. No upsells. Pick a chair and show up.
+            </p>
+          </div>
+          <div id="iamb8z" class="md:text-end">
+            <a
+              href="./book.html"
+              id="iy96ye"
+              class="btn btn-primary btn-lg font-mono uppercase tracking-widest"
+              >Book a Chair</a
+            >
+            <div
+              id="i2yw2b"
+              class="mt-4 font-mono text-xs uppercase tracking-widest text-default"
+            >
+              <span id="if1ml83">or call (555) 018-2016</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      data-swebsy-block-id="footer-brand"
+      data-swebsy-block='{"tags":["footer"],"description":"Site footer with a brand mark, tagline, navigation links, and social handles."}'
+      id="ijw8kg"
+      class="bg-default border-t-2 border-default"
+    >
+      <div id="imw7kd" class="container py-16">
+        <div
+          id="iy6j6j"
+          class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12"
+        >
+          <div id="iv59is">
+            <div id="icxx3d" class="flex items-center gap-2 mb-4">
+              <span
+                id="isxqoc"
+                class="size-7 bg-secondary border-2 border-default inline-block"
+              ></span
+              ><strong
+                id="ixkmjz"
+                class="font-black text-xl tracking-tight uppercase text-default leading-none"
+                >Ironside</strong
+              >
+            </div>
+            <p id="itw26f" class="text-muted max-w-xs mb-4">
+              Sharp cuts. No small talk. An independent barbershop on the
+              Eastside since 2016.
+            </p>
+            <div
+              id="io6nzi"
+              class="text-xs uppercase tracking-widest leading-relaxed"
+            >
+              <span id="i6cr5ai"
+                >47 Anvil Street · Eastside · (555) 018-2016</span
+              >
+            </div>
+          </div>
+          <div id="inijyh">
+            <div
+              id="i2wthz"
+              class="font-mono text-xs uppercase tracking-widest text-secondary mb-4"
+            >
+              <span id="iqucqy6">Menu</span>
+            </div>
+            <ul id="io9wu2" class="flex flex-col gap-2 list-none p-0 m-0">
+              <li id="i0ldzv">
+                <a
+                  href="./index.html"
+                  id="ijflvv"
+                  class="text-default font-bold uppercase no-underline"
+                  >Home</a
+                >
+              </li>
+              <li id="imcwxk">
+                <a
+                  href="./services.html"
+                  id="izc1df"
+                  class="text-default font-bold uppercase no-underline"
+                  >Services</a
+                >
+              </li>
+              <li id="itsash">
+                <a
+                  href="./barbers.html"
+                  id="ivgprl"
+                  class="text-default font-bold uppercase no-underline"
+                  >Barbers</a
+                >
+              </li>
+              <li id="intbjf">
+                <a
+                  href="./gallery.html"
+                  id="iuixss"
+                  class="text-default font-bold uppercase no-underline"
+                  >Gallery</a
+                >
+              </li>
+              <li id="i4r43e">
+                <a
+                  href="./book.html"
+                  id="i0e04t"
+                  class="text-default font-bold uppercase no-underline"
+                  >Book</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="ig253i">
+            <div
+              id="i3qi8l"
+              class="font-mono text-xs uppercase tracking-widest text-secondary mb-4"
+            >
+              <span id="iwvb72m">Follow</span>
+            </div>
+            <ul id="imz1vh" class="flex flex-col gap-2 list-none p-0 m-0 mb-6">
+              <li id="ige5jg">
+                <a
+                  href="https://instagram.com"
+                  id="iswzee"
+                  class="text-default font-bold uppercase no-underline"
+                  >Instagram ↗</a
+                >
+              </li>
+              <li id="iqj2jh">
+                <a
+                  href="https://tiktok.com"
+                  id="innyrz"
+                  class="text-default font-bold uppercase no-underline"
+                  >TikTok ↗</a
+                >
+              </li>
+            </ul>
+            <a
+              href="./book.html"
+              id="itw3uj"
+              class="btn btn-primary font-mono uppercase tracking-widest"
+              >Book a Chair</a
+            >
+          </div>
+        </div>
+        <div id="i0z8k1" class="mt-14 border-t-2 border-default pt-6">
+          <h2
+            id="i6d0vc"
+            class="text-6xl md:text-9xl font-black uppercase leading-none tracking-tight text-default mb-8"
+          >
+            Ironside<span id="i9kuuxl" class="dark:text-secondary">.</span>
+          </h2>
+        </div>
+        <div
+          data-dark-mode-switch="true"
+          data-mode="system"
+          data-switch-style="segmented"
+          role="group"
+          aria-label="Theme toggle"
+          id="i5cl9kl"
+          class="dark-mode-switch btn-group"
+        >
+          <input
+            type="radio"
+            name="dark-mode-toggle"
+            id="dark-mode-system"
+            autocomplete="off"
+            data-mode="system"
+            checked
+            class="btn-check"
+          /><label
+            for="dark-mode-system"
+            title="System"
+            id="icc6271"
+            class="btn btn-outline-neutral"
+            ><span
+              data-icon-pack="stroke"
+              data-icon-name="monitor"
+              data-icon-decorative="false"
+              data-icon-label="System theme"
+              role="img"
+              aria-label="System theme"
+              id="id355e7"
+              class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="100%"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="var(--icon-stroke, 2)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect width="20" height="14" x="2" y="3" rx="2" />
+                <line x1="8" x2="16" y1="21" y2="21" />
+                <line x1="12" x2="12" y1="17" y2="21" /></svg></span></label
+          ><input
+            type="radio"
+            name="dark-mode-toggle"
+            id="dark-mode-light"
+            autocomplete="off"
+            data-mode="light"
+            class="btn-check"
+          /><label
+            for="dark-mode-light"
+            title="Light"
+            id="itfpcv1"
+            class="btn btn-outline-neutral"
+            ><span
+              data-icon-pack="stroke"
+              data-icon-name="sun"
+              data-icon-decorative="false"
+              data-icon-label="Light theme"
+              role="img"
+              aria-label="Light theme"
+              id="ifk77un"
+              class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="100%"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="var(--icon-stroke, 2)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2" />
+                <path d="M12 20v2" />
+                <path d="m4.93 4.93 1.41 1.41" />
+                <path d="m17.66 17.66 1.41 1.41" />
+                <path d="M2 12h2" />
+                <path d="M20 12h2" />
+                <path d="m6.34 17.66-1.41 1.41" />
+                <path d="m19.07 4.93-1.41 1.41" /></svg></span></label
+          ><input
+            type="radio"
+            name="dark-mode-toggle"
+            id="dark-mode-dark"
+            autocomplete="off"
+            data-mode="dark"
+            class="btn-check"
+          /><label
+            for="dark-mode-dark"
+            title="Dark"
+            id="itllor3"
+            class="btn btn-outline-neutral"
+            ><span
+              data-icon-pack="stroke"
+              data-icon-name="moon"
+              data-icon-decorative="false"
+              data-icon-label="Dark theme"
+              role="img"
+              aria-label="Dark theme"
+              id="in72paz"
+              class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="100%"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="var(--icon-stroke, 2)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
+                /></svg></span
+          ></label>
+        </div>
+        <div
+          id="i0bm3b"
+          class="mt-8 flex flex-wrap gap-3 justify-between font-mono text-xs uppercase tracking-widest text-muted"
+        >
+          <span id="i8mmsn">© 2026 Ironside Barber Co.</span
+          ><span id="inickr">Est. 2016 — Eastside</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/swebsy-components.595d9f5a4a.js" defer></script>
+  <a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

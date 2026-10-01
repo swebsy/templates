@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      if (location.protocol !== "file:") {
+        var b = document.createElement("base");
+        b.href = "/";
+        document.head.prepend(b);
+        document.addEventListener("click", function (e) {
+          var a =
+            !e.defaultPrevented &&
+            e.target.closest &&
+            e.target.closest('a[href^="#"]');
+          if (a) {
+            e.preventDefault();
+            location.hash = a.getAttribute("href");
+          }
+        });
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Page not found · Jules Park — Links</title>
+    <link rel="stylesheet" href="./css/styles.4da059a9cd.css" />
+    <style>
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-content: center;
+        gap: 1rem;
+        padding: 1.5rem;
+        text-align: center;
+      }
+      h1 {
+        margin: 0;
+      }
+      p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Page not found</h1>
+    <p>This page does not exist.</p>
+    <p><a href="./index.html">Go to the home page</a></p>
+  </body>
+</html>

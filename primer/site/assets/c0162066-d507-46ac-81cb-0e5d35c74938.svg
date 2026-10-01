@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 48" aria-label="kern software">
+  <path fill="#000" d="M4 9h5v30H4zM9 22h8l10-13h7L21 24l14 15h-8L17 27H9z"></path>
+  <g fill="none" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M43 27c0-7 4-11 10-11s10 4 10 10H43c0 7 4 11 11 11 4 0 7-1 9-4M72 37V17m0 7c3-5 6-7 11-7M90 37V17m0 5c3-4 6-6 10-6 6 0 9 4 9 11v10"></path>
+  </g>
+</svg>

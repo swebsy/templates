@@ -1,0 +1,1160 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulsar — the workspace for shipping software</title>
+    <meta
+      name="description"
+      content="Plan, build, and ship in one system. Issues, releases, and agent runs in a single fast workspace."
+    />
+    <meta
+      name="keywords"
+      content="devtool, issue tracking, developer platform, engineering"
+    />
+    <meta name="author" content="Pulsar" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Pulsar — the workspace for shipping software"
+    />
+    <meta
+      property="og:description"
+      content="Plan, build, and ship in one system. Issues, releases, and agent runs in a single fast workspace."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Pulsar — the workspace for shipping software"
+    />
+    <meta
+      name="twitter:description"
+      content="Plan, build, and ship in one system. Issues, releases, and agent runs in a single fast workspace."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-jetbrainsmono-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx3cwhsk.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-jetbrainsmono-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-jetbrainsmono-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxPcwhsk.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-jetbrainsmono-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx_cwhsk.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-jetbrainsmono-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx7cwhsk.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-jetbrainsmono-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "dark";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.1176481b88.css" />
+  </head>
+  <body>
+    <nav
+      data-navbar-collapse-on="md"
+      data-swebsy-block-id="navbar-inline-cta"
+      data-swebsy-block='{"tags":["navigation"],"description":"Bordered navbar with a mark-plus-wordmark brand, inline text links, a muted log-in link and a primary CTA button, collapsing to a toggler on mobile."}'
+      id="i1ke-2-3"
+      class="navbar navbar-expand-md bg-default border-b border-subtle sticky top-0 z-50"
+    >
+      <div data-navbar-part="container" id="itktfb-3" class="container">
+        <a
+          href="#"
+          data-navbar-part="brand"
+          id="imlsl9-3"
+          class="navbar-brand inline-flex items-center gap-2 text-emphasis no-underline font-semibold text-lg"
+          ><span
+            data-icon-pack="stroke"
+            data-icon-name="orbit"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="ihz70m-3"
+            class="inline-flex items-center leading-none size-6 text-primary"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M20.341 6.484A10 10 0 0 1 10.266 21.85" />
+              <path d="M3.659 17.516A10 10 0 0 1 13.74 2.152" />
+              <circle cx="12" cy="12" r="3" />
+              <circle cx="19" cy="5" r="2" />
+              <circle cx="5" cy="19" r="2" /></svg></span
+          ><span id="iqhkm6-3">Pulsar</span></a
+        ><button
+          href="#"
+          type="button"
+          data-navbar-part="toggler"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="i6o2e9-3"
+          class="btn btn-icon navbar-toggler"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="i8gs7c-3"
+            class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="navbarMenu-2-3"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse"
+        >
+          <ul
+            data-navbar-part="links"
+            id="ile51v-3"
+            class="navbar-nav ms-auto md:items-center gap-1"
+          >
+            <li id="i3gm3p-3" class="nav-item">
+              <a href="./product.html" id="i83hww-3" class="nav-link text-sm"
+                >Product</a
+              >
+            </li>
+            <li id="imb0sl-3" class="nav-item">
+              <a
+                href="./changelog.html"
+                id="izb9hb-3"
+                class="nav-link text-sm active"
+                aria-current="page"
+                >Changelog</a
+              >
+            </li>
+            <li id="icdps5-3" class="nav-item">
+              <a href="./pricing.html" id="i0uswm-3" class="nav-link text-sm"
+                >Pricing</a
+              >
+            </li>
+            <li id="i28gii-3" class="nav-item">
+              <a href="#" id="ii3e4o-3" class="nav-link text-sm">Docs</a>
+            </li>
+            <li id="i9j8xg-3" class="nav-item md:ms-4 mt-3 md:mt-0">
+              <a href="#" id="i801gb-3" class="text-sm text-muted no-underline"
+                >Log in</a
+              >
+            </li>
+            <li id="itsx94-3" class="nav-item md:ms-3 mt-3 md:mt-0">
+              <a href="#" id="imqs9d-3" class="btn btn-primary btn-sm"
+                >Start building</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      data-swebsy-block-id="page-header-simple"
+      data-swebsy-block='{"tags":["hero"],"description":"Compact left-aligned page header with an eyebrow label, large headline and one supporting paragraph, no buttons."}'
+      class="relative overflow-hidden py-16 md:py-24 lg:py-28"
+    >
+      <div class="container">
+        <div class="max-w-3xl">
+          <p class="text-sm text-primary mb-3">Changelog</p>
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl font-semibold text-emphasis tracking-tight leading-tight mb-6"
+          >
+            What shipped, and when
+          </h1>
+          <p class="text-lg md:text-xl text-muted leading-relaxed">
+            Pulsar ships every week. Notes are drafted from the issues in the
+            release, so this page is never a second version of the truth.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      id="iwqf5g"
+      data-swebsy-block-id="changelog-timeline"
+      data-swebsy-block='{"tags":["content"],"description":"Stacked changelog entries with a date and version badge in a narrow left column beside a release heading, summary and bulleted highlights."}'
+      class="py-16 md:py-20 lg:py-24 border-t border-subtle"
+    >
+      <div class="container">
+        <div class="flex flex-col gap-14 lg:gap-20">
+          <div class="row g-6 lg:g-10">
+            <div class="col-12 lg:col-3">
+              <p class="text-sm text-subtle mb-3">24 July 2026</p>
+              <span class="badge badge-primary">v2.9</span>
+            </div>
+            <div class="col-12 lg:col-9">
+              <h2
+                class="text-2xl md:text-3xl font-semibold text-emphasis tracking-tight leading-tight mb-4"
+              >
+                Agent runs, out of preview
+              </h2>
+              <p class="text-base text-muted leading-relaxed mb-6">
+                Hand any issue to an agent and watch the run stream in beside
+                the board. Runs carry the issue's context, and the diff lands as
+                a pull request you can review in place.
+              </p>
+              <ul class="list-none p-0 m-0 flex flex-col gap-3">
+                <li class="flex items-start gap-3">
+                  <span
+                    data-icon-pack="stroke"
+                    data-icon-name="plus"
+                    data-icon-decorative="true"
+                    data-icon-label=""
+                    aria-hidden="true"
+                    class="inline-flex items-center leading-none size-5 text-primary shrink-0 mt-0.5 [--icon-stroke:2]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="M12 5v14" /></svg></span
+                  ><span class="text-base text-muted"
+                    >Run history with full transcripts and token spend</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <span
+                    data-icon-pack="stroke"
+                    data-icon-name="plus"
+                    data-icon-decorative="true"
+                    data-icon-label=""
+                    aria-hidden="true"
+                    class="inline-flex items-center leading-none size-5 text-primary shrink-0 mt-0.5 [--icon-stroke:2]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="M12 5v14" /></svg></span
+                  ><span class="text-base text-muted"
+                    >Per-team spend caps and approval gates</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <span
+                    data-icon-pack="stroke"
+                    data-icon-name="plus"
+                    data-icon-decorative="true"
+                    data-icon-label=""
+                    aria-hidden="true"
+                    class="inline-flex items-center leading-none size-5 text-primary shrink-0 mt-0.5 [--icon-stroke:2]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="M12 5v14" /></svg></span
+                  ><span class="text-base text-muted"
+                    >MCP server so your own tools can queue runs</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row g-6 lg:g-10">
+            <div class="col-12 lg:col-3">
+              <p class="text-sm text-subtle mb-3">10 July 2026</p>
+              <span class="badge badge-secondary">v2.8</span>
+            </div>
+            <div class="col-12 lg:col-9">
+              <h2
+                class="text-2xl md:text-3xl font-semibold text-emphasis tracking-tight leading-tight mb-4"
+              >
+                Release notes that write their first draft
+              </h2>
+              <p class="text-base text-muted leading-relaxed mb-6">
+                Cutting a release now drafts public notes from the issues it
+                carries — grouped, deduplicated, and in your product's voice
+                rather than your commit log's.
+              </p>
+              <ul class="list-none p-0 m-0 flex flex-col gap-3">
+                <li class="flex items-start gap-3">
+                  <span
+                    data-icon-pack="stroke"
+                    data-icon-name="plus"
+                    data-icon-decorative="true"
+                    data-icon-label=""
+                    aria-hidden="true"
+                    class="inline-flex items-center leading-none size-5 text-primary shrink-0 mt-0.5 [--icon-stroke:2]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="M12 5v14" /></svg></span
+                  ><span class="text-base text-muted"
+                    >Hosted public changelog with RSS</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <span
+                    data-icon-pack="stroke"
+                    data-icon-name="plus"
+                    data-icon-decorative="true"
+                    data-icon-label=""
+                    aria-hidden="true"
+                    class="inline-flex items-center leading-none size-5 text-primary shrink-0 mt-0.5 [--icon-stroke:2]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="M12 5v14" /></svg></span
+                  ><span class="text-base text-muted"
+                    >Scheduled publishing with an embargo window</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row g-6 lg:g-10">
+            <div class="col-12 lg:col-3">
+              <p class="text-sm text-subtle mb-3">26 June 2026</p>
+              <span class="badge badge-secondary">v2.7</span>
+            </div>
+            <div class="col-12 lg:col-9">
+              <h2
+                class="text-2xl md:text-3xl font-semibold text-emphasis tracking-tight leading-tight mb-4"
+              >
+                Offline, properly
+              </h2>
+              <p class="text-base text-muted leading-relaxed mb-6">
+                The whole workspace is local-first now. Triage on a plane,
+                reconnect, and every change merges without a conflict dialog
+                asking you to pick a winner.
+              </p>
+              <ul class="list-none p-0 m-0 flex flex-col gap-3">
+                <li class="flex items-start gap-3">
+                  <span
+                    data-icon-pack="stroke"
+                    data-icon-name="plus"
+                    data-icon-decorative="true"
+                    data-icon-label=""
+                    aria-hidden="true"
+                    class="inline-flex items-center leading-none size-5 text-primary shrink-0 mt-0.5 [--icon-stroke:2]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="M12 5v14" /></svg></span
+                  ><span class="text-base text-muted"
+                    >Conflict-free sync for issues, comments, and views</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <span
+                    data-icon-pack="stroke"
+                    data-icon-name="arrow-up"
+                    data-icon-decorative="true"
+                    data-icon-label=""
+                    aria-hidden="true"
+                    class="inline-flex items-center leading-none size-5 text-primary shrink-0 mt-0.5 [--icon-stroke:2]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="m5 12 7-7 7 7" />
+                      <path d="M12 19V5" /></svg></span
+                  ><span class="text-base text-muted"
+                    >Cold start down from 1.8s to 340ms</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row g-6 lg:g-10">
+            <div class="col-12 lg:col-3">
+              <p class="text-sm text-subtle mb-3">12 June 2026</p>
+              <span class="badge badge-secondary">v2.6</span>
+            </div>
+            <div class="col-12 lg:col-9">
+              <h2
+                class="text-2xl md:text-3xl font-semibold text-emphasis tracking-tight leading-tight mb-4"
+              >
+                Initiatives and rolled-up progress
+              </h2>
+              <p class="text-base text-muted leading-relaxed mb-6">
+                Roadmap items now derive their status from the issues underneath
+                them, so the quarterly plan stops being a slide deck that
+                quietly goes stale.
+              </p>
+              <ul class="list-none p-0 m-0 flex flex-col gap-3">
+                <li class="flex items-start gap-3">
+                  <span
+                    data-icon-pack="stroke"
+                    data-icon-name="plus"
+                    data-icon-decorative="true"
+                    data-icon-label=""
+                    aria-hidden="true"
+                    class="inline-flex items-center leading-none size-5 text-primary shrink-0 mt-0.5 [--icon-stroke:2]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="M12 5v14" /></svg></span
+                  ><span class="text-base text-muted"
+                    >Shareable read-only roadmap links</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <span
+                    data-icon-pack="stroke"
+                    data-icon-name="plus"
+                    data-icon-decorative="true"
+                    data-icon-label=""
+                    aria-hidden="true"
+                    class="inline-flex items-center leading-none size-5 text-primary shrink-0 mt-0.5 [--icon-stroke:2]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="M12 5v14" /></svg></span
+                  ><span class="text-base text-muted"
+                    >Target dates that warn before they slip</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="cta-centered-glow"
+      data-swebsy-block='{"tags":["cta"],"description":"Centered closing CTA with an outsized headline, a reassuring one-line subhead and two buttons over a soft radial glow."}'
+      id="ilysa5-3"
+      class="relative overflow-hidden py-20 md:py-24 lg:py-32 border-t border-subtle text-center"
+    >
+      <div id="iqczg8-3" class="container relative">
+        <div id="idnsgr-3" class="row">
+          <div id="ivfdl5-3" class="col-12 lg:col-8 mx-auto">
+            <h2
+              id="i45mq5-3"
+              class="text-4xl md:text-5xl lg:text-6xl font-semibold text-emphasis tracking-tight leading-none mb-6"
+            >
+              Built for the future. Available today.
+            </h2>
+            <p
+              id="ipso7z-3"
+              class="text-lg text-muted max-w-xl mx-auto mb-10 leading-relaxed"
+            >
+              Free for teams up to ten. No card, no sales call, no migration
+              weekend.
+            </p>
+            <div
+              id="i7o2oo-3"
+              class="flex flex-wrap items-center justify-center gap-3"
+            >
+              <a href="#" id="iekdno-3" class="btn btn-primary btn-lg"
+                >Start building</a
+              ><a
+                href="#"
+                id="ikdj88-3"
+                class="btn btn-outline-secondary btn-lg"
+                >Talk to sales</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      data-swebsy-block-id="footer-four-column"
+      data-swebsy-block='{"tags":["footer"],"description":"Four-column footer with a brand blurb and social icons beside three stacked link lists, over a bottom bar with copyright and legal links."}'
+      id="ir7v8k-3"
+      class="py-14 md:py-16 lg:py-20 border-t border-subtle"
+    >
+      <div id="irkoy1-3" class="container">
+        <div id="idbnqd-3" class="row g-8 lg:g-10">
+          <div id="i24zaz-3" class="col-12 lg:col-4">
+            <span
+              id="ivvj8x-3"
+              class="inline-flex items-center gap-2 text-emphasis font-semibold text-lg"
+              ><span
+                data-icon-pack="stroke"
+                data-icon-name="orbit"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="ikyn94-3"
+                class="inline-flex items-center leading-none size-6 text-primary"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M20.341 6.484A10 10 0 0 1 10.266 21.85" />
+                  <path d="M3.659 17.516A10 10 0 0 1 13.74 2.152" />
+                  <circle cx="12" cy="12" r="3" />
+                  <circle cx="19" cy="5" r="2" />
+                  <circle cx="5" cy="19" r="2" /></svg></span
+              ><span id="icv0p2-3">Pulsar</span></span
+            >
+            <p
+              id="ifn1y7-3"
+              class="text-sm text-muted leading-relaxed max-w-xs mt-4 mb-6"
+            >
+              The workspace for shipping software. Issues, releases, and agent
+              runs in one system.
+            </p>
+            <div id="icoucx-3" class="flex items-center gap-3">
+              <a
+                href="#"
+                aria-label="Pulsar on GitHub"
+                id="i0m1zi-3"
+                class="inline-flex items-center justify-center size-9 border border-subtle rounded-lg text-muted no-underline"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faGithub"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="i6rr2o-3"
+                  class="inline-flex items-center leading-none size-4"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="github"
+                    class="svg-inline--fa fa-github"
+                    role="img"
+                    viewBox="0 0 512 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM252.8 8c-138.7 0-244.8 105.3-244.8 244 0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1 100-33.2 167.8-128.1 167.8-239 0-138.7-112.5-244-251.2-244zM105.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                    ></path></svg></span></a
+              ><a
+                href="#"
+                aria-label="Pulsar on X"
+                id="iuqp8f-3"
+                class="inline-flex items-center justify-center size-9 border border-subtle rounded-lg text-muted no-underline"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faXTwitter"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="it95b7-3"
+                  class="inline-flex items-center leading-none size-4"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="x-twitter"
+                    class="svg-inline--fa fa-x-twitter"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M357.2 48L427.8 48 273.6 224.2 455 464 313 464 201.7 318.6 74.5 464 3.8 464 168.7 275.5-5.2 48 140.4 48 240.9 180.9 357.2 48zM332.4 421.8l39.1 0-252.4-333.8-42 0 255.3 333.8z"
+                    ></path></svg></span></a
+              ><a
+                href="#"
+                aria-label="Pulsar on Discord"
+                id="i9837g-3"
+                class="inline-flex items-center justify-center size-9 border border-subtle rounded-lg text-muted no-underline"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faDiscord"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="izy5bg-3"
+                  class="inline-flex items-center leading-none size-4"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="discord"
+                    class="svg-inline--fa fa-discord"
+                    role="img"
+                    viewBox="0 0 576 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1 .1s-.6 .4-.8 .8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2c-41.3 7.1-81.6 19.6-119.7 37.1-.3 .1-.6 .4-.8 .7-76.2 113.8-97.1 224.9-86.9 334.5 0 .3 .1 .5 .2 .8s.3 .4 .5 .6c44.4 32.9 94 58 146.8 74.2 .4 .1 .8 .1 1.1 0s.7-.4 .9-.7c11.3-15.4 21.4-31.8 30-48.8 .1-.2 .2-.5 .2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6 .2-.9 .3-.5 .6-.7c3.1-2.3 6.2-4.7 9.1-7.1 .3-.2 .6-.4 .9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1 .7-.2 1-.2s.7 .2 .9 .4c2.9 2.4 6 4.9 9.1 7.2 .2 .2 .4 .4 .6 .7s.2 .6 .2 .9-.1 .6-.3 .9-.4 .5-.6 .6c-14.7 8.6-30 15.9-45.9 21.8-.2 .1-.5 .2-.7 .4s-.3 .4-.4 .7-.1 .5-.1 .8 .1 .5 .2 .8c8.8 17 18.8 33.3 30 48.8 .2 .3 .6 .6 .9 .7s.8 .1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2 .2-.2 .4-.4 .5-.6s.2-.5 .2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2zm195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2z"
+                    ></path></svg></span
+              ></a>
+            </div>
+          </div>
+          <div id="i0qnrh-3" class="col-6 md:col-3 lg:col-2">
+            <div data-ai-symbol="foot-col" id="i1sv7i-3">
+              <h3
+                id="iup5bj-3"
+                class="text-xs uppercase tracking-widest text-subtle mb-4"
+              >
+                Product
+              </h3>
+              <ul id="i8xzan-3" class="list-none p-0 m-0 flex flex-col gap-2.5">
+                <li id="i7f06o-3">
+                  <a
+                    href="./product.html"
+                    id="isztem-3"
+                    class="text-sm text-muted no-underline"
+                    >Features</a
+                  >
+                </li>
+                <li id="ip1fw5-3">
+                  <a
+                    href="./pricing.html"
+                    id="imatas-3"
+                    class="text-sm text-muted no-underline"
+                    >Pricing</a
+                  >
+                </li>
+                <li id="ictdvn-3">
+                  <a
+                    href="./changelog.html"
+                    id="i3vcs3-3"
+                    class="text-sm text-muted no-underline"
+                    >Changelog</a
+                  >
+                </li>
+                <li id="i10itw-3">
+                  <a
+                    href="#"
+                    id="izmxjh-3"
+                    class="text-sm text-muted no-underline"
+                    >Integrations</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="izhd2d-3" class="col-6 md:col-3 lg:col-2">
+            <div data-ai-symbol-ref="foot-col" id="ixdhdg-3">
+              <h3
+                id="irewtk-3"
+                class="text-xs uppercase tracking-widest text-subtle mb-4"
+              >
+                Developers
+              </h3>
+              <ul id="ixyga9-3" class="list-none p-0 m-0 flex flex-col gap-2.5">
+                <li id="ihvev7-3">
+                  <a
+                    href="#"
+                    id="itsjfz-3"
+                    class="text-sm text-muted no-underline"
+                    >Docs</a
+                  >
+                </li>
+                <li id="iti6v6-3">
+                  <a
+                    href="#"
+                    id="ilhokz-3"
+                    class="text-sm text-muted no-underline"
+                    >API</a
+                  >
+                </li>
+                <li id="io0naz-3">
+                  <a
+                    href="#"
+                    id="i0en7p-3"
+                    class="text-sm text-muted no-underline"
+                    >Agent SDK</a
+                  >
+                </li>
+                <li id="i0qfyj-3">
+                  <a
+                    href="#"
+                    id="ix4h1h-3"
+                    class="text-sm text-muted no-underline"
+                    >Status</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="ifbhce-3" class="col-6 md:col-3 lg:col-2">
+            <div data-ai-symbol-ref="foot-col" id="iuzu7u-3">
+              <h3
+                id="i4xgti-3"
+                class="text-xs uppercase tracking-widest text-subtle mb-4"
+              >
+                Company
+              </h3>
+              <ul id="ii3gdg-3" class="list-none p-0 m-0 flex flex-col gap-2.5">
+                <li id="isluet-3">
+                  <a
+                    href="#"
+                    id="iv1wor-3"
+                    class="text-sm text-muted no-underline"
+                    >About</a
+                  >
+                </li>
+                <li id="il9ftj-3">
+                  <a
+                    href="#"
+                    id="iz3aud-3"
+                    class="text-sm text-muted no-underline"
+                    >Blog</a
+                  >
+                </li>
+                <li id="im5bb5-3">
+                  <a
+                    href="#"
+                    id="iogxnb-3"
+                    class="text-sm text-muted no-underline"
+                    >Careers</a
+                  >
+                </li>
+                <li id="io9aej-3">
+                  <a
+                    href="#"
+                    id="iz5t8z-3"
+                    class="text-sm text-muted no-underline"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="iq9ahj-3" class="col-6 md:col-3 lg:col-2">
+            <div data-ai-symbol-ref="foot-col" id="i2a4yx-3">
+              <h3
+                id="iviprl-3"
+                class="text-xs uppercase tracking-widest text-subtle mb-4"
+              >
+                Legal
+              </h3>
+              <ul id="i1a3lb-3" class="list-none p-0 m-0 flex flex-col gap-2.5">
+                <li id="i8pp0t-3">
+                  <a
+                    href="#"
+                    id="i45h4g-3"
+                    class="text-sm text-muted no-underline"
+                    >Terms</a
+                  >
+                </li>
+                <li id="i7wqvj-3">
+                  <a
+                    href="#"
+                    id="i8j5da-3"
+                    class="text-sm text-muted no-underline"
+                    >Privacy</a
+                  >
+                </li>
+                <li id="iu62bt-3">
+                  <a
+                    href="#"
+                    id="inbdp6-3"
+                    class="text-sm text-muted no-underline"
+                    >Security</a
+                  >
+                </li>
+                <li id="i7j39g-3">
+                  <a
+                    href="#"
+                    id="ijgsce-3"
+                    class="text-sm text-muted no-underline"
+                    >DPA</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          id="iks21l-2-3"
+          class="border-t border-subtle mt-12 lg:mt-16 pt-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3"
+        >
+          <p id="iah73h-2-3" class="text-xs text-subtle">
+            © 2026 Pulsar Labs, Inc.
+          </p>
+          <div id="il56ug" class="flex items-center gap-4">
+            <div id="iefanm-2-3" class="inline-flex items-center gap-2">
+              <span
+                id="ioxi9o-2-3"
+                class="inline-block w-2 h-2 rounded-full bg-primary"
+              ></span
+              ><span id="i9izkj-2-3" class="text-xs text-subtle"
+                >All systems operational</span
+              >
+            </div>
+            <div
+              data-dark-mode-switch="true"
+              data-mode="dark"
+              data-switch-style="segmented"
+              role="group"
+              id="itsh7l-2-3"
+              class="dark-mode-switch btn-group"
+            >
+              <input
+                type="radio"
+                name="dark-mode-toggle"
+                id="dark-mode-system-4"
+                autocomplete="off"
+                data-mode="system"
+                class="btn-check"
+              /><label
+                for="dark-mode-system"
+                title="System"
+                id="igftse"
+                class="btn btn-outline-neutral"
+                ><span
+                  data-icon-pack="stroke"
+                  data-icon-name="monitor"
+                  data-icon-decorative="false"
+                  data-icon-label="System theme"
+                  role="img"
+                  aria-label="System theme"
+                  id="i54q0d"
+                  class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="var(--icon-stroke, 2)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <rect width="20" height="14" x="2" y="3" rx="2" />
+                    <line x1="8" x2="16" y1="21" y2="21" />
+                    <line x1="12" x2="12" y1="17" y2="21" /></svg></span></label
+              ><input
+                type="radio"
+                name="dark-mode-toggle"
+                id="dark-mode-light-4"
+                autocomplete="off"
+                data-mode="light"
+                class="btn-check"
+              /><label
+                for="dark-mode-light"
+                title="Light"
+                id="il97vu8"
+                class="btn btn-outline-neutral"
+                ><span
+                  data-icon-pack="stroke"
+                  data-icon-name="sun"
+                  data-icon-decorative="false"
+                  data-icon-label="Light theme"
+                  role="img"
+                  aria-label="Light theme"
+                  id="ifciuet"
+                  class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="var(--icon-stroke, 2)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <circle cx="12" cy="12" r="4" />
+                    <path d="M12 2v2" />
+                    <path d="M12 20v2" />
+                    <path d="m4.93 4.93 1.41 1.41" />
+                    <path d="m17.66 17.66 1.41 1.41" />
+                    <path d="M2 12h2" />
+                    <path d="M20 12h2" />
+                    <path d="m6.34 17.66-1.41 1.41" />
+                    <path d="m19.07 4.93-1.41 1.41" /></svg></span></label
+              ><input
+                type="radio"
+                name="dark-mode-toggle"
+                id="dark-mode-dark-4"
+                autocomplete="off"
+                data-mode="dark"
+                checked
+                class="btn-check"
+              /><label
+                for="dark-mode-dark"
+                title="Dark"
+                id="iwh7p72"
+                class="btn btn-outline-neutral"
+                ><span
+                  data-icon-pack="stroke"
+                  data-icon-name="moon"
+                  data-icon-decorative="false"
+                  data-icon-label="Dark theme"
+                  role="img"
+                  aria-label="Dark theme"
+                  id="i834w0k"
+                  class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="var(--icon-stroke, 2)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
+                    /></svg></span
+              ></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/swebsy-components.f609d959ae.js" defer></script>
+  <a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

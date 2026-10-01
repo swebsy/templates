@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 48" aria-label="Northline Daily">
+  <path fill="#000" fill-rule="evenodd" d="M3 5h38v38H3V5Zm7 7v24h24V12H10Z"></path>
+  <path fill="none" stroke="#000" stroke-width="3" stroke-linecap="square" stroke-linejoin="miter" d="M15 32V16l14 16V16"></path>
+  <g fill="none" stroke="#000" stroke-width="2.4" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M51 33V15l12 18V15M69 24c0-6 3-9 8-9s8 3 8 9-3 9-8 9-8-3-8-9ZM92 33V15h7c5 0 8 2 8 5.5S104 26 99 26h-7m7 0 9 7M112 15h17m-8.5 0v18M135 15v18m0-9h12m0-9v18M154 15v18h11M172 15v18M179 33V15l12 18V15M198 15h10m-10 0v18h10m-10-9h8"></path>
+  </g>
+</svg>

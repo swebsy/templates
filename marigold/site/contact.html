@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Marigold — Scheduling, clients and payments for small service businesses
+    </title>
+    <meta
+      name="description"
+      content="Marigold holds every appointment, client record and payment for your salon, clinic or studio in one place. Thirty days free, no card, diary migration included."
+    />
+    <meta
+      name="keywords"
+      content="appointment scheduling software, salon booking system, clinic practice management, client records, service business software"
+    />
+    <meta name="author" content="Marigold Software Ltd." />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Marigold — Run the day, not the paperwork"
+    />
+    <meta
+      property="og:description"
+      content="Scheduling, client records and payments for small service businesses. Thirty days free, no card required."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Marigold — Run the day, not the paperwork"
+    />
+    <meta
+      name="twitter:description"
+      content="Scheduling, client records and payments for small service businesses."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-outfit-QGYvz_MVcBeNP4NJuktqQ4E.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-outfit-QGYvz_MVcBeNP4NJtEtq.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "system";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.6641a65ad1.css" />
+  </head>
+  <body>
+    <div
+      class="bg-stone-900 py-2.5 [--text-color-default:var(--color-stone-50)] [--background-color-emphasis:var(--color-stone-600)]"
+    >
+      <div
+        class="container mx-auto max-w-6xl px-6 flex flex-wrap justify-center items-center gap-x-3 gap-y-1"
+      >
+        <span class="text-xs md:text-sm text-stone-300"
+          >Deposits, waitlists and card on file are now on every plan.</span
+        ><a
+          href="./product.html"
+          class="text-xs md:text-sm font-semibold text-secondary underline underline-offset-4"
+          >See what's new</a
+        >
+      </div>
+    </div>
+    <nav
+      data-navbar-collapse-on="md"
+      id="iluz-2-5"
+      class="navbar navbar-expand-sm bg-default border-b border-emphasis py-4"
+    >
+      <div data-navbar-part="container" id="is9j6bh" class="container px-6">
+        <a
+          href="#"
+          data-navbar-part="brand"
+          id="i30yqsf"
+          class="navbar-brand font-serif text-2xl text-emphasis no-underline"
+          >Marigold</a
+        ><button
+          type="button"
+          data-navbar-part="toggler"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="i7ljs3u"
+          class="btn btn-icon navbar-toggler"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="isds5oz"
+            class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="navbarMenu-2-5"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse"
+        >
+          <ul
+            data-navbar-part="links"
+            id="ik39e4g"
+            class="navbar-nav ms-auto items-center"
+          >
+            <li id="iisaue8" class="nav-item">
+              <a href="./index.html" id="i0q83pe" class="nav-link">Home</a>
+            </li>
+            <li id="ik4swg2" class="nav-item">
+              <a href="./product.html" id="it74ga9" class="nav-link">Product</a>
+            </li>
+            <li id="ia2wu9f" class="nav-item">
+              <a href="./pricing.html" id="i2899a4" class="nav-link">Pricing</a>
+            </li>
+            <li id="ix3a82j" class="nav-item">
+              <a href="./customers.html" id="ivsv2wg" class="nav-link"
+                >Customers</a
+              >
+            </li>
+            <li id="ijnoosb" class="nav-item">
+              <a
+                href="./contact.html"
+                id="impaj3i"
+                class="nav-link active"
+                aria-current="page"
+                >Contact</a
+              >
+            </li>
+            <li id="iaxr6nl" class="nav-item ms-3">
+              <a href="./pricing.html" id="i8z0z17" class="btn btn-primary"
+                >Start free</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="in6n88g"
+      data-swebsy-block-id="contact-email-guide"
+      data-swebsy-block='{"tags":["contact","process","cta"],"description":"A two-column contact hero pairing direct support copy with a numbered email-preparation checklist and CTA."}'
+      class="bg-default"
+    >
+      <div class="container mx-auto max-w-6xl px-6 py-16 md:py-24">
+        <div class="row g-6">
+          <div class="col-12 lg:col-5">
+            <span
+              class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-4"
+              >Contact</span
+            >
+            <h1 class="text-4xl md:text-5xl text-emphasis mb-5">
+              Talk to someone who has worked a front desk.
+            </h1>
+            <p class="text-lg text-muted mb-8">
+              Not a chatbot, not a qualification call. Tell us what you run and
+              we will tell you straight whether Marigold suits it.
+            </p>
+            <div class="border-t border-default pt-6">
+              <p class="text-sm text-muted mb-2">
+                Most enquiries are answered inside two working hours.
+              </p>
+              <p class="text-subtle text-sm">
+                Already a customer? Use the help button inside the app — it
+                reaches the same desk with your account already attached.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 lg:col-7 mt-12 lg:mt-0">
+            <div class="rounded-2xl border border-default bg-muted p-8 md:p-10">
+              <h2 class="text-2xl md:text-3xl text-emphasis mb-3">
+                There is no form. Send one email.
+              </h2>
+              <p class="text-muted mb-8">
+                Put these four things in it and we can answer properly the first
+                time, instead of trading messages for a week.
+              </p>
+              <div
+                class="flex items-start gap-4 border-t border-emphasis pt-5 pb-5"
+              >
+                <span
+                  class="inline-block w-8 shrink-0 tabular-nums font-semibold text-2xl text-primary leading-8"
+                  >01</span
+                >
+                <div>
+                  <p class="text-emphasis font-medium mb-1">What you run</p>
+                  <p class="text-muted text-sm">
+                    Salon, clinic or studio — and how many chairs or rooms.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex items-start gap-4 border-t border-emphasis pt-5 pb-5"
+              >
+                <span
+                  class="inline-block w-8 shrink-0 tabular-nums font-semibold text-2xl text-primary leading-8"
+                  >02</span
+                >
+                <div>
+                  <p class="text-emphasis font-medium mb-1">How many staff</p>
+                  <p class="text-muted text-sm">
+                    Count anyone part-time who needs a diary of their own.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex items-start gap-4 border-t border-emphasis pt-5 pb-5"
+              >
+                <span
+                  class="inline-block w-8 shrink-0 tabular-nums font-semibold text-2xl text-primary leading-8"
+                  >03</span
+                >
+                <div>
+                  <p class="text-emphasis font-medium mb-1">
+                    What you use today
+                  </p>
+                  <p class="text-muted text-sm">
+                    Paper, a shared calendar, or the system you want to leave.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex items-start gap-4 border-t border-b border-emphasis pt-5 pb-5 mb-8"
+              >
+                <span
+                  class="inline-block w-8 shrink-0 tabular-nums font-semibold text-2xl text-primary leading-8"
+                  >04</span
+                >
+                <div>
+                  <p class="text-emphasis font-medium mb-1">
+                    When you want to move
+                  </p>
+                  <p class="text-muted text-sm">
+                    We migrate diaries on Sunday nights, so nobody loses a
+                    booking.
+                  </p>
+                </div>
+              </div>
+              <a
+                href="mailto:hello@marigold.co.uk?subject=Marigold%20enquiry"
+                id="i0rhq0r"
+                class="btn btn-primary btn-lg w-full"
+                >Email hello@marigold.co.uk</a
+              >
+              <p id="if0n1jn" class="text-subtle text-sm mt-4 text-center">
+                Opens your mail app. Nothing is stored on this website.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="i0vmqll"
+      data-swebsy-block-id="direct-contact-routes"
+      data-swebsy-block='{"tags":["contact","card"],"description":"A dark contact-options grid for phone, email, migration, and sales routes."}'
+      class="bg-stone-900 dark:bg-stone-950 [--text-color-default:var(--color-stone-50)] [--background-color-emphasis:var(--color-stone-500)] [--background-color-muted:var(--color-stone-700)]"
+    >
+      <div class="container mx-auto max-w-6xl px-6 py-16 md:py-24">
+        <div class="row g-6">
+          <div class="col-12 lg:col-4">
+            <h2 class="text-3xl md:text-4xl text-stone-50 mb-4">
+              Or reach a person directly.
+            </h2>
+            <p class="text-stone-400">
+              Every one of these reaches a person in Bristol, Monday to
+              Saturday.
+            </p>
+          </div>
+          <div class="col-12 md:col-4 lg:col-3">
+            <div class="border-t border-stone-700 pt-5">
+              <span
+                class="inline-block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-3"
+                >Call</span
+              ><a
+                href="tel:+441179460115"
+                class="text-2xl text-primary-light no-underline block mb-2"
+                >0117 946 0115</a
+              >
+              <p class="text-sm text-stone-400">
+                Mon–Fri 08:00–18:00, Sat 09:00–13:00
+              </p>
+            </div>
+          </div>
+          <div class="col-12 md:col-4 lg:col-3">
+            <div class="border-t border-stone-700 pt-5">
+              <span
+                class="inline-block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-3"
+                >Email</span
+              ><a
+                href="mailto:hello@marigold.co.uk"
+                class="text-2xl text-primary-light no-underline block mb-2"
+                >hello@marigold.co.uk</a
+              >
+              <p class="text-sm text-stone-400">
+                Answered within two working hours
+              </p>
+            </div>
+          </div>
+          <div class="col-12 md:col-4 lg:col-2">
+            <div class="border-t border-stone-700 pt-5">
+              <span
+                class="inline-block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-3"
+                >Migration</span
+              ><a
+                href="mailto:move@marigold.co.uk"
+                class="text-lg text-primary-light no-underline block mb-2"
+                >move@marigold.co.uk</a
+              >
+              <p class="text-sm text-stone-400">
+                Send the diary, we do the rest
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="ii6mp9r"
+      data-swebsy-block-id="office-visit"
+      data-swebsy-block='{"tags":["contact","cta"],"description":"A muted office-visit callout with address details and a booking CTA."}'
+      class="bg-muted"
+    >
+      <div class="container mx-auto max-w-6xl px-6 py-16 md:py-24">
+        <div class="row g-6 items-center">
+          <div class="col-12 lg:col-5">
+            <h2 class="text-3xl md:text-4xl text-emphasis mb-4">
+              Come and see it on a real desk.
+            </h2>
+            <p class="text-lg text-muted mb-8 max-w-lg">
+              We keep a working front desk in the office — same tablet, same
+              card reader, same Tuesday. Book an hour and bring your current
+              diary.
+            </p>
+            <div class="border-t border-default pt-6 mb-6">
+              <p class="text-emphasis mb-1">Marigold Software Ltd.</p>
+              <p class="text-muted">18 Colston Yard, Bristol BS1 5BD</p>
+            </div>
+            <a href="mailto:hello@marigold.co.uk" class="btn btn-primary btn-lg"
+              >Book an hour</a
+            >
+          </div>
+          <div class="col-12 lg:col-7 mt-12 lg:mt-0">
+            <div class="rounded-2xl border border-default bg-default p-2">
+              <div
+                data-address="Colston Yard, Bristol BS1 5BD"
+                data-zoom="15"
+                data-maptype="roadmap"
+                id="i7pwp3h"
+                class="w-full overflow-hidden rounded-lg"
+              >
+                <iframe
+                  data-swebsy-map=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen="true"
+                  title="Map"
+                  src="https://www.google.com/maps?q=Colston%20Yard%2C%20Bristol%20BS1%205BD&amp;z=15&amp;t=m&amp;output=embed"
+                  class="block w-full h-full border-0"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="footer-multi-column"
+      data-swebsy-block='{"tags":["footer","navigation"],"description":"A dark multi-column footer with brand statement, navigation groups, social links, and legal copy."}'
+      id="iyteto-6"
+      class="bg-stone-900 dark:bg-stone-950"
+    >
+      <div id="itwny9-6" class="container py-16 md:py-20">
+        <div id="ii465lv-2-6" class="row g-10">
+          <div id="idw9dws-2-6" class="col-12 lg:col-4">
+            <span
+              id="i472ra2-2-6"
+              class="inline-block font-serif text-3xl text-stone-50 mb-4"
+              >Marigold</span
+            >
+            <p id="i1jnfs6-2-6" class="text-stone-400 max-w-xs mb-6">
+              Scheduling, client records and payments for small service
+              businesses. Built in Bristol.
+            </p>
+            <div
+              data-dark-mode-switch="true"
+              data-mode="system"
+              data-switch-style="icon"
+              role="group"
+              id="i7o6255-2-6"
+              class="dark-mode-switch btn-group"
+            >
+              <button
+                type="button"
+                data-theme-cycle-button="true"
+                aria-label="Theme: System. Click to switch to Light."
+                title="Theme: System. Click to switch to Light."
+                id="i9hfjvo-6"
+                class="btn btn-outline-neutral dark-mode-switch__cycle inline-flex items-center justify-center dark"
+              >
+                <span
+                  data-theme-mode-icon="system"
+                  id="iyl5mlc-6"
+                  class="inline-flex items-center justify-center leading-none size-4"
+                  ><span
+                    data-icon-pack="stroke"
+                    data-icon-name="monitor"
+                    data-icon-decorative="false"
+                    data-icon-label="System theme"
+                    role="img"
+                    aria-label="System theme"
+                    id="ipw26hd-6"
+                    class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <rect width="20" height="14" x="2" y="3" rx="2" />
+                      <line x1="8" x2="16" y1="21" y2="21" />
+                      <line
+                        x1="12"
+                        x2="12"
+                        y1="17"
+                        y2="21"
+                      /></svg></span></span
+                ><span
+                  data-theme-mode-icon="light"
+                  hidden
+                  id="ihxyce5-6"
+                  class="inline-flex items-center justify-center leading-none size-4"
+                  ><span
+                    data-icon-pack="stroke"
+                    data-icon-name="sun"
+                    data-icon-decorative="false"
+                    data-icon-label="Light theme"
+                    role="img"
+                    aria-label="Light theme"
+                    id="izlhhz8-6"
+                    class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="4" />
+                      <path d="M12 2v2" />
+                      <path d="M12 20v2" />
+                      <path d="m4.93 4.93 1.41 1.41" />
+                      <path d="m17.66 17.66 1.41 1.41" />
+                      <path d="M2 12h2" />
+                      <path d="M20 12h2" />
+                      <path d="m6.34 17.66-1.41 1.41" />
+                      <path d="m19.07 4.93-1.41 1.41" /></svg></span></span
+                ><span
+                  data-theme-mode-icon="dark"
+                  hidden
+                  id="i9s06pa-6"
+                  class="inline-flex items-center justify-center leading-none size-4"
+                  ><span
+                    data-icon-pack="stroke"
+                    data-icon-name="moon"
+                    data-icon-decorative="false"
+                    data-icon-label="Dark theme"
+                    role="img"
+                    aria-label="Dark theme"
+                    id="ina6d8n-6"
+                    class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
+                      /></svg></span
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div id="ix316uw-2-6" class="col-12 sm:col-4 lg:col-2">
+            <span
+              id="io8hmkk-2-6"
+              class="inline-block text-sm uppercase tracking-widest text-stone-400 mb-4"
+              >Product</span
+            >
+            <ul id="ivxy9ox-2-6" class="list-none p-0 m-0 flex flex-col gap-3">
+              <li id="ipj5j7c-2-6">
+                <a href="#" id="i5ju2be-2-6" class="text-stone-300 no-underline"
+                  >Overview</a
+                >
+              </li>
+              <li id="igym2wk-2-6">
+                <a href="#" id="ie6v2g3-2-6" class="text-stone-300 no-underline"
+                  >Pricing</a
+                >
+              </li>
+              <li id="iybhjte-2-6">
+                <a href="#" id="i7u0wvh-2-6" class="text-stone-300 no-underline"
+                  >Customers</a
+                >
+              </li>
+              <li id="ipmdygr-2-6">
+                <a href="#" id="iju2inn-2-6" class="text-stone-300 no-underline"
+                  >What's new</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="iewxxhe-2-6" class="col-12 sm:col-4 lg:col-2">
+            <span
+              id="ipr7xun-2-6"
+              class="inline-block text-sm uppercase tracking-widest text-stone-400 mb-4"
+              >Company</span
+            >
+            <ul id="iwy7qgu-2-6" class="list-none p-0 m-0 flex flex-col gap-3">
+              <li id="iy90blx-2-6">
+                <a href="#" id="io4k5te-2-6" class="text-stone-300 no-underline"
+                  >About</a
+                >
+              </li>
+              <li id="i6cc98e-2-6">
+                <a href="#" id="ipy9kqq-2-6" class="text-stone-300 no-underline"
+                  >Careers</a
+                >
+              </li>
+              <li id="i25e7d7-2-6">
+                <a href="#" id="im7fng8-2-6" class="text-stone-300 no-underline"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="ihofy1d-2-6" class="col-12 sm:col-4 lg:col-2">
+            <span
+              id="iyaekwr-2-6"
+              class="inline-block text-sm uppercase tracking-widest text-stone-400 mb-4"
+              >Support</span
+            >
+            <ul id="ilinu0m-2-6" class="list-none p-0 m-0 flex flex-col gap-3">
+              <li id="imyphi1-2-6">
+                <a href="#" id="i9g8cxf-2-6" class="text-stone-300 no-underline"
+                  >Help centre</a
+                >
+              </li>
+              <li id="ir614y2-2-6">
+                <a href="#" id="id2k3d5-2-6" class="text-stone-300 no-underline"
+                  >Import your diary</a
+                >
+              </li>
+              <li id="i2j8tnp-2-6">
+                <a href="#" id="iv57nl8-2-6" class="text-stone-300 no-underline"
+                  >Status</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="i6nml06-2-6" class="col-12 lg:col-2">
+            <span
+              id="i7jsfqt-2-6"
+              class="inline-block text-sm uppercase tracking-widest text-stone-400 mb-4"
+              >Follow</span
+            >
+            <div id="ivymz7d-2-6" class="flex items-center gap-3">
+              <a
+                href="#"
+                aria-label="Marigold on Instagram"
+                id="i37le7f-2-6"
+                class="text-stone-300 inline-flex"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faInstagram"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="ipso63q-2-6"
+                  class="inline-flex items-center leading-none size-5"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="instagram"
+                    class="svg-inline--fa fa-instagram"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    ></path></svg></span></a
+              ><a
+                href="#"
+                aria-label="Marigold on LinkedIn"
+                id="i67ai7q-2-6"
+                class="text-stone-300 inline-flex"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faLinkedin"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="iq5y4mi-2-6"
+                  class="inline-flex items-center leading-none size-5"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="linkedin"
+                    class="svg-inline--fa fa-linkedin"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z"
+                    ></path></svg></span
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div
+          id="i07r31d-2-6"
+          class="border-t border-stone-700 mt-12 pt-6 flex flex-wrap items-center justify-between gap-4"
+        >
+          <span id="ifi9qqq-2-6" class="inline-block text-sm text-stone-400"
+            >© 2026 Marigold Software Ltd.</span
+          ><span id="iqtvhum-2-6" class="inline-block text-sm text-stone-400"
+            >Privacy · Terms · Cookies</span
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/swebsy-components.04453deeb1.js" defer></script>
+  <a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

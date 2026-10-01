@@ -1,0 +1,940 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Marigold — Scheduling, clients and payments for small service businesses
+    </title>
+    <meta
+      name="description"
+      content="Marigold holds every appointment, client record and payment for your salon, clinic or studio in one place. Thirty days free, no card, diary migration included."
+    />
+    <meta
+      name="keywords"
+      content="appointment scheduling software, salon booking system, clinic practice management, client records, service business software"
+    />
+    <meta name="author" content="Marigold Software Ltd." />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Marigold — Run the day, not the paperwork"
+    />
+    <meta
+      property="og:description"
+      content="Scheduling, client records and payments for small service businesses. Thirty days free, no card required."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Marigold — Run the day, not the paperwork"
+    />
+    <meta
+      name="twitter:description"
+      content="Scheduling, client records and payments for small service businesses."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa25L7SUc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-outfit-QGYvz_MVcBeNP4NJuktqQ4E.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-outfit-QGYvz_MVcBeNP4NJtEtq.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "system";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.6641a65ad1.css" />
+  </head>
+  <body>
+    <div
+      class="bg-stone-900 py-2.5 [--text-color-default:var(--color-stone-50)] [--background-color-emphasis:var(--color-stone-600)]"
+    >
+      <div
+        class="container mx-auto max-w-6xl px-6 flex flex-wrap justify-center items-center gap-x-3 gap-y-1"
+      >
+        <span class="text-xs md:text-sm text-stone-300"
+          >Deposits, waitlists and card on file are now on every plan.</span
+        ><a
+          href="./product.html"
+          class="text-xs md:text-sm font-semibold text-secondary underline underline-offset-4"
+          >See what's new</a
+        >
+      </div>
+    </div>
+    <nav
+      data-navbar-collapse-on="md"
+      id="iluz-2-4"
+      class="navbar navbar-expand-sm bg-default border-b border-emphasis py-4"
+    >
+      <div data-navbar-part="container" id="ii1jn3q" class="container px-6">
+        <a
+          href="#"
+          data-navbar-part="brand"
+          id="i9r0m0l"
+          class="navbar-brand font-serif text-2xl text-emphasis no-underline"
+          >Marigold</a
+        ><button
+          type="button"
+          data-navbar-part="toggler"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="io7he8n"
+          class="btn btn-icon navbar-toggler"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="iaddlmn"
+            class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="navbarMenu-2-4"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse"
+        >
+          <ul
+            data-navbar-part="links"
+            id="ieb04so"
+            class="navbar-nav ms-auto items-center"
+          >
+            <li id="im5nlkh" class="nav-item">
+              <a href="./index.html" id="irt0zxk" class="nav-link">Home</a>
+            </li>
+            <li id="i2xm113" class="nav-item">
+              <a href="./product.html" id="itonxs4" class="nav-link">Product</a>
+            </li>
+            <li id="i17fcaz" class="nav-item">
+              <a href="./pricing.html" id="i4nzke2" class="nav-link">Pricing</a>
+            </li>
+            <li id="ip7l3un" class="nav-item">
+              <a
+                href="./customers.html"
+                id="iu44zr7"
+                class="nav-link active"
+                aria-current="page"
+                >Customers</a
+              >
+            </li>
+            <li id="i4luqek" class="nav-item">
+              <a href="./contact.html" id="iz0c01s" class="nav-link">Contact</a>
+            </li>
+            <li id="ihqqpiv" class="nav-item ms-3">
+              <a href="./pricing.html" id="itg12sg" class="btn btn-primary"
+                >Start free</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="i9ux7uf"
+      data-swebsy-block-id="customers-intro"
+      data-swebsy-block='{"tags":["header","intro","testimonials"],"description":"A restrained customer-stories header with a large editorial headline and credibility copy."}'
+      class="bg-default"
+    >
+      <div
+        class="container mx-auto max-w-6xl px-6 pt-16 pb-12 md:pt-24 md:pb-16"
+      >
+        <div class="row g-6 items-end">
+          <div class="col-12 lg:col-8">
+            <span
+              class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-4"
+              >Customers</span
+            >
+            <h1 class="text-4xl md:text-5xl text-emphasis mb-5">
+              Nine thousand businesses, one Tuesday at a time.
+            </h1>
+            <p class="text-lg text-muted max-w-2xl">
+              Salons, clinics, studios and workshops that had outgrown a paper
+              diary and could not face a system built for a hotel chain.
+            </p>
+          </div>
+          <div class="col-12 lg:col-4 mt-10 lg:mt-0">
+            <div class="rounded-xl border border-default bg-muted p-6">
+              <p class="text-sm text-muted">
+                The three below let us print their numbers. They were not paid,
+                and they still pay us.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="igup4we"
+      data-swebsy-block-id="case-study-fold-fringe"
+      data-swebsy-block='{"tags":["testimonials","stats","content"],"description":"A muted customer case study combining a pull quote, narrative, attribution, and three outcome metrics."}'
+      class="bg-muted"
+    >
+      <div class="container mx-auto max-w-6xl px-6 py-16 md:py-24">
+        <div class="row g-6 items-center">
+          <div class="col-12 lg:col-6">
+            <span
+              class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-4"
+              >Fold & Fringe · Leeds · 4 chairs</span
+            >
+            <h2 class="text-3xl md:text-4xl text-emphasis mb-5">
+              “I stopped working Sundays.”
+            </h2>
+            <p class="text-lg text-muted mb-4 max-w-lg">
+              “The whole salon lived in a paper diary and three group chats.
+              Marigold replaced all of it in a weekend. The waitlist alone pays
+              for the year — it fills gaps I used to just stare at.”
+            </p>
+            <p class="text-sm text-subtle mb-8">Priya Raman, owner</p>
+            <div class="row g-6">
+              <div class="col-12 sm:col-4">
+                <div class="border-t border-default pt-4">
+                  <span class="inline-block font-semibold text-4xl text-primary"
+                    >−38%</span
+                  >
+                  <p class="text-sm text-muted mt-1">No-shows, first year</p>
+                </div>
+              </div>
+              <div class="col-12 sm:col-4">
+                <div class="border-t border-default pt-4">
+                  <span class="inline-block font-semibold text-4xl text-primary"
+                    >+£19k</span
+                  >
+                  <p class="text-sm text-muted mt-1">
+                    Recovered from filled gaps
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 sm:col-4">
+                <div class="border-t border-default pt-4">
+                  <span class="inline-block font-semibold text-4xl text-primary"
+                    >1 wk</span
+                  >
+                  <p class="text-sm text-muted mt-1">From paper to live</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 lg:col-6 mt-12 lg:mt-0">
+            <div
+              id="i4u6yh2"
+              class="rounded-2xl border border-default bg-default p-2"
+            >
+              <img
+                alt="Fold &amp; Fringe salon, Leeds — four chairs"
+                src="assets/5fff0402-6567-46f5-9e88-9026e9754160.webp"
+                id="i5ffrfy"
+                class="w-full block rounded-xl"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="ir2ed3l"
+      data-swebsy-block-id="case-study-harborne-dental"
+      data-swebsy-block='{"tags":["testimonials","stats","content"],"description":"A bright customer case study combining a pull quote, narrative, attribution, and three operational metrics."}'
+      class="bg-default"
+    >
+      <div class="container mx-auto max-w-6xl px-6 py-16 md:py-24">
+        <div class="row g-6 items-center">
+          <div class="col-12 lg:col-6 order-2 lg:order-1 mt-12 lg:mt-0">
+            <div
+              id="ijvj2wr"
+              class="rounded-2xl border border-default bg-muted p-2"
+            >
+              <img
+                alt="Harborne Dental Practice, Birmingham — three surgeries"
+                src="assets/c494105d-3ff4-4eb0-a954-0e3574dc9e30.webp"
+                id="i0d5a7f"
+                class="w-full block rounded-xl"
+              />
+            </div>
+          </div>
+          <div class="col-12 lg:col-6 order-1 lg:order-2">
+            <span
+              class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-4"
+              >Harborne Dental · Birmingham · 3 surgeries</span
+            >
+            <h2 class="text-3xl md:text-4xl text-emphasis mb-5">
+              “Recalls stopped being somebody's job.”
+            </h2>
+            <p class="text-lg text-muted mb-4 max-w-lg">
+              “Six-month recalls used to be a nurse with a list every Friday
+              afternoon. Now they go out on their own and come back booked. That
+              afternoon went back to patients.”
+            </p>
+            <p class="text-sm text-subtle mb-8">Dr Yusuf Bello, principal</p>
+            <div class="row g-6">
+              <div class="col-12 sm:col-4">
+                <div class="border-t border-default pt-4">
+                  <span class="inline-block font-semibold text-4xl text-primary"
+                    >91%</span
+                  >
+                  <p class="text-sm text-muted mt-1">Recall rebooking rate</p>
+                </div>
+              </div>
+              <div class="col-12 sm:col-4">
+                <div class="border-t border-default pt-4">
+                  <span class="inline-block font-semibold text-4xl text-primary"
+                    >4 hrs</span
+                  >
+                  <p class="text-sm text-muted mt-1">
+                    Returned to the nursing rota, weekly
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 sm:col-4">
+                <div class="border-t border-default pt-4">
+                  <span class="inline-block font-semibold text-4xl text-primary"
+                    >0</span
+                  >
+                  <p class="text-sm text-muted mt-1">
+                    Records lost in migration
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="i0t610w"
+      data-swebsy-block-id="case-study-two-rivers"
+      data-swebsy-block='{"tags":["testimonials","stats","content"],"description":"A dark customer case study combining a pull quote, narrative, attribution, and three migration metrics."}'
+      class="bg-stone-900 dark:bg-stone-950 [--text-color-default:var(--color-stone-50)] [--background-color-emphasis:var(--color-stone-500)] [--background-color-muted:var(--color-stone-700)]"
+    >
+      <div class="container mx-auto max-w-6xl px-6 py-16 md:py-24">
+        <div class="row g-6 items-center">
+          <div class="col-12 lg:col-6">
+            <span
+              class="inline-block text-xs font-semibold uppercase tracking-widest text-stone-400 mb-4"
+              >Two Rivers Veterinary · Shrewsbury · 2 sites</span
+            >
+            <h2 class="text-3xl md:text-4xl text-stone-50 mb-5">
+              “Both sites finally see the same animal.”
+            </h2>
+            <p class="text-lg text-stone-300 mb-4 max-w-lg">
+              “A dog seen in Shrewsbury on Monday used to be a stranger in
+              Church Stretton on Thursday. One record across both practices
+              ended a category of mistake we had quietly accepted.”
+            </p>
+            <p class="text-sm text-stone-400 mb-8">
+              Claire Nesbitt, practice manager
+            </p>
+            <div class="row g-6">
+              <div class="col-12 sm:col-4">
+                <div class="border-t border-stone-700 pt-4">
+                  <span
+                    class="inline-block font-semibold text-4xl text-secondary"
+                    >2→1</span
+                  >
+                  <p class="text-sm text-stone-400 mt-1">
+                    Systems, down to one
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 sm:col-4">
+                <div class="border-t border-stone-700 pt-4">
+                  <span
+                    class="inline-block font-semibold text-4xl text-secondary"
+                    >12 min</span
+                  >
+                  <p class="text-sm text-stone-400 mt-1">
+                    Saved per consult on history
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 sm:col-4">
+                <div class="border-t border-stone-700 pt-4">
+                  <span
+                    class="inline-block font-semibold text-4xl text-secondary"
+                    >3 yr</span
+                  >
+                  <p class="text-sm text-stone-400 mt-1">
+                    Of history imported clean
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 lg:col-6 mt-12 lg:mt-0">
+            <div id="ipwudbf" class="rounded-2xl border border-stone-700 p-2">
+              <img
+                alt="Veterinary consulting room at Two Rivers, a nurse reviewing a patient record on screen"
+                src="assets/aefec82b-5183-4961-bd9b-8a999b3647cf.webp"
+                id="irz1rx5"
+                class="w-full block rounded-xl"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="i9lxkyc"
+      data-swebsy-block-id="customer-quotes"
+      data-swebsy-block='{"tags":["testimonials","card"],"description":"A muted grid of short customer quotes with compact source attributions."}'
+      class="bg-muted"
+    >
+      <div class="container mx-auto max-w-6xl px-6 py-16 md:py-24">
+        <div class="row">
+          <div class="col-12 lg:col-7 mb-10">
+            <h2 class="text-3xl md:text-4xl text-emphasis mb-4">
+              Said in passing, on the phone.
+            </h2>
+            <p class="text-muted">
+              Collected from support calls, printed with permission.
+            </p>
+          </div>
+        </div>
+        <div class="border-t border-l border-emphasis">
+          <div class="row g-0">
+            <div
+              class="col-12 md:col-6 lg:col-4 border-b border-r border-emphasis p-8"
+            >
+              <blockquote class="m-0">
+                <p class="text-default mb-6">
+                  “My weekend Saturday girl set up her own rota in it without
+                  asking me anything. That has never happened with software.”
+                </p>
+                <span class="inline-block text-sm text-muted"
+                  >Tom Ashworth · The Wick Barber · Glasgow</span
+                >
+              </blockquote>
+            </div>
+            <div
+              class="col-12 md:col-6 lg:col-4 border-b border-r border-emphasis p-8"
+            >
+              <blockquote class="m-0">
+                <p class="text-default mb-6">
+                  “I moved off a system that charged me to export my own client
+                  list. Take that personally, because I did.”
+                </p>
+                <span class="inline-block text-sm text-muted"
+                  >Roisin Kelly · Aster Physiotherapy · Cork</span
+                >
+              </blockquote>
+            </div>
+            <div
+              class="col-12 md:col-6 lg:col-4 border-b border-r border-emphasis p-8"
+            >
+              <blockquote class="m-0">
+                <p class="text-default mb-6">
+                  “Deposits killed the Friday-night no-show. One setting, on a
+                  Tuesday, done.”
+                </p>
+                <span class="inline-block text-sm text-muted"
+                  >Marek Nowak · Ironwood Tattoo · Manchester</span
+                >
+              </blockquote>
+            </div>
+            <div
+              class="col-12 md:col-6 lg:col-4 border-b border-r border-emphasis p-8"
+            >
+              <blockquote class="m-0">
+                <p class="text-default mb-6">
+                  “The migration team sent back a spreadsheet of everything they
+                  could not read and asked me. Nobody does that.”
+                </p>
+                <span class="inline-block text-sm text-muted"
+                  >Beth Ogilvie · Larkhall Grooming · Bath</span
+                >
+              </blockquote>
+            </div>
+            <div
+              class="col-12 md:col-6 lg:col-4 border-b border-r border-emphasis p-8"
+            >
+              <blockquote class="m-0">
+                <p class="text-default mb-6">
+                  “I can do a full day's close on the bus home. I do not, but I
+                  could, and knowing that changed how I feel at 6pm.”
+                </p>
+                <span class="inline-block text-sm text-muted"
+                  >Sadia Rahman · Verve Med Spa · London</span
+                >
+              </blockquote>
+            </div>
+            <div
+              class="col-12 md:col-6 lg:col-4 border-b border-r border-emphasis p-8"
+            >
+              <blockquote class="m-0">
+                <p class="text-default mb-6">
+                  “We run three driving instructors off one calendar. It never
+                  once double-booked a car.”
+                </p>
+                <span class="inline-block text-sm text-muted"
+                  >Gareth Pryce · Cotswold Drive · Stroud</span
+                >
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="ib2xd13"
+      class="bg-stone-900 [--text-color-default:var(--color-stone-50)] [--background-color-emphasis:var(--color-stone-600)] [--background-color-muted:var(--color-stone-700)] border-b border-stone-700"
+    >
+      <div id="imx3afr" class="container mx-auto max-w-6xl px-6 py-16 md:py-20">
+        <div id="i4c63mb" class="row g-6 items-center">
+          <div id="i4crwc9" class="col-12 lg:col-7">
+            <h2 id="i3nrolq" class="text-3xl md:text-5xl text-stone-50 mb-4">
+              Your next quiet Sunday starts here.
+            </h2>
+            <p id="ilr79xx" class="text-lg text-stone-300 max-w-xl">
+              Thirty days, every feature, no card. Bring your diary across and
+              we will match it appointment for appointment.
+            </p>
+          </div>
+          <div id="i4j49cl" class="col-12 lg:col-5 mt-8 lg:mt-0">
+            <div
+              id="ihgh2fg"
+              class="flex flex-wrap items-center gap-3 lg:justify-end"
+            >
+              <a href="#" id="i51qf6q" class="btn btn-primary btn-lg"
+                >Start free for 30 days</a
+              ><a href="#" id="ibpjrgz" class="btn btn-outline-neutral btn-lg"
+                >Talk to us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="footer-multi-column"
+      data-swebsy-block='{"tags":["footer","navigation"],"description":"A dark multi-column footer with brand statement, navigation groups, social links, and legal copy."}'
+      id="iyteto-5"
+      class="bg-stone-900 dark:bg-stone-950"
+    >
+      <div id="itwny9-5" class="container py-16 md:py-20">
+        <div id="ii465lv-2-5" class="row g-10">
+          <div id="idw9dws-2-5" class="col-12 lg:col-4">
+            <span
+              id="i472ra2-2-5"
+              class="inline-block font-serif text-3xl text-stone-50 mb-4"
+              >Marigold</span
+            >
+            <p id="i1jnfs6-2-5" class="text-stone-400 max-w-xs mb-6">
+              Scheduling, client records and payments for small service
+              businesses. Built in Bristol.
+            </p>
+            <div
+              data-dark-mode-switch="true"
+              data-mode="system"
+              data-switch-style="icon"
+              role="group"
+              id="i7o6255-2-5"
+              class="dark-mode-switch btn-group"
+            >
+              <button
+                type="button"
+                data-theme-cycle-button="true"
+                aria-label="Theme: System. Click to switch to Light."
+                title="Theme: System. Click to switch to Light."
+                id="i9hfjvo-5"
+                class="btn btn-outline-neutral dark-mode-switch__cycle inline-flex items-center justify-center dark"
+              >
+                <span
+                  data-theme-mode-icon="system"
+                  id="iyl5mlc-5"
+                  class="inline-flex items-center justify-center leading-none size-4"
+                  ><span
+                    data-icon-pack="stroke"
+                    data-icon-name="monitor"
+                    data-icon-decorative="false"
+                    data-icon-label="System theme"
+                    role="img"
+                    aria-label="System theme"
+                    id="ipw26hd-5"
+                    class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <rect width="20" height="14" x="2" y="3" rx="2" />
+                      <line x1="8" x2="16" y1="21" y2="21" />
+                      <line
+                        x1="12"
+                        x2="12"
+                        y1="17"
+                        y2="21"
+                      /></svg></span></span
+                ><span
+                  data-theme-mode-icon="light"
+                  hidden
+                  id="ihxyce5-5"
+                  class="inline-flex items-center justify-center leading-none size-4"
+                  ><span
+                    data-icon-pack="stroke"
+                    data-icon-name="sun"
+                    data-icon-decorative="false"
+                    data-icon-label="Light theme"
+                    role="img"
+                    aria-label="Light theme"
+                    id="izlhhz8-5"
+                    class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="4" />
+                      <path d="M12 2v2" />
+                      <path d="M12 20v2" />
+                      <path d="m4.93 4.93 1.41 1.41" />
+                      <path d="m17.66 17.66 1.41 1.41" />
+                      <path d="M2 12h2" />
+                      <path d="M20 12h2" />
+                      <path d="m6.34 17.66-1.41 1.41" />
+                      <path d="m19.07 4.93-1.41 1.41" /></svg></span></span
+                ><span
+                  data-theme-mode-icon="dark"
+                  hidden
+                  id="i9s06pa-5"
+                  class="inline-flex items-center justify-center leading-none size-4"
+                  ><span
+                    data-icon-pack="stroke"
+                    data-icon-name="moon"
+                    data-icon-decorative="false"
+                    data-icon-label="Dark theme"
+                    role="img"
+                    aria-label="Dark theme"
+                    id="ina6d8n-5"
+                    class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
+                      /></svg></span
+                ></span>
+              </button>
+            </div>
+          </div>
+          <div id="ix316uw-2-5" class="col-12 sm:col-4 lg:col-2">
+            <span
+              id="io8hmkk-2-5"
+              class="inline-block text-sm uppercase tracking-widest text-stone-400 mb-4"
+              >Product</span
+            >
+            <ul id="ivxy9ox-2-5" class="list-none p-0 m-0 flex flex-col gap-3">
+              <li id="ipj5j7c-2-5">
+                <a href="#" id="i5ju2be-2-5" class="text-stone-300 no-underline"
+                  >Overview</a
+                >
+              </li>
+              <li id="igym2wk-2-5">
+                <a href="#" id="ie6v2g3-2-5" class="text-stone-300 no-underline"
+                  >Pricing</a
+                >
+              </li>
+              <li id="iybhjte-2-5">
+                <a href="#" id="i7u0wvh-2-5" class="text-stone-300 no-underline"
+                  >Customers</a
+                >
+              </li>
+              <li id="ipmdygr-2-5">
+                <a href="#" id="iju2inn-2-5" class="text-stone-300 no-underline"
+                  >What's new</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="iewxxhe-2-5" class="col-12 sm:col-4 lg:col-2">
+            <span
+              id="ipr7xun-2-5"
+              class="inline-block text-sm uppercase tracking-widest text-stone-400 mb-4"
+              >Company</span
+            >
+            <ul id="iwy7qgu-2-5" class="list-none p-0 m-0 flex flex-col gap-3">
+              <li id="iy90blx-2-5">
+                <a href="#" id="io4k5te-2-5" class="text-stone-300 no-underline"
+                  >About</a
+                >
+              </li>
+              <li id="i6cc98e-2-5">
+                <a href="#" id="ipy9kqq-2-5" class="text-stone-300 no-underline"
+                  >Careers</a
+                >
+              </li>
+              <li id="i25e7d7-2-5">
+                <a href="#" id="im7fng8-2-5" class="text-stone-300 no-underline"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="ihofy1d-2-5" class="col-12 sm:col-4 lg:col-2">
+            <span
+              id="iyaekwr-2-5"
+              class="inline-block text-sm uppercase tracking-widest text-stone-400 mb-4"
+              >Support</span
+            >
+            <ul id="ilinu0m-2-5" class="list-none p-0 m-0 flex flex-col gap-3">
+              <li id="imyphi1-2-5">
+                <a href="#" id="i9g8cxf-2-5" class="text-stone-300 no-underline"
+                  >Help centre</a
+                >
+              </li>
+              <li id="ir614y2-2-5">
+                <a href="#" id="id2k3d5-2-5" class="text-stone-300 no-underline"
+                  >Import your diary</a
+                >
+              </li>
+              <li id="i2j8tnp-2-5">
+                <a href="#" id="iv57nl8-2-5" class="text-stone-300 no-underline"
+                  >Status</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="i6nml06-2-5" class="col-12 lg:col-2">
+            <span
+              id="i7jsfqt-2-5"
+              class="inline-block text-sm uppercase tracking-widest text-stone-400 mb-4"
+              >Follow</span
+            >
+            <div id="ivymz7d-2-5" class="flex items-center gap-3">
+              <a
+                href="#"
+                aria-label="Marigold on Instagram"
+                id="i37le7f-2-5"
+                class="text-stone-300 inline-flex"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faInstagram"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="ipso63q-2-5"
+                  class="inline-flex items-center leading-none size-5"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="instagram"
+                    class="svg-inline--fa fa-instagram"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    ></path></svg></span></a
+              ><a
+                href="#"
+                aria-label="Marigold on LinkedIn"
+                id="i67ai7q-2-5"
+                class="text-stone-300 inline-flex"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faLinkedin"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="iq5y4mi-2-5"
+                  class="inline-flex items-center leading-none size-5"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="linkedin"
+                    class="svg-inline--fa fa-linkedin"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z"
+                    ></path></svg></span
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div
+          id="i07r31d-2-5"
+          class="border-t border-stone-700 mt-12 pt-6 flex flex-wrap items-center justify-between gap-4"
+        >
+          <span id="ifi9qqq-2-5" class="inline-block text-sm text-stone-400"
+            >© 2026 Marigold Software Ltd.</span
+          ><span id="iqtvhum-2-5" class="inline-block text-sm text-stone-400"
+            >Privacy · Terms · Cookies</span
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/swebsy-components.04453deeb1.js" defer></script>
+  <a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

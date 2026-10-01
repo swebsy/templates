@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 205 48" aria-label="Oblique magazine">
+  <g fill="none" stroke="#000" stroke-linecap="square" stroke-linejoin="miter">
+    <path stroke-width="4" d="M13 7v34M40 7v34M66 7v34M92 7v34M118 7v34M144 7v34M170 7v34M196 7v34"></path>
+    <path stroke-width="1.2" d="M4 24c0-11 4-17 9-17s9 6 9 17-4 17-9 17-9-6-9-17ZM40 7h9c8 0 12 3 12 8 0 4-3 7-8 8 7 1 11 4 11 9 0 6-5 9-14 9H40M66 7v34h18M92 7v34M118 7l-11 34M118 7l12 34M152 11c-2-3-5-4-8-4-8 0-13 7-13 17s5 17 13 17c4 0 7-1 10-4M170 7v22c0 8 4 12 10 12s10-4 10-12V7M196 7h8m-8 0v34h8m-8-17h6"></path>
+  </g>
+</svg>

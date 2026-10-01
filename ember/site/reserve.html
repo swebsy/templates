@@ -1,0 +1,912 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ember &amp; Ash — Wood-Fired Restaurant, Carlton North</title>
+    <meta
+      name="description"
+      content="A wood-fired neighbourhood restaurant in Carlton North. Seasonal plates, natural wine, and an open fire at the centre of the room."
+    />
+    <meta name="author" content="Ember &amp;amp; Ash" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Ember &amp;amp; Ash — Wood-Fired Restaurant, Carlton North"
+    />
+    <meta
+      property="og:description"
+      content="A wood-fired neighbourhood restaurant in Carlton North. Seasonal plates, natural wine, and an open fire at the centre of the room."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Ember &amp;amp; Ash — Wood-Fired Restaurant, Carlton North"
+    />
+    <meta
+      name="twitter:description"
+      content="A wood-fired neighbourhood restaurant in Carlton North. Seasonal plates, natural wine, and an open fire at the centre of the room."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGWmQSNjdsmc35JDF1K5GRweDY1ZzPJ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGWmQSNjdsmc35JDF1K5GRweD81ZzPJ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGWmQSNjdsmc35JDF1K5GRweDc1ZzPJ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGWmQSNjdsmc35JDF1K5GRweDg1ZzPJ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGWmQSNjdsmc35JDF1K5GRweDQ1ZzPJ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGWmQSNjdsmc35JDF1K5GRweDU1ZzPJ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGWmQSNjdsmc35JDF1K5GRweDs1Zw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGUmQSNjdsmc35JDF1K5GR4SDktYw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGUmQSNjdsmc35JDF1K5GRxSDktYw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGUmQSNjdsmc35JDF1K5GR5SDktYw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGUmQSNjdsmc35JDF1K5GR2SDktYw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGUmQSNjdsmc35JDF1K5GR6SDktYw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGUmQSNjdsmc35JDF1K5GR7SDktYw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGUmQSNjdsmc35JDF1K5GR1SDk.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "light";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.60c11cddfc.css" />
+  </head>
+  <body>
+    <nav
+      data-navbar-collapse-on="sm"
+      data-swebsy-block-id="navbar-inline-brand"
+      data-swebsy-block='{"tags":["navigation"],"description":"Bordered navbar with a serif wordmark, a small tagline beside it, inline links and a reservation button."}'
+      id="i55k-2-5"
+      class="navbar navbar-expand-sm bg-default border-b border-default"
+    >
+      <div data-navbar-part="container" id="ilyygi-5" class="container">
+        <a
+          href="./index.html"
+          data-navbar-part="brand"
+          id="iwcqdm-5"
+          class="navbar-brand flex flex-col leading-none no-underline py-2"
+          ><span
+            id="i198is-5"
+            class="font-serif font-black uppercase tracking-widest text-primary text-lg"
+            >Ember & Ash</span
+          ><span
+            id="ian3x2-5"
+            class="text-xs uppercase tracking-widest text-muted"
+            >Ristorante · Carlton North</span
+          ></a
+        ><button
+          href="#"
+          type="button"
+          data-navbar-part="toggler"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="il7ert-5"
+          class="btn btn-icon navbar-toggler"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="itw98r-5"
+            class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="navbarMenu-2-5"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse"
+        >
+          <ul
+            data-navbar-part="links"
+            id="id6l0c-5"
+            class="navbar-nav ms-auto items-center gap-1"
+          >
+            <li id="i5ii5v-5" class="nav-item">
+              <a
+                href="./index.html"
+                id="ih2atq-2-5"
+                class="nav-link uppercase tracking-widest text-sm"
+                >Home</a
+              >
+            </li>
+            <li id="ilmk7g-5" class="nav-item">
+              <a
+                href="./menu.html"
+                id="i2bhu7-2-5"
+                class="nav-link uppercase tracking-widest text-sm"
+                >Menu</a
+              >
+            </li>
+            <li id="izrju2-5" class="nav-item">
+              <a
+                href="./story.html"
+                id="ikryx8-2-5"
+                class="nav-link uppercase tracking-widest text-sm"
+                >Story</a
+              >
+            </li>
+            <li id="i6ogiu-5" class="nav-item">
+              <a
+                href="./visit.html"
+                id="is87cj-2-5"
+                class="nav-link uppercase tracking-widest text-sm"
+                >Visit</a
+              >
+            </li>
+            <li id="im27xp-5" class="nav-item ms-3">
+              <a
+                href="./reserve.html"
+                id="ixlwuv-5"
+                class="btn btn-primary btn-sm uppercase tracking-widest"
+                >Reserve</a
+              >
+            </li>
+            <li id="ivs89i-5" class="nav-item ms-2">
+              <div
+                data-dark-mode-switch="true"
+                data-mode="system"
+                data-switch-style="icon"
+                role="group"
+                id="i86d8-2-5"
+                class="dark-mode-switch btn-group"
+              >
+                <button
+                  type="button"
+                  data-theme-cycle-button="true"
+                  aria-label="Theme: System. Click to switch to Light."
+                  title="Theme: System. Click to switch to Light."
+                  id="iqpvnk-2-5"
+                  class="btn btn-outline-neutral dark-mode-switch__cycle inline-flex items-center justify-center"
+                >
+                  <span
+                    data-icon-pack="stroke"
+                    data-icon-name="sun"
+                    data-icon-decorative="true"
+                    data-icon-label=""
+                    aria-hidden="true"
+                    id="i54pa7-5"
+                    class="inline-flex items-center leading-none size-4"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="4" />
+                      <path d="M12 2v2" />
+                      <path d="M12 20v2" />
+                      <path d="m4.93 4.93 1.41 1.41" />
+                      <path d="m17.66 17.66 1.41 1.41" />
+                      <path d="M2 12h2" />
+                      <path d="M20 12h2" />
+                      <path d="m6.34 17.66-1.41 1.41" />
+                      <path d="m19.07 4.93-1.41 1.41" /></svg
+                  ></span>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="pt-8 md:pt-10 lg:pt-12 pb-10 md:pb-12">
+      <div class="container">
+        <div
+          class="flex items-center justify-between gap-4 border-b border-default pb-2 mb-6"
+        >
+          <span
+            class="text-xs md:text-sm uppercase tracking-widest text-primary flex-none md:whitespace-nowrap"
+            >Bookings open a month ahead</span
+          ><span
+            class="text-sm uppercase tracking-widest text-muted flex-none whitespace-nowrap hidden md:block"
+            >Forty-two seats</span
+          >
+        </div>
+        <h1
+          id="ioorjjs"
+          class="uppercase text-primary tracking-tight text-center text-5xl md:text-8xl lg:text-9xl mb-4"
+        >
+          Reserve
+        </h1>
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-1 border-t border-default pt-2"
+        >
+          <span
+            class="text-sm uppercase tracking-widest text-primary flex-none whitespace-nowrap"
+            >Open tonight 17:30 – 22:30</span
+          ><span class="text-sm italic text-muted"
+            >The good tables go quickly, and the fire seats go first of
+            all.</span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="py-12 md:py-16 lg:py-20 border-t border-default">
+      <div class="container">
+        <div class="row g-8 items-start">
+          <div class="col-12 lg:col-7">
+            <p class="text-lg leading-relaxed text-default mb-6">
+              <span
+                class="float-left font-serif font-black text-primary text-5xl leading-none border border-default px-3 py-1 mr-3 mt-1"
+                >B</span
+              >ook online in under a minute, or call the room if you would
+              rather talk to a person — someone is by the phone from 15:00 every
+              day we are open. Tables of one to six can be booked online;
+              anything larger we would rather arrange with you directly.
+            </p>
+            <div class="flex flex-wrap items-center gap-3 mb-4">
+              <a
+                href="#"
+                class="btn btn-primary uppercase tracking-widest whitespace-nowrap"
+                >Book a table online</a
+              ><a
+                href="tel:+61390421188"
+                class="text-base text-muted no-underline whitespace-nowrap"
+                >or call +61 3 9042 1188</a
+              >
+            </div>
+            <p class="text-sm text-muted mb-0">
+              Opens our booking page in a new window.
+            </p>
+            <hr class="border-t border-default my-8" />
+            <div class="row g-6 items-start">
+              <div class="col-12 sm:col-6">
+                <span
+                  class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+                  >Sittings</span
+                >
+                <p class="text-base leading-relaxed text-muted mb-0">
+                  Two on Friday and Saturday — 17:30 and 20:15 — and the table
+                  is yours for two hours. Every other night there is one sitting
+                  and nobody is asked to leave.
+                </p>
+              </div>
+              <div class="col-12 sm:col-6">
+                <span
+                  class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+                  >Running late</span
+                >
+                <p class="text-base leading-relaxed text-muted mb-0">
+                  Call us. We hold a table fifteen minutes on a quiet night and
+                  as long as we honestly can on a busy one, but after that it
+                  goes to the door.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 lg:col-5">
+            <div class="bg-primary p-5 md:p-6">
+              <span
+                class="block text-sm uppercase tracking-widest text-white dark:text-stone-950 mb-2"
+                >Prefer to call?</span
+              ><a
+                href="tel:+61390421188"
+                id="i84zva2"
+                class="font-semibold block font-serif leading-none text-white dark:text-stone-950 text-4xl md:text-5xl no-underline mb-5"
+                >+61 3 9042 1188</a
+              >
+              <hr class="border-t border-subtle my-4" />
+              <span
+                class="block text-sm uppercase tracking-widest text-white dark:text-stone-950 mb-1"
+                >We answer</span
+              >
+              <p class="text-base text-white dark:text-stone-950 mb-0">
+                Tue–Thu 15:00 – 22:30<br />Fri–Sun 11:00 – 23:00
+              </p>
+            </div>
+            <div class="border border-default p-5 mt-6">
+              <span
+                class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+                >Walk-ins</span
+              >
+              <p class="text-base leading-relaxed text-muted mb-0">
+                The bar and the two window seats are held for walk-ins every
+                night. If the calendar looks full it is still worth trying your
+                luck at 17:30.
+              </p>
+              <hr class="border-t border-subtle my-4" />
+              <span
+                class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+                >Cancellations</span
+              >
+              <p class="text-base leading-relaxed text-muted mb-0">
+                Free up to 24 hours before. After that we charge $30 a head,
+                because a table of four lost on a Saturday is a real hole in a
+                forty-two seat room.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-12 md:py-16 lg:py-20 border-t border-default">
+      <div class="container">
+        <h2
+          id="i002vay"
+          class="uppercase text-primary tracking-tight text-4xl md:text-6xl lg:text-7xl mb-8"
+        >
+          Large groups
+        </h2>
+        <div class="row g-8 items-start">
+          <div class="col-12 lg:col-7">
+            <p class="text-lg leading-relaxed text-default mb-6">
+              Seven or more sit at the long table beside the fire. Call the room
+              and ask for Marco — we will talk through a set menu and hold the
+              whole end of the room for you. Groups of that size eat the
+              feasting menu at $85 a head, which keeps the kitchen honest and
+              the table talking rather than reading.
+            </p>
+            <div class="row g-6 items-start">
+              <div class="col-12 sm:col-6">
+                <span
+                  class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+                  >Deposit</span
+                >
+                <p class="text-base leading-relaxed text-muted mb-0">
+                  $40 a head to hold the date, taken off the final bill.
+                  Refundable up to seven days out.
+                </p>
+              </div>
+              <div class="col-12 sm:col-6">
+                <span
+                  class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+                  >Final numbers</span
+                >
+                <p class="text-base leading-relaxed text-muted mb-0">
+                  Confirmed 48 hours before. We buy for the table on the day, so
+                  that is the number we cook for.
+                </p>
+              </div>
+              <div class="col-12 sm:col-6">
+                <span
+                  class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+                  >One bill</span
+                >
+                <p class="text-base leading-relaxed text-muted mb-0">
+                  Groups of seven or more settle on a single account. Sort it
+                  out among yourselves on the tram home.
+                </p>
+              </div>
+              <div class="col-12 sm:col-6">
+                <span
+                  class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+                  >Whole venue</span
+                >
+                <p class="text-base leading-relaxed text-muted mb-0">
+                  Forty-two seated, sixty standing, six weeks notice. Email us
+                  and Marco will walk you through it.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 lg:col-5">
+            <div class="bg-primary p-5 md:p-6">
+              <span
+                class="block text-sm uppercase tracking-widest text-white dark:text-stone-950 mb-2"
+                >Seven or more</span
+              >
+              <p
+                class="text-base md:text-lg leading-relaxed text-white dark:text-stone-950 mb-5"
+              >
+                Write to us with the date, the number and roughly what the night
+                is for. We answer the same day.
+              </p>
+              <a
+                href="mailto:hello@emberandash.com"
+                id="i9hr60d"
+                class="btn btn-subtle-neutral btn-sm uppercase tracking-widest whitespace-nowrap w-full"
+                >Email about a group</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="py-12 md:py-16 lg:py-20 border-t border-default">
+      <div class="container">
+        <h2
+          id="ib641fi"
+          class="uppercase text-primary tracking-tight text-4xl md:text-6xl lg:text-7xl mb-8"
+        >
+          Tell us first
+        </h2>
+        <p class="text-lg leading-relaxed text-default mb-8">
+          There is a notes field on the booking form and we do read every one of
+          them. These are the four that change what we do on the night.
+        </p>
+        <div class="row g-8 items-start">
+          <div class="col-12 sm:col-6 lg:col-3">
+            <span
+              class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+              >Allergies</span
+            >
+            <p class="text-base leading-relaxed text-muted mb-0">
+              Tell us when you book and again when you sit down. We can adapt
+              most of the menu, but we cook over open fire in one room and
+              cannot promise a trace-free kitchen.
+            </p>
+          </div>
+          <div class="col-12 sm:col-6 lg:col-3">
+            <span
+              class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+              >Vegetarian & vegan</span
+            >
+            <p class="text-base leading-relaxed text-muted mb-0">
+              There is a full vegetarian feasting menu at the same price. Vegan
+              takes a day's notice and is worth asking for.
+            </p>
+          </div>
+          <div class="col-12 sm:col-6 lg:col-3">
+            <span
+              class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+              >Occasions</span
+            >
+            <p class="text-base leading-relaxed text-muted mb-0">
+              Birthdays, anniversaries, the end of something. We will not sing,
+              but there will be a candle and a glass of something on the house.
+            </p>
+          </div>
+          <div class="col-12 sm:col-6 lg:col-3">
+            <span
+              class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+              >Access</span
+            >
+            <p class="text-base leading-relaxed text-muted mb-0">
+              Step-free from the Rathdowne Street entrance, including the
+              bathrooms. Say so when you book and we will hold a table with room
+              to move.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="faq-two-column"
+      data-swebsy-block='{"tags":["faq"],"description":"Frequently-asked questions in two columns, each a bold question with a short answer, closing on a contact link."}'
+      class="py-12 md:py-16 lg:py-20 border-t border-default"
+    >
+      <div class="container">
+        <h2
+          id="i315o85"
+          class="uppercase text-primary tracking-tight text-4xl md:text-6xl lg:text-7xl mb-8"
+        >
+          Before you ask
+        </h2>
+        <div class="row g-8 items-start">
+          <div class="col-12 lg:col-6">
+            <span class="block font-serif text-xl text-default mb-2"
+              >How far ahead can I book?</span
+            >
+            <p class="text-base leading-relaxed text-muted mb-6">
+              A month, to the day. The calendar opens at nine in the morning and
+              Friday and Saturday tend to go the same week.
+            </p>
+            <span class="block font-serif text-xl text-default mb-2"
+              >Can I request the fire table?</span
+            >
+            <p class="text-base leading-relaxed text-muted mb-6">
+              You can ask and we will try, but it is the table everyone wants
+              and we cannot promise it. The bar seats have the better view of
+              the grill anyway.
+            </p>
+            <span class="block font-serif text-xl text-default mb-2"
+              >Do you take walk-ins?</span
+            >
+            <p class="text-base leading-relaxed text-muted mb-0">
+              Every night. The bar and two window seats are never booked out.
+              Come at 17:30 for the best odds.
+            </p>
+          </div>
+          <div class="col-12 lg:col-6">
+            <span class="block font-serif text-xl text-default mb-2"
+              >Is there a dress code?</span
+            >
+            <p class="text-base leading-relaxed text-muted mb-6">
+              No. Half the room comes straight from work and the other half has
+              clearly thought about it, and both are right.
+            </p>
+            <span class="block font-serif text-xl text-default mb-2"
+              >Can we bring our own wine?</span
+            >
+            <p class="text-base leading-relaxed text-muted mb-6">
+              Tuesday to Thursday, $25 a bottle, two bottles a table. If it is
+              something special we will happily drink a glass with you.
+            </p>
+            <span class="block font-serif text-xl text-default mb-2"
+              >What if we are only two and want to eat early?</span
+            >
+            <p class="text-base leading-relaxed text-muted mb-0">
+              The 17:30 sitting is the quietest, the easiest to book, and the
+              only time you will hear each other properly. It is our favourite
+              service of the week.
+            </p>
+          </div>
+        </div>
+        <hr class="border-t border-default my-8" />
+        <div class="flex flex-wrap items-center gap-3">
+          <a
+            href="#"
+            class="btn btn-primary btn-sm uppercase tracking-widest whitespace-nowrap"
+            >Book a table online</a
+          ><a
+            href="tel:+61390421188"
+            class="text-base text-muted no-underline whitespace-nowrap"
+            >or call +61 3 9042 1188</a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="footer-columns-wordmark"
+      data-swebsy-block='{"tags":["footer","copyright"],"description":"Three-column footer with page links, socials and address, closing on an oversized serif wordmark and a copyright line."}'
+      id="visit-2-5"
+      class="py-10 md:py-12 lg:py-16 border-t border-default"
+    >
+      <div id="iy64mg-5" class="container">
+        <div id="ik2tdu-5" class="border border-default p-6 md:p-8">
+          <div id="i9xeat-2-5" class="row g-8">
+            <div id="ivqxpg-2-5" class="col-12 md:col-4">
+              <span
+                id="ijh8l9-2-5"
+                class="block text-sm uppercase tracking-widest text-primary mb-4"
+                >Pages</span
+              >
+              <ul id="id300x" class="list-none p-0 m-0 text-base">
+                <li id="iq15lk" class="mb-2">
+                  <a
+                    href="./index.html"
+                    id="ik6snj"
+                    class="text-default no-underline"
+                    >Home</a
+                  >
+                </li>
+                <li id="i5rsyj" class="mb-2">
+                  <a
+                    href="./menu.html"
+                    id="i3pt4l"
+                    class="text-default no-underline"
+                    >Menu</a
+                  >
+                </li>
+                <li id="imutcv" class="mb-2">
+                  <a
+                    href="./story.html"
+                    id="i4sdfe"
+                    class="text-default no-underline"
+                    >Story</a
+                  >
+                </li>
+                <li id="ifvisit1" class="mb-2">
+                  <a
+                    href="./visit.html"
+                    id="ilvisit1"
+                    class="text-default no-underline"
+                    >Visit</a
+                  >
+                </li>
+                <li id="iq2nzy" class="mb-0">
+                  <a
+                    href="./reserve.html"
+                    id="i3222i"
+                    class="text-default no-underline"
+                    >Reservations</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="if03ao-2-5" class="col-12 md:col-4">
+              <span
+                id="iodv39-2-5"
+                class="block text-sm uppercase tracking-widest text-primary mb-4"
+                >Socials</span
+              >
+              <ul id="iam388-2-5" class="list-none p-0 m-0 text-base">
+                <li id="ivgo6n-2-5" class="mb-2">
+                  <a
+                    href="https://instagram.com"
+                    id="i6p0kz-2-5"
+                    class="text-default no-underline"
+                    >Instagram</a
+                  >
+                </li>
+                <li id="i9jnli-2-5" class="mb-2">
+                  <a
+                    href="https://facebook.com"
+                    id="iccgki-2-5"
+                    class="text-default no-underline"
+                    >Facebook</a
+                  >
+                </li>
+                <li id="i66x7k-2-5" class="mb-0">
+                  <a
+                    href="mailto:hello@emberandash.com"
+                    id="i1293u-2-5"
+                    class="text-default no-underline"
+                    >Newsletter</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="iot0mg-2-5" class="col-12 md:col-4">
+              <span
+                id="ir06wo-2-5"
+                class="block text-sm uppercase tracking-widest text-primary mb-4"
+                >Address</span
+              >
+              <p id="ic0r4a-2-5" class="text-base text-default mb-2">
+                122 Rathdowne Street<br />Carlton North VIC 3054
+              </p>
+              <a
+                href="tel:+61390421188"
+                id="id41tk-2-5"
+                class="text-base text-default no-underline"
+                >+61 3 9042 1188</a
+              >
+            </div>
+          </div>
+          <hr id="ieg0ka-5" class="border-t border-subtle my-6" />
+          <div
+            id="ikcj6f-2-5"
+            class="flex flex-col md:flex-row items-start md:items-center justify-between gap-2"
+          >
+            <span
+              id="iy8gzd-2-5"
+              class="font-serif font-black uppercase tracking-widest text-primary text-sm flex-none whitespace-nowrap"
+              >Ember & Ash</span
+            ><span
+              id="iep5tk-2-5"
+              class="text-sm text-muted flex-none whitespace-nowrap"
+              >© 2026 Ember & Ash. Wood-fired in Carlton North.</span
+            >
+          </div>
+        </div>
+        <div
+          class="overflow-hidden w-full py-3 uppercase tracking-widest text-sm font-bold font-black text-primary leading-none tracking-tight text-center text-5xl md:text-8xl lg:text-9xl mb-4"
+          data-marquee="true"
+          data-marquee-items="Ember & Ash"
+          data-marquee-divider="❅"
+          data-marquee-duration="40"
+          id="i6nmud-2-5"
+          data-marquee-divider-color="var(--color-danger, #c63722)"
+        >
+          <div class="flex w-max">
+            <div
+              class="inline-flex shrink-0 items-center gap-8 pr-8 whitespace-nowrap animate-marquee"
+              style="animation-duration: 40s"
+            >
+              <span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              ><span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              ><span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              ><span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              >
+            </div>
+            <div
+              class="inline-flex shrink-0 items-center gap-8 pr-8 whitespace-nowrap animate-marquee"
+              style="animation-duration: 40s"
+              aria-hidden="true"
+            >
+              <span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              ><span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              ><span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              ><span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/swebsy-components.d9213718e3.js" defer></script>
+  <a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primer — A field course in editorial typography</title>
+    <meta
+      name="description"
+      content="Nine weeks, 42 filmed lessons, six live critiques and a 180-page working manual. A typography course for designers who already ship real work."
+    />
+    <meta
+      name="keywords"
+      content="typography course, editorial design, online course, design education, type design"
+    />
+    <meta name="author" content="Primer Editions" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Primer — A field course in editorial typography"
+    />
+    <meta
+      property="og:description"
+      content="Nine weeks, 42 filmed lessons, six live critiques and a 180-page working manual. One payment, lifetime access, thirty-day refund."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Primer — A field course in editorial typography"
+    />
+    <meta
+      name="twitter:description"
+      content="Nine weeks, 42 filmed lessons, six live critiques and a 180-page working manual. One payment, lifetime access, thirty-day refund."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-figtree-_Xms-HUzqDCFdgfMm4q9DbZs.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-figtree-_Xms-HUzqDCFdgfMm4S9DQ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-gloock-Iurb6YFw84WUY4NJhRakNrc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-gloock-Iurb6YFw84WUY4NJhhakNrc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-gloock-Iurb6YFw84WUY4NJiBak.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "system";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.631c5c21bd.css" />
+  </head>
+  <body>
+    <nav
+      data-navbar-collapse-on="sm"
+      data-swebsy-block-id="navbar-square-cta"
+      data-swebsy-block='{"tags":["navigation","header"],"description":"A quiet navbar with a square brand mark, a display wordmark, inline links, a dark-mode switch and a square accent CTA button."}'
+      id="irbnxt7-3-2"
+      class="navbar navbar-expand-sm bg-default py-3"
+    >
+      <div data-navbar-part="container" id="i1vdhf3" class="container">
+        <a
+          href="#"
+          data-navbar-part="brand"
+          id="isorqlk"
+          class="navbar-brand flex items-center gap-3 no-underline"
+          ><span id="ialfm1e-3" class="inline-block h-6 w-6 bg-primary"></span
+          ><span id="ih3gkvz" class="font-serif text-2xl text-emphasis"
+            >Primer</span
+          ></a
+        ><button
+          type="button"
+          data-navbar-part="toggler"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#primerNav"
+          aria-controls="primerNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="ijm0g0z"
+          class="btn btn-icon navbar-toggler"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="ir8nvcg"
+            class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="primerNav-3-2"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse"
+        >
+          <ul
+            data-navbar-part="links"
+            id="imfzvg2"
+            class="navbar-nav ms-auto items-center"
+          >
+            <li id="in9zhfv" class="nav-item">
+              <a href="#curriculum" id="i4mxnek" class="nav-link">Curriculum</a>
+            </li>
+            <li id="ifoikfy" class="nav-item">
+              <a href="#inside" id="i4724ho" class="nav-link">Inside</a>
+            </li>
+            <li id="inx4m38" class="nav-item">
+              <a href="#instructor" id="i3uporh" class="nav-link">Instructor</a>
+            </li>
+            <li id="ic62ifl" class="nav-item">
+              <a href="#pricing" id="i3qpz6j" class="nav-link">Pricing</a>
+            </li>
+            <li id="iiq798y" class="nav-item">
+              <a href="#faq" id="i4fyoxk" class="nav-link">FAQ</a>
+            </li>
+            <li id="ilfw1xw" class="nav-item ms-2">
+              <div
+                data-dark-mode-switch="true"
+                data-mode="system"
+                data-switch-style="icon"
+                role="group"
+                id="ib3pdaq-2-2"
+                class="dark-mode-switch btn-group"
+              >
+                <button
+                  type="button"
+                  data-theme-cycle-button="true"
+                  aria-label="Theme: System. Click to switch to Light."
+                  title="Theme: System. Click to switch to Light."
+                  id="iwy8xt4"
+                  class="btn btn-outline-neutral dark-mode-switch__cycle inline-flex items-center justify-center"
+                >
+                  <span
+                    data-theme-mode-icon="system"
+                    id="ixmvqx9"
+                    class="inline-flex items-center justify-center leading-none size-4"
+                    ><span
+                      data-icon-pack="stroke"
+                      data-icon-name="monitor"
+                      data-icon-decorative="false"
+                      data-icon-label="System theme"
+                      role="img"
+                      aria-label="System theme"
+                      id="izd3ow6"
+                      class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="var(--icon-stroke, 2)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <rect width="20" height="14" x="2" y="3" rx="2" />
+                        <line x1="8" x2="16" y1="21" y2="21" />
+                        <line
+                          x1="12"
+                          x2="12"
+                          y1="17"
+                          y2="21"
+                        /></svg></span></span
+                  ><span
+                    data-theme-mode-icon="light"
+                    hidden
+                    id="i8u3kf1"
+                    class="inline-flex items-center justify-center leading-none size-4"
+                    ><span
+                      data-icon-pack="stroke"
+                      data-icon-name="sun"
+                      data-icon-decorative="false"
+                      data-icon-label="Light theme"
+                      role="img"
+                      aria-label="Light theme"
+                      id="itxntu2"
+                      class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="var(--icon-stroke, 2)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <circle cx="12" cy="12" r="4" />
+                        <path d="M12 2v2" />
+                        <path d="M12 20v2" />
+                        <path d="m4.93 4.93 1.41 1.41" />
+                        <path d="m17.66 17.66 1.41 1.41" />
+                        <path d="M2 12h2" />
+                        <path d="M20 12h2" />
+                        <path d="m6.34 17.66-1.41 1.41" />
+                        <path d="m19.07 4.93-1.41 1.41" /></svg></span></span
+                  ><span
+                    data-theme-mode-icon="dark"
+                    hidden
+                    id="i7mg37z"
+                    class="inline-flex items-center justify-center leading-none size-4"
+                    ><span
+                      data-icon-pack="stroke"
+                      data-icon-name="moon"
+                      data-icon-decorative="false"
+                      data-icon-label="Dark theme"
+                      role="img"
+                      aria-label="Dark theme"
+                      id="ins2lva"
+                      class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="var(--icon-stroke, 2)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
+                        /></svg></span
+                  ></span>
+                </button>
+              </div>
+            </li>
+            <li id="iq5m5wn" class="nav-item ms-2">
+              <a href="#pricing" id="iistc1f" class="btn btn-primary">Enrol</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="i714276"
+      data-swebsy-block-id="article-header-ruled"
+      data-swebsy-block='{"tags":["header","intro"],"description":"An article header: a hairline-ruled byline strip with a back link, a large display title, and the standfirst beside a boxed note and call to action."}'
+      class="bg-default pt-10 md:pt-16 pb-12 md:pb-16"
+    >
+      <div class="container">
+        <div
+          class="border-y border-subtle py-3 flex flex-wrap items-center gap-x-8 gap-y-2"
+        >
+          <span
+            class="text-xs uppercase tracking-widest text-primary font-semibold"
+            >Free lesson</span
+          ><span class="text-xs uppercase tracking-widest text-muted"
+            >Week seven · The page</span
+          ><span class="text-xs uppercase tracking-widest text-muted"
+            >9 min</span
+          ><a
+            href="index.html"
+            id="i4vlkak"
+            class="text-xs uppercase tracking-widest text-muted ms-auto no-underline"
+            >← Back to the course</a
+          >
+        </div>
+        <h1
+          class="text-5xl md:text-7xl lg:text-8xl leading-none text-emphasis mt-10 md:mt-14 max-w-4xl"
+        >
+          Nobody warned you about the rag.
+        </h1>
+        <div class="row g-6 mt-10 md:mt-14">
+          <div class="col-12 lg:col-7">
+            <p
+              class="text-lg md:text-xl text-default leading-relaxed max-w-2xl"
+            >
+              The ragged right edge of a text column is the last thing most
+              designers look at and the first thing a typographer sees. This is
+              lesson four of week seven, unedited and in full.
+            </p>
+          </div>
+          <div class="col-12 lg:col-5">
+            <div class="lg:ps-10 lg:border-s lg:border-subtle">
+              <p class="text-sm text-muted leading-relaxed">
+                Taught by Della Voss. If it lands, the other forty-one are the
+                same shape.
+              </p>
+              <a href="index.html#pricing" class="btn btn-primary mt-5"
+                >See the full course</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <iframe
+      controls
+      playsinline
+      src="https://www.youtube.com/embed/AXpxZMRM1EY?"
+      referrerpolicy="strict-origin-when-cross-origin"
+      id="i2e2fe"
+      class="aspect-video object-cover w-full"
+    ></iframe>
+    <div
+      id="irogyo9"
+      data-swebsy-block-id="article-body-figure-row"
+      data-swebsy-block='{"tags":["content","gallery"],"description":"A long-form article body on the rail grid: a hanging label, prose held to a reading measure, a three-up ruled figure row with captions, and a closing pull quote."}'
+      class="bg-default py-16 md:py-20 lg:py-28"
+    >
+      <div class="container">
+        <div class="row g-6">
+          <div class="col-12 lg:col-3">
+            <div class="border-t-2 border-emphasis pt-3 lg:sticky lg:top-24">
+              <span
+                class="block text-xs uppercase tracking-widest text-primary font-semibold"
+                >The lesson</span
+              >
+            </div>
+          </div>
+          <div class="col-12 lg:col-8">
+            <h2
+              class="text-3xl md:text-4xl leading-tight text-emphasis max-w-2xl mt-6 lg:mt-0"
+            >
+              A rag is a shape, and you are allowed to design it.
+            </h2>
+            <p
+              class="text-base md:text-lg text-default leading-relaxed max-w-2xl mt-8"
+            >
+              Set a column of text ragged right and the software makes a
+              decision for you every single line. It breaks where the next word
+              will not fit, and it does not care what the resulting edge looks
+              like. Most of the time that is fine. Perhaps one column in five,
+              it is not.
+            </p>
+            <p
+              class="text-base md:text-lg text-default leading-relaxed max-w-2xl mt-5"
+            >
+              There are three failures worth learning to see, and once you can
+              see them you will never unsee them — which is the honest warning
+              attached to this entire course.
+            </p>
+            <h3 class="text-lg text-emphasis mt-12">The notch</h3>
+            <p class="text-base text-muted leading-relaxed max-w-2xl mt-3">
+              One short line sitting between two long ones cuts a bite out of
+              the edge. Your eye reads it as a gap in the paragraph rather than
+              a break in a sentence, and the column stops feeling solid.
+            </p>
+            <h3 class="text-lg text-emphasis mt-10">The false flush</h3>
+            <p class="text-base text-muted leading-relaxed max-w-2xl mt-3">
+              Four or five lines that all end at nearly the same point read as a
+              failed attempt at justification. A rag has to look intentional,
+              and near-straight is the one shape that never does.
+            </p>
+            <h3 class="text-lg text-emphasis mt-10">The ladder</h3>
+            <p class="text-base text-muted leading-relaxed max-w-2xl mt-3">
+              Hyphens stacked on consecutive lines. Two is survivable, three is
+              a ladder, and a ladder pulls the eye down the margin instead of
+              across the line.
+            </p>
+          </div>
+        </div>
+        <div class="row g-6 mt-16 md:mt-20">
+          <div class="col-12 md:col-4 border-t border-subtle pt-6">
+            <img
+              alt="A text column set with a badly uneven rag, the deep notches in the right-hand edge marked in dusty rose pencil"
+              src="assets/1d949400-1813-498f-8509-fd10139ff2e6.webp"
+              id="iddjuj"
+              class="w-full aspect-[4/5] object-cover block"
+            /><span
+              class="block text-xs uppercase tracking-widest text-muted mt-4"
+              >Notched</span
+            >
+            <p class="text-sm text-muted leading-relaxed mt-2">
+              Short lines trapped between long ones. The edge reads as damage.
+            </p>
+          </div>
+          <div id="ivvnxmv" class="col-12 md:col-4 border-t border-subtle pt-6">
+            <img
+              alt="A text column set with a near-flush right edge and five stacked hyphens circled in dusty rose"
+              src="assets/9b30217d-d662-4fab-97e1-746cc4117a54.webp"
+              id="i7qhs6"
+              class="w-full aspect-[4/5] object-cover block"
+            /><span
+              class="block text-xs uppercase tracking-widest text-muted mt-4"
+              >Near-flush</span
+            >
+            <p class="text-sm text-muted leading-relaxed mt-2">
+              Almost straight, plus a hyphen ladder. Reads as a mistake, not a
+              choice.
+            </p>
+          </div>
+          <div
+            id="i8v6cz5"
+            class="col-12 md:col-4 border-t border-primary pt-6"
+          >
+            <img
+              alt="A text column set with a soft, evenly stepped rag, its silhouette traced in one clean dusty rose line"
+              src="assets/7b37c59f-d717-403a-879d-5a2450d388c4.webp"
+              id="iwlz9r"
+              class="w-full aspect-[4/5] object-cover block"
+            /><span
+              class="block text-xs uppercase tracking-widest text-primary font-semibold mt-4"
+              >Designed</span
+            >
+            <p class="text-sm text-default leading-relaxed mt-2">
+              An even step, no ladder, no notch. Four manual breaks got it
+              there.
+            </p>
+          </div>
+        </div>
+        <div class="row g-6 mt-16 md:mt-20">
+          <div class="col-12 lg:col-3">
+            <div class="border-t-2 border-emphasis pt-3">
+              <span
+                class="block text-xs uppercase tracking-widest text-primary font-semibold"
+                >The exercise</span
+              >
+            </div>
+          </div>
+          <div class="col-12 lg:col-8">
+            <p
+              class="text-base md:text-lg text-default leading-relaxed max-w-2xl mt-6 lg:mt-0"
+            >
+              Open the last thing you set in two columns. Turn hyphenation off,
+              print it, and draw the right-hand edge of each column as a single
+              line without looking at the words. If the line you drew has a
+              notch, a ladder or a straight stretch, you have found the four
+              breaks worth putting in by hand.
+            </p>
+            <blockquote
+              class="text-2xl md:text-3xl leading-snug text-emphasis border-s-2 border-primary ps-6 mt-10 max-w-2xl"
+            >
+              A good rag is not random. It is a shallow, even step that nobody
+              notices — which is the whole job, most days.
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="ifmiovp" class="w-full py-16 md:py-20 lg:py-28">
+      <div class="container">
+        <div class="row g-6 items-center">
+          <div class="col-12 lg:col-7">
+            <div class="border-t-2 border-emphasis pt-3">
+              <span
+                class="block text-xs uppercase tracking-widest text-default font-semibold"
+                >That was one of forty-two</span
+              >
+            </div>
+            <h2
+              class="text-4xl md:text-5xl leading-tight text-emphasis mt-8 max-w-2xl"
+            >
+              The other forty-one are the same shape.
+            </h2>
+            <p class="text-base text-muted leading-relaxed mt-6 max-w-xl">
+              One decision, demonstrated on real work, with an exercise you can
+              do the same evening. Nine weeks of them, plus six live critiques
+              on your own pages.
+            </p>
+            <div class="flex flex-wrap items-center gap-3 mt-10">
+              <a href="index.html#pricing" class="btn btn-primary btn-lg"
+                >Enrol — $349</a
+              ><a
+                href="index.html#curriculum"
+                id="iyn50qo"
+                class="btn btn-outline-neutral btn-lg"
+                >See the curriculum</a
+              >
+            </div>
+          </div>
+          <div id="ia2b2p3" class="col-12 lg:col-5">
+            <img
+              alt="The printed course manual resting on a dark desk beside marked-up proofs, a dusty rose pencil lying across the open spread"
+              src="assets/d5a9093d-c1e6-4488-861e-6637f026cd8b.webp"
+              id="i6nub4"
+              class="w-full aspect-[4/3] object-cover block"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="footer-dark-ruled"
+      data-swebsy-block='{"tags":["footer","copyright"],"description":"A flush dark footer with its own surface tokens: a brand column, two ruled link columns, a cohort note with a button, and a hairline bottom bar."}'
+      id="iijyxmr-2-2"
+      class="w-full pt-16 md:pt-20 pb-10"
+    >
+      <div id="im1tix4" class="container">
+        <div id="i4kkehc" class="row g-6">
+          <div id="i6n3x3f" class="col-12 lg:col-5">
+            <span id="i3dg88m" class="block font-serif text-3xl text-emphasis"
+              >Primer</span
+            >
+            <p
+              id="itkwch9"
+              class="text-sm text-muted leading-relaxed mt-4 max-w-sm"
+            >
+              A field course in editorial typography, taught in nine weeks by
+              Della Voss. Published by Primer Editions, Rotterdam.
+            </p>
+          </div>
+          <div id="i69tstk" class="col-6 lg:col-2">
+            <span
+              id="i5p9jfy"
+              class="block text-xs uppercase tracking-widest text-subtle"
+              >The course</span
+            ><a
+              href="#curriculum"
+              id="ihnyjgi"
+              class="block text-sm text-default mt-4 no-underline"
+              >Curriculum</a
+            ><a
+              href="#pricing"
+              id="i6ynd8l"
+              class="block text-sm text-default mt-3 no-underline"
+              >Pricing</a
+            ><a
+              href="free-lesson.html"
+              id="igcqd6w"
+              class="block text-sm text-default mt-3 no-underline"
+              >Free lesson</a
+            ><a
+              href="#faq"
+              id="in3670e"
+              class="block text-sm text-default mt-3 no-underline"
+              >Questions</a
+            >
+          </div>
+          <div id="ide1v2i" class="col-6 lg:col-2">
+            <span
+              id="iabu6mo"
+              class="block text-xs uppercase tracking-widest text-subtle"
+              >Primer Editions</span
+            ><a
+              href="#instructor"
+              id="ixv2pkg"
+              class="block text-sm text-default mt-4 no-underline"
+              >Della Voss</a
+            ><a
+              href="#pricing"
+              id="i2ae2xg"
+              class="block text-sm text-default mt-3 no-underline"
+              >Team enrolment</a
+            ><a
+              href="#faq"
+              id="ij66ly7"
+              class="block text-sm text-default mt-3 no-underline"
+              >Refund policy</a
+            ><a
+              href="#pricing"
+              id="is3l8p7"
+              class="block text-sm text-default mt-3 no-underline"
+              >Contact</a
+            >
+          </div>
+          <div id="i5n7nds" class="col-12 lg:col-3">
+            <span
+              id="is7eawg"
+              class="block text-xs uppercase tracking-widest text-subtle"
+              >Next cohort</span
+            >
+            <p id="iy9l1u1" class="text-sm text-muted leading-relaxed mt-4">
+              Cohort ten opens 4 March. Twenty critique seats, and they have
+              gone early every time so far.
+            </p>
+            <a
+              href="#pricing"
+              id="i9qml1b"
+              class="btn btn-outline-neutral btn-sm mt-5"
+              >Enrol — $349</a
+            >
+          </div>
+        </div>
+        <div
+          id="i69m5ku"
+          class="border-t border-subtle mt-14 pt-6 flex flex-wrap items-center gap-x-6 gap-y-2"
+        >
+          <span id="iww1it3" class="text-xs text-subtle"
+            >© 2026 Primer Editions</span
+          ><span id="i4c0588" class="text-xs text-subtle"
+            >Set in Gloock and Figtree</span
+          ><span id="ip7364l" class="text-xs text-subtle ms-auto"
+            >Rotterdam · Netherlands</span
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/swebsy-components.6dc3166180.js" defer></script>
+  <a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

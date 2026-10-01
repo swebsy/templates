@@ -1,0 +1,1338 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ember &amp; Ash — Wood-Fired Restaurant, Carlton North</title>
+    <meta
+      name="description"
+      content="A wood-fired neighbourhood restaurant in Carlton North. Seasonal plates, natural wine, and an open fire at the centre of the room."
+    />
+    <meta name="author" content="Ember &amp;amp; Ash" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Ember &amp;amp; Ash — Wood-Fired Restaurant, Carlton North"
+    />
+    <meta
+      property="og:description"
+      content="A wood-fired neighbourhood restaurant in Carlton North. Seasonal plates, natural wine, and an open fire at the centre of the room."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Ember &amp;amp; Ash — Wood-Fired Restaurant, Carlton North"
+    />
+    <meta
+      name="twitter:description"
+      content="A wood-fired neighbourhood restaurant in Carlton North. Seasonal plates, natural wine, and an open fire at the centre of the room."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGWmQSNjdsmc35JDF1K5GRweDY1ZzPJ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGWmQSNjdsmc35JDF1K5GRweD81ZzPJ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGWmQSNjdsmc35JDF1K5GRweDc1ZzPJ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGWmQSNjdsmc35JDF1K5GRweDg1ZzPJ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGWmQSNjdsmc35JDF1K5GRweDQ1ZzPJ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGWmQSNjdsmc35JDF1K5GRweDU1ZzPJ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGWmQSNjdsmc35JDF1K5GRweDs1Zw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGUmQSNjdsmc35JDF1K5GR4SDktYw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGUmQSNjdsmc35JDF1K5GRxSDktYw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGUmQSNjdsmc35JDF1K5GR5SDktYw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGUmQSNjdsmc35JDF1K5GR2SDktYw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGUmQSNjdsmc35JDF1K5GR6SDktYw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGUmQSNjdsmc35JDF1K5GR7SDktYw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGUmQSNjdsmc35JDF1K5GR1SDk.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "light";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.60c11cddfc.css" />
+  </head>
+  <body id="inad">
+    <nav
+      data-navbar-collapse-on="sm"
+      data-swebsy-block-id="navbar-inline-brand"
+      data-swebsy-block='{"tags":["navigation"],"description":"Bordered navbar with a serif wordmark, a small tagline beside it, inline links and a reservation button."}'
+      id="i55k"
+      class="navbar navbar-expand-sm bg-default border-b border-default"
+    >
+      <div data-navbar-part="container" id="is2m2d" class="container">
+        <a
+          href="./index.html"
+          data-navbar-part="brand"
+          id="ikco6n"
+          class="navbar-brand flex flex-col leading-none no-underline py-2"
+          ><span
+            id="ignfa2"
+            class="font-serif font-black uppercase tracking-widest text-primary text-lg"
+            >Ember & Ash</span
+          ><span
+            id="i5jf5t"
+            class="text-xs uppercase tracking-widest text-muted"
+            >Ristorante · Carlton North</span
+          ></a
+        ><button
+          href="#"
+          type="button"
+          data-navbar-part="toggler"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="iwq53h"
+          class="btn btn-icon navbar-toggler"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="icp8kg"
+            class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="navbarMenu"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse"
+        >
+          <ul
+            data-navbar-part="links"
+            id="ij1x6h"
+            class="navbar-nav ms-auto items-center gap-1"
+          >
+            <li id="ijizbt" class="nav-item">
+              <a
+                href="./index.html"
+                id="ih2atq"
+                class="nav-link uppercase tracking-widest text-sm active"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li id="iujx2e" class="nav-item">
+              <a
+                href="./menu.html"
+                id="i2bhu7"
+                class="nav-link uppercase tracking-widest text-sm"
+                >Menu</a
+              >
+            </li>
+            <li id="ir97cf" class="nav-item">
+              <a
+                href="./story.html"
+                id="ikryx8"
+                class="nav-link uppercase tracking-widest text-sm"
+                >Story</a
+              >
+            </li>
+            <li id="i0ysow" class="nav-item">
+              <a
+                href="./visit.html"
+                id="is87cj"
+                class="nav-link uppercase tracking-widest text-sm"
+                >Visit</a
+              >
+            </li>
+            <li id="iecx6g" class="nav-item ms-3">
+              <a
+                href="./reserve.html"
+                id="ipw0oa"
+                class="btn btn-primary btn-sm uppercase tracking-widest"
+                >Reserve</a
+              >
+            </li>
+            <li id="itsr43" class="nav-item ms-2">
+              <div
+                data-dark-mode-switch="true"
+                data-mode="system"
+                data-switch-style="icon"
+                role="group"
+                id="i86d8"
+                class="dark-mode-switch btn-group"
+              >
+                <button
+                  type="button"
+                  data-theme-cycle-button="true"
+                  aria-label="Theme: System. Click to switch to Light."
+                  title="Theme: System. Click to switch to Light."
+                  id="iqpvnk"
+                  class="btn btn-outline-neutral dark-mode-switch__cycle inline-flex items-center justify-center"
+                >
+                  <span
+                    data-icon-pack="stroke"
+                    data-icon-name="sun"
+                    data-icon-decorative="true"
+                    data-icon-label=""
+                    aria-hidden="true"
+                    id="ih4gjd"
+                    class="inline-flex items-center leading-none size-4"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="4" />
+                      <path d="M12 2v2" />
+                      <path d="M12 20v2" />
+                      <path d="m4.93 4.93 1.41 1.41" />
+                      <path d="m17.66 17.66 1.41 1.41" />
+                      <path d="M2 12h2" />
+                      <path d="M20 12h2" />
+                      <path d="m6.34 17.66-1.41 1.41" />
+                      <path d="m19.07 4.93-1.41 1.41" /></svg
+                  ></span>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="iewu7h"
+      data-swebsy-block-id="hero-wordmark-meta"
+      data-swebsy-block='{"tags":["hero"],"description":"Editorial hero with a meta rule above an oversized serif wordmark, an accent status pill, an award note, two CTAs and a wide image below."}'
+      class="pt-8 md:pt-10 lg:pt-12 pb-12 md:pb-16 lg:pb-20"
+    >
+      <div id="iurnen" class="container">
+        <div
+          id="iitj8o"
+          class="flex items-center justify-between gap-4 border-b border-default pb-2 mb-6"
+        >
+          <span
+            id="iz29hk"
+            class="text-xs md:text-sm uppercase tracking-widest text-primary flex-none md:whitespace-nowrap"
+            >Wood fire · Seasonal plates · Natural wine</span
+          ><span
+            class="text-sm uppercase tracking-widest text-muted flex-none whitespace-nowrap hidden md:block"
+            >122 Rathdowne St, Carlton North</span
+          >
+        </div>
+        <h1
+          id="itv5az"
+          class="uppercase text-primary tracking-tight text-center text-5xl md:text-8xl lg:text-9xl mb-4"
+        >
+          Ember & Ash
+        </h1>
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-1 border-t border-default pt-2 mb-8"
+        >
+          <span
+            class="text-sm uppercase tracking-widest text-primary flex-none whitespace-nowrap"
+            >Open tonight 17:30 – 22:30</span
+          ><span
+            id="i4p22x"
+            class="text-sm italic text-muted md:whitespace-nowrap"
+            >Recently awarded One Hat — Good Food Guide 2026</span
+          >
+        </div>
+        <div class="flex flex-wrap items-center gap-3 mb-8">
+          <a
+            href="#book"
+            class="btn btn-primary btn-sm uppercase tracking-widest whitespace-nowrap"
+            >Reserve a table</a
+          ><a
+            href="#menu"
+            class="btn btn-outline-primary btn-sm uppercase tracking-widest whitespace-nowrap"
+            >See the menu</a
+          ><a
+            href="tel:+61390421188"
+            class="text-base text-muted no-underline whitespace-nowrap"
+            >or call +61 3 9042 1188</a
+          >
+        </div>
+        <div class="relative">
+          <img
+            alt="Hands twirling spaghetti with blistered cherry tomatoes on a wide ceramic plate"
+            src="assets/b6c954dc-dbcd-46bd-9c39-003a94345774.webp"
+            id="is7q9s"
+            class="w-full object-cover aspect-square md:aspect-video"
+          />
+          <div class="absolute bottom-0 left-0 max-w-lg bg-primary p-5 md:p-6">
+            <p
+              id="i86laf"
+              class="text-base md:text-lg leading-snug text-white dark:text-stone-950 mb-0"
+            >
+              The kind of room that feels effortlessly polished without ever
+              becoming formal. Fire-cooked plates, a lively crowd, and the sort
+              of warmth that keeps the night going.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="menu"
+      data-swebsy-block-id="menu-preview-split"
+      data-swebsy-block='{"tags":["pricing","content"],"description":"Menu preview: a short label column beside priced dish rows with dotted leaders, an accent note card and a wide image."}'
+      class="py-12 md:py-16 lg:py-20 border-t border-default"
+    >
+      <div class="container">
+        <h2
+          id="ihuhbnk"
+          class="uppercase text-primary tracking-tight text-4xl md:text-6xl lg:text-7xl mb-8"
+        >
+          Menu
+        </h2>
+        <div class="row g-8 items-start">
+          <div class="col-12 lg:col-8">
+            <img
+              alt="Hand-written weekly menu card resting on a linen tablecloth beside a fork and knife"
+              src="assets/6ebd8d3a-4659-433c-8d6a-1e29623c76e0.webp"
+              id="iei5zr"
+              class="w-full object-cover aspect-video border border-default mb-6"
+            />
+            <p class="text-lg leading-relaxed text-default mb-10">
+              <span
+                class="float-left font-serif font-black text-primary text-5xl leading-none border border-default px-3 py-1 mr-3 mt-1"
+                >S</span
+              >easonal plates, bold flavour, and a kitchen built around a single
+              wood-fired hearth. We write the menu the morning it is served, so
+              what follows is what we are cooking this week — the classics stay,
+              the rest depends on what the growers dropped off on Tuesday.
+            </p>
+            <span
+              class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-5"
+              >To start</span
+            >
+            <div class="mb-5">
+              <div class="flex items-baseline justify-between gap-4">
+                <span class="font-serif text-xl text-default"
+                  >Wood-fired flatbread</span
+                ><span
+                  class="font-serif text-xl text-primary flex-none whitespace-nowrap"
+                  >$16</span
+                >
+              </div>
+              <p class="text-base text-muted mt-1 mb-0">
+                Whipped cod roe, chives, burnt lemon.
+              </p>
+            </div>
+            <div class="mb-5">
+              <div class="flex items-baseline justify-between gap-4">
+                <span class="font-serif text-xl text-default"
+                  >Grilled prawns</span
+                ><span
+                  class="font-serif text-xl text-primary flex-none whitespace-nowrap"
+                  >$26</span
+                >
+              </div>
+              <p class="text-base text-muted mt-1 mb-0">
+                'Nduja butter, garlic, and enough bread to finish the sauce.
+              </p>
+            </div>
+            <div class="mb-5">
+              <div class="flex items-baseline justify-between gap-4">
+                <span class="font-serif text-xl text-default"
+                  >Zucchini flowers</span
+                ><span
+                  class="font-serif text-xl text-primary flex-none whitespace-nowrap"
+                  >$22</span
+                >
+              </div>
+              <p class="text-base text-muted mt-1 mb-0">
+                Stracciatella, honey, black pepper.
+              </p>
+            </div>
+            <div class="mb-0">
+              <div class="flex items-baseline justify-between gap-4">
+                <span class="font-serif text-xl text-default"
+                  >Chicory & blood orange</span
+                ><span
+                  class="font-serif text-xl text-primary flex-none whitespace-nowrap"
+                  >$18</span
+                >
+              </div>
+              <p class="text-base text-muted mt-1 mb-0">
+                Pecorino, toasted walnuts, aged balsamic.
+              </p>
+            </div>
+            <span
+              class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mt-10 mb-5"
+              >From the fire</span
+            >
+            <div class="mb-5">
+              <div class="flex items-baseline justify-between gap-4">
+                <span class="font-serif text-xl text-default"
+                  >Ravioli alla Nonna</span
+                ><span
+                  class="font-serif text-xl text-primary flex-none whitespace-nowrap"
+                  >$34</span
+                >
+              </div>
+              <p class="text-base text-muted mt-1 mb-0">
+                Elena's grandmother's recipe, folded by hand each Thursday.
+                Brown butter and sage.
+              </p>
+            </div>
+            <div class="mb-5">
+              <div class="flex items-baseline justify-between gap-4">
+                <span class="font-serif text-xl text-default"
+                  >Whole flounder</span
+                ><span
+                  class="font-serif text-xl text-primary flex-none whitespace-nowrap"
+                  >$46</span
+                >
+              </div>
+              <p class="text-base text-muted mt-1 mb-0">
+                Cooked over coals, salsa verde, capers, lemon from the yard.
+              </p>
+            </div>
+            <div class="mb-5">
+              <div class="flex items-baseline justify-between gap-4">
+                <span class="font-serif text-xl text-default"
+                  >Coal-roasted lamb shoulder</span
+                ><span
+                  class="font-serif text-xl text-primary flex-none whitespace-nowrap"
+                  >$78</span
+                >
+              </div>
+              <p class="text-base text-muted mt-1 mb-0">
+                For the middle of the table. Oregano, anchovy, roasting juices.
+                Serves two to three.
+              </p>
+            </div>
+            <div class="mb-5">
+              <div class="flex items-baseline justify-between gap-4">
+                <span class="font-serif text-xl text-default"
+                  >Hearth potatoes</span
+                ><span
+                  class="font-serif text-xl text-primary flex-none whitespace-nowrap"
+                  >$14</span
+                >
+              </div>
+              <p class="text-base text-muted mt-1 mb-0">
+                Rosemary salt and aioli. Order them — everyone does.
+              </p>
+            </div>
+            <div class="mb-0">
+              <div class="flex items-baseline justify-between gap-4">
+                <span class="font-serif text-xl text-default"
+                  >Charred broccolini</span
+                ><span
+                  class="font-serif text-xl text-primary flex-none whitespace-nowrap"
+                  >$16</span
+                >
+              </div>
+              <p class="text-base text-muted mt-1 mb-0">
+                Anchovy, chilli, lemon.
+              </p>
+            </div>
+            <span
+              class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mt-10 mb-5"
+              >Sweet</span
+            >
+            <div class="mb-5">
+              <div class="flex items-baseline justify-between gap-4">
+                <span class="font-serif text-xl text-default"
+                  >Burnt honey panna cotta</span
+                ><span
+                  class="font-serif text-xl text-primary flex-none whitespace-nowrap"
+                  >$16</span
+                >
+              </div>
+              <p class="text-base text-muted mt-1 mb-0">
+                Poached quince and toasted almond.
+              </p>
+            </div>
+            <div class="mb-5">
+              <div class="flex items-baseline justify-between gap-4">
+                <span class="font-serif text-xl text-default"
+                  >Olive oil cake</span
+                ><span
+                  class="font-serif text-xl text-primary flex-none whitespace-nowrap"
+                  >$15</span
+                >
+              </div>
+              <p class="text-base text-muted mt-1 mb-0">
+                Mascarpone and blood orange.
+              </p>
+            </div>
+            <div class="mb-0">
+              <div class="flex items-baseline justify-between gap-4">
+                <span class="font-serif text-xl text-default">Affogato</span
+                ><span
+                  class="font-serif text-xl text-primary flex-none whitespace-nowrap"
+                  >$14</span
+                >
+              </div>
+              <p class="text-base text-muted mt-1 mb-0">
+                With house amaro, if you are staying.
+              </p>
+            </div>
+            <hr class="border-t border-default my-8" />
+            <span
+              class="block text-sm uppercase tracking-widest text-muted mb-2"
+              >Dietary</span
+            >
+            <p class="text-base leading-relaxed text-muted mb-0">
+              Most plates can be made gluten-free and there is always a
+              vegetarian dish on the fire — tell us when you book and we will
+              tell you honestly what we can and cannot change. All prices in
+              AUD. A 10% surcharge applies on Sundays and public holidays.
+            </p>
+          </div>
+          <div class="col-12 lg:col-4">
+            <div class="border border-default">
+              <div class="bg-primary px-4 py-2">
+                <span
+                  id="i1jq5f"
+                  class="text-sm uppercase tracking-widest text-white dark:text-stone-950"
+                  >Kitchen</span
+                >
+              </div>
+              <div id="ii2kzlo" class="p-5">
+                <span
+                  class="block text-sm uppercase tracking-widest text-muted mb-1"
+                  >Dinner</span
+                >
+                <p class="font-serif text-xl text-default mb-0">
+                  Mon–Thu 17:30 – 22:30
+                </p>
+                <hr class="border-t border-subtle my-4" />
+                <span
+                  class="block text-sm uppercase tracking-widest text-muted mb-1"
+                  >Lunch & dinner</span
+                >
+                <p class="font-serif text-xl text-default mb-0">
+                  Fri–Sun 12:00 – 23:00
+                </p>
+                <hr class="border-t border-subtle my-4" />
+                <span
+                  class="block text-sm uppercase tracking-widest text-muted mb-1"
+                  >Last orders</span
+                >
+                <p class="text-base text-default mb-0">
+                  One hour before close. The bar stays open later on Friday and
+                  Saturday.
+                </p>
+                <hr class="border-t border-subtle my-4" />
+                <a
+                  href="#book"
+                  class="btn btn-primary btn-sm uppercase tracking-widest w-full whitespace-nowrap"
+                  >Book a table</a
+                ><a
+                  href="./menu.html"
+                  class="btn btn-outline-primary btn-sm uppercase tracking-widest w-full whitespace-nowrap mt-3"
+                  >See the full menu</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="book-2"
+      data-swebsy-block-id="cta-split-accent-card"
+      data-swebsy-block='{"tags":["cta","contact"],"description":"Two-column call to action: headline and supporting copy with a button, beside a filled accent card holding a phone number and hours."}'
+      class="py-12 md:py-16 lg:py-20 border-t border-default"
+    >
+      <div class="container">
+        <h2
+          id="i4co2vh"
+          class="uppercase text-primary tracking-tight text-4xl md:text-6xl lg:text-7xl mb-8"
+        >
+          Book now
+        </h2>
+        <div id="iay1gq" class="row g-8 items-start">
+          <div id="i448ta" class="col-12 lg:col-7">
+            <p class="text-lg leading-relaxed text-default mb-6">
+              <span
+                class="float-left font-serif font-black text-primary text-5xl leading-none border border-default px-3 py-1 mr-3 mt-1"
+                >B</span
+              >ookings open a month ahead and the good tables go quickly.
+              Reserve online in under a minute, or call the room if you would
+              rather talk to a person — someone is by the phone from 15:00 every
+              day we are open.
+            </p>
+            <a
+              href="./reserve.html"
+              id="ihx2q3-2"
+              class="btn btn-primary btn-sm uppercase tracking-widest whitespace-nowrap"
+              >Reserve a table</a
+            >
+            <p class="text-sm text-muted mt-4 mb-0">
+              Opens our booking page in a new window.
+            </p>
+            <hr class="border-t border-default my-8" />
+            <div class="row g-6 items-start">
+              <div class="col-12 sm:col-6">
+                <span
+                  class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+                  >Large groups</span
+                >
+                <p class="text-base leading-relaxed text-muted mb-0">
+                  Seven or more sit at the long table beside the fire. Call the
+                  room and ask for Marco — we will talk through a set menu and
+                  hold the whole end of the room for you.
+                </p>
+              </div>
+              <div class="col-12 sm:col-6">
+                <span
+                  class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+                  >Walk-ins</span
+                >
+                <p class="text-base leading-relaxed text-muted mb-0">
+                  The bar and the two window seats are held for walk-ins every
+                  night. If the calendar looks full it is still worth trying
+                  your luck at 17:30.
+                </p>
+              </div>
+              <div
+                data-address="Eiffel Tower, Paris"
+                data-zoom="16"
+                data-maptype="roadmap"
+                id="irc1hpz"
+                class="w-full overflow-hidden rounded-lg border border-default"
+              >
+                <iframe
+                  data-swebsy-map=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen="true"
+                  title="Map"
+                  src="https://www.google.com/maps?q=Eiffel%20Tower%2C%20Paris&amp;z=16&amp;t=m&amp;output=embed"
+                  class="block w-full h-full border-0"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 lg:col-5">
+            <div id="ivd85x" class="bg-primary p-5 md:p-6">
+              <span
+                class="block text-sm uppercase tracking-widest text-white dark:text-stone-950 mb-2"
+                >Prefer to call?</span
+              ><a
+                href="tel:+61390421188"
+                id="il5dj7"
+                class="font-semibold block font-serif leading-none text-white dark:text-stone-950 text-4xl md:text-5xl no-underline mb-5"
+                >+61 3 9042 1188</a
+              >
+              <hr class="border-t border-subtle my-4" />
+              <span
+                class="block text-sm uppercase tracking-widest text-white dark:text-stone-950 mb-1"
+                >We answer</span
+              >
+              <p class="text-base text-white dark:text-stone-950 mb-0">
+                Mon–Thu 17:30 – 22:30<br />Fri–Sun 12:00 – 23:00
+              </p>
+            </div>
+            <div id="ip82hh" class="border border-default p-5 mt-6">
+              <span
+                class="block text-sm uppercase tracking-widest text-muted mb-1"
+                >Getting here</span
+              >
+              <p class="font-serif text-xl text-default mb-0">
+                122 Rathdowne Street<br />Carlton North VIC 3054
+              </p>
+              <hr class="border-t border-subtle my-4" />
+              <span
+                class="block text-sm uppercase tracking-widest text-muted mb-1"
+                >Tram</span
+              >
+              <p class="text-base text-default mb-0">
+                Route 96 to Stop 20, then a three-minute walk.
+              </p>
+              <hr class="border-t border-subtle my-4" />
+              <span
+                class="block text-sm uppercase tracking-widest text-muted mb-1"
+                >Parking</span
+              >
+              <p class="text-base text-default mb-0">
+                Unmetered street parking on Fenwick and Newry Streets after
+                18:00.
+              </p>
+              <hr class="border-t border-subtle my-4" />
+              <span
+                class="block text-sm uppercase tracking-widest text-muted mb-1"
+                >Access</span
+              >
+              <p class="text-base text-default mb-0">
+                The dining room and bathrooms are step-free from the Rathdowne
+                Street entrance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="story"
+      data-swebsy-block-id="about-drop-cap-split"
+      data-swebsy-block='{"tags":["about","content"],"description":"About section with an eyebrow, a drop-capped opening paragraph and link, beside a portrait image and a small filled accent stat card."}'
+      class="py-12 md:py-16 lg:py-20 border-t border-default"
+    >
+      <div class="container">
+        <span
+          class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-8"
+          >Get to know us</span
+        >
+        <div class="row g-8 items-start">
+          <div id="i0yhl9" class="col-12 md:col-5">
+            <div class="bg-primary px-5 py-8 lg:py-12">
+              <h2
+                id="ijzlu4"
+                class="uppercase tracking-tight text-white dark:text-stone-950 text-4xl md:text-5xl lg:text-6xl mb-0"
+              >
+                Who are we
+              </h2>
+            </div>
+          </div>
+          <div class="col-12 md:col-7">
+            <img
+              alt="Marble table set with a burrata plate, a negroni and a pomegranate spritz in afternoon light"
+              src="assets/088a0f46-fe46-4546-8103-15e088e8c124.webp"
+              id="il256b"
+              class="w-full object-cover aspect-video"
+            />
+          </div>
+        </div>
+        <div class="row g-8 mt-8">
+          <div id="i4ssq51" class="col-12 md:col-5">
+            <p class="text-lg leading-relaxed text-default mb-6">
+              <span
+                class="float-left font-serif font-black text-primary text-5xl leading-none border border-default px-3 py-1 mr-3 mt-1"
+                >W</span
+              >e are a small crew of cooks, growers and stubborn romantics who
+              care more about the plate than the presentation. Elena opened the
+              room in 2019 with one wood oven and a short list of suppliers she
+              trusted. Very little has changed since — we still write the menu
+              the morning it is served, and we still keep the last table free
+              for whoever walks in.
+            </p>
+            <a
+              href="./story.html"
+              class="btn btn-outline-primary btn-sm uppercase tracking-widest whitespace-nowrap"
+              >Read our story</a
+            >
+          </div>
+        </div>
+        <span
+          class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mt-12 mb-6"
+          >In the press</span
+        >
+        <div class="row g-6 items-start">
+          <div class="col-12 md:col-4">
+            <p class="font-serif italic text-xl leading-snug text-default mb-3">
+              “A room that knows exactly what it is, and cooks like it.”
+            </p>
+            <span class="block text-sm uppercase tracking-widest text-muted"
+              >Good Food Guide, 2026</span
+            >
+          </div>
+          <div class="col-12 md:col-4">
+            <p class="font-serif italic text-xl leading-snug text-default mb-3">
+              “The lamb shoulder is worth the tram ride from anywhere in
+              Melbourne.”
+            </p>
+            <span class="block text-sm uppercase tracking-widest text-muted"
+              >Broadsheet</span
+            >
+          </div>
+          <div class="col-12 md:col-4">
+            <p class="font-serif italic text-xl leading-snug text-default mb-3">
+              “Carlton North’s best argument for eating out on a Tuesday.”
+            </p>
+            <span class="block text-sm uppercase tracking-widest text-muted"
+              >The Age</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="itrj5"
+      data-swebsy-block-id="feature-detail-list-images"
+      data-swebsy-block='{"tags":["features","gallery"],"description":"Recurring-event feature: a labelled detail list (when, where, what) beside a stack of captioned images."}'
+      class="py-12 md:py-16 lg:py-20 border-t border-default"
+    >
+      <div class="container">
+        <h2
+          id="imyko"
+          class="uppercase text-primary tracking-tight text-4xl md:text-6xl lg:text-7xl mb-8"
+        >
+          Negroni Hour
+        </h2>
+        <div id="i4vptz" class="row g-8 items-stretch">
+          <div id="izoowi" class="col-12 lg:col-7">
+            <img
+              alt="A hand lifting a negroni over a sunlit table beside a carafe of orange wine"
+              src="assets/fce32623-6b1e-44b9-835e-7cca508f1267.webp"
+              id="ilsv44"
+              class="w-full h-full object-cover aspect-video"
+            />
+          </div>
+          <div id="iiozzf" class="col-12 lg:col-5 flex">
+            <div
+              id="ipxygsb"
+              class="border border-default p-5 md:p-6 w-full flex flex-col justify-center"
+            >
+              <span
+                class="block text-sm uppercase tracking-widest text-muted mb-1"
+                >When</span
+              >
+              <p
+                id="inqoid"
+                class="font-medium font-serif text-2xl text-default mb-0"
+              >
+                Every Friday & Saturday, 17:00 – 19:00
+              </p>
+              <hr class="border-t border-subtle my-4" />
+              <span
+                class="block text-sm uppercase tracking-widest text-muted mb-1"
+                >Where</span
+              >
+              <p class="text-base text-default mb-0">
+                In the restored cellar bar, downstairs
+              </p>
+              <hr class="border-t border-subtle my-4" />
+              <span
+                class="block text-sm uppercase tracking-widest text-muted mb-1"
+                >The pour</span
+              >
+              <p class="text-base leading-relaxed text-muted mb-0">
+                Campari, a Melbourne gin and the sweet vermouth we barrel-age
+                upstairs. Six dollars off the list price. No bookings — first
+                in, best seated.
+              </p>
+            </div>
+          </div>
+        </div>
+        <span
+          id="i61lg8"
+          class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mt-12 mb-6"
+          >Off menu this week</span
+        >
+        <div class="row g-6 items-start">
+          <div class="col-12 sm:col-6">
+            <img
+              alt="Split marron grilled over coals with burnt butter"
+              src="assets/420f4fbd-baea-4b10-a93c-3ef73c03d63a.webp"
+              id="ixuabc"
+              class="w-full object-cover aspect-video mb-4"
+            />
+            <div class="flex items-baseline justify-between gap-4">
+              <h3
+                id="ij0jet"
+                class="font-serif text-primary text-2xl leading-tight mb-0 flex-none whitespace-nowrap"
+              >
+                Marron over coals
+              </h3>
+              <span
+                class="font-serif text-xl text-primary flex-none whitespace-nowrap"
+                >$52</span
+              >
+            </div>
+            <p id="ih0m7e" class="text-base text-muted mt-2 mb-0">
+              Two only each night, driven up from Warrnambool on Friday morning.
+              Burnt butter and lemon.
+            </p>
+          </div>
+          <div class="col-12 sm:col-6">
+            <img
+              alt="Freshly shucked oysters on crushed ice with a wedge of lemon"
+              src="assets/c9888fd5-5ddc-4ad0-9e3f-01e6fb531df6.webp"
+              id="itczrc"
+              class="w-full object-cover aspect-video mb-4"
+            />
+            <div class="flex items-baseline justify-between gap-4">
+              <h3
+                id="ifoebc"
+                class="text-primary text-2xl leading-tight mb-0 flex-none whitespace-nowrap"
+              >
+                Coffin Bay oysters
+              </h3>
+              <span
+                class="font-serif text-xl text-primary flex-none whitespace-nowrap"
+                >$6 ea</span
+              >
+            </div>
+            <p class="text-base text-muted mt-2 mb-0">
+              Shucked to order, dressed with burnt-butter vinegar. Available
+              while the tide allows.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="i1llxi"
+      data-swebsy-block-id="product-row-three-up"
+      data-swebsy-block='{"tags":["pricing","card"],"description":"Small shop row: three priced product cards with images and a button, beside a filled accent note card."}'
+      class="py-12 md:py-16 lg:py-20 border-t border-default"
+    >
+      <div id="i1b7dk" class="container">
+        <h2
+          id="i2sncs"
+          class="uppercase text-primary tracking-tight text-4xl md:text-6xl lg:text-7xl mb-8"
+        >
+          Order online
+        </h2>
+        <div id="iaetkz" class="row g-8 items-start lg:items-stretch">
+          <div class="col-12 lg:col-8">
+            <span
+              id="irmdea"
+              class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-6"
+              >From the pantry</span
+            >
+            <div id="im2wdv" class="row g-6 items-start">
+              <div class="col-6 sm:col-4">
+                <div>
+                  <img
+                    alt="Bottle of Ember &amp; Ash extra virgin olive oil"
+                    src="assets/ee14010c-4243-412e-ad4f-51fd54e900f2.webp"
+                    id="ircvkt"
+                    class="w-full object-cover aspect-square bg-subtle mb-3"
+                  /><span
+                    class="block text-sm uppercase tracking-widest text-primary mb-1"
+                    >House olive oil</span
+                  ><span class="block text-base text-muted">$32.00 AUD</span>
+                </div>
+              </div>
+              <div id="ivba5v" class="col-6 sm:col-4">
+                <div>
+                  <img
+                    alt="Jar of Ember &amp; Ash slow-cooked tomato sugo"
+                    src="assets/ca198dd5-1a99-4bd3-8fd6-055609d353c7.webp"
+                    id="i3ecms"
+                    class="w-full object-cover aspect-square bg-subtle mb-3"
+                  /><span
+                    class="block text-sm uppercase tracking-widest text-primary mb-1"
+                    >Tomato sugo</span
+                  ><span class="block text-base text-muted">$14.00 AUD</span>
+                </div>
+              </div>
+              <div id="i7brr9" class="col-6 sm:col-4">
+                <div>
+                  <img
+                    alt="Bottle of Ember &amp; Ash smoked chilli oil"
+                    src="assets/f2e1b8c0-96f9-43c7-b9ab-c78018d66254.webp"
+                    id="i6umji"
+                    class="w-full object-cover aspect-square bg-subtle mb-3"
+                  /><span
+                    class="block text-sm uppercase tracking-widest text-primary mb-1"
+                    >Smoked chilli oil</span
+                  ><span class="block text-base text-muted">$18.00 AUD</span>
+                </div>
+              </div>
+            </div>
+            <div class="mt-8">
+              <a
+                href="#"
+                id="ia2znw"
+                class="btn btn-primary btn-sm uppercase tracking-widest whitespace-nowrap"
+                >Shop the pantry</a
+              >
+            </div>
+          </div>
+          <div id="idqfbk" class="col-12 lg:col-4 lg:flex lg:flex-col">
+            <span
+              id="ixteilq"
+              class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-6"
+              >Cook's note</span
+            >
+            <div id="ie4qe3" class="bg-primary p-5 mb-6">
+              <span
+                id="ium2td"
+                class="block font-serif italic font-bold text-2xl text-white dark:text-stone-950 mb-3"
+                >Ciao amici!</span
+              >
+              <p
+                class="text-base leading-relaxed text-white dark:text-stone-950 mb-4"
+              >
+                We press the oil, cook the sugo and pack every jar in the same
+                kitchen we cook your dinner in. Nothing leaves here that we
+                would not put on our own table.
+              </p>
+              <span
+                class="block font-serif italic text-lg text-white dark:text-stone-950"
+                >Elena</span
+              >
+            </div>
+            <img
+              alt="Chef's hands ladling tomato sugo into a glass jar on a steel bench"
+              src="assets/7c9d8531-e327-479a-9add-a022feb73f50.webp"
+              id="i243la"
+              class="w-full object-cover aspect-video lg:aspect-auto lg:grow lg:basis-0 lg:min-h-0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="footer-columns-wordmark"
+      data-swebsy-block='{"tags":["footer","copyright"],"description":"Three-column footer with page links, socials and address, closing on an oversized serif wordmark and a copyright line."}'
+      id="visit"
+      class="py-10 md:py-12 lg:py-16 border-t border-default"
+    >
+      <div id="iysrsq" class="container">
+        <div id="i8lmnk" class="border border-default p-6 md:p-8">
+          <div id="i9xeat" class="row g-8">
+            <div id="ivqxpg" class="col-12 md:col-4">
+              <span
+                id="ijh8l9"
+                class="block text-sm uppercase tracking-widest text-primary mb-4"
+                >Pages</span
+              >
+              <ul id="id300x-3" class="list-none p-0 m-0 text-base">
+                <li id="iq15lk-3" class="mb-2">
+                  <a
+                    href="./index.html"
+                    id="ik6snj-3"
+                    class="text-default no-underline"
+                    >Home</a
+                  >
+                </li>
+                <li id="i5rsyj-3" class="mb-2">
+                  <a
+                    href="./menu.html"
+                    id="i3pt4l-3"
+                    class="text-default no-underline"
+                    >Menu</a
+                  >
+                </li>
+                <li id="imutcv-3" class="mb-2">
+                  <a
+                    href="./story.html"
+                    id="i4sdfe-3"
+                    class="text-default no-underline"
+                    >Story</a
+                  >
+                </li>
+                <li id="ifvisit1-3" class="mb-2">
+                  <a
+                    href="./visit.html"
+                    id="ilvisit1-3"
+                    class="text-default no-underline"
+                    >Visit</a
+                  >
+                </li>
+                <li id="iq2nzy-3" class="mb-0">
+                  <a
+                    href="./reserve.html"
+                    id="i3222i-3"
+                    class="text-default no-underline"
+                    >Reservations</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="if03ao" class="col-12 md:col-4">
+              <span
+                id="iodv39"
+                class="block text-sm uppercase tracking-widest text-primary mb-4"
+                >Socials</span
+              >
+              <ul id="iam388" class="list-none p-0 m-0 text-base">
+                <li id="ivgo6n" class="mb-2">
+                  <a
+                    href="https://instagram.com"
+                    id="i6p0kz"
+                    class="text-default no-underline"
+                    >Instagram</a
+                  >
+                </li>
+                <li id="i9jnli" class="mb-2">
+                  <a
+                    href="https://facebook.com"
+                    id="iccgki"
+                    class="text-default no-underline"
+                    >Facebook</a
+                  >
+                </li>
+                <li id="i66x7k" class="mb-0">
+                  <a
+                    href="mailto:hello@emberandash.com"
+                    id="i1293u"
+                    class="text-default no-underline"
+                    >Newsletter</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="iot0mg" class="col-12 md:col-4">
+              <span
+                id="ir06wo"
+                class="block text-sm uppercase tracking-widest text-primary mb-4"
+                >Address</span
+              >
+              <p id="ic0r4a" class="text-base text-default mb-2">
+                122 Rathdowne Street<br />Carlton North VIC 3054
+              </p>
+              <a
+                href="tel:+61390421188"
+                id="id41tk"
+                class="text-base text-default no-underline"
+                >+61 3 9042 1188</a
+              >
+            </div>
+          </div>
+          <hr id="ibfowi" class="border-t border-subtle my-6" />
+          <div
+            id="ikcj6f"
+            class="flex flex-col md:flex-row items-start md:items-center justify-between gap-2"
+          >
+            <span
+              id="iy8gzd"
+              class="font-serif font-black uppercase tracking-widest text-primary text-sm flex-none whitespace-nowrap"
+              >Ember & Ash</span
+            ><span
+              id="iep5tk"
+              class="text-sm text-muted flex-none whitespace-nowrap"
+              >© 2026 Ember & Ash. Wood-fired in Carlton North.</span
+            >
+          </div>
+        </div>
+        <div
+          class="overflow-hidden w-full py-3 uppercase tracking-widest text-sm font-bold font-black text-primary leading-none tracking-tight text-center text-5xl md:text-8xl lg:text-9xl mb-4"
+          data-marquee="true"
+          data-marquee-items="Ember & Ash"
+          data-marquee-divider="❅"
+          data-marquee-duration="40"
+          id="i6nmud"
+          data-marquee-divider-color="var(--color-danger, #c63722)"
+        >
+          <div class="flex w-max">
+            <div
+              class="inline-flex shrink-0 items-center gap-8 pr-8 whitespace-nowrap animate-marquee"
+              style="animation-duration: 40s"
+            >
+              <span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              ><span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              ><span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              ><span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              >
+            </div>
+            <div
+              class="inline-flex shrink-0 items-center gap-8 pr-8 whitespace-nowrap animate-marquee"
+              style="animation-duration: 40s"
+              aria-hidden="true"
+            >
+              <span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              ><span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              ><span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              ><span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/swebsy-components.d9213718e3.js" defer></script>
+  <a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

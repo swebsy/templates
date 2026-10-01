@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 48" aria-label="formline studio">
+  <path fill="none" stroke="#000" stroke-width="2" d="M5 7h30v34H5zM11 13h18v22H11z"></path>
+  <g fill="none" stroke="#000" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M48 34V18c0-5 3-8 8-8m-8 9h8M61 26c0-5 3-8 8-8s8 3 8 8-3 8-8 8-8-3-8-8ZM84 34V19m0 5c2-4 5-6 9-5M98 34V19m0 4c2-3 4-4 7-4 4 0 6 3 6 7v8m0-11c2-3 4-4 7-4 4 0 6 3 6 7v8M132 11v23M141 34V19M141 12h.1M150 34V19l13 15V19M184 30c-2 3-5 4-8 4-6 0-9-3-9-8s3-8 9-8c5 0 8 3 8 7h-17"></path>
+  </g>
+</svg>

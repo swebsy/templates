@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 48" aria-label="Morrow House">
+  <g fill="none" stroke="#000" stroke-width="2.8" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M5 28V8l10 15L25 8v20M33 18c0-7 4-11 10-11s10 4 10 11-4 11-10 11-10-4-10-11ZM61 28V8h8c5 0 8 2 8 6s-3 6-8 6h-8m8 0 9 8M84 28V8h8c5 0 8 2 8 6s-3 6-8 6h-8m8 0 9 8M107 18c0-7 4-11 10-11s10 4 10 11-4 11-10 11-10-4-10-11ZM132 8l6 20 7-15 7 15 6-20"></path>
+  </g>
+  <g fill="none" stroke="#000" stroke-width="1.6" stroke-linecap="square">
+    <path d="M5 37h12M5 33v10M17 33v10M24 38c0-3 2-5 6-5s6 2 6 5-2 5-6 5-6-2-6-5ZM43 33v6c0 3 2 4 5 4s5-1 5-4v-6M60 41c2 2 4 2 6 2 3 0 5-1 5-3 0-4-10-2-10-5 0-2 2-3 5-3 2 0 4 1 5 2M78 33h10M78 33v10h10M78 38h8"></path>
+  </g>
+</svg>

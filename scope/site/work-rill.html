@@ -1,0 +1,931 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope — Fixed-scope brand and web sprints</title>
+    <meta
+      name="description"
+      content="Scope is a senior brand and web studio delivering focused website sprints with clear scope, pricing, and timelines."
+    />
+    <meta
+      name="keywords"
+      content="productized design agency, website sprint, brand studio, design subscription, fixed-price web design"
+    />
+    <meta name="author" content="Scope Studio" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Scope — Your next website, properly scoped"
+    />
+    <meta
+      property="og:description"
+      content="Senior brand and web design delivered through focused, fixed-price sprints."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Scope — Fixed-scope brand and web sprints"
+    />
+    <meta
+      name="twitter:description"
+      content="A senior studio for focused brand and website sprints."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-dmmono-aFTU7PB1QTsUX8KYthSQBLyM.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-dmmono-aFTU7PB1QTsUX8KYthqQBA.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-dmmono-aFTR7PB1QTsUX8KYvumzEY2tbZX9.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-dmmono-aFTR7PB1QTsUX8KYvumzEYOtbQ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-instrumentserif-jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjgn7MsNo.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-instrumentserif-jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjjH7M.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-instrumentserif-jizBRFtNs2ka5fXjeivQ4LroWlx-6zsTjmbI.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-instrumentserif-jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-8.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-9.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-10.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-11.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-12.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-13.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "light";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.48ee4ef553.css" />
+  </head>
+  <body>
+    <nav
+      data-navbar-collapse-on="sm"
+      data-swebsy-block-id="navigation-studio"
+      data-swebsy-block='{"tags":["navigation"],"description":"Sticky responsive studio navbar with wordmark, compact links, and a primary project CTA."}'
+      id="i90b-2-4"
+      class="navbar navbar-expand-sm bg-default border-b border-default sticky top-0 z-50"
+    >
+      <div data-navbar-part="container" id="it09i0x" class="container py-3">
+        <a
+          href="./index.html"
+          data-navbar-part="brand"
+          id="i9mgatk"
+          class="navbar-brand flex items-center gap-2 no-underline"
+          ><strong id="il4htpd" class="text-2xl text-emphasis">Scope</strong
+          ><span
+            aria-hidden="true"
+            id="i4qw5cs"
+            class="inline-block size-2 rounded-full bg-secondary"
+          ></span></a
+        ><button
+          type="button"
+          data-navbar-part="toggler"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="iig76t2"
+          class="btn btn-icon navbar-toggler"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="iq1cqhj"
+            class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="navbarMenu-2-4"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse"
+        >
+          <ul
+            data-navbar-part="links"
+            id="io6uohq"
+            class="navbar-nav ms-auto items-md-center gap-md-1"
+          >
+            <li id="ijim26w" class="nav-item">
+              <a href="./index.html" id="ieztm5d" class="nav-link">Home</a>
+            </li>
+            <li id="i4ldfd8" class="nav-item">
+              <a href="./services.html" id="im7182a" class="nav-link"
+                >Services</a
+              >
+            </li>
+            <li id="i8kud8f" class="nav-item">
+              <a href="./work.html" id="ibluvsz" class="nav-link">Work</a>
+            </li>
+            <li id="i38jzfr" class="nav-item">
+              <a href="./studio.html" id="imiczzh" class="nav-link">Studio</a>
+            </li>
+            <li id="iy3dkhf" class="nav-item md:ms-3">
+              <a
+                href="./start.html"
+                id="icbg8l-2-2-5"
+                class="nav-link btn btn-primary text-white px-4 py-2 whitespace-nowrap"
+                >Start a project</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      data-swebsy-block-id="case-study-hero"
+      data-swebsy-block='{"tags":["hero"],"description":"Dark case-study hero with project label, oversized title, short transformation statement, and scope facts."}'
+      id="idk9i8e"
+      class="border-b border-default"
+    >
+      <div class="container py-16 md:py-24 lg:py-28">
+        <div class="row gap-y-10">
+          <div class="col-12 lg:col-8">
+            <p
+              data-animate-trigger="scroll"
+              id="i6hrek"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-sm text-primary mb-4"
+            >
+              Rill · Brand launch · 2026
+            </p>
+            <h1
+              data-animate-trigger="scroll"
+              id="i4oyny"
+              class="max-w-3xl animate-soft-reveal-up text-4xl md:text-6xl lg:text-7xl leading-none text-emphasis mb-8"
+            >
+              A
+              <span id="i6ppcxh" class="font-light italic font-serif"
+                >botanical drink</span
+              >
+              with shelf presence.
+            </h1>
+            <p
+              data-animate-trigger="scroll"
+              id="iawbwh"
+              class="animate-soft-reveal-up text-xl md:text-2xl text-default max-w-3xl mb-0"
+            >
+              Positioning, identity, packaging, campaign system, and launch site
+              for a sparkling tea that refused to whisper.
+            </p>
+          </div>
+          <div class="col-12 lg:col-4">
+            <div class="border-t border-default">
+              <div
+                class="flex justify-between gap-4 py-4 border-b border-default"
+              >
+                <p
+                  data-animate-trigger="scroll"
+                  id="igsoyt"
+                  class="animate-soft-reveal-up text-muted mb-0"
+                >
+                  Category
+                </p>
+                <p
+                  data-animate-trigger="scroll"
+                  id="iy0h41"
+                  class="animate-soft-reveal-up font-mono uppercase tracking-widest text-sm text-emphasis mb-0"
+                >
+                  Food & drink
+                </p>
+              </div>
+              <div
+                class="flex justify-between gap-4 py-4 border-b border-default"
+              >
+                <p
+                  data-animate-trigger="scroll"
+                  id="ic2kah"
+                  class="animate-soft-reveal-up text-muted mb-0"
+                >
+                  Engagement
+                </p>
+                <p
+                  data-animate-trigger="scroll"
+                  id="isau2i"
+                  class="animate-soft-reveal-up font-mono uppercase tracking-widest text-sm text-emphasis mb-0"
+                >
+                  Two sprints
+                </p>
+              </div>
+              <div
+                class="flex justify-between gap-4 py-4 border-b border-default"
+              >
+                <p
+                  data-animate-trigger="scroll"
+                  id="iqs7lb"
+                  class="animate-soft-reveal-up text-muted mb-0"
+                >
+                  Launch
+                </p>
+                <p
+                  data-animate-trigger="scroll"
+                  id="ir5cm8"
+                  class="animate-soft-reveal-up font-mono uppercase tracking-widest text-sm text-emphasis mb-0"
+                >
+                  Spring 2026
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-default">
+      <div class="container py-8 md:py-12 lg:py-16">
+        <div class="row">
+          <div class="col-12">
+            <img
+              alt="Rill botanical tea packaging and identity materials in cobalt, orange, and warm ivory"
+              src="assets/fd5a6a12-98f5-4292-871d-9fda93c7b1bf.webp"
+              id="ig1tfh"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up w-full rounded-2xl border border-default"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="case-study-story"
+      data-swebsy-block='{"tags":["content"],"description":"Two-column case-study challenge section pairing editorial narrative with a compact project brief."}'
+      id="i5ptm5i"
+      class="bg-default"
+    >
+      <div class="container py-16 md:py-24 lg:py-28">
+        <div class="row gap-y-10">
+          <div class="col-12 lg:col-4">
+            <p
+              data-animate-trigger="scroll"
+              id="i2p4ti"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-sm text-primary mb-4"
+            >
+              The assignment
+            </p>
+            <h2
+              id="izphwrb"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-3xl md:text-5xl text-emphasis mb-0"
+            >
+              Make ritual feel
+              <span id="i1crzsf" class="font-light italic font-serif"
+                >refreshing</span
+              >.
+            </h2>
+          </div>
+          <div class="col-12 lg:col-7 lg:offset-1">
+            <p
+              data-animate-trigger="scroll"
+              id="iag2xk"
+              class="animate-soft-reveal-up text-2xl md:text-3xl text-emphasis mb-8"
+            >
+              Rill had a distinctive product and an indistinct category problem:
+              botanical drinks either looked medicinal or disappeared into
+              wellness beige.
+            </p>
+            <p
+              data-animate-trigger="scroll"
+              id="ispybg"
+              class="animate-soft-reveal-up text-lg text-muted mb-6"
+            >
+              The founders needed a position that felt credible to specialty
+              retailers without sanding away the energy that made early
+              customers care.
+            </p>
+            <p
+              data-animate-trigger="scroll"
+              id="ifr30w3"
+              class="animate-soft-reveal-up text-lg text-muted mb-0"
+            >
+              We centered the brand on a simple tension—grown slowly, enjoyed
+              immediately—and built a visual system that paired natural
+              materials with assertive commercial color.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="identity-system"
+      data-swebsy-block='{"tags":["features"],"description":"Dark identity-system showcase with expressive typography, campaign language, and a compact color palette."}'
+      id="i0c7bgf"
+      class="relative overflow-hidden"
+    >
+      <div class="container relative py-16 md:py-24 lg:py-28">
+        <div class="row gap-y-10">
+          <div class="col-12 lg:col-5">
+            <p
+              data-animate-trigger="scroll"
+              id="igkhwyh"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-sm text-secondary mb-4"
+            >
+              Design language
+            </p>
+            <h2
+              id="i7igkpp"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up animate-delay-100 text-4xl md:text-6xl text-white"
+            >
+              RILL
+            </h2>
+            <p
+              data-animate-trigger="scroll"
+              id="i9c5pho"
+              class="animate-soft-reveal-up animate-delay-200 text-xl text-white/80 mb-0"
+            >
+              A compact wordmark, an expanding leaf-line device, and color that
+              holds its own from a fridge door.
+            </p>
+          </div>
+          <div class="col-12 lg:col-6 lg:offset-1">
+            <div class="grid grid-cols-2 gap-4 mb-8">
+              <span
+                aria-label="Cobalt blue brand color swatch"
+                class="block h-32 rounded-xl bg-primary border border-white/25"
+              ></span
+              ><span
+                aria-label="Vivid orange brand color swatch"
+                class="block h-32 rounded-xl bg-secondary border border-white/25"
+              ></span
+              ><span
+                aria-label="Warm ivory brand color swatch"
+                class="block h-32 rounded-xl bg-white border border-white/25"
+              ></span
+              ><span
+                aria-label="Ink black brand color swatch"
+                class="block h-32 rounded-xl bg-stone-950 border border-white/25"
+              ></span>
+            </div>
+            <hr class="border-white/20 mb-6" />
+            <p
+              data-animate-trigger="scroll"
+              id="id7kor3"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-white/65 mb-0"
+            >
+              Warm ivory · Botanical cobalt · Citrus orange · Ink
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="strategy-cards"
+      data-swebsy-block='{"tags":["features"],"description":"Three-card strategy system explaining positioning, identity, and launch decisions."}'
+      id="i7sryjf"
+      class="bg-subtle border-y border-default"
+    >
+      <div class="container py-16 md:py-24 lg:py-28">
+        <div class="row gap-y-10 mb-12">
+          <div class="col-12 lg:col-7">
+            <p
+              data-animate-trigger="scroll"
+              id="ihqvjb3"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-sm text-primary mb-4"
+            >
+              The system
+            </p>
+            <h2
+              id="is6yejk"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-3xl md:text-5xl text-emphasis mb-0"
+            >
+              Natural materials.
+              <span id="i1vwc4l" class="block font-light italic font-serif"
+                >Commercial confidence.</span
+              >
+            </h2>
+          </div>
+        </div>
+        <div class="row gap-y-6">
+          <div class="col-12 lg:col-4">
+            <div
+              data-animate-trigger="scroll"
+              id="irshfkj"
+              class="animate-soft-reveal-up card relative h-full bg-default border border-emphasis rounded-2xl shadow-none"
+            >
+              <div class="card-body p-6 md:p-8">
+                <p
+                  id="i7pxudv"
+                  class="font-mono uppercase tracking-widest text-sm text-muted mb-10"
+                >
+                  Position
+                </p>
+                <h3 id="ixtncs7" class="text-3xl text-emphasis mb-4">
+                  A better afternoon ritual
+                </h3>
+                <p class="text-default mb-0">
+                  Not another health claim. A bright, grown-up alternative to
+                  the second coffee and the first cocktail.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 lg:col-4">
+            <div
+              data-animate-trigger="scroll"
+              id="i04cmvu"
+              class="animate-soft-reveal-up card relative h-full bg-default border border-emphasis rounded-2xl shadow-none"
+            >
+              <div class="card-body p-6 md:p-8">
+                <p
+                  id="i0rvfdh"
+                  class="font-mono uppercase tracking-widest text-sm text-muted mb-10"
+                >
+                  Identity
+                </p>
+                <h3 id="im4lam6" class="text-3xl text-emphasis mb-4">
+                  Rhythm you can recognize
+                </h3>
+                <p class="text-default mb-0">
+                  Repeating botanical lines, hard crops, and compact typography
+                  gave every format the same energetic cadence.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 lg:col-4">
+            <div
+              data-animate-trigger="scroll"
+              id="ii1ifak"
+              class="animate-soft-reveal-up card relative h-full bg-default border border-emphasis rounded-2xl shadow-none"
+            >
+              <div class="card-body p-6 md:p-8">
+                <p
+                  id="ipvsare"
+                  class="font-mono uppercase tracking-widest text-sm text-muted mb-10"
+                >
+                  Launch
+                </p>
+                <h3 id="i1aqxio" class="text-3xl text-emphasis mb-4">
+                  One system, every surface
+                </h3>
+                <p class="text-default mb-0">
+                  Packaging, retail sell-in, social launch, sampling materials,
+                  and the website all moved as one campaign.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="outcome-metrics"
+      data-swebsy-block='{"tags":["stats"],"description":"Case-study outcomes section with commercial metrics and supporting launch narrative."}'
+      id="iq40rd4"
+      class="bg-default"
+    >
+      <div id="ieb82p" class="container py-16 md:py-24 lg:py-28">
+        <div class="row gap-y-10 mb-12">
+          <div class="col-12 lg:col-6">
+            <p
+              data-animate-trigger="scroll"
+              id="ix98x56"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-sm text-primary mb-4"
+            >
+              After launch
+            </p>
+            <h2
+              id="iw2t4xm"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-3xl md:text-5xl text-emphasis mb-0"
+            >
+              The first production run
+              <span id="iwiekfi" class="font-light italic font-serif"
+                >moved fast.</span
+              >
+            </h2>
+          </div>
+        </div>
+        <div class="row gap-y-8">
+          <div class="col-6 lg:col-3">
+            <h3
+              id="ifstu4g"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-4xl md:text-6xl text-emphasis mb-2"
+            >
+              11d
+            </h3>
+            <p
+              data-animate-trigger="scroll"
+              id="id6msvf"
+              class="animate-soft-reveal-up text-muted mb-0"
+            >
+              to sell out online
+            </p>
+          </div>
+          <div class="col-6 lg:col-3">
+            <h3
+              id="id4ldth"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-4xl md:text-6xl text-emphasis mb-2"
+            >
+              18
+            </h3>
+            <p
+              data-animate-trigger="scroll"
+              id="itkectl"
+              class="animate-soft-reveal-up text-muted mb-0"
+            >
+              retail accounts opened
+            </p>
+          </div>
+          <div class="col-6 lg:col-3">
+            <h3
+              id="izpo3q1"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-4xl md:text-6xl text-emphasis mb-2"
+            >
+              41%
+            </h3>
+            <p
+              data-animate-trigger="scroll"
+              id="iql3aab"
+              class="animate-soft-reveal-up text-muted mb-0"
+            >
+              email launch conversion
+            </p>
+          </div>
+          <div class="col-6 lg:col-3">
+            <h3
+              id="iqexqqq"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-4xl md:text-6xl text-emphasis mb-2"
+            >
+              3×
+            </h3>
+            <p
+              data-animate-trigger="scroll"
+              id="iwg0lef"
+              class="animate-soft-reveal-up text-muted mb-0"
+            >
+              second production order
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="project-cta"
+      data-swebsy-block='{"tags":["cta"],"description":"High-contrast project CTA band with availability note, oversized closing line, and action button."}'
+      id="start-2-4"
+    >
+      <div id="i69f7i-2-4" class="container py-16 md:py-24 lg:py-28">
+        <div id="i9o7sx-2-4" class="row items-end gap-y-8">
+          <div id="i7ec0o-2-4" class="col-12 lg:col-8">
+            <p
+              id="i0i05w-2-4"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-stone-950 mb-4"
+            >
+              Two September starts
+            </p>
+            <h2
+              id="ihrn3p-2-4"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-4xl md:text-6xl lg:text-7xl leading-none text-stone-950 mb-0"
+            >
+              Bring the brief.
+              <span
+                data-selectme=""
+                id="imq46nl"
+                class="font-light italic font-serif"
+                >Leave with the site.</span
+              >
+            </h2>
+          </div>
+          <div id="iltnyg-2-4" class="col-12 lg:col-4 text-start lg:text-end">
+            <a
+              href="./start.html"
+              id="icbe7x-2-4"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up btn btn-neutral btn-lg"
+              ><span id="icynbi-2-4">Start a project</span
+              ><span
+                data-icon-pack="stroke"
+                data-icon-name="arrow-right"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="i13hki-2-4"
+                class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" /></svg></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="footer-studio"
+      data-swebsy-block='{"tags":["footer"],"description":"Multi-column dark studio footer with brand statement, navigation, social links, and location."}'
+      id="im60bsu-4"
+      class="bg-emphasis border-t border-emphasis"
+    >
+      <div id="ihq0629-4" class="container py-12 md:py-16 lg:py-20">
+        <div id="i1foali-4" class="row gap-y-10 mb-16">
+          <div id="i4qkeze-4" class="col-12 lg:col-5">
+            <h2
+              data-animate-trigger="scroll"
+              id="irvtyul-4"
+              class="animate-soft-reveal-up text-4xl text-white dark:text-stone-900 mb-4"
+            >
+              Scope.
+            </h2>
+            <p
+              data-animate-trigger="scroll"
+              id="isx2j03-4"
+              class="animate-soft-reveal-up text-white/60 dark:text-stone-700 max-w-md mb-6"
+            >
+              A small senior studio for brand systems, focused websites, and the
+              work that moves a launch forward.
+            </p>
+          </div>
+          <div id="i44iyg3-4" class="col-6 lg:col-2 lg:offset-1">
+            <p
+              data-animate-trigger="scroll"
+              id="i8w3qxj-4"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-white/50 dark:text-stone-500"
+            >
+              Explore
+            </p>
+            <div id="i75v2zg-4" class="flex flex-col gap-3">
+              <a
+                href="./work.html"
+                data-animate-trigger="scroll"
+                id="ia78thi-4"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >Work</a
+              ><a
+                href="./services.html"
+                data-animate-trigger="scroll"
+                id="iv2rnl6-4"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >Services</a
+              ><a
+                href="./studio.html"
+                data-animate-trigger="scroll"
+                id="i2nq6px-4"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >Studio</a
+              >
+            </div>
+          </div>
+          <div id="ir6ufdj-4" class="col-6 lg:col-2">
+            <p
+              data-animate-trigger="scroll"
+              id="i560kff-4"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-white/50 dark:text-stone-500"
+            >
+              Social
+            </p>
+            <div id="i7x0sei-4" class="flex flex-col gap-3">
+              <a
+                href="#"
+                data-animate-trigger="scroll"
+                id="is0am91-4"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >Instagram</a
+              ><a
+                href="#"
+                data-animate-trigger="scroll"
+                id="iewhr3q-4"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >LinkedIn</a
+              ><a
+                href="mailto:hello@scope.studio"
+                data-animate-trigger="scroll"
+                id="ieb12ri-4"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >Email</a
+              >
+            </div>
+          </div>
+          <div id="i9jxsm5-4" class="col-12 lg:col-2">
+            <p
+              data-animate-trigger="scroll"
+              id="i91vwlg-4"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-white/50 dark:text-stone-500"
+            >
+              Based
+            </p>
+            <p
+              data-animate-trigger="scroll"
+              id="i0pgawa-4"
+              class="animate-soft-reveal-up text-white/80 dark:text-stone-800 mb-1"
+            >
+              Vancouver, BC
+            </p>
+            <p
+              data-animate-trigger="scroll"
+              id="iklqcqw-4"
+              class="animate-soft-reveal-up text-white/50 dark:text-stone-600 mb-0"
+            >
+              Working worldwide
+            </p>
+          </div>
+        </div>
+        <hr id="iznk77l-4" class="border-emphasis mb-6" />
+        <div
+          id="i3yal4y-4"
+          class="flex flex-col md:flex-row md:items-center justify-between gap-3"
+        >
+          <p
+            data-animate-trigger="scroll"
+            id="ijh1dke-4"
+            class="animate-soft-reveal-up text-sm text-white/50 dark:text-stone-600 mb-0"
+          >
+            © 2026 Scope Studio
+          </p>
+          <p
+            data-animate-trigger="scroll"
+            id="i1iut08-4"
+            class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-white/50 dark:text-stone-600"
+          >
+            Clear scope · Senior work · Full ownership
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/swebsy-components.a8a0f945e5.js" defer></script>
+  <script src="js/swebsy-scroll-observer.5f2059a125.js"></script>
+  <noscript
+    ><style>
+      [data-animate-trigger] {
+        opacity: 1 !important;
+        animation: none !important;
+      }
+    </style></noscript
+  ><a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

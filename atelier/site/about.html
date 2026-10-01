@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier — where pixels meet the canvas</title>
+    <meta
+      name="description"
+      content="Showcase your work in a clean, gallery-inspired layout designed to let your art speak first."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Atelier — where pixels meet the canvas"
+    />
+    <meta
+      property="og:description"
+      content="Showcase your work in a clean, gallery-inspired layout designed to let your art speak first."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Atelier — where pixels meet the canvas"
+    />
+    <meta
+      name="twitter:description"
+      content="Showcase your work in a clean, gallery-inspired layout designed to let your art speak first."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-slackey-N0bV2SdQO-5yM0-dGlNQJA.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "light";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.d3435b8f56.css" />
+  </head>
+  <body id="iubs-2" class="dark:bg-red-950 bg-red-200">
+    <div id="iwz7my" class="md:p-12 container">
+      <div id="iwr9f-3">
+        <nav
+          data-navbar-collapse-on="sm"
+          data-swebsy-block-id="social-navbar"
+          data-swebsy-block='{"tags":["navigation"],"description":"Responsive studio navbar with an illustrated wordmark, page links, and Instagram and Bluesky icon buttons."}'
+          id="i2ux-3"
+          class="navbar navbar-expand-sm sm:my-6 xl:my-12"
+        >
+          <div data-navbar-part="container" id="i9ok-3" class="container">
+            <a
+              href="index.html"
+              data-navbar-part="brand"
+              id="i97r-4-3"
+              class="navbar-brand me-12"
+              ><span
+                data-icon-pack="stroke"
+                data-icon-name="palette"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="i7a74d-2-3"
+                class="size-15 [--icon-stroke:2] inline-flex items-center leading-none mr-2"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"
+                  />
+                  <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+                  <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+                  <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+                  <circle
+                    cx="8.5"
+                    cy="7.5"
+                    r=".5"
+                    fill="currentColor"
+                  /></svg></span
+              ><b id="igk668-2-3">atelier<br id="i42fic-2-3" />studio</b></a
+            >
+            <div id="i67so-3" class="ms-auto sm:order-1">
+              <a
+                href="#"
+                id="iw8xl-3"
+                class="btn btn-text-neutral btn-lg btn-icon"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faInstagram"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="igckj-3"
+                  class="size-8 inline-flex items-center leading-none [--icon-stroke:2]"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="instagram"
+                    class="svg-inline--fa fa-instagram"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    ></path></svg></span></a
+              ><a
+                href="#"
+                id="id06i-4-3"
+                class="btn btn-text-neutral btn-lg btn-icon"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faDeviantart"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="iy9uc-4-3"
+                  class="size-8 inline-flex items-center leading-none [--icon-stroke:2]"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="deviantart"
+                    class="svg-inline--fa fa-deviantart"
+                    role="img"
+                    viewBox="0 0 320 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M320 93.2l-98.2 179.1 7.4 9.5 90.8 0 0 127.7-160.9 0-13.5 9.2-43.7 84c-.3 0-8.6 8.6-9.2 9.2l-92.7 0 0-93.2 93.2-179.4-7.4-9.2-85.8 0 0-127.6 156 0 13.5-9.2 43.7-84c.3 0 8.6-8.6 9.2-9.2l97.6 0 0 93.1z"
+                    ></path></svg></span
+              ></a>
+            </div>
+            <button
+              type="button"
+              data-navbar-part="toggler"
+              data-swebsy-toggle="collapse"
+              data-swebsy-target="#navbarMenu"
+              aria-controls="navbarMenu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              id="ik6hw-3"
+              class="btn btn-icon navbar-toggler"
+            >
+              <span
+                data-icon-pack="stroke"
+                data-icon-name="menu"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="i652l-3"
+                class="text-default inline-flex items-center leading-none size-6 [--icon-stroke:2]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M4 5h16" />
+                  <path d="M4 12h16" />
+                  <path d="M4 19h16" /></svg
+              ></span>
+            </button>
+            <div
+              id="navbarMenu-3"
+              data-navbar-part="collapse"
+              class="collapse navbar-collapse"
+            >
+              <ul
+                data-navbar-part="links"
+                id="ivqxu-3"
+                class="navbar-nav ms-auto me-5"
+              >
+                <li id="iv3jnk" class="nav-item">
+                  <a href="./index.html" id="ih90o-3" class="nav-link"
+                    >studio</a
+                  >
+                </li>
+                <li id="ij35c4" class="nav-item">
+                  <a
+                    href="./about.html"
+                    id="iws8l-3"
+                    class="nav-link active"
+                    aria-current="page"
+                    >about</a
+                  >
+                </li>
+                <li id="iebv6t" class="nav-item">
+                  <a href="./blog.html" id="izgvi-3" class="nav-link"
+                    >journal</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <h1
+          id="iwq9r-3"
+          class="md:m-12 lg:m-24 m-6 text-5xl md:text-6xl dark:text-muted"
+        >
+          about
+        </h1>
+      </div>
+      <div
+        id="i6tju-4"
+        data-swebsy-block-id="studio-about-copy"
+        data-swebsy-block='{"tags":["about","content"],"description":"Wide bordered studio-about panel with a single editorial paragraph and generous responsive padding."}'
+        class="border-red-800 p-4 md:p-12 lg:p-20 xl:p-30 2xl:p-40 md:mt-12 lg:mt-24 xl:mt-36 m-6"
+      >
+        <p id="i74b6j">
+          Atelier North is keeping a working journal for studies, materials, and
+          small decisions from the studio floor. Current notes follow layered
+          sketches, surface tests, and the practical rhythm behind finished
+          pieces. Expect cropped details, short process reflections, and
+          observations gathered while new work moves from first marks to final
+          presentation.
+        </p>
+      </div>
+      <div id="igipo-3">
+        <div
+          data-swebsy-block-id="contact-cta"
+          data-swebsy-block='{"tags":["cta","contact"],"description":"Bold bordered contact CTA with a large work-with-me heading and prominent studio email address."}'
+          id="i6tju-2-3"
+          class="dark:bg-red-900 bg-danger-light border-red-800 xl:mt-24 mt-6 p-4 xl:p-24 dark:text-muted"
+        >
+          <h1 id="io77h-3" class="md:text-5xl text-2xl">work with me</h1>
+          <p id="ikelu-3" class="text-lg lg:text-3xl">
+            email: hello@ateliernorth.studio
+          </p>
+        </div>
+        <p id="iclu7-3" class="my-8 xl:my-24 dark:text-muted">
+          Atelier North © 2026
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="./js/swebsy-components.c1dd02fb13.js" defer></script>
+  <a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

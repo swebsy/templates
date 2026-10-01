@@ -1,0 +1,2106 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Ember &amp; Oak — Public House &amp; Kitchen</title>
+    <meta
+      name="description"
+      content="A proper public house on the old wharf. Cask ale, open fire, Sunday roasts and live folk in the back room. Booking open seven days."
+    />
+    <meta
+      name="keywords"
+      content="pub, gastropub, cask ale, sunday roast, live music, bar, kitchen"
+    />
+    <meta name="author" content="The Ember &amp;amp; Oak" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="The Ember &amp;amp; Oak — Public House &amp;amp; Kitchen"
+    />
+    <meta
+      property="og:description"
+      content="A proper public house on the old wharf. Cask ale, open fire, Sunday roasts and live folk in the back room. Booking open seven days."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="The Ember &amp;amp; Oak — Public House &amp;amp; Kitchen"
+    />
+    <meta
+      name="twitter:description"
+      content="A proper public house on the old wharf. Cask ale, open fire, Sunday roasts and live folk in the back room. Booking open seven days."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-fraunces-6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxCBTeO-U.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-fraunces-6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxCFTeO-U.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-fraunces-6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxC9TeA.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-karla-qkB9XvYC6trAT55ZBi1ueQVIjQTD-JrIH2G7nytkHRyQ8p4wUjm6bnEr.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-karla-qkB9XvYC6trAT55ZBi1ueQVIjQTD-JrIH2G7nytkHRyQ8p4wUje6bg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "dark";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.35424d3404.css" />
+  </head>
+  <body>
+    <nav
+      data-navbar-collapse-on="sm"
+      data-swebsy-block-id="inner-navigation"
+      data-swebsy-block='{"tags":[],"description":"Responsive inner-page navigation with compact pub brand, page links, active state, and reservations action."}'
+      id="idbk-3-2-3"
+      class="navbar navbar-expand-sm bg-default border-b border-subtle sticky top-0 z-50"
+    >
+      <div
+        data-navbar-part="container"
+        id="is1urp-3-2-3"
+        class="container mx-auto max-w-6xl px-6 min-h-10"
+      >
+        <a
+          href="./index.html"
+          data-navbar-part="brand"
+          id="i2l133-2-2-3"
+          class="navbar-brand flex items-center gap-3 no-underline"
+          ><span
+            data-icon-pack="stroke"
+            data-icon-name="flame"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="ixh34g-2-2-3"
+            class="inline-flex items-center leading-none size-7 text-primary [--icon-stroke:1.5]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"
+              /></svg></span
+          ><span
+            id="ig2irf-2-2-3"
+            class="text-xl font-semibold tracking-tight text-emphasis leading-none"
+            >The Ember &amp; Oak</span
+          ></a
+        ><button
+          href="#"
+          type="button"
+          data-navbar-part="toggler"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="ijb2yd-2-2-3"
+          class="btn btn-icon navbar-toggler"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="ianc5r-2-2-3"
+            class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="navbarMenu-3-2-3"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse"
+        >
+          <ul
+            data-navbar-part="links"
+            id="ien1nk-2-2-3"
+            class="navbar-nav ms-auto"
+          >
+            <li id="iuo8f6-2-2-3" class="nav-item">
+              <a
+                href="./index.html"
+                id="i5aurp-2-2-3"
+                class="nav-link active"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li id="izl48h-2-2-3" class="nav-item">
+              <a href="./food-and-drink.html" id="ilv52g-2-2-3" class="nav-link"
+                >Food & Drink</a
+              >
+            </li>
+            <li id="iuadlb-2-2-3" class="nav-item">
+              <a href="./the-bar.html" id="i136cj-2-2-3" class="nav-link"
+                >The Bar</a
+              >
+            </li>
+            <li id="i3x74w-2-2-3" class="nav-item">
+              <a href="./whats-on.html" id="irfkrq-2-2-3" class="nav-link"
+                >What's On</a
+              >
+            </li>
+            <li id="ibsome-2-2-3" class="nav-item">
+              <a href="./find-us.html" id="i1cxvm-2-2-3" class="nav-link"
+                >Find Us</a
+              >
+            </li>
+          </ul>
+          <div
+            id="isoxfh-3-2-3"
+            class="flex items-center gap-2 mt-4 lg:mt-0 lg:ms-4"
+          >
+            <a
+              href="./reservations.html"
+              id="i8zu7x-2-2-3"
+              class="btn btn-primary"
+              >Reservations</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="ia8zt"
+      data-swebsy-block-id="immersive-pub-hero"
+      data-swebsy-block='{"tags":[],"description":"Full-bleed pub interior hero with atmospheric overlay, editorial headline, supporting copy, and paired actions."}'
+      class="relative overflow-hidden bg-emphasis flex items-center dark"
+    >
+      <img
+        alt="Lamplight along the long oak bar at The Ember &amp; Oak on a winter evening"
+        src="assets/04defba9-b1b0-4c0b-b254-8514d073fde4.webp"
+        id="igjsl"
+        data-animate-trigger="scroll"
+        class="animate-soft-reveal-up absolute inset-0 w-full h-full object-cover"
+      /><span id="ic5o9" class="absolute inset-0 block bg-stone-950/50"></span>
+      <div
+        id="iulx5i"
+        class="container mx-auto max-w-6xl px-6 relative py-12 md:py-16"
+      >
+        <div id="ibvqw8" class="row">
+          <div class="col-12 lg:col-8">
+            <span
+              class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-6"
+              >Kilngate Wharf &middot; Licensed since 1904</span
+            >
+            <h1
+              id="ib84qv"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-4xl md:text-6xl lg:text-7xl text-white dark:text-white mb-6"
+            >
+              A fire, a fair pint,<br />&amp; nowhere else to be
+            </h1>
+            <p
+              id="ipm7id"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-lg md:text-xl text-stone-300 dark:text-stone-300 max-w-2xl mb-10"
+            >
+              Cask ale from the West Country, a kitchen that takes Sunday
+              seriously, and a back room that has hosted folk sessions for
+              longer than anyone can prove.
+            </p>
+            <div id="iuh4k" class="flex flex-wrap items-center gap-3">
+              <a
+                href="#book"
+                data-animate-trigger="scroll"
+                id="i384j"
+                class="animate-soft-reveal-up btn btn-primary btn-lg"
+                >Book a Table</a
+              ><a
+                href="#kitchen"
+                data-animate-trigger="scroll"
+                id="iq695"
+                class="animate-soft-reveal-up btn btn-outline-neutral btn-lg text-white dark:text-white border"
+                >See the Menus</a
+              >
+            </div>
+            <div
+              class="flex flex-wrap items-center gap-x-8 gap-y-3 mt-12 pt-8 border-t border-stone-700 dark:border-stone-700"
+            >
+              <div class="flex items-center gap-2">
+                <span
+                  data-icon-pack="stroke"
+                  data-icon-name="clock"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  class="inline-flex items-center leading-none size-4 text-primary [--icon-stroke:2]"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="var(--icon-stroke, 2)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 6v6l4 2" /></svg></span
+                ><span class="text-sm text-stone-300 dark:text-stone-300"
+                  >Kitchen open till 9.30pm</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <span
+                  data-icon-pack="stroke"
+                  data-icon-name="map-pin"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  class="inline-flex items-center leading-none size-4 text-primary [--icon-stroke:2]"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="var(--icon-stroke, 2)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                    />
+                    <circle cx="12" cy="10" r="3" /></svg></span
+                ><span class="text-sm text-stone-300 dark:text-stone-300"
+                  >17 Kilngate Wharf, Bristol</span
+                >
+              </div>
+              <div class="flex items-center gap-2">
+                <span
+                  data-icon-pack="stroke"
+                  data-icon-name="dog"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  class="inline-flex items-center leading-none size-4 text-primary [--icon-stroke:2]"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="var(--icon-stroke, 2)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M11.25 16.25h1.5L12 17z" />
+                    <path d="M16 14v.5" />
+                    <path
+                      d="M4.42 11.247A13.152 13.152 0 0 0 4 14.556C4 18.728 7.582 21 12 21s8-2.272 8-6.444a11.702 11.702 0 0 0-.493-3.309"
+                    />
+                    <path d="M8 14v.5" />
+                    <path
+                      d="M8.5 8.5c-.384 1.05-1.083 2.028-2.344 2.5-1.931.722-3.576-.297-3.656-1-.113-.994 1.177-6.53 4-7 1.923-.321 3.651.845 3.651 2.235A7.497 7.497 0 0 1 14 5.277c0-1.39 1.844-2.598 3.767-2.277 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.722-3.656 1-1.261-.472-1.855-1.45-2.239-2.5"
+                    /></svg></span
+                ><span class="text-sm text-stone-300 dark:text-stone-300"
+                  >Dogs always welcome</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="iwp4v2"
+      data-swebsy-block-id="venue-highlights-marquee"
+      data-swebsy-block='{"tags":[],"description":"Amber horizontal marquee repeating concise venue highlights in a lively continuous strip."}'
+      class="bg-primary h-14 flex items-center overflow-hidden"
+    >
+      <div
+        class="w-full text-sm md:text-base uppercase tracking-widest text-stone-950 dark:text-stone-950"
+        data-marquee="true"
+        data-marquee-items="Cask Ale|Sunday Roast|Open Fire|Live Folk|Wharfside Terrace|Quiz Tuesdays|Fourteen Lines On"
+        data-marquee-divider="◆"
+        data-marquee-duration="38"
+        data-marquee-divider-color="var(--color-stone-800)"
+      >
+        <div class="flex w-max">
+          <div
+            class="inline-flex shrink-0 items-center gap-8 pr-8 whitespace-nowrap animate-marquee"
+            style="animation-duration: 38s"
+          >
+            <span>Cask Ale</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Sunday Roast</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Open Fire</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Live Folk</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Wharfside Terrace</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Quiz Tuesdays</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Fourteen Lines On</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Cask Ale</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Sunday Roast</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Open Fire</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Live Folk</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Wharfside Terrace</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Quiz Tuesdays</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Fourteen Lines On</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Cask Ale</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Sunday Roast</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Open Fire</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Live Folk</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Wharfside Terrace</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Quiz Tuesdays</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Fourteen Lines On</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Cask Ale</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Sunday Roast</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Open Fire</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Live Folk</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Wharfside Terrace</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Quiz Tuesdays</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Fourteen Lines On</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            >
+          </div>
+          <div
+            class="inline-flex shrink-0 items-center gap-8 pr-8 whitespace-nowrap animate-marquee"
+            style="animation-duration: 38s"
+            aria-hidden="true"
+          >
+            <span>Cask Ale</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Sunday Roast</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Open Fire</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Live Folk</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Wharfside Terrace</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Quiz Tuesdays</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Fourteen Lines On</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Cask Ale</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Sunday Roast</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Open Fire</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Live Folk</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Wharfside Terrace</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Quiz Tuesdays</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Fourteen Lines On</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Cask Ale</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Sunday Roast</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Open Fire</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Live Folk</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Wharfside Terrace</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Quiz Tuesdays</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Fourteen Lines On</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Cask Ale</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Sunday Roast</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Open Fire</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Live Folk</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Wharfside Terrace</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Quiz Tuesdays</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            ><span>Fourteen Lines On</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-stone-800)"
+              aria-hidden="true"
+              >◆</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="story"
+      data-swebsy-block-id="heritage-story-split"
+      data-swebsy-block='{"tags":[],"description":"Editorial heritage section pairing a warm interior image with a long-form story and supporting action."}'
+      class="bg-default py-16 md:py-20 lg:py-28"
+    >
+      <div id="ip7py4" class="container mx-auto max-w-6xl px-6">
+        <div class="row g-12 items-center">
+          <div class="col-12 lg:col-6">
+            <div class="relative">
+              <img
+                alt="The snug at The Ember &amp; Oak, with a lit fire and worn leather benches"
+                src="assets/d69d2ea5-475a-4674-a6de-fb403e2900e6.webp"
+                id="iw4hi"
+                data-animate-trigger="scroll"
+                class="animate-soft-reveal-up w-full h-96 lg:h-[520px] object-cover"
+              />
+              <div
+                class="absolute -bottom-6 -right-2 lg:right-6 bg-primary px-6 py-5 max-w-[220px]"
+              >
+                <span
+                  id="igo32f"
+                  class="font-serif block text-3xl text-stone-950 dark:text-stone-950 leading-none"
+                  >1904</span
+                ><span
+                  class="block text-xs uppercase tracking-widest text-stone-800 dark:text-stone-800 mt-2"
+                  >The year the licence was granted</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 lg:col-6 mt-16 lg:mt-0">
+            <span
+              class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-5"
+              >The House</span
+            >
+            <h2
+              id="i0h3ef"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-3xl md:text-4xl lg:text-5xl text-emphasis mb-6"
+            >
+              A century of people not going home yet
+            </h2>
+            <p
+              id="iv9ep4"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-base md:text-lg text-muted mb-5"
+            >
+              The Ember &amp; Oak began life as a lamp store for the wharf,
+              which is how it ended up with a chimney far too big for the room.
+              The dockers found the fire first, the licence followed, and the
+              pub has been arguing about football, politics and the correct way
+              to pour a stout ever since.
+            </p>
+            <p
+              id="i1s3yn"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-base md:text-lg text-muted mb-8"
+            >
+              We have kept what mattered — the long tables, the cellar, the two
+              working fires — and quietly fixed everything else. The kitchen is
+              ours, the beer is chosen by people who drink it, and nobody has
+              ever been rushed out at last orders.
+            </p>
+            <div class="row g-6 border-t border-subtle pt-8">
+              <div class="col-12 sm:col-4">
+                <span
+                  id="ibuzlk"
+                  class="text-5xl font-serif block text-primary leading-none"
+                  >14</span
+                ><span
+                  class="block text-xs uppercase tracking-widest text-subtle mt-2"
+                  >Lines on the bar</span
+                >
+              </div>
+              <div class="col-12 sm:col-4">
+                <span
+                  id="ioakez"
+                  class="text-5xl font-serif block text-primary leading-none"
+                  >2</span
+                ><span
+                  class="block text-xs uppercase tracking-widest text-subtle mt-2"
+                  >Working fires</span
+                >
+              </div>
+              <div class="col-12 sm:col-4">
+                <span
+                  id="ijamql"
+                  class="text-5xl font-serif block text-primary leading-none"
+                  >80</span
+                ><span
+                  class="block text-xs uppercase tracking-widest text-subtle mt-2"
+                  >Seats, terrace included</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="kitchen"
+      data-swebsy-block-id="food-feature-grid"
+      data-swebsy-block='{"tags":[],"description":"Food introduction with prominent editorial heading, supporting copy, and a grid of signature dish features."}'
+      class="bg-subtle py-16 md:py-20 lg:py-28"
+    >
+      <div id="ismrua" class="container mx-auto max-w-6xl px-6">
+        <div class="row g-8 items-end mb-12">
+          <div id="ifq51i" class="col-12 lg:col-9">
+            <span
+              class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-5"
+              >From the Kitchen</span
+            >
+            <h2
+              id="ii7ymj"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-3xl md:text-4xl lg:text-5xl text-emphasis mb-4"
+            >
+              Food worth crossing the bridge for
+            </h2>
+            <p
+              id="iarnwf"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-base md:text-lg text-muted max-w-2xl"
+            >
+              Pub cooking done properly: butchered in-house, landed that
+              morning, and served in portions that assume you walked here.
+            </p>
+          </div>
+          <div id="i232ge" class="col-12 lg:text-right lg:col-3">
+            <a
+              href="#"
+              data-animate-trigger="scroll"
+              id="i343fk"
+              class="animate-soft-reveal-up btn btn-outline-primary"
+              >See All Menus</a
+            >
+          </div>
+        </div>
+        <div class="row g-8">
+          <div class="col-12 md:col-4">
+            <div
+              id="itbvvh"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up card h-full bg-default border border-subtle overflow-hidden"
+            >
+              <img
+                alt="A dry-aged sirloin Sunday roast with dripping potatoes and a tall Yorkshire pudding"
+                src="assets/62e2fdcf-564e-42fb-862c-742c50033394.webp"
+                class="card-img-top w-full h-56 object-cover"
+                id="iuguaf"
+              />
+              <div id="ihmdpi" class="card-body p-6">
+                <span id="i8lzr4" class="badge badge-primary badge-sm mb-4"
+                  >Sundays only</span
+                >
+                <div
+                  id="iwwq3a"
+                  class="flex items-baseline justify-between gap-4 mb-3"
+                >
+                  <h3 id="ii1neo-3" class="text-xl text-emphasis">
+                    The Sunday Roast
+                  </h3>
+                  <span id="iksm6i" class="text-lg text-primary shrink-0"
+                    >£22</span
+                  >
+                </div>
+                <p id="idnn2l" class="text-sm text-muted">
+                  Dry-aged sirloin, dripping potatoes, a Yorkshire the size of
+                  your hand, and gravy we start reducing on Friday.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 md:col-4">
+            <div
+              data-animate-trigger="scroll"
+              id="i6idyf"
+              class="animate-soft-reveal-up card h-full bg-default border border-subtle overflow-hidden"
+            >
+              <img
+                alt="Suet-crusted beef and stout pie with buttered mash and minted peas"
+                src="assets/313ede9c-24af-4231-878f-bd89813556d2.webp"
+                id="i5o7an"
+                class="card-img-top w-full h-56 object-cover"
+              />
+              <div class="card-body p-6">
+                <span class="badge badge-primary badge-sm mb-4"
+                  >House classic</span
+                >
+                <div class="flex items-baseline justify-between gap-4 mb-3">
+                  <h3 id="ire7yc" class="text-xl text-emphasis">
+                    Ember Pie &amp; Mash
+                  </h3>
+                  <span id="ixhuwx" class="text-lg text-primary shrink-0"
+                    >£18</span
+                  >
+                </div>
+                <p id="iggmar" class="text-sm text-muted">
+                  Slow-braised shin and stout under suet pastry, buttered mash,
+                  minted peas, and a jug of gravy on the side.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 md:col-4">
+            <div
+              data-animate-trigger="scroll"
+              id="i54v7b"
+              class="animate-soft-reveal-up card h-full bg-default border border-subtle overflow-hidden"
+            >
+              <img
+                alt="Beer-battered cod with triple-cooked chips, crushed peas and tartare sauce"
+                src="assets/f37c4bfa-6e46-4412-b0e0-20284c4ee382.webp"
+                id="ik2wan"
+                class="card-img-top w-full h-56 object-cover"
+              />
+              <div class="card-body p-6">
+                <span class="badge badge-primary badge-sm mb-4"
+                  >Friday landing</span
+                >
+                <div class="flex items-baseline justify-between gap-4 mb-3">
+                  <h3 id="ibeugu" class="text-xl text-emphasis">
+                    Wharfside Fish Board
+                  </h3>
+                  <span id="i4y2kt" class="text-lg text-primary shrink-0"
+                    >£24</span
+                  >
+                </div>
+                <p id="ihqk2z" class="text-sm text-muted">
+                  Line-caught cod in Ember Ale batter, triple-cooked chips,
+                  crushed peas and pickled shallot tartare.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="taps"
+      data-swebsy-block-id="tap-list-split"
+      data-swebsy-block='{"tags":[],"description":"Detailed drinks showcase combining bar imagery, explanatory copy, and a structured multi-item tap list."}'
+      class="bg-default py-16 md:py-20 lg:py-28"
+    >
+      <div class="container mx-auto max-w-6xl px-6">
+        <div class="row g-12">
+          <div id="iiq7bq" class="col-12 lg:col-4">
+            <span
+              class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-5"
+              >On the Bar</span
+            >
+            <h2
+              data-animate-trigger="scroll"
+              id="i0ybup"
+              class="animate-soft-reveal-up text-3xl md:text-4xl lg:text-5xl text-emphasis mb-6"
+            >
+              Fourteen lines, changed when they're good and ready
+            </h2>
+            <p
+              data-animate-trigger="scroll"
+              id="izspdi"
+              class="animate-soft-reveal-up text-base text-muted mb-6"
+            >
+              Six of them are ours for good. The rest rotate through whatever
+              the West Country brewers have done well that month.
+            </p>
+            <div class="border-s-2 border-primary ps-5">
+              <p
+                data-animate-trigger="scroll"
+                id="ikeda5"
+                class="animate-soft-reveal-up text-sm text-muted"
+              >
+                Ask about the cellar cask. There is usually something on that
+                never makes it onto the board.
+              </p>
+            </div>
+          </div>
+          <div id="i4too7" class="col-12 lg:col-8 mt-10 lg:mt-0">
+            <div
+              data-ai-symbol="tap-row"
+              id="ii44xs"
+              class="flex items-baseline gap-4 border-b border-subtle py-5"
+            >
+              <div id="ip8khb" class="min-w-0">
+                <h3
+                  id="ihpdoa"
+                  data-animate-trigger="scroll"
+                  class="animate-soft-reveal-up text-lg text-emphasis"
+                >
+                  Ember Best Bitter
+                </h3>
+                <p
+                  id="i18mjb"
+                  data-animate-trigger="scroll"
+                  class="animate-soft-reveal-up text-sm text-muted mt-1"
+                >
+                  Kilngate &middot; brewed for us since 1987
+                </p>
+              </div>
+              <span
+                id="i0rnbx"
+                class="hidden sm:block flex-1 border-b border-dashed border-muted"
+              ></span>
+              <div id="iu99ij" class="text-right shrink-0">
+                <span
+                  id="i2y639"
+                  class="block text-lg text-primary leading-none"
+                  >£5.40</span
+                ><span
+                  id="ipkqa9"
+                  class="block text-xs uppercase tracking-widest text-subtle mt-2"
+                  >Bitter &middot; 4.2%</span
+                >
+              </div>
+            </div>
+            <div
+              data-ai-symbol-ref="tap-row"
+              class="flex items-baseline gap-4 border-b border-subtle py-5"
+            >
+              <div class="min-w-0">
+                <h3
+                  data-animate-trigger="scroll"
+                  id="iasejb"
+                  class="animate-soft-reveal-up text-lg text-emphasis"
+                >
+                  Oakcutter Stout
+                </h3>
+                <p
+                  data-animate-trigger="scroll"
+                  id="ipefz3"
+                  class="animate-soft-reveal-up text-sm text-muted mt-1"
+                >
+                  Mendip Hills &middot; poured slow, twice
+                </p>
+              </div>
+              <span
+                class="hidden sm:block flex-1 border-b border-dashed border-muted"
+              ></span>
+              <div class="text-right shrink-0">
+                <span class="block text-lg text-primary leading-none"
+                  >£5.80</span
+                ><span
+                  class="block text-xs uppercase tracking-widest text-subtle mt-2"
+                  >Dry Stout &middot; 4.8%</span
+                >
+              </div>
+            </div>
+            <div
+              data-ai-symbol-ref="tap-row"
+              class="flex items-baseline gap-4 border-b border-subtle py-5"
+            >
+              <div class="min-w-0">
+                <h3
+                  data-animate-trigger="scroll"
+                  id="it0fnh"
+                  class="animate-soft-reveal-up text-lg text-emphasis"
+                >
+                  Wharf Lantern Pale
+                </h3>
+                <p
+                  data-animate-trigger="scroll"
+                  id="itlp7p"
+                  class="animate-soft-reveal-up text-sm text-muted mt-1"
+                >
+                  Bristol &middot; three hops, no ceremony
+                </p>
+              </div>
+              <span
+                class="hidden sm:block flex-1 border-b border-dashed border-muted"
+              ></span>
+              <div class="text-right shrink-0">
+                <span class="block text-lg text-primary leading-none"
+                  >£6.10</span
+                ><span
+                  class="block text-xs uppercase tracking-widest text-subtle mt-2"
+                  >Pale Ale &middot; 4.5%</span
+                >
+              </div>
+            </div>
+            <div
+              data-ai-symbol-ref="tap-row"
+              class="flex items-baseline gap-4 border-b border-subtle py-5"
+            >
+              <div class="min-w-0">
+                <h3
+                  data-animate-trigger="scroll"
+                  id="ic540f"
+                  class="animate-soft-reveal-up text-lg text-emphasis"
+                >
+                  Ridgeway Still Cider
+                </h3>
+                <p
+                  data-animate-trigger="scroll"
+                  id="ilzhtl"
+                  class="animate-soft-reveal-up text-sm text-muted mt-1"
+                >
+                  Herefordshire &middot; straight from the barrel
+                </p>
+              </div>
+              <span
+                class="hidden sm:block flex-1 border-b border-dashed border-muted"
+              ></span>
+              <div class="text-right shrink-0">
+                <span class="block text-lg text-primary leading-none"
+                  >£5.20</span
+                ><span
+                  class="block text-xs uppercase tracking-widest text-subtle mt-2"
+                  >Still Cider &middot; 6.0%</span
+                >
+              </div>
+            </div>
+            <div
+              data-ai-symbol-ref="tap-row"
+              class="flex items-baseline gap-4 border-b border-subtle py-5"
+            >
+              <div class="min-w-0">
+                <h3
+                  data-animate-trigger="scroll"
+                  id="i2k3zi"
+                  class="animate-soft-reveal-up text-lg text-emphasis"
+                >
+                  Nightporter Mild
+                </h3>
+                <p
+                  data-animate-trigger="scroll"
+                  id="ioakq1"
+                  class="animate-soft-reveal-up text-sm text-muted mt-1"
+                >
+                  Kilngate &middot; the one the regulars order
+                </p>
+              </div>
+              <span
+                class="hidden sm:block flex-1 border-b border-dashed border-muted"
+              ></span>
+              <div class="text-right shrink-0">
+                <span class="block text-lg text-primary leading-none"
+                  >£4.90</span
+                ><span
+                  class="block text-xs uppercase tracking-widest text-subtle mt-2"
+                  >Dark Mild &middot; 3.6%</span
+                >
+              </div>
+            </div>
+            <div
+              data-ai-symbol-ref="tap-row"
+              class="flex items-baseline gap-4 border-b border-subtle py-5"
+            >
+              <div class="min-w-0">
+                <h3
+                  data-animate-trigger="scroll"
+                  id="isgl1f"
+                  class="animate-soft-reveal-up text-lg text-emphasis"
+                >
+                  Old Kiln Barleywine
+                </h3>
+                <p
+                  data-animate-trigger="scroll"
+                  id="ireqq6"
+                  class="animate-soft-reveal-up text-sm text-muted mt-1"
+                >
+                  Cellar cask &middot; halves only, and rightly so
+                </p>
+              </div>
+              <span
+                class="hidden sm:block flex-1 border-b border-dashed border-muted"
+              ></span>
+              <div class="text-right shrink-0">
+                <span class="block text-lg text-primary leading-none"
+                  >£4.20</span
+                ><span
+                  class="block text-xs uppercase tracking-widest text-subtle mt-2"
+                  >Barleywine &middot; 8.1%</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="events"
+      data-swebsy-block-id="events-card-grid"
+      data-swebsy-block='{"tags":[],"description":"Upcoming-events section with editorial introduction and a compact grid of recurring pub event cards."}'
+      class="bg-subtle py-16 md:py-20 lg:py-28"
+    >
+      <div id="i8gu2j" class="container mx-auto max-w-6xl px-6">
+        <div class="row g-8 items-end mb-12">
+          <div class="col-12 lg:col-8">
+            <span
+              class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-5"
+              >What's On</span
+            >
+            <h2
+              data-animate-trigger="scroll"
+              id="il6wzn"
+              class="animate-soft-reveal-up text-3xl md:text-4xl lg:text-5xl text-emphasis mb-4"
+            >
+              The back room is rarely quiet
+            </h2>
+            <p
+              data-animate-trigger="scroll"
+              id="i28u3h"
+              class="animate-soft-reveal-up text-base md:text-lg text-muted max-w-2xl"
+            >
+              No tickets, no cover charge, no stage. Turn up, find a seat, and
+              let whoever is playing get on with it.
+            </p>
+          </div>
+          <div class="col-12 lg:col-4 lg:text-right">
+            <a
+              href="#"
+              data-animate-trigger="scroll"
+              id="ia0k3u"
+              class="animate-soft-reveal-up btn btn-outline-primary"
+              >Full Calendar</a
+            >
+          </div>
+        </div>
+        <div class="row g-6">
+          <div id="iew2cm" class="col-12 sm:col-6 lg:col-4">
+            <div
+              data-ai-symbol="event-card"
+              id="iaqlci"
+              class="flex items-start gap-5 h-full bg-default border border-subtle p-6"
+            >
+              <div
+                id="i3abc8"
+                class="shrink-0 w-16 border border-primary py-3 text-center"
+              >
+                <span
+                  id="ishzyn"
+                  class="block text-xs uppercase tracking-widest text-primary"
+                  >Fri</span
+                ><span
+                  id="i1hr3d"
+                  class="block text-2xl text-emphasis leading-none mt-1"
+                  >12</span
+                >
+              </div>
+              <div id="io8oi9" class="min-w-0">
+                <h3
+                  id="if5xtl"
+                  data-animate-trigger="scroll"
+                  class="animate-soft-reveal-up text-xl text-emphasis"
+                >
+                  Kilngate Folk Session
+                </h3>
+                <p
+                  id="iofb1j"
+                  data-animate-trigger="scroll"
+                  class="animate-soft-reveal-up text-xs uppercase tracking-widest text-primary mt-2"
+                >
+                  8pm till late &middot; Back room
+                </p>
+                <p
+                  id="ib79mz"
+                  data-animate-trigger="scroll"
+                  class="animate-soft-reveal-up text-sm text-muted mt-4"
+                >
+                  Fiddles, whistles and whoever walks in with a case. It has run
+                  every second Friday since 1978.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="ibqxrv" class="col-12 sm:col-6 lg:col-4">
+            <div
+              data-ai-symbol-ref="event-card"
+              id="irj0io"
+              class="flex items-start gap-5 h-full bg-default border border-subtle p-6"
+            >
+              <div class="shrink-0 w-16 border border-primary py-3 text-center">
+                <span
+                  class="block text-xs uppercase tracking-widest text-primary"
+                  >Tue</span
+                ><span class="block text-2xl text-emphasis leading-none mt-1"
+                  >16</span
+                >
+              </div>
+              <div class="min-w-0">
+                <h3
+                  data-animate-trigger="scroll"
+                  id="iyz8uh"
+                  class="animate-soft-reveal-up text-xl text-emphasis"
+                >
+                  The Hard Quiz
+                </h3>
+                <p
+                  data-animate-trigger="scroll"
+                  id="irlzbq"
+                  class="animate-soft-reveal-up text-xs uppercase tracking-widest text-primary mt-2"
+                >
+                  7.30pm &middot; Six rounds
+                </p>
+                <p
+                  data-animate-trigger="scroll"
+                  id="ieot4j"
+                  class="animate-soft-reveal-up text-sm text-muted mt-4"
+                >
+                  Two pounds a head, teams of six maximum, and a bar tab for
+                  whoever ends up least wrong.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="i5ggnl" class="col-12 sm:col-6 lg:col-4">
+            <div
+              data-ai-symbol-ref="event-card"
+              id="ir0vpl"
+              class="flex items-start gap-5 h-full bg-default border border-subtle p-6"
+            >
+              <div class="shrink-0 w-16 border border-primary py-3 text-center">
+                <span
+                  class="block text-xs uppercase tracking-widest text-primary"
+                  >Sun</span
+                ><span class="block text-2xl text-emphasis leading-none mt-1"
+                  >21</span
+                >
+              </div>
+              <div class="min-w-0">
+                <h3
+                  data-animate-trigger="scroll"
+                  id="ikwruu"
+                  class="animate-soft-reveal-up text-xl text-emphasis"
+                >
+                  Roast &amp; Records
+                </h3>
+                <p
+                  data-animate-trigger="scroll"
+                  id="i7n6ng"
+                  class="animate-soft-reveal-up text-xs uppercase tracking-widest text-primary mt-2"
+                >
+                  12–5pm &middot; All vinyl
+                </p>
+                <p
+                  data-animate-trigger="scroll"
+                  id="iuuo28"
+                  class="animate-soft-reveal-up text-sm text-muted mt-4"
+                >
+                  Bring a record and we will play it between courses. Nothing
+                  after 1979, house rule, no appeals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="gallery"
+      data-swebsy-block-id="rooms-gallery-feature"
+      data-swebsy-block='{"tags":[],"description":"Room showcase with a strong editorial heading and an atmospheric multi-image gallery composition."}'
+      class="bg-default py-16 md:py-20 lg:py-28"
+    >
+      <div class="container mx-auto max-w-6xl px-6">
+        <div class="row mb-12">
+          <div class="col-12 lg:col-7">
+            <span
+              class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-5"
+              >Have a Look Round</span
+            >
+            <h2
+              id="imx1ri"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-3xl md:text-4xl lg:text-5xl text-emphasis"
+            >
+              Four rooms, one chimney, no televisions
+            </h2>
+          </div>
+        </div>
+        <div id="id949z" class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+          <img
+            alt="The long oak bar with fourteen hand pumps lined along the counter"
+            src="assets/d85aa830-bf99-4605-a4ed-90ee54c9fb41.webp"
+            id="i1j6hj"
+            data-animate-trigger="scroll"
+            class="animate-soft-reveal-up w-full h-48 md:h-64 object-cover"
+          /><img
+            alt="The snug fireplace surrounded by worn leather armchairs"
+            src="assets/52c82342-1dc5-4f26-839f-b425d471e465.webp"
+            id="ichgug"
+            data-animate-trigger="scroll"
+            class="animate-soft-reveal-up w-full h-48 md:h-64 object-cover"
+          /><img
+            alt="Sunday roast plated with dripping potatoes on a scrubbed oak table"
+            src="assets/85ebe729-c7b5-4f9d-b3e9-5d972ba930e6.webp"
+            id="iw67me"
+            data-animate-trigger="scroll"
+            class="animate-soft-reveal-up w-full h-48 md:h-64 object-cover"
+          /><img
+            alt="The back room set up for a folk session with chairs in a loose circle"
+            src="assets/fccb8e60-172f-44c8-9b4c-481b9022b7af.webp"
+            id="ia1teg"
+            data-animate-trigger="scroll"
+            class="animate-soft-reveal-up w-full h-48 md:h-64 object-cover"
+          /><img
+            alt="The wharfside terrace with benches looking over the water at dusk"
+            src="assets/ad1ee78d-8c6f-4074-93e3-045a98af9159.webp"
+            id="iozgbj"
+            data-animate-trigger="scroll"
+            class="animate-soft-reveal-up w-full h-48 md:h-64 object-cover"
+          /><img
+            alt="The cellar with casks stillaged and ready to be tapped"
+            src="assets/60840dd0-94da-4859-8bcf-2e1432f2d591.webp"
+            id="ix1efk"
+            data-animate-trigger="scroll"
+            class="animate-soft-reveal-up w-full h-48 md:h-64 object-cover"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      id="find-us"
+      data-swebsy-block-id="location-hours-contact"
+      data-swebsy-block='{"tags":[],"description":"Visit section combining waterfront imagery with address, opening hours, and contact details."}'
+      class="bg-subtle py-16 md:py-20 lg:py-28"
+    >
+      <div class="container mx-auto max-w-6xl px-6">
+        <div class="row g-12">
+          <div id="i2nggk" class="col-12 lg:col-6">
+            <span
+              class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-5"
+              >Find Us</span
+            >
+            <h2
+              data-animate-trigger="scroll"
+              id="ixrp8y"
+              class="animate-soft-reveal-up text-3xl md:text-4xl lg:text-5xl text-emphasis mb-8"
+            >
+              Down by the water, follow the chimney
+            </h2>
+            <div class="flex gap-4 border-b border-default pb-6 mb-6">
+              <span
+                data-icon-pack="stroke"
+                data-icon-name="map-pin"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                class="inline-flex items-center leading-none size-5 text-primary shrink-0 mt-1 [--icon-stroke:1.75]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                  />
+                  <circle cx="12" cy="10" r="3" /></svg
+              ></span>
+              <div>
+                <h3
+                  data-animate-trigger="scroll"
+                  id="iyxg2j"
+                  class="animate-soft-reveal-up text-xs uppercase tracking-widest text-subtle mb-2"
+                >
+                  Address
+                </h3>
+                <p
+                  data-animate-trigger="scroll"
+                  id="i54r04"
+                  class="animate-soft-reveal-up text-base text-default"
+                >
+                  17 Kilngate Wharf<br />Bristol BS1 4RN
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4 border-b border-default pb-6 mb-6">
+              <span
+                data-icon-pack="stroke"
+                data-icon-name="clock"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                class="inline-flex items-center leading-none size-5 text-primary shrink-0 mt-1 [--icon-stroke:1.75]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" /></svg
+              ></span>
+              <div class="w-full">
+                <h3
+                  data-animate-trigger="scroll"
+                  id="ik55g2"
+                  class="animate-soft-reveal-up text-xs uppercase tracking-widest text-subtle mb-3"
+                >
+                  Opening Hours
+                </h3>
+                <div class="flex justify-between gap-4 py-1">
+                  <span class="text-base text-default">Monday – Thursday</span
+                  ><span class="text-base text-muted">12pm – 11pm</span>
+                </div>
+                <div class="flex justify-between gap-4 py-1">
+                  <span class="text-base text-default">Friday – Saturday</span
+                  ><span class="text-base text-muted">12pm – 1am</span>
+                </div>
+                <div class="flex justify-between gap-4 py-1">
+                  <span class="text-base text-default">Sunday</span
+                  ><span class="text-base text-muted">12pm – 10.30pm</span>
+                </div>
+                <p
+                  data-animate-trigger="scroll"
+                  id="i0jhif"
+                  class="animate-soft-reveal-up text-sm text-subtle mt-3"
+                >
+                  Kitchen closes at 9.30pm, an hour earlier on Sundays.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <span
+                data-icon-pack="stroke"
+                data-icon-name="phone"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                class="inline-flex items-center leading-none size-5 text-primary shrink-0 mt-1 [--icon-stroke:1.75]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+                  /></svg
+              ></span>
+              <div>
+                <h3
+                  data-animate-trigger="scroll"
+                  id="ijayey"
+                  class="animate-soft-reveal-up text-xs uppercase tracking-widest text-subtle mb-2"
+                >
+                  Get in Touch
+                </h3>
+                <p
+                  data-animate-trigger="scroll"
+                  id="iidvqf"
+                  class="animate-soft-reveal-up text-base"
+                >
+                  <a
+                    href="tel:+441174960231"
+                    class="text-default no-underline hover:text-primary"
+                    >0117 496 0231</a
+                  >
+                </p>
+                <p
+                  data-animate-trigger="scroll"
+                  id="ig1yd5"
+                  class="animate-soft-reveal-up text-base"
+                >
+                  <a
+                    href="mailto:hello@emberandoak.co.uk"
+                    class="text-default no-underline hover:text-primary"
+                    >hello@emberandoak.co.uk</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 lg:col-6 mt-10 lg:mt-0">
+            <div
+              data-address="Kilngate Wharf, Bristol, UK"
+              data-zoom="17"
+              data-maptype="roadmap"
+              id="itnwh2"
+              class="w-full border border-default"
+            >
+              <iframe
+                data-swebsy-map=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen="true"
+                title="Map"
+                src="https://www.google.com/maps?q=Kilngate%20Wharf%2C%20Bristol%2C%20UK&amp;z=17&amp;t=m&amp;output=embed"
+                class="block w-full h-full border-0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-ai-symbol="true"
+      data-swebsy-block-id="booking-image-cta"
+      data-swebsy-block='{"tags":[],"description":"Image-backed booking banner with dark overlay, bold headline, supporting copy, and primary action."}'
+      id="book"
+      class="relative overflow-hidden bg-emphasis"
+    >
+      <img
+        alt="A long table laid for a large party in the back room of the pub"
+        src="assets/70fe1255-13c7-4c6a-9f07-ef8959799ec2.webp"
+        id="i1t0ai"
+        data-animate-trigger="scroll"
+        class="animate-soft-reveal-up absolute inset-0 w-full h-full object-cover"
+      /><span
+        id="i8qhxk"
+        class="absolute inset-0 block bg-stone-950/78 dark:bg-stone-950/80"
+      ></span>
+      <div
+        id="iz9dwo"
+        class="container mx-auto max-w-6xl px-6 relative py-16 md:py-20 lg:py-28"
+      >
+        <div id="i561zv" class="row">
+          <div id="inpobg" class="col-12 lg:col-8 mx-auto text-center">
+            <span
+              id="il5512"
+              class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-5"
+              >Reservations</span
+            >
+            <h2
+              id="iugx45"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-3xl md:text-4xl lg:text-5xl text-white dark:text-white mb-5"
+            >
+              Table for two, or twenty?
+            </h2>
+            <p
+              id="i17e98"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-base md:text-lg text-stone-300 dark:text-stone-300 max-w-xl mx-auto mb-9"
+            >
+              We hold a third of the room back for walk-ins, so there is usually
+              a seat. For Sundays, folk nights and anything over six, book ahead
+              and we will keep the fire side free.
+            </p>
+            <div
+              id="ilxg9t"
+              class="flex flex-wrap items-center justify-center gap-3"
+            >
+              <a
+                href="#"
+                id="isdncg"
+                data-animate-trigger="scroll"
+                class="animate-soft-reveal-up btn btn-primary btn-lg"
+                >Book a Table</a
+              ><a
+                href="tel:+441174960231"
+                id="i1d65v"
+                data-animate-trigger="scroll"
+                class="btn btn-neutral btn-lg animate-soft-reveal-up text-white dark:text-white"
+                >Call 0117 496 0231</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      data-ai-symbol="true"
+      id="ic41og"
+      data-swebsy-block-id="primary-footer"
+      data-swebsy-block='{"tags":[],"description":"Multi-column dark pub footer with brand statement, grouped navigation, and practical venue details."}'
+      class="bg-subtle border-t border-subtle pt-16 md:pt-20 lg:pt-24"
+    >
+      <div id="izqjlc" class="container mx-auto max-w-6xl px-6">
+        <div id="icaluy" class="row g-10">
+          <div id="i1627t" class="col-12 lg:col-4">
+            <div id="ie8pa5" class="flex items-center gap-3 mb-5">
+              <span
+                data-icon-pack="stroke"
+                data-icon-name="flame"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="ihvjv1"
+                class="inline-flex items-center leading-none size-7 text-primary [--icon-stroke:1.5]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"
+                  /></svg></span
+              ><span
+                id="irewyf"
+                class="text-xl font-semibold tracking-tight text-emphasis leading-none"
+                >The Ember &amp; Oak</span
+              >
+            </div>
+            <p
+              id="irmhxn"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-sm text-muted mb-6 max-w-sm"
+            >
+              A public house and kitchen on Kilngate Wharf. Cask ale, two
+              working fires, and a Sunday roast worth the walk. Licensed since
+              1904.
+            </p>
+            <div id="i8xg8t" class="flex items-center gap-2">
+              <a
+                href="#"
+                aria-label="The Ember and Oak on Instagram"
+                id="iraltt"
+                data-animate-trigger="scroll"
+                class="animate-soft-reveal-up btn btn-icon btn-outline-neutral btn-sm"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faInstagram"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="icmho4"
+                  class="inline-flex items-center leading-none size-4"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="instagram"
+                    class="svg-inline--fa fa-instagram"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    ></path></svg></span></a
+              ><a
+                href="#"
+                aria-label="The Ember and Oak on Facebook"
+                id="i4g3lx"
+                data-animate-trigger="scroll"
+                class="animate-soft-reveal-up btn btn-icon btn-outline-neutral btn-sm"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faFacebookF"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="i3y6oo"
+                  class="inline-flex items-center leading-none size-4"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="facebook-f"
+                    class="svg-inline--fa fa-facebook-f"
+                    role="img"
+                    viewBox="0 0 320 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M80 299.3l0 212.7 116 0 0-212.7 86.5 0 18-97.8-104.5 0 0-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4 .4 37 1.2l0-88.7C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4l0 42.1-66 0 0 97.8 66 0z"
+                    ></path></svg></span></a
+              ><a
+                href="#"
+                aria-label="The Ember and Oak on X"
+                id="i9a466"
+                data-animate-trigger="scroll"
+                class="animate-soft-reveal-up btn btn-icon btn-outline-neutral btn-sm"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faXTwitter"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="iy1nt5"
+                  class="inline-flex items-center leading-none size-4"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="x-twitter"
+                    class="svg-inline--fa fa-x-twitter"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M357.2 48L427.8 48 273.6 224.2 455 464 313 464 201.7 318.6 74.5 464 3.8 464 168.7 275.5-5.2 48 140.4 48 240.9 180.9 357.2 48zM332.4 421.8l39.1 0-252.4-333.8-42 0 255.3 333.8z"
+                    ></path></svg></span
+              ></a>
+            </div>
+          </div>
+          <div id="ik7vbj" class="col-12 sm:col-4 lg:col-2">
+            <h3
+              id="igkbyp"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-xs uppercase tracking-widest text-emphasis mb-5"
+            >
+              The Pub
+            </h3>
+            <p
+              id="ipoipa"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up mb-3"
+            >
+              <a
+                href="#story"
+                id="ig7444"
+                class="text-sm text-muted no-underline hover:text-primary"
+                >Our Story</a
+              >
+            </p>
+            <p
+              id="it9p4s"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up mb-3"
+            >
+              <a
+                href="#gallery"
+                id="iy3dom"
+                class="text-sm text-muted no-underline hover:text-primary"
+                >Gallery</a
+              >
+            </p>
+            <p
+              id="isgj2l"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up mb-3"
+            >
+              <a
+                href="#"
+                id="i6p2jg"
+                class="text-sm text-muted no-underline hover:text-primary"
+                >Private Hire</a
+              >
+            </p>
+            <p
+              id="iqndch"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up mb-3"
+            >
+              <a
+                href="#"
+                id="io6bxj"
+                class="text-sm text-muted no-underline hover:text-primary"
+                >Work With Us</a
+              >
+            </p>
+          </div>
+          <div id="iia1fh" class="col-12 sm:col-4 lg:col-3">
+            <h3
+              id="ianb32"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-xs uppercase tracking-widest text-emphasis mb-5"
+            >
+              Eat &amp; Drink
+            </h3>
+            <p
+              id="i5ypzy"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up mb-3"
+            >
+              <a
+                href="#kitchen"
+                id="ixzaeq"
+                class="text-sm text-muted no-underline hover:text-primary"
+                >Kitchen Menu</a
+              >
+            </p>
+            <p
+              id="iw4qal"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up mb-3"
+            >
+              <a
+                href="#"
+                id="i2tsuf"
+                class="text-sm text-muted no-underline hover:text-primary"
+                >Sunday Roast</a
+              >
+            </p>
+            <p
+              id="iu6v0f"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up mb-3"
+            >
+              <a
+                href="#taps"
+                id="i90zmg"
+                class="text-sm text-muted no-underline hover:text-primary"
+                >What's On the Bar</a
+              >
+            </p>
+            <p
+              id="iki1w1"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up mb-3"
+            >
+              <a
+                href="#"
+                id="io5tjh"
+                class="text-sm text-muted no-underline hover:text-primary"
+                >Wine &amp; Spirits</a
+              >
+            </p>
+          </div>
+          <div id="iaid31" class="col-12 sm:col-4 lg:col-3">
+            <h3
+              id="i86icr"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-xs uppercase tracking-widest text-emphasis mb-5"
+            >
+              Visit
+            </h3>
+            <p
+              id="iup2zh"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-sm text-muted mb-4"
+            >
+              17 Kilngate Wharf<br />Bristol BS1 4RN
+            </p>
+            <p
+              id="i8v26m"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up mb-3"
+            >
+              <a
+                href="tel:+441174960231"
+                id="i95gjw"
+                class="text-sm text-muted no-underline hover:text-primary"
+                >0117 496 0231</a
+              >
+            </p>
+            <p
+              id="il03he"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up mb-3"
+            >
+              <a
+                href="mailto:hello@emberandoak.co.uk"
+                id="irhw7i"
+                class="text-sm text-muted no-underline hover:text-primary"
+                >hello@emberandoak.co.uk</a
+              >
+            </p>
+          </div>
+        </div>
+        <div
+          id="i97l5o"
+          class="flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-default mt-14 py-7"
+        >
+          <p
+            id="iwn6ho"
+            data-animate-trigger="scroll"
+            class="animate-soft-reveal-up text-xs text-subtle"
+          >
+            &copy; 2026 The Ember &amp; Oak Public House. Please drink
+            responsibly.
+          </p>
+          <div
+            id="isdtmr"
+            class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2"
+          >
+            <a
+              href="#"
+              id="itvm4c"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-xs text-subtle no-underline hover:text-primary"
+              >Privacy</a
+            ><a
+              href="#"
+              id="i9lwqw"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-xs text-subtle no-underline hover:text-primary"
+              >Allergens</a
+            ><a
+              href="#"
+              id="irksot"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-xs text-subtle no-underline hover:text-primary"
+              >Accessibility</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/swebsy-components.0428791abb.js" defer></script>
+  <script src="js/swebsy-scroll-observer.5f2059a125.js"></script>
+  <noscript
+    ><style>
+      [data-animate-trigger] {
+        opacity: 1 !important;
+        animation: none !important;
+      }
+    </style></noscript
+  ><a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

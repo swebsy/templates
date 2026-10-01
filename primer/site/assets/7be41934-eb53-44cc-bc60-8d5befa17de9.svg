@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 48" aria-label="Wide Hall Museum">
+  <g fill="none" stroke="#000" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M4 11l6 26 8-20 8 20 6-26M43 11v26M55 11v26h8c8 0 13-5 13-13s-5-13-13-13h-8ZM89 11h16M89 11v26h16M89 24h13M125 11v26m0-13h18m0-13v26M155 37l10-26 10 26m-15-11h10M187 11v26h16M216 11v26h16"></path>
+  </g>
+  <path fill="#000" d="M238 11h8v8h-8zM238 29h8v8h-8z"></path>
+</svg>

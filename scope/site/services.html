@@ -1,0 +1,1325 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope — Fixed-scope brand and web sprints</title>
+    <meta
+      name="description"
+      content="Scope is a senior brand and web studio delivering focused website sprints with clear scope, pricing, and timelines."
+    />
+    <meta
+      name="keywords"
+      content="productized design agency, website sprint, brand studio, design subscription, fixed-price web design"
+    />
+    <meta name="author" content="Scope Studio" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Scope — Your next website, properly scoped"
+    />
+    <meta
+      property="og:description"
+      content="Senior brand and web design delivered through focused, fixed-price sprints."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Scope — Fixed-scope brand and web sprints"
+    />
+    <meta
+      name="twitter:description"
+      content="A senior studio for focused brand and website sprints."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-dmmono-aFTU7PB1QTsUX8KYthSQBLyM.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-dmmono-aFTU7PB1QTsUX8KYthqQBA.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-dmmono-aFTR7PB1QTsUX8KYvumzEY2tbZX9.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-dmmono-aFTR7PB1QTsUX8KYvumzEYOtbQ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-instrumentserif-jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjgn7MsNo.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-instrumentserif-jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjjH7M.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-instrumentserif-jizBRFtNs2ka5fXjeivQ4LroWlx-6zsTjmbI.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-instrumentserif-jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-8.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-9.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-10.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-11.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-12.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-13.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "light";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.48ee4ef553.css" />
+  </head>
+  <body>
+    <nav
+      data-navbar-collapse-on="sm"
+      data-swebsy-block-id="navigation-studio"
+      data-swebsy-block='{"tags":["navigation"],"description":"Sticky responsive studio navbar with wordmark, compact links, and a primary project CTA."}'
+      id="i90b-2-2"
+      class="navbar navbar-expand-sm bg-default border-b border-default sticky top-0 z-50"
+    >
+      <div data-navbar-part="container" id="icv1xx" class="container py-3">
+        <a
+          href="./index.html"
+          data-navbar-part="brand"
+          id="iljevh"
+          class="navbar-brand flex items-center gap-2 no-underline"
+          ><strong id="iaiyfs" class="text-2xl text-emphasis">Scope</strong
+          ><span
+            aria-hidden="true"
+            id="ivtavl"
+            class="inline-block size-2 rounded-full bg-secondary"
+          ></span></a
+        ><button
+          type="button"
+          data-navbar-part="toggler"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="ikkteb"
+          class="btn btn-icon navbar-toggler"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="ivc1s3"
+            class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="navbarMenu-2-2"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse"
+        >
+          <ul
+            data-navbar-part="links"
+            id="irnl3z"
+            class="navbar-nav ms-auto items-md-center gap-md-1"
+          >
+            <li id="ih9xd7" class="nav-item">
+              <a href="./index.html" id="i2vrze" class="nav-link">Home</a>
+            </li>
+            <li id="iqihge" class="nav-item">
+              <a
+                href="./services.html"
+                id="i60v3g"
+                class="nav-link active"
+                aria-current="page"
+                >Services</a
+              >
+            </li>
+            <li id="isre4x" class="nav-item">
+              <a href="./work.html" id="iwc6ut" class="nav-link">Work</a>
+            </li>
+            <li id="iv0a55" class="nav-item">
+              <a href="./studio.html" id="ih6ydw" class="nav-link">Studio</a>
+            </li>
+            <li id="i574xh" class="nav-item md:ms-3">
+              <a
+                href="./start.html"
+                id="icbg8l-2-2-3"
+                class="nav-link btn btn-primary text-white px-4 py-2 whitespace-nowrap"
+                >Start a project</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      data-swebsy-block-id="services-hero"
+      data-swebsy-block='{"tags":["hero"],"description":"Editorial services hero with offer positioning, transparent promise, and compact availability proof."}'
+      id="idyyzu8"
+      class="border-b border-default"
+    >
+      <div class="container py-16 md:py-24 lg:py-28">
+        <div class="row items-end gap-y-8">
+          <div class="col-12 lg:col-8">
+            <p
+              data-animate-trigger="scroll"
+              id="i9tagn"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-sm text-primary mb-4"
+            >
+              Services · Two formats
+            </p>
+            <h1
+              id="in5qk8"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-4xl md:text-6xl lg:text-7xl leading-none text-emphasis mb-0"
+            >
+              Clear offers.
+              <span id="ilzut35" class="font-light italic font-serif"
+                >Serious</span
+              >
+              outcomes.
+            </h1>
+          </div>
+          <div class="col-12 lg:col-4">
+            <p
+              data-animate-trigger="scroll"
+              id="i1jdhh"
+              class="animate-soft-reveal-up text-xl text-default mb-0"
+            >
+              A focused sprint when the finish line is known. An ongoing desk
+              when the work keeps moving.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="website-sprint-ledger"
+      data-swebsy-block='{"tags":["pricing"],"description":"Detailed fixed-scope website sprint section with price, timeline, CTA, and three delivery-phase cards."}'
+      id="i91q9je"
+      class="bg-default relative"
+    >
+      <div class="container py-16 md:py-24 lg:py-28">
+        <div class="row gap-y-10">
+          <div class="col-12 lg:col-5">
+            <div class="sticky top-24">
+              <span
+                data-animate-trigger="scroll"
+                id="iotxp8"
+                class="animate-soft-reveal-up badge badge-primary font-mono uppercase tracking-widest mb-4"
+                >10 working days</span
+              >
+              <h2
+                id="iv2hpal"
+                data-animate-trigger="scroll"
+                class="animate-soft-reveal-up text-3xl md:text-5xl text-emphasis mb-6"
+              >
+                The Website Sprint
+              </h2>
+              <p
+                data-animate-trigger="scroll"
+                id="i529zm"
+                class="animate-soft-reveal-up text-lg text-muted mb-8"
+              >
+                For a launch, repositioning, or overdue website that needs
+                senior attention and a firm deadline.
+              </p>
+              <h3
+                id="io5zq0m"
+                data-animate-trigger="scroll"
+                class="animate-soft-reveal-up text-4xl text-emphasis mb-2"
+              >
+                $8,500
+              </h3>
+              <p
+                data-animate-trigger="scroll"
+                id="i2nphk"
+                class="animate-soft-reveal-up text-sm text-muted mb-8"
+              >
+                Fixed project fee · 50% to reserve
+              </p>
+              <a
+                href="./start.html"
+                data-animate-trigger="scroll"
+                id="i8ecbm"
+                class="animate-soft-reveal-up btn btn-primary btn-lg"
+                >Reserve a sprint</a
+              >
+              <div
+                data-animate-trigger="scroll"
+                class="animate-soft-reveal-up mt-10 overflow-hidden rounded-2xl border border-default bg-subtle"
+              >
+                <img
+                  alt="Layered paper website wireframes in desktop, tablet, and mobile proportions"
+                  src="assets/7132c85a-f9f8-4624-8e8c-5cda679bf2ca.webp"
+                  loading="lazy"
+                  class="w-full aspect-[4/3] object-cover"
+                />
+                <div class="p-4 border-t border-default">
+                  <p
+                    class="font-mono uppercase tracking-widest text-xs text-primary mb-0"
+                  >
+                    RESPONSIVE BY CONSTRUCTION
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 lg:col-6 lg:offset-1">
+            <div class="border-t border-default">
+              <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-4 py-8 border-b border-default"
+              >
+                <p
+                  data-animate-trigger="scroll"
+                  id="ids5bh"
+                  class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-primary"
+                >
+                  Focus
+                </p>
+                <h3
+                  id="iadmm4u"
+                  data-animate-trigger="scroll"
+                  class="animate-soft-reveal-up text-2xl text-emphasis mb-0"
+                >
+                  Direction before decoration
+                </h3>
+                <p
+                  data-animate-trigger="scroll"
+                  id="i89quf"
+                  class="animate-soft-reveal-up text-muted mb-0"
+                >
+                  Audience, offer, positioning, page architecture, and a visual
+                  direction everyone can commit to.
+                </p>
+              </div>
+              <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-4 py-8 border-b border-default"
+              >
+                <p
+                  data-animate-trigger="scroll"
+                  id="ii4159"
+                  class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-primary"
+                >
+                  Design
+                </p>
+                <h3
+                  id="i7a0i3g"
+                  data-animate-trigger="scroll"
+                  class="animate-soft-reveal-up text-2xl text-emphasis mb-0"
+                >
+                  A complete responsive system
+                </h3>
+                <p
+                  data-animate-trigger="scroll"
+                  id="i4jzrh"
+                  class="animate-soft-reveal-up text-muted mb-0"
+                >
+                  Homepage, supporting pages, reusable components, custom
+                  project art direction, and every important state.
+                </p>
+              </div>
+              <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-4 py-8 border-b border-default"
+              >
+                <p
+                  data-animate-trigger="scroll"
+                  id="ikwadh"
+                  class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-primary"
+                >
+                  Build
+                </p>
+                <h3
+                  id="i79sh2i"
+                  data-animate-trigger="scroll"
+                  class="animate-soft-reveal-up text-2xl text-emphasis mb-0"
+                >
+                  Ready for a real launch
+                </h3>
+                <p
+                  data-animate-trigger="scroll"
+                  id="ihte41"
+                  class="animate-soft-reveal-up text-muted mb-0"
+                >
+                  Responsive implementation, metadata, analytics, performance
+                  pass, deployment support, and handoff.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="deliverables-grid"
+      data-swebsy-block='{"tags":["features"],"description":"Six-card deliverables grid covering strategy, design, build, launch, and handoff."}'
+      id="iqdabf4"
+      class="bg-subtle border-y border-default"
+    >
+      <div class="container py-16 md:py-24 lg:py-28">
+        <div class="row gap-y-10 mb-12">
+          <div class="col-12 lg:col-5">
+            <p
+              data-animate-trigger="scroll"
+              id="ivo4oh"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-sm text-primary mb-4"
+            >
+              Inside the sprint
+            </p>
+            <h2
+              id="iuac3hl"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-3xl md:text-5xl text-emphasis mb-0"
+            >
+              Everything needed. Nothing padded.
+            </h2>
+          </div>
+          <div class="col-12 lg:col-6 lg:offset-1">
+            <p
+              data-animate-trigger="scroll"
+              id="ikxc3l"
+              class="animate-soft-reveal-up text-xl text-default mb-0"
+            >
+              The scope is intentionally complete enough to launch and
+              constrained enough to finish with care.
+            </p>
+          </div>
+        </div>
+        <div id="iicnr0v" class="row gap-y-8">
+          <div class="col-12 md:col-6 lg:col-4">
+            <div
+              data-animate-trigger="scroll"
+              id="ipqdyj"
+              class="animate-soft-reveal-up card relative h-full bg-default border border-emphasis rounded-2xl"
+            >
+              <div class="card-body p-6 md:p-8">
+                <span
+                  data-icon-pack="stroke"
+                  data-icon-name="message-square-text"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="idpl07q"
+                  class="inline-flex items-center leading-none size-5 text-primary mb-4 [--icon-stroke:2.25]"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="var(--icon-stroke, 2)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"
+                    />
+                    <path d="M7 11h10" />
+                    <path d="M7 15h6" />
+                    <path d="M7 7h8" /></svg
+                ></span>
+                <h3 id="iiwft77" class="text-2xl text-emphasis mb-3">
+                  Positioning & copy
+                </h3>
+                <p class="text-muted mb-0">
+                  A sharper promise, page narrative, headlines, calls to action,
+                  and launch-ready supporting copy.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 md:col-6 lg:col-4">
+            <div
+              data-animate-trigger="scroll"
+              id="iifowa"
+              class="animate-soft-reveal-up card relative h-full bg-default border border-emphasis rounded-2xl"
+            >
+              <div class="card-body p-6 md:p-8">
+                <span
+                  data-icon-pack="stroke"
+                  data-icon-name="palette"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="isgpeog"
+                  class="inline-flex items-center leading-none size-5 text-primary mb-4 [--icon-stroke:2.25]"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="var(--icon-stroke, 2)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"
+                    />
+                    <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+                    <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+                    <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+                    <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" /></svg
+                ></span>
+                <h3 id="ia2urfh" class="text-2xl text-emphasis mb-3">
+                  Visual direction
+                </h3>
+                <p class="text-muted mb-0">
+                  A distinct type, color, layout, image, and motion system that
+                  extends the brand with purpose.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 md:col-6 lg:col-4">
+            <div
+              data-animate-trigger="scroll"
+              id="ia1v2k"
+              class="animate-soft-reveal-up card relative h-full bg-default border border-emphasis rounded-2xl"
+            >
+              <div class="card-body p-6 md:p-8">
+                <span
+                  data-icon-pack="stroke"
+                  data-icon-name="layout-template"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="if3iugs"
+                  class="inline-flex items-center leading-none size-5 text-primary mb-4 [--icon-stroke:2.25]"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="var(--icon-stroke, 2)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <rect width="18" height="7" x="3" y="3" rx="1" />
+                    <rect width="9" height="7" x="3" y="14" rx="1" />
+                    <rect width="5" height="7" x="16" y="14" rx="1" /></svg
+                ></span>
+                <h3 id="in6m21q" class="text-2xl text-emphasis mb-3">
+                  Up to six pages
+                </h3>
+                <p class="text-muted mb-0">
+                  The core route from first impression to informed decision,
+                  composed for desktop through mobile.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 md:col-6 lg:col-4">
+            <div
+              data-animate-trigger="scroll"
+              id="il55sr"
+              class="animate-soft-reveal-up card relative h-full bg-default border border-emphasis rounded-2xl"
+            >
+              <div class="card-body p-6 md:p-8">
+                <span
+                  data-icon-pack="stroke"
+                  data-icon-name="blocks"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="i0fyb4o"
+                  class="inline-flex items-center leading-none size-5 text-primary mb-4 [--icon-stroke:2.25]"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="var(--icon-stroke, 2)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2"
+                    />
+                    <rect x="14" y="2" width="8" height="8" rx="1" /></svg
+                ></span>
+                <h3 id="itly64r" class="text-2xl text-emphasis mb-3">
+                  Reusable sections
+                </h3>
+                <p class="text-muted mb-0">
+                  A flexible library for new campaign, feature, pricing, and
+                  story pages after the sprint ends.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 md:col-6 lg:col-4">
+            <div
+              data-animate-trigger="scroll"
+              id="iqhdt3"
+              class="animate-soft-reveal-up card relative h-full bg-default border border-emphasis rounded-2xl"
+            >
+              <div class="card-body p-6 md:p-8">
+                <span
+                  data-icon-pack="stroke"
+                  data-icon-name="gauge"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="iart16p"
+                  class="inline-flex items-center leading-none size-5 text-primary mb-4 [--icon-stroke:2.25]"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="var(--icon-stroke, 2)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="m12 14 4-4" />
+                    <path d="M3.34 19a10 10 0 1 1 17.32 0" /></svg
+                ></span>
+                <h3 id="in0ejru" class="text-2xl text-emphasis mb-3">
+                  Launch quality
+                </h3>
+                <p class="text-muted mb-0">
+                  Responsive checks, sensible SEO, analytics, accessibility, and
+                  performance-minded implementation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 md:col-6 lg:col-4">
+            <div
+              data-animate-trigger="scroll"
+              id="ijq7hi"
+              class="animate-soft-reveal-up card relative h-full bg-default border border-emphasis rounded-2xl"
+            >
+              <div class="card-body p-6 md:p-8">
+                <span
+                  data-icon-pack="stroke"
+                  data-icon-name="package-check"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="ij3h2pl"
+                  class="inline-flex items-center leading-none size-5 text-primary mb-4 [--icon-stroke:2.25]"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="var(--icon-stroke, 2)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 22V12" />
+                    <path d="m16 17 2 2 4-4" />
+                    <path
+                      d="M21 11.127V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.729l7 4a2 2 0 0 0 2 .001l1.32-.753"
+                    />
+                    <path d="M3.29 7 12 12l8.71-5" />
+                    <path d="m7.5 4.27 8.997 5.148" /></svg
+                ></span>
+                <h3 id="ifoxl71" class="text-2xl text-emphasis mb-3">
+                  Full handoff
+                </h3>
+                <p class="text-muted mb-0">
+                  Editable design assets, the working site, a recorded
+                  walkthrough, and no required ongoing retainer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="design-desk"
+      data-swebsy-block='{"tags":["pricing"],"description":"Recurring design subscription section with monthly pricing, service rhythm, and direct CTA."}'
+      id="ikte6qf"
+    >
+      <div class="container py-16 md:py-24 lg:py-28">
+        <div class="row gap-y-10">
+          <div class="col-12 lg:col-6">
+            <span
+              data-animate-trigger="scroll"
+              id="ij4as6"
+              class="animate-soft-reveal-up badge badge-secondary font-mono uppercase tracking-widest mb-4"
+              >Month to month</span
+            >
+            <h2
+              id="i12n5nl"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-3xl md:text-5xl text-white mb-6"
+            >
+              A senior design desk, minus the hiring process.
+            </h2>
+            <p
+              data-animate-trigger="scroll"
+              id="iulsvi"
+              class="animate-soft-reveal-up text-xl text-white/80 mb-8"
+            >
+              Queue as much as you need. We work through one priority at a time
+              and return polished work every few days.
+            </p>
+            <h3
+              id="izj6rjc"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-4xl text-white mb-2"
+            >
+              $5,900/month
+            </h3>
+            <p
+              data-animate-trigger="scroll"
+              id="i9zjpm"
+              class="animate-soft-reveal-up text-white/70 mb-8"
+            >
+              Pause or cancel before the next cycle.
+            </p>
+            <a
+              href="./start.html"
+              data-animate-trigger="scroll"
+              id="izz7yu"
+              class="animate-soft-reveal-up btn btn-secondary btn-lg"
+              >Join the Design Desk</a
+            >
+          </div>
+          <div class="col-12 lg:col-5 lg:offset-1">
+            <div class="border-t border-white/25">
+              <div
+                class="flex justify-between gap-4 py-5 border-b border-white/15"
+              >
+                <p
+                  data-animate-trigger="scroll"
+                  id="i68kfs"
+                  class="animate-soft-reveal-up text-white/70 mb-0"
+                >
+                  Active requests
+                </p>
+                <p
+                  data-animate-trigger="scroll"
+                  id="ipuywn"
+                  class="animate-soft-reveal-up font-mono uppercase tracking-widest text-sm text-white mb-0"
+                >
+                  One at a time
+                </p>
+              </div>
+              <div
+                class="flex justify-between gap-4 py-5 border-b border-white/15"
+              >
+                <p
+                  data-animate-trigger="scroll"
+                  id="i7609q"
+                  class="animate-soft-reveal-up text-white/70 mb-0"
+                >
+                  Typical turnaround
+                </p>
+                <p
+                  data-animate-trigger="scroll"
+                  id="ikfi04"
+                  class="animate-soft-reveal-up font-mono uppercase tracking-widest text-sm text-white mb-0"
+                >
+                  2–3 days
+                </p>
+              </div>
+              <div
+                class="flex justify-between gap-4 py-5 border-b border-white/15"
+              >
+                <p
+                  data-animate-trigger="scroll"
+                  id="i8cusp"
+                  class="animate-soft-reveal-up text-white/70 mb-0"
+                >
+                  Requests & revisions
+                </p>
+                <p
+                  data-animate-trigger="scroll"
+                  id="i3ow2u"
+                  class="animate-soft-reveal-up font-mono uppercase tracking-widest text-sm text-white mb-0"
+                >
+                  Unlimited queue
+                </p>
+              </div>
+              <div
+                class="flex justify-between gap-4 py-5 border-b border-white/15"
+              >
+                <p
+                  data-animate-trigger="scroll"
+                  id="i48v7b"
+                  class="animate-soft-reveal-up text-white/70 mb-0"
+                >
+                  Collaboration
+                </p>
+                <p
+                  data-animate-trigger="scroll"
+                  id="i60fuq"
+                  class="animate-soft-reveal-up font-mono uppercase tracking-widest text-sm text-white mb-0"
+                >
+                  Async by default
+                </p>
+              </div>
+              <div
+                class="flex justify-between gap-4 py-5 border-b border-white/15"
+              >
+                <p
+                  data-animate-trigger="scroll"
+                  id="il3n3i"
+                  class="animate-soft-reveal-up text-white/70 mb-0"
+                >
+                  Commitment
+                </p>
+                <p
+                  data-animate-trigger="scroll"
+                  id="i0nyni"
+                  class="animate-soft-reveal-up font-mono uppercase tracking-widest text-sm text-white mb-0"
+                >
+                  None
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="iwusnbx"
+      data-swebsy-block-id="engagement-comparison-ly6f"
+      data-swebsy-block='{"tags":["pricing","features"],"description":"A two-card engagement comparison with an editorial heading and concise fit checklists."}'
+      class="bg-default"
+    >
+      <div class="container py-16 md:py-24 lg:py-28">
+        <div class="row gap-y-8 mb-12">
+          <div class="col-12 lg:col-7">
+            <p
+              data-animate-trigger="scroll"
+              id="ijt6zl"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-sm text-primary mb-4"
+            >
+              Pick your engagement
+            </p>
+            <h2
+              id="iy13iqn"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-3xl md:text-5xl text-emphasis mb-0"
+            >
+              A finish line or a steady rhythm?
+            </h2>
+          </div>
+        </div>
+        <div class="row gap-y-6">
+          <div class="col-12 lg:col-6">
+            <div
+              id="icjzwi"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up card relative h-full bg-default border border-emphasis rounded-2xl"
+            >
+              <div class="card-body p-6 md:p-8">
+                <p
+                  class="font-mono uppercase tracking-widest text-sm text-primary mb-8"
+                >
+                  Choose a sprint when…
+                </p>
+                <h3 id="i7xd28e" class="text-3xl text-emphasis mb-6">
+                  Something important needs to ship.
+                </h3>
+                <div class="flex flex-col gap-4">
+                  <p class="mb-0">→ You have a launch or funding date.</p>
+                  <p class="mb-0">→ Your offer or site needs repositioning.</p>
+                  <p class="mb-0">→ The team can make fast decisions.</p>
+                  <p class="mb-0">→ You want a complete handoff.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 lg:col-6">
+            <div
+              data-animate-trigger="scroll"
+              id="is8v7f"
+              class="animate-soft-reveal-up card relative h-full bg-default border border-emphasis rounded-2xl"
+            >
+              <div class="card-body p-6 md:p-8">
+                <p
+                  class="font-mono uppercase tracking-widest text-sm text-secondary mb-8"
+                >
+                  Choose the desk when…
+                </p>
+                <h3 id="ibeil6w" class="text-3xl text-emphasis mb-6">
+                  The queue never really ends.
+                </h3>
+                <div class="flex flex-col gap-4">
+                  <p class="mb-0">→ Design debt is slowing the team.</p>
+                  <p class="mb-0">→ Campaigns need a reliable maker.</p>
+                  <p class="mb-0">→ Hiring full-time is premature.</p>
+                  <p class="mb-0">→ Priorities change week to week.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="services-faq"
+      data-swebsy-block='{"tags":["faq"],"description":"Service-specific FAQ section answering scope, timing, platform, revision, and ownership questions."}'
+      id="iic5svt"
+      class="bg-subtle border-t border-default"
+    >
+      <div class="container py-16 md:py-24 lg:py-28">
+        <div class="row gap-y-10">
+          <div class="col-12 lg:col-4">
+            <p
+              data-animate-trigger="scroll"
+              id="ih9al7"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-sm text-primary mb-4"
+            >
+              Practical details
+            </p>
+            <h2
+              id="iq0yhc4"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-3xl md:text-5xl text-emphasis mb-0"
+            >
+              Before we begin.
+            </h2>
+          </div>
+          <div class="col-12 lg:col-7 lg:offset-1">
+            <div class="border-t border-default">
+              <div class="py-6 border-b border-default">
+                <h3
+                  id="ilvf25i"
+                  data-animate-trigger="scroll"
+                  class="animate-soft-reveal-up text-xl text-emphasis mb-3"
+                >
+                  How many people will work on our project?
+                </h3>
+                <p
+                  data-animate-trigger="scroll"
+                  id="ivyghg"
+                  class="animate-soft-reveal-up text-muted mb-0"
+                >
+                  A two-person senior team leads strategy, design, and build.
+                  Specialists join only when the scope genuinely calls for them.
+                </p>
+              </div>
+              <div class="py-6 border-b border-default">
+                <h3
+                  id="iywr12j"
+                  data-animate-trigger="scroll"
+                  class="animate-soft-reveal-up text-xl text-emphasis mb-3"
+                >
+                  What counts as one Design Desk request?
+                </h3>
+                <p
+                  data-animate-trigger="scroll"
+                  id="idkgqr"
+                  class="animate-soft-reveal-up text-muted mb-0"
+                >
+                  A focused deliverable such as a landing page, pitch deck,
+                  campaign concept, or defined group of product screens. Larger
+                  requests are divided into clear stages.
+                </p>
+              </div>
+              <div class="py-6 border-b border-default">
+                <h3
+                  id="iapfhny"
+                  data-animate-trigger="scroll"
+                  class="animate-soft-reveal-up text-xl text-emphasis mb-3"
+                >
+                  Can the sprint include a new logo?
+                </h3>
+                <p
+                  data-animate-trigger="scroll"
+                  id="ixks86"
+                  class="animate-soft-reveal-up text-muted mb-0"
+                >
+                  A complete identity can be added before the website sprint.
+                  Lighter visual refreshes are often covered inside the standard
+                  engagement.
+                </p>
+              </div>
+              <div class="py-6 border-b border-default">
+                <h3
+                  id="i19py39"
+                  data-animate-trigger="scroll"
+                  class="animate-soft-reveal-up text-xl text-emphasis mb-3"
+                >
+                  What is not included?
+                </h3>
+                <p
+                  data-animate-trigger="scroll"
+                  id="i4lwxq"
+                  class="animate-soft-reveal-up text-muted mb-0"
+                >
+                  Complex application development, ecommerce operations,
+                  long-form content production, and ongoing campaign management
+                  are scoped separately.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="project-cta"
+      data-swebsy-block='{"tags":["cta"],"description":"High-contrast project CTA band with availability note, oversized closing line, and action button."}'
+      id="start-2-2"
+    >
+      <div id="i69f7i-2-2" class="container py-16 md:py-24 lg:py-28">
+        <div id="i9o7sx-2-2" class="row items-end gap-y-8">
+          <div id="i7ec0o-2-2" class="col-12 lg:col-8">
+            <p
+              id="i0i05w-2-2"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-stone-950 mb-4"
+            >
+              Two September starts
+            </p>
+            <h2
+              id="ihrn3p-2-2"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-4xl md:text-6xl lg:text-7xl leading-none text-stone-950 mb-0"
+            >
+              Bring the brief.
+              <span
+                data-selectme=""
+                id="iwk04bq"
+                class="font-light italic font-serif"
+                >Leave with the site.</span
+              >
+            </h2>
+          </div>
+          <div id="iltnyg-2-2" class="col-12 lg:col-4 text-start lg:text-end">
+            <a
+              href="./start.html"
+              id="icbe7x-2-2"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up btn btn-neutral btn-lg"
+              ><span id="icynbi-2-2">Start a project</span
+              ><span
+                data-icon-pack="stroke"
+                data-icon-name="arrow-right"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="i13hki-2-2"
+                class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" /></svg></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="footer-studio"
+      data-swebsy-block='{"tags":["footer"],"description":"Multi-column dark studio footer with brand statement, navigation, social links, and location."}'
+      id="im60bsu-2"
+      class="bg-emphasis border-t border-emphasis"
+    >
+      <div id="ihq0629-2" class="container py-12 md:py-16 lg:py-20">
+        <div id="i1foali-2" class="row gap-y-10 mb-16">
+          <div id="i4qkeze-2" class="col-12 lg:col-5">
+            <h2
+              data-animate-trigger="scroll"
+              id="irvtyul-2"
+              class="animate-soft-reveal-up text-4xl text-white dark:text-stone-900 mb-4"
+            >
+              Scope.
+            </h2>
+            <p
+              data-animate-trigger="scroll"
+              id="isx2j03-2"
+              class="animate-soft-reveal-up text-white/60 dark:text-stone-700 max-w-md mb-6"
+            >
+              A small senior studio for brand systems, focused websites, and the
+              work that moves a launch forward.
+            </p>
+          </div>
+          <div id="i44iyg3-2" class="col-6 lg:col-2 lg:offset-1">
+            <p
+              data-animate-trigger="scroll"
+              id="i8w3qxj-2"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-white/50 dark:text-stone-500"
+            >
+              Explore
+            </p>
+            <div id="i75v2zg-2" class="flex flex-col gap-3">
+              <a
+                href="./work.html"
+                data-animate-trigger="scroll"
+                id="ia78thi-2"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >Work</a
+              ><a
+                href="./services.html"
+                data-animate-trigger="scroll"
+                id="iv2rnl6-2"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >Services</a
+              ><a
+                href="./studio.html"
+                data-animate-trigger="scroll"
+                id="i2nq6px-2"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >Studio</a
+              >
+            </div>
+          </div>
+          <div id="ir6ufdj-2" class="col-6 lg:col-2">
+            <p
+              data-animate-trigger="scroll"
+              id="i560kff-2"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-white/50 dark:text-stone-500"
+            >
+              Social
+            </p>
+            <div id="i7x0sei-2" class="flex flex-col gap-3">
+              <a
+                href="#"
+                data-animate-trigger="scroll"
+                id="is0am91-2"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >Instagram</a
+              ><a
+                href="#"
+                data-animate-trigger="scroll"
+                id="iewhr3q-2"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >LinkedIn</a
+              ><a
+                href="mailto:hello@scope.studio"
+                data-animate-trigger="scroll"
+                id="ieb12ri-2"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >Email</a
+              >
+            </div>
+          </div>
+          <div id="i9jxsm5-2" class="col-12 lg:col-2">
+            <p
+              data-animate-trigger="scroll"
+              id="i91vwlg-2"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-white/50 dark:text-stone-500"
+            >
+              Based
+            </p>
+            <p
+              data-animate-trigger="scroll"
+              id="i0pgawa-2"
+              class="animate-soft-reveal-up text-white/80 dark:text-stone-800 mb-1"
+            >
+              Vancouver, BC
+            </p>
+            <p
+              data-animate-trigger="scroll"
+              id="iklqcqw-2"
+              class="animate-soft-reveal-up text-white/50 dark:text-stone-600 mb-0"
+            >
+              Working worldwide
+            </p>
+          </div>
+        </div>
+        <hr id="iznk77l-2" class="border-emphasis mb-6" />
+        <div
+          id="i3yal4y-2"
+          class="flex flex-col md:flex-row md:items-center justify-between gap-3"
+        >
+          <p
+            data-animate-trigger="scroll"
+            id="ijh1dke-2"
+            class="animate-soft-reveal-up text-sm text-white/50 dark:text-stone-600 mb-0"
+          >
+            © 2026 Scope Studio
+          </p>
+          <p
+            data-animate-trigger="scroll"
+            id="i1iut08-2"
+            class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-white/50 dark:text-stone-600"
+          >
+            Clear scope · Senior work · Full ownership
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/swebsy-components.a8a0f945e5.js" defer></script>
+  <script src="js/swebsy-scroll-observer.5f2059a125.js"></script>
+  <noscript
+    ><style>
+      [data-animate-trigger] {
+        opacity: 1 !important;
+        animation: none !important;
+      }
+    </style></noscript
+  ><a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

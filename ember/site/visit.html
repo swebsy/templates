@@ -1,0 +1,999 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ember &amp; Ash — Wood-Fired Restaurant, Carlton North</title>
+    <meta
+      name="description"
+      content="A wood-fired neighbourhood restaurant in Carlton North. Seasonal plates, natural wine, and an open fire at the centre of the room."
+    />
+    <meta name="author" content="Ember &amp;amp; Ash" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Ember &amp;amp; Ash — Wood-Fired Restaurant, Carlton North"
+    />
+    <meta
+      property="og:description"
+      content="A wood-fired neighbourhood restaurant in Carlton North. Seasonal plates, natural wine, and an open fire at the centre of the room."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Ember &amp;amp; Ash — Wood-Fired Restaurant, Carlton North"
+    />
+    <meta
+      name="twitter:description"
+      content="A wood-fired neighbourhood restaurant in Carlton North. Seasonal plates, natural wine, and an open fire at the centre of the room."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGWmQSNjdsmc35JDF1K5GRweDY1ZzPJ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGWmQSNjdsmc35JDF1K5GRweD81ZzPJ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGWmQSNjdsmc35JDF1K5GRweDc1ZzPJ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGWmQSNjdsmc35JDF1K5GRweDg1ZzPJ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGWmQSNjdsmc35JDF1K5GRweDQ1ZzPJ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGWmQSNjdsmc35JDF1K5GRweDU1ZzPJ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGWmQSNjdsmc35JDF1K5GRweDs1Zw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGUmQSNjdsmc35JDF1K5GR4SDktYw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGUmQSNjdsmc35JDF1K5GRxSDktYw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGUmQSNjdsmc35JDF1K5GR5SDktYw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGUmQSNjdsmc35JDF1K5GR2SDktYw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGUmQSNjdsmc35JDF1K5GR6SDktYw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGUmQSNjdsmc35JDF1K5GR7SDktYw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-ebgaramond-SlGUmQSNjdsmc35JDF1K5GR1SDk.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "light";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.60c11cddfc.css" />
+  </head>
+  <body>
+    <nav
+      data-navbar-collapse-on="sm"
+      data-swebsy-block-id="navbar-inline-brand"
+      data-swebsy-block='{"tags":["navigation"],"description":"Bordered navbar with a serif wordmark, a small tagline beside it, inline links and a reservation button."}'
+      id="i55k-2-4"
+      class="navbar navbar-expand-sm bg-default border-b border-default"
+    >
+      <div data-navbar-part="container" id="ilyygi-4" class="container">
+        <a
+          href="./index.html"
+          data-navbar-part="brand"
+          id="iwcqdm-4"
+          class="navbar-brand flex flex-col leading-none no-underline py-2"
+          ><span
+            id="i198is-4"
+            class="font-serif font-black uppercase tracking-widest text-primary text-lg"
+            >Ember & Ash</span
+          ><span
+            id="ian3x2-4"
+            class="text-xs uppercase tracking-widest text-muted"
+            >Ristorante · Carlton North</span
+          ></a
+        ><button
+          href="#"
+          type="button"
+          data-navbar-part="toggler"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="il7ert-4"
+          class="btn btn-icon navbar-toggler"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="itw98r-4"
+            class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="navbarMenu-2-4"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse"
+        >
+          <ul
+            data-navbar-part="links"
+            id="id6l0c-4"
+            class="navbar-nav ms-auto items-center gap-1"
+          >
+            <li id="i5ii5v-4" class="nav-item">
+              <a
+                href="./index.html"
+                id="ih2atq-2-4"
+                class="nav-link uppercase tracking-widest text-sm"
+                >Home</a
+              >
+            </li>
+            <li id="ilmk7g-4" class="nav-item">
+              <a
+                href="./menu.html"
+                id="i2bhu7-2-4"
+                class="nav-link uppercase tracking-widest text-sm"
+                >Menu</a
+              >
+            </li>
+            <li id="izrju2-4" class="nav-item">
+              <a
+                href="./story.html"
+                id="ikryx8-2-4"
+                class="nav-link uppercase tracking-widest text-sm"
+                >Story</a
+              >
+            </li>
+            <li id="i6ogiu-4" class="nav-item">
+              <a
+                href="./visit.html"
+                id="is87cj-2-4"
+                class="nav-link uppercase tracking-widest text-sm active"
+                aria-current="page"
+                >Visit</a
+              >
+            </li>
+            <li id="im27xp-4" class="nav-item ms-3">
+              <a
+                href="./reserve.html"
+                id="ixlwuv-4"
+                class="btn btn-primary btn-sm uppercase tracking-widest"
+                >Reserve</a
+              >
+            </li>
+            <li id="ivs89i-4" class="nav-item ms-2">
+              <div
+                data-dark-mode-switch="true"
+                data-mode="system"
+                data-switch-style="icon"
+                role="group"
+                id="i86d8-2-4"
+                class="dark-mode-switch btn-group"
+              >
+                <button
+                  type="button"
+                  data-theme-cycle-button="true"
+                  aria-label="Theme: System. Click to switch to Light."
+                  title="Theme: System. Click to switch to Light."
+                  id="iqpvnk-2-4"
+                  class="btn btn-outline-neutral dark-mode-switch__cycle inline-flex items-center justify-center"
+                >
+                  <span
+                    data-icon-pack="stroke"
+                    data-icon-name="sun"
+                    data-icon-decorative="true"
+                    data-icon-label=""
+                    aria-hidden="true"
+                    id="i54pa7-4"
+                    class="inline-flex items-center leading-none size-4"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="4" />
+                      <path d="M12 2v2" />
+                      <path d="M12 20v2" />
+                      <path d="m4.93 4.93 1.41 1.41" />
+                      <path d="m17.66 17.66 1.41 1.41" />
+                      <path d="M2 12h2" />
+                      <path d="M20 12h2" />
+                      <path d="m6.34 17.66-1.41 1.41" />
+                      <path d="m19.07 4.93-1.41 1.41" /></svg
+                  ></span>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="pt-8 md:pt-10 lg:pt-12 pb-10 md:pb-12">
+      <div class="container">
+        <div
+          class="flex items-center justify-between gap-4 border-b border-default pb-2 mb-6"
+        >
+          <span
+            class="text-xs md:text-sm uppercase tracking-widest text-primary flex-none md:whitespace-nowrap"
+            >122 Rathdowne St · Carlton North</span
+          ><span
+            class="text-sm uppercase tracking-widest text-muted flex-none whitespace-nowrap hidden md:block"
+            >Tram 96 · Stop 20</span
+          >
+        </div>
+        <h1
+          id="iugkn34"
+          class="uppercase text-primary tracking-tight text-center text-5xl md:text-8xl lg:text-9xl mb-4"
+        >
+          Visit
+        </h1>
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-1 border-t border-default pt-2"
+        >
+          <span
+            class="text-sm uppercase tracking-widest text-primary flex-none whitespace-nowrap"
+            >Open tonight 17:30 – 22:30</span
+          ><span class="text-sm italic text-muted"
+            >Ten minutes from the city, and worth the tram.</span
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      id="iq8zli"
+      data-swebsy-block-id="hours-table-accent-card"
+      data-swebsy-block='{"tags":["contact","content"],"description":"Opening hours as ruled day/time rows with a closing note, beside a filled accent card holding the address and phone."}'
+      class="py-12 md:py-16 lg:py-20 border-t border-default"
+    >
+      <div class="container">
+        <h2
+          id="iqwjccm"
+          class="uppercase text-primary tracking-tight text-4xl md:text-6xl lg:text-7xl mb-8"
+        >
+          Hours
+        </h2>
+        <div class="row g-8 items-start">
+          <div class="col-12 lg:col-7">
+            <div
+              class="flex items-baseline justify-between gap-4 border-b border-default pb-3 mb-3"
+            >
+              <span class="font-serif text-xl text-default">Monday</span
+              ><span
+                class="text-base uppercase tracking-widest text-muted flex-none whitespace-nowrap"
+                >Closed</span
+              >
+            </div>
+            <div
+              class="flex items-baseline justify-between gap-4 border-b border-default pb-3 mb-3"
+            >
+              <span class="font-serif text-xl text-default"
+                >Tuesday – Thursday</span
+              ><span
+                class="text-base uppercase tracking-widest text-primary flex-none whitespace-nowrap"
+                >17:30 – 22:30</span
+              >
+            </div>
+            <div
+              class="flex items-baseline justify-between gap-4 border-b border-default pb-3 mb-3"
+            >
+              <span class="font-serif text-xl text-default"
+                >Friday – Saturday</span
+              ><span
+                class="text-base uppercase tracking-widest text-primary flex-none whitespace-nowrap"
+                >12:00 – 23:00</span
+              >
+            </div>
+            <div
+              id="i6ulxg"
+              class="flex items-baseline justify-between gap-4 border-b border-default pb-3 mb-6"
+            >
+              <span class="font-serif text-xl text-default">Sunday</span
+              ><span
+                class="text-base uppercase tracking-widest text-primary flex-none whitespace-nowrap"
+                >12:00 – 21:00</span
+              >
+            </div>
+            <p class="text-base leading-relaxed text-muted mb-0">
+              The kitchen takes its last order half an hour before we close, and
+              the bar keeps pouring until the room empties. We close for two
+              weeks after Christmas and on Good Friday — we post the exact dates
+              on Instagram each year.
+            </p>
+          </div>
+          <div class="col-12 lg:col-5">
+            <div class="bg-primary p-5 md:p-6">
+              <span
+                class="block text-sm uppercase tracking-widest text-white dark:text-stone-950 mb-2"
+                >Find us</span
+              >
+              <p
+                id="isdfat"
+                class="font-medium font-serif leading-tight text-white dark:text-stone-950 text-3xl md:text-4xl mb-5"
+              >
+                122 Rathdowne Street<br />Carlton North VIC 3054
+              </p>
+              <hr class="border-t border-subtle my-4" />
+              <span
+                class="block text-sm uppercase tracking-widest text-white dark:text-stone-950 mb-1"
+                >Call the room</span
+              ><a
+                href="tel:+61390421188"
+                class="block font-serif text-2xl text-white dark:text-stone-950 no-underline mb-4"
+                >+61 3 9042 1188</a
+              ><span
+                class="block text-sm uppercase tracking-widest text-white dark:text-stone-950 mb-1"
+                >Write to us</span
+              ><a
+                href="mailto:hello@emberandash.com"
+                class="block font-serif text-2xl text-white dark:text-stone-950 no-underline mb-0"
+                >hello@emberandash.com</a
+              >
+            </div>
+            <div class="border border-default p-5 mt-6">
+              <span
+                class="block text-sm uppercase tracking-widest text-muted mb-1"
+                >Someone is by the phone</span
+              >
+              <p class="text-base text-default mb-0">
+                From 15:00 every day we are open. Before then, email is faster.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="i099mb"
+      data-swebsy-block-id="directions-four-column"
+      data-swebsy-block='{"tags":["contact","features"],"description":"Four short labelled columns of directions — transit, parking, bikes and access — under one section heading."}'
+      class="py-12 md:py-16 lg:py-20 border-t border-default"
+    >
+      <div class="container">
+        <h2
+          id="idqftc"
+          class="uppercase text-primary tracking-tight text-4xl md:text-6xl lg:text-7xl mb-8"
+        >
+          Getting here
+        </h2>
+        <div class="row g-8 items-start">
+          <div class="col-12 sm:col-6 lg:col-3">
+            <span
+              class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+              >Tram</span
+            >
+            <p class="text-base leading-relaxed text-muted mb-0">
+              Route 96 to Stop 20, then a three-minute walk east. The 1 and the
+              6 down Lygon Street will also get you within a block.
+            </p>
+          </div>
+          <div class="col-12 sm:col-6 lg:col-3">
+            <span
+              class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+              >Parking</span
+            >
+            <p id="izb4xc" class="text-base leading-relaxed text-muted mb-0">
+              Unmetered street parking on Fenwick and Newry Streets after 18:00.
+              Rathdowne Street itself is two-hour metered until then.
+            </p>
+          </div>
+          <div class="col-12 sm:col-6 lg:col-3">
+            <span
+              class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+              >By bike</span
+            >
+            <p class="text-base leading-relaxed text-muted mb-0">
+              Hoops directly outside the door, and the Canning Street path runs
+              one block west. We will keep an eye on it through the window.
+            </p>
+          </div>
+          <div class="col-12 sm:col-6 lg:col-3">
+            <span
+              class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+              >Access</span
+            >
+            <p id="ipiowl" class="text-base leading-relaxed text-muted mb-0">
+              The dining room and bathrooms are step-free from the Rathdowne
+              Street entrance. Tell us when you book and we will hold a table
+              with room to move.
+            </p>
+          </div>
+        </div>
+        <div
+          data-address="Ember and ash"
+          data-zoom="17"
+          data-maptype="roadmap"
+          id="iwf7tzd"
+          class="w-full overflow-hidden mt-10 rounded-none"
+        >
+          <iframe
+            data-swebsy-map=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen="true"
+            title="Map"
+            src="https://www.google.com/maps?q=Ember%20and%20ash&amp;z=17&amp;t=m&amp;output=embed"
+            class="block w-full h-full border-0"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="image-copy-halves"
+      data-swebsy-block='{"tags":["content","gallery"],"description":"Even split of a wide image and a short descriptive column with a labelled detail list beneath it."}'
+      class="py-12 md:py-16 lg:py-20 border-t border-default"
+    >
+      <div class="container">
+        <h2
+          id="im8fit9"
+          class="uppercase text-primary tracking-tight text-4xl md:text-6xl lg:text-7xl mb-8"
+        >
+          The room
+        </h2>
+        <div class="row g-8 items-start">
+          <div id="i70of9m" class="col-12 lg:col-6">
+            <img
+              alt="The dining room mid-service, long table beside the open fire"
+              src="assets/ddc44123-649f-46e0-b59f-c77e212f7304.webp"
+              id="ifurr79"
+              class="w-full object-cover aspect-video"
+            />
+          </div>
+          <div class="col-12 lg:col-6">
+            <p class="text-lg leading-relaxed text-default mb-6">
+              Forty-two seats, one long table beside the fire, a bar you can eat
+              at and two window seats we hold back every night. It is close
+              together and it is loud — that is the point. If you want to hear
+              every word, book early in the evening.
+            </p>
+            <div class="row g-6 items-start">
+              <div class="col-12 sm:col-6">
+                <span
+                  class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+                  >What to wear</span
+                >
+                <p class="text-base leading-relaxed text-muted mb-0">
+                  Whatever you like. Half the room comes straight from work and
+                  the other half has clearly thought about it.
+                </p>
+              </div>
+              <div class="col-12 sm:col-6">
+                <span
+                  class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+                  >Children</span
+                >
+                <p class="text-base leading-relaxed text-muted mb-0">
+                  Very welcome at lunch and at the early sitting. We have two
+                  high chairs and the kitchen will happily do a plain pasta.
+                </p>
+              </div>
+              <div class="col-12 sm:col-6">
+                <span
+                  class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+                  >Dogs</span
+                >
+                <p class="text-base leading-relaxed text-muted mb-0">
+                  On the footpath tables, always. There is a water bowl by the
+                  door and usually a biscuit behind the bar.
+                </p>
+              </div>
+              <div class="col-12 sm:col-6">
+                <span
+                  class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+                  >Paying</span
+                >
+                <p class="text-base leading-relaxed text-muted mb-0">
+                  Card or cash, no surcharge either way. We split bills, but
+                  only up to four ways — anything beyond that and the night gets
+                  away from us.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="ialqbrk"
+      data-swebsy-block-id="options-bordered-rows"
+      data-swebsy-block='{"tags":["pricing","features"],"description":"Two or three bordered option rows — name, capacity and price — with an enquiry note and button alongside."}'
+      class="py-12 md:py-16 lg:py-20 border-t border-default"
+    >
+      <div class="container">
+        <h2
+          id="ifqk8zx"
+          class="uppercase text-primary tracking-tight text-4xl md:text-6xl lg:text-7xl mb-8"
+        >
+          Groups & hire
+        </h2>
+        <div class="row g-8 items-start">
+          <div class="col-12 lg:col-4">
+            <div class="border border-default p-5">
+              <span
+                class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+                >The long table</span
+              >
+              <p class="text-base leading-relaxed text-muted mb-0">
+                Seven to fourteen, beside the fire, in the middle of the room
+                rather than tucked away from it. Feasting menu at $85 a head.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 lg:col-4">
+            <div class="border border-default p-5">
+              <span
+                class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+                >Half the room</span
+              >
+              <p class="text-base leading-relaxed text-muted mb-0">
+                Up to twenty-four, the eastern half screened off, from Tuesday
+                to Thursday. Minimum spend applies and includes the wine
+                pairing.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 lg:col-4">
+            <div class="border border-default p-5">
+              <span
+                class="block text-sm uppercase tracking-widest text-primary border-b border-default pb-2 mb-3"
+                >Whole venue</span
+              >
+              <p class="text-base leading-relaxed text-muted mb-0">
+                Forty-two seated or sixty standing, the fire going and the bar
+                open. Six weeks notice, and Marco will walk you through it.
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr class="border-t border-default my-8" />
+        <div class="row g-8 items-start">
+          <div class="col-12 lg:col-7">
+            <p class="text-lg leading-relaxed text-default mb-6">
+              Every one of these is a conversation rather than a form. Tell us
+              the date, the number and roughly what the night is for, and we
+              will come back the same day with a plan and a price.
+            </p>
+            <div class="flex flex-wrap items-center gap-3">
+              <a
+                href="mailto:hello@emberandash.com"
+                class="btn btn-primary btn-sm uppercase tracking-widest whitespace-nowrap"
+                >Email about a group</a
+              ><a
+                href="tel:+61390421188"
+                class="text-base text-muted no-underline whitespace-nowrap"
+                >or call +61 3 9042 1188</a
+              >
+            </div>
+          </div>
+          <div class="col-12 lg:col-5">
+            <div class="border border-default p-5">
+              <span
+                class="block text-sm uppercase tracking-widest text-muted mb-1"
+                >Gift vouchers</span
+              >
+              <p class="text-base text-default mb-0">
+                Any amount, valid three years, printed on the same butcher paper
+                we write the menu on. Email us and we will post one or hold it
+                at the door.
+              </p>
+              <hr class="border-t border-subtle my-4" />
+              <span
+                class="block text-sm uppercase tracking-widest text-muted mb-1"
+                >Lost something</span
+              >
+              <p class="text-base text-default mb-0">
+                Everything left behind lives in a box behind the bar for a
+                month. Call and describe it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="icelzsh"
+      data-swebsy-block-id="cta-band-inverted-card"
+      data-swebsy-block='{"tags":["cta"],"description":"Full-bleed accent closing band: eyebrow, oversized display headline and sub-line beside an inverted paper card holding a note and two buttons."}'
+      class="bg-primary py-14 md:py-20 lg:py-24"
+    >
+      <div class="container">
+        <div class="row g-8 items-center">
+          <div class="col-12 lg:col-7">
+            <span
+              class="block text-sm uppercase tracking-widest text-white dark:text-stone-950 mb-4"
+              >Come in</span
+            >
+            <h2
+              class="uppercase tracking-tight text-white dark:text-stone-950 text-4xl md:text-5xl lg:text-6xl mb-4"
+            >
+              The fire is lit at nine
+            </h2>
+            <p
+              class="font-serif text-xl md:text-2xl leading-snug text-white dark:text-stone-950 mb-0"
+            >
+              By the time you get here it has been going for eight hours — come
+              and use it.
+            </p>
+          </div>
+          <div class="col-12 lg:col-5">
+            <div class="bg-default p-6 md:p-8">
+              <span
+                class="block text-sm uppercase tracking-widest text-muted mb-2"
+                >Tonight</span
+              >
+              <p class="text-base text-default mb-5">
+                The bar and the two window seats are held for walk-ins every
+                night. If the calendar looks full it is still worth trying your
+                luck at 17:30.
+              </p>
+              <div class="flex flex-wrap items-center gap-3">
+                <a
+                  href="./reserve.html"
+                  class="btn btn-primary btn-sm uppercase tracking-widest whitespace-nowrap"
+                  >Reserve a table</a
+                ><a
+                  href="./menu.html"
+                  class="btn btn-outline-primary btn-sm uppercase tracking-widest whitespace-nowrap"
+                  >See the menu</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="footer-columns-wordmark"
+      data-swebsy-block='{"tags":["footer","copyright"],"description":"Three-column footer with page links, socials and address, closing on an oversized serif wordmark and a copyright line."}'
+      id="visit-2-4"
+      class="py-10 md:py-12 lg:py-16 border-t border-default"
+    >
+      <div id="iy64mg-4" class="container">
+        <div id="ik2tdu-4" class="border border-default p-6 md:p-8">
+          <div id="i9xeat-2-4" class="row g-8">
+            <div id="ivqxpg-2-4" class="col-12 md:col-4">
+              <span
+                id="ijh8l9-2-4"
+                class="block text-sm uppercase tracking-widest text-primary mb-4"
+                >Pages</span
+              >
+              <ul id="id300x-6" class="list-none p-0 m-0 text-base">
+                <li id="iq15lk-6" class="mb-2">
+                  <a
+                    href="./index.html"
+                    id="ik6snj-6"
+                    class="text-default no-underline"
+                    >Home</a
+                  >
+                </li>
+                <li id="i5rsyj-6" class="mb-2">
+                  <a
+                    href="./menu.html"
+                    id="i3pt4l-6"
+                    class="text-default no-underline"
+                    >Menu</a
+                  >
+                </li>
+                <li id="imutcv-6" class="mb-2">
+                  <a
+                    href="./story.html"
+                    id="i4sdfe-6"
+                    class="text-default no-underline"
+                    >Story</a
+                  >
+                </li>
+                <li id="ifvisit1-6" class="mb-2">
+                  <a
+                    href="./visit.html"
+                    id="ilvisit1-6"
+                    class="text-default no-underline"
+                    >Visit</a
+                  >
+                </li>
+                <li id="iq2nzy-6" class="mb-0">
+                  <a
+                    href="./reserve.html"
+                    id="i3222i-6"
+                    class="text-default no-underline"
+                    >Reservations</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="if03ao-2-4" class="col-12 md:col-4">
+              <span
+                id="iodv39-2-4"
+                class="block text-sm uppercase tracking-widest text-primary mb-4"
+                >Socials</span
+              >
+              <ul id="iam388-2-4" class="list-none p-0 m-0 text-base">
+                <li id="ivgo6n-2-4" class="mb-2">
+                  <a
+                    href="https://instagram.com"
+                    id="i6p0kz-2-4"
+                    class="text-default no-underline"
+                    >Instagram</a
+                  >
+                </li>
+                <li id="i9jnli-2-4" class="mb-2">
+                  <a
+                    href="https://facebook.com"
+                    id="iccgki-2-4"
+                    class="text-default no-underline"
+                    >Facebook</a
+                  >
+                </li>
+                <li id="i66x7k-2-4" class="mb-0">
+                  <a
+                    href="mailto:hello@emberandash.com"
+                    id="i1293u-2-4"
+                    class="text-default no-underline"
+                    >Newsletter</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="iot0mg-2-4" class="col-12 md:col-4">
+              <span
+                id="ir06wo-2-4"
+                class="block text-sm uppercase tracking-widest text-primary mb-4"
+                >Address</span
+              >
+              <p id="ic0r4a-2-4" class="text-base text-default mb-2">
+                122 Rathdowne Street<br />Carlton North VIC 3054
+              </p>
+              <a
+                href="tel:+61390421188"
+                id="id41tk-2-4"
+                class="text-base text-default no-underline"
+                >+61 3 9042 1188</a
+              >
+            </div>
+          </div>
+          <hr id="ieg0ka-4" class="border-t border-subtle my-6" />
+          <div
+            id="ikcj6f-2-4"
+            class="flex flex-col md:flex-row items-start md:items-center justify-between gap-2"
+          >
+            <span
+              id="iy8gzd-2-4"
+              class="font-serif font-black uppercase tracking-widest text-primary text-sm flex-none whitespace-nowrap"
+              >Ember & Ash</span
+            ><span
+              id="iep5tk-2-4"
+              class="text-sm text-muted flex-none whitespace-nowrap"
+              >© 2026 Ember & Ash. Wood-fired in Carlton North.</span
+            >
+          </div>
+        </div>
+        <div
+          class="overflow-hidden w-full py-3 uppercase tracking-widest text-sm font-bold font-black text-primary leading-none tracking-tight text-center text-5xl md:text-8xl lg:text-9xl mb-4"
+          data-marquee="true"
+          data-marquee-items="Ember & Ash"
+          data-marquee-divider="❅"
+          data-marquee-duration="40"
+          id="i6nmud-2-4"
+          data-marquee-divider-color="var(--color-danger, #c63722)"
+        >
+          <div class="flex w-max">
+            <div
+              class="inline-flex shrink-0 items-center gap-8 pr-8 whitespace-nowrap animate-marquee"
+              style="animation-duration: 40s"
+            >
+              <span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              ><span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              ><span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              ><span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              >
+            </div>
+            <div
+              class="inline-flex shrink-0 items-center gap-8 pr-8 whitespace-nowrap animate-marquee"
+              style="animation-duration: 40s"
+              aria-hidden="true"
+            >
+              <span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              ><span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              ><span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              ><span>Ember &amp; Ash</span
+              ><span
+                class="text-secondary select-none"
+                style="color: var(--color-danger, #c63722)"
+                aria-hidden="true"
+                >❅</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/swebsy-components.d9213718e3.js" defer></script>
+  <a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

@@ -1,0 +1,2150 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primer — A field course in editorial typography</title>
+    <meta
+      name="description"
+      content="Nine weeks, 42 filmed lessons, six live critiques and a 180-page working manual. A typography course for designers who already ship real work."
+    />
+    <meta
+      name="keywords"
+      content="typography course, editorial design, online course, design education, type design"
+    />
+    <meta name="author" content="Primer Editions" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Primer — A field course in editorial typography"
+    />
+    <meta
+      property="og:description"
+      content="Nine weeks, 42 filmed lessons, six live critiques and a 180-page working manual. One payment, lifetime access, thirty-day refund."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Primer — A field course in editorial typography"
+    />
+    <meta
+      name="twitter:description"
+      content="Nine weeks, 42 filmed lessons, six live critiques and a 180-page working manual. One payment, lifetime access, thirty-day refund."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-figtree-_Xms-HUzqDCFdgfMm4q9DbZs.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-figtree-_Xms-HUzqDCFdgfMm4S9DQ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-gloock-Iurb6YFw84WUY4NJhRakNrc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-gloock-Iurb6YFw84WUY4NJhhakNrc.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-gloock-Iurb6YFw84WUY4NJiBak.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "system";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.631c5c21bd.css" />
+  </head>
+  <body>
+    <nav
+      data-navbar-collapse-on="sm"
+      data-swebsy-block-id="navbar-square-cta"
+      data-swebsy-block='{"tags":["navigation","header"],"description":"A quiet navbar with a square brand mark, a display wordmark, inline links, a dark-mode switch and a square accent CTA button."}'
+      id="irbnxt7"
+      class="navbar navbar-expand-sm bg-default py-3"
+    >
+      <div data-navbar-part="container" id="iz18c0y" class="container">
+        <a
+          href="#"
+          data-navbar-part="brand"
+          id="ivy5mlg"
+          class="navbar-brand flex items-center gap-3 no-underline"
+          ><span id="ialfm1e" class="inline-block h-6 w-6 bg-primary"></span
+          ><span id="i6wzoxk" class="font-serif text-2xl text-emphasis"
+            >Primer</span
+          ></a
+        ><button
+          type="button"
+          data-navbar-part="toggler"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#primerNav"
+          aria-controls="primerNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="i2wlkzc"
+          class="btn btn-icon navbar-toggler"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="i5gs0pb"
+            class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="primerNav"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse"
+        >
+          <ul
+            data-navbar-part="links"
+            id="i8ikwm9"
+            class="navbar-nav ms-auto items-center"
+          >
+            <li id="iqrl43y" class="nav-item">
+              <a href="#curriculum" id="izzz9yz" class="nav-link">Curriculum</a>
+            </li>
+            <li id="igvei6h" class="nav-item">
+              <a href="#inside" id="im5jn6k" class="nav-link">Inside</a>
+            </li>
+            <li id="ie4wap3" class="nav-item">
+              <a href="#instructor" id="iue6s0p" class="nav-link">Instructor</a>
+            </li>
+            <li id="i0hhsd3" class="nav-item">
+              <a href="#pricing" id="iynk38w" class="nav-link">Pricing</a>
+            </li>
+            <li id="imtop42" class="nav-item">
+              <a href="#faq" id="imvr86l" class="nav-link">FAQ</a>
+            </li>
+            <li id="iplw2dh" class="nav-item ms-2">
+              <div
+                data-dark-mode-switch="true"
+                data-mode="system"
+                data-switch-style="icon"
+                role="group"
+                id="ib3pdaq"
+                class="dark-mode-switch btn-group"
+              >
+                <button
+                  type="button"
+                  data-theme-cycle-button="true"
+                  aria-label="Theme: System. Click to switch to Light."
+                  title="Theme: System. Click to switch to Light."
+                  id="icmzzvp"
+                  class="btn btn-outline-neutral dark-mode-switch__cycle inline-flex items-center justify-center"
+                >
+                  <span
+                    data-theme-mode-icon="system"
+                    id="iwu9r4h"
+                    class="inline-flex items-center justify-center leading-none size-4"
+                    ><span
+                      data-icon-pack="stroke"
+                      data-icon-name="monitor"
+                      data-icon-decorative="false"
+                      data-icon-label="System theme"
+                      role="img"
+                      aria-label="System theme"
+                      id="i9m74ty"
+                      class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="var(--icon-stroke, 2)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <rect width="20" height="14" x="2" y="3" rx="2" />
+                        <line x1="8" x2="16" y1="21" y2="21" />
+                        <line
+                          x1="12"
+                          x2="12"
+                          y1="17"
+                          y2="21"
+                        /></svg></span></span
+                  ><span
+                    data-theme-mode-icon="light"
+                    hidden
+                    id="ie1m5ri"
+                    class="inline-flex items-center justify-center leading-none size-4"
+                    ><span
+                      data-icon-pack="stroke"
+                      data-icon-name="sun"
+                      data-icon-decorative="false"
+                      data-icon-label="Light theme"
+                      role="img"
+                      aria-label="Light theme"
+                      id="iqv7la6"
+                      class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="var(--icon-stroke, 2)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <circle cx="12" cy="12" r="4" />
+                        <path d="M12 2v2" />
+                        <path d="M12 20v2" />
+                        <path d="m4.93 4.93 1.41 1.41" />
+                        <path d="m17.66 17.66 1.41 1.41" />
+                        <path d="M2 12h2" />
+                        <path d="M20 12h2" />
+                        <path d="m6.34 17.66-1.41 1.41" />
+                        <path d="m19.07 4.93-1.41 1.41" /></svg></span></span
+                  ><span
+                    data-theme-mode-icon="dark"
+                    hidden
+                    id="izdh6fh"
+                    class="inline-flex items-center justify-center leading-none size-4"
+                    ><span
+                      data-icon-pack="stroke"
+                      data-icon-name="moon"
+                      data-icon-decorative="false"
+                      data-icon-label="Dark theme"
+                      role="img"
+                      aria-label="Dark theme"
+                      id="ivy1wuy"
+                      class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="var(--icon-stroke, 2)"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
+                        /></svg></span
+                  ></span>
+                </button>
+              </div>
+            </li>
+            <li id="it1svoi" class="nav-item ms-2">
+              <a href="#pricing" id="iz3ye6w" class="btn btn-primary">Enrol</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="i8hoq7u"
+      data-swebsy-block-id="hero-ruled-display"
+      data-swebsy-block='{"tags":["hero","cta","stats"],"description":"A type-first hero: a hairline-ruled meta strip above an oversized display headline, with the deck and a ruled spec list side by side and a full-bleed image band below."}'
+      class="bg-default pt-10 md:pt-16"
+    >
+      <div id="ict5q" class="container">
+        <div
+          class="border-y border-subtle py-3 flex flex-wrap items-center gap-x-8 gap-y-2"
+        >
+          <span
+            class="text-xs uppercase tracking-widest text-primary font-semibold"
+            >Edition One</span
+          ><span class="text-xs uppercase tracking-widest text-muted"
+            >Cohort ten opens 4 March</span
+          ><span class="text-xs uppercase tracking-widest text-muted"
+            >20 critique seats</span
+          ><span class="text-xs uppercase tracking-widest text-muted ms-auto"
+            >$349 · one payment</span
+          >
+        </div>
+        <h1
+          id="izuqp2l"
+          class="text-6xl md:text-8xl lg:text-9xl leading-none tracking-tight text-emphasis mt-10 md:mt-16 max-w-5xl"
+        >
+          Set type like you mean it.
+        </h1>
+        <div id="i7tqfhw" class="row g-6 mt-10 md:mt-14 pb-12 md:pb-16">
+          <div class="col-12 lg:col-7">
+            <p
+              class="text-lg md:text-xl text-default leading-relaxed max-w-2xl"
+            >
+              A nine-week field course in editorial typography for designers who
+              ship real work. Forty-two lessons, six live critiques, and a
+              180-page working manual you will actually keep on the desk.
+            </p>
+            <div class="flex flex-wrap items-center gap-3 mt-8">
+              <a href="#pricing" class="btn btn-primary btn-lg">Enrol — $349</a
+              ><a
+                href="free-lesson.html"
+                id="ie8aqxh"
+                class="btn btn-outline-neutral btn-lg"
+                >Read a free lesson</a
+              >
+            </div>
+            <p class="text-sm text-muted mt-5">
+              Lifetime access. Thirty days to change your mind.
+            </p>
+          </div>
+          <div class="col-12 lg:col-5">
+            <div class="lg:ps-10 lg:border-s lg:border-subtle">
+              <div
+                class="flex items-baseline justify-between gap-4 py-3 border-b border-subtle"
+              >
+                <span class="text-xs uppercase tracking-widest text-muted"
+                  >Filmed lessons</span
+                ><span class="font-serif text-2xl text-emphasis">42</span>
+              </div>
+              <div
+                class="flex items-baseline justify-between gap-4 py-3 border-b border-subtle"
+              >
+                <span class="text-xs uppercase tracking-widest text-muted"
+                  >Live critiques</span
+                ><span class="font-serif text-2xl text-emphasis">6</span>
+              </div>
+              <div
+                class="flex items-baseline justify-between gap-4 py-3 border-b border-subtle"
+              >
+                <span class="text-xs uppercase tracking-widest text-muted"
+                  >Manual pages</span
+                ><span class="font-serif text-2xl text-emphasis">180</span>
+              </div>
+              <div class="flex items-baseline justify-between gap-4 py-3">
+                <span class="text-xs uppercase tracking-widest text-muted"
+                  >Weeks</span
+                ><span class="font-serif text-2xl text-emphasis">9</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="ixifj" class="w-full">
+        <img
+          alt="A typographer's desk photographed from directly above in soft daylight: an open course manual on a type-specimen spread, loose printed proofs annotated in dusty rose pencil, a brass ruler and a loupe on warm oat linen"
+          src="assets/22568eee-2310-4a44-98d8-0c3fbd25ad8f.webp"
+          id="igv41e"
+          class="w-full h-[52vh] md:h-[68vh] object-cover block"
+        />
+      </div>
+    </div>
+    <div id="ij2l9c" class="bg-default border-y border-subtle">
+      <div
+        class="overflow-hidden w-full py-4 uppercase tracking-widest text-xs font-semibold text-muted"
+        data-marquee="true"
+        data-marquee-items="42 filmed lessons|6 live critiques|180-page manual|Working InDesign + Figma files|Lifetime access|Specimen library|Certificate on completion"
+        data-marquee-divider="•"
+        data-marquee-duration="48"
+        data-marquee-divider-color="var(--color-primary)"
+        id="ivzu22"
+      >
+        <div class="flex w-max">
+          <div
+            class="inline-flex shrink-0 items-center gap-8 pr-8 whitespace-nowrap animate-marquee"
+            style="animation-duration: 48s"
+          >
+            <span>42 filmed lessons</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>6 live critiques</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>180-page manual</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Working InDesign + Figma files</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Lifetime access</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Specimen library</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Certificate on completion</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>42 filmed lessons</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>6 live critiques</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>180-page manual</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Working InDesign + Figma files</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Lifetime access</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Specimen library</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Certificate on completion</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>42 filmed lessons</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>6 live critiques</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>180-page manual</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Working InDesign + Figma files</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Lifetime access</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Specimen library</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Certificate on completion</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>42 filmed lessons</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>6 live critiques</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>180-page manual</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Working InDesign + Figma files</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Lifetime access</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Specimen library</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Certificate on completion</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            >
+          </div>
+          <div
+            class="inline-flex shrink-0 items-center gap-8 pr-8 whitespace-nowrap animate-marquee"
+            style="animation-duration: 48s"
+            aria-hidden="true"
+          >
+            <span>42 filmed lessons</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>6 live critiques</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>180-page manual</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Working InDesign + Figma files</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Lifetime access</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Specimen library</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Certificate on completion</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>42 filmed lessons</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>6 live critiques</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>180-page manual</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Working InDesign + Figma files</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Lifetime access</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Specimen library</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Certificate on completion</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>42 filmed lessons</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>6 live critiques</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>180-page manual</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Working InDesign + Figma files</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Lifetime access</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Specimen library</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Certificate on completion</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>42 filmed lessons</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>6 live critiques</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>180-page manual</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Working InDesign + Figma files</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Lifetime access</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Specimen library</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            ><span>Certificate on completion</span
+            ><span
+              class="text-secondary select-none"
+              style="color: var(--color-primary)"
+              aria-hidden="true"
+              >•</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="i9wdu95"
+      data-swebsy-block-id="rail-label-two-column-prose"
+      data-swebsy-block='{"tags":["about","content"],"description":"An editorial rail layout: a small hanging section label in a narrow left column, with a display headline and two columns of body copy held to a reading measure."}'
+      class="bg-default py-16 md:py-20 lg:py-28"
+    >
+      <div class="container">
+        <div id="igs14z7" class="row g-6">
+          <div class="col-12 lg:col-3">
+            <div class="border-t-2 border-emphasis pt-3 lg:sticky lg:top-24">
+              <span
+                class="block text-xs uppercase tracking-widest text-primary font-semibold"
+                >The problem</span
+              >
+            </div>
+          </div>
+          <div class="col-12 lg:col-9">
+            <h2
+              id="i1oaq2p"
+              class="text-4xl md:text-5xl lg:text-6xl leading-tight text-emphasis max-w-3xl mt-6 lg:mt-0"
+            >
+              You can spot bad type. You can't always say why.
+            </h2>
+            <div id="ir8spyf" class="row g-6 mt-10 md:mt-14">
+              <div class="col-12 md:col-6">
+                <p class="text-base text-muted leading-relaxed">
+                  Every designer reaches the same wall. You know the layout is
+                  off. You nudge the line-height, try a different face, add a
+                  little letter-spacing, and it gets marginally less wrong. Then
+                  a senior designer moves two things and it snaps into place,
+                  and you still can't name what they did.
+                </p>
+              </div>
+              <div class="col-12 md:col-6">
+                <p class="text-base text-muted leading-relaxed">
+                  That gap isn't taste. Taste you already have — it's what makes
+                  the page bother you. What's missing is vocabulary: the small
+                  set of decisions typographers have been making deliberately
+                  for four hundred years, and that nobody taught you because
+                  they assumed you'd absorb it.
+                </p>
+                <p
+                  class="text-base text-emphasis font-medium leading-relaxed mt-5"
+                >
+                  You won't absorb it. Nobody does. It has to be taught in
+                  order, on real work, with someone telling you what you got
+                  wrong.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="i177u57"
+      data-swebsy-block-id="fullbleed-photo-statement"
+      data-swebsy-block='{"tags":["intro","header"],"description":"A full-bleed photographic plate with a gradient scrim, carrying a large statement headline and two columns of copy anchored to the bottom of the frame."}'
+      class="relative overflow-hidden w-full"
+    >
+      <img
+        alt="A large printed proof pinned to a plaster studio wall in soft daylight, an editorial spread marked up in dusty rose pencil with the baseline grid drawn in and the measure bracketed by hand"
+        src="assets/e45c087d-9078-4590-8b78-d5b6a3c50a55.webp"
+        id="i3zd0c"
+        class="absolute inset-0 w-full h-full object-cover"
+      /><span id="ilyeuq9" aria-hidden="true" class="absolute inset-0"></span>
+      <div
+        class="container relative flex items-end min-h-[85vh] py-20 md:py-28"
+      >
+        <div id="i8em6pr" class="row g-6 w-full">
+          <div class="col-12 lg:col-3">
+            <div id="im0woij" class="border-t-2 pt-3">
+              <span
+                class="block text-xs uppercase tracking-widest text-primary font-semibold"
+                >The shift</span
+              >
+            </div>
+          </div>
+          <div class="col-12 lg:col-9">
+            <h2
+              id="i8w4w4e"
+              class="text-4xl md:text-6xl lg:text-7xl leading-tight text-emphasis max-w-4xl mt-6 lg:mt-0"
+            >
+              Typography is a set of decisions, not a set of fonts.
+            </h2>
+            <div id="i0ai0nk" class="row g-6 mt-8 md:mt-12">
+              <div class="col-12 md:col-6">
+                <p class="text-base text-muted leading-relaxed">
+                  Primer teaches the decisions. Measure before face. Rhythm
+                  before ornament. Contrast as a system you can defend in a
+                  review rather than a feeling you have to apologise for.
+                </p>
+              </div>
+              <div class="col-12 md:col-6">
+                <p class="text-base text-muted leading-relaxed">
+                  By week three you will stop auditioning typefaces and start
+                  setting a page. By week nine you will have rebuilt four real
+                  pieces of your own work and be able to say, out loud, exactly
+                  why each one is now better.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="iujfjru"
+      data-swebsy-block-id="logo-row-ruled"
+      data-swebsy-block='{"tags":["logos"],"description":"A logo wall built as a hairline-ruled specimen row, each wordmark in its own cell divided by vertical rules under a label and trailing hairline."}'
+      class="bg-default py-16 md:py-20"
+    >
+      <div class="container">
+        <div class="flex items-center gap-4">
+          <span
+            class="text-xs uppercase tracking-widest text-muted whitespace-nowrap"
+            >Taught to designers at</span
+          ><span class="block h-px flex-1 bg-subtle"></span>
+        </div>
+        <div id="i5tfify" class="row g-0 mt-8 border-y border-subtle">
+          <div
+            class="col-6 md:col-2 py-7 flex items-center justify-center border-e border-subtle"
+          >
+            <img
+              alt="Wordmark of a national daily newspaper set in a condensed slab serif, single dark ink on transparent"
+              src="assets/8a0173ab-9fbb-44c5-bb20-d28fae7331c7.svg"
+              id="i93snf"
+              class="h-7 md:h-8 w-auto object-contain opacity-70 dark:invert"
+            />
+          </div>
+          <div
+            class="col-6 md:col-2 py-7 flex items-center justify-center border-e border-subtle"
+          >
+            <img
+              alt="Wordmark of a design studio set in a lowercase geometric sans, single dark ink on transparent"
+              src="assets/a125e649-5ea0-4217-929c-a5496f4dd372.svg"
+              id="iuzvxp"
+              class="h-7 md:h-8 w-auto object-contain opacity-70 dark:invert"
+            />
+          </div>
+          <div
+            class="col-6 md:col-2 py-7 flex items-center justify-center border-e border-subtle"
+          >
+            <img
+              alt="Wordmark of a book publisher set in classical serif capitals, single dark ink on transparent"
+              src="assets/3305eb2c-2e72-47cd-b2bf-54745197703f.svg"
+              id="idq5y5"
+              class="h-7 md:h-8 w-auto object-contain opacity-70 dark:invert"
+            />
+          </div>
+          <div
+            class="col-6 md:col-2 py-7 flex items-center justify-center border-e border-subtle"
+          >
+            <img
+              alt="Wordmark of a software company set in a tight lowercase grotesque, single dark ink on transparent"
+              src="assets/c0162066-d507-46ac-81cb-0e5d35c74938.svg"
+              id="itcn9p"
+              class="h-7 md:h-8 w-auto object-contain opacity-70 dark:invert"
+            />
+          </div>
+          <div
+            class="col-6 md:col-2 py-7 flex items-center justify-center border-e border-subtle"
+          >
+            <img
+              alt="Wordmark of an art museum set in wide letterspaced capitals, single dark ink on transparent"
+              src="assets/7be41934-eb53-44cc-bc60-8d5befa17de9.svg"
+              id="imyrui"
+              class="h-7 md:h-8 w-auto object-contain opacity-70 dark:invert"
+            />
+          </div>
+          <div class="col-6 md:col-2 py-7 flex items-center justify-center">
+            <img
+              alt="Wordmark of an independent magazine set in high-contrast didone capitals, single dark ink on transparent"
+              src="assets/c6a1adf9-e41b-4fcc-8103-b872e0af346e.svg"
+              id="i0xziw"
+              class="h-7 md:h-8 w-auto object-contain opacity-70 dark:invert"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="iu3nhtf"
+      data-swebsy-block-id="ruled-card-grid-six"
+      data-swebsy-block='{"tags":["features","gallery"],"description":"A six-cell feature grid with no card fills: each cell is a hairline top rule over a square-cropped image, a small sans heading and a short paragraph."}'
+      class="bg-default py-16 md:py-20 lg:py-28"
+    >
+      <div class="container">
+        <div id="iw8200k" class="row g-6">
+          <div class="col-12 lg:col-3">
+            <div class="border-t-2 border-emphasis pt-3">
+              <span
+                class="block text-xs uppercase tracking-widest text-primary font-semibold"
+                >What's inside</span
+              >
+            </div>
+          </div>
+          <div class="col-12 lg:col-9">
+            <h2
+              id="i9xec09"
+              class="text-4xl md:text-5xl lg:text-6xl leading-tight text-emphasis max-w-2xl mt-6 lg:mt-0"
+            >
+              Six things arrive the day you enrol.
+            </h2>
+            <p class="text-base text-muted leading-relaxed max-w-xl mt-6">
+              Nothing is drip-fed and nothing expires. The critiques run live on
+              a schedule; everything else is yours the moment you pay for it.
+            </p>
+          </div>
+        </div>
+        <div id="icm51d6" class="row g-6 mt-14 md:mt-20">
+          <div
+            id="irixdvs"
+            class="col-12 md:col-6 lg:col-4 border-t border-subtle pt-6"
+          >
+            <img
+              alt="A still from a filmed lesson: a magazine layout open on screen with a rose measuring line drawn across the text column, warm daylight on the desk"
+              src="assets/6c063a76-a6df-4261-85bc-be22fbfc91a1.webp"
+              id="itp9ci"
+              class="w-full aspect-[4/3] object-cover block"
+            />
+            <h3 class="text-lg font-semibold text-emphasis mt-6">
+              42 filmed lessons
+            </h3>
+            <p class="text-sm text-muted leading-relaxed mt-2">
+              Twelve hours, cut tight. Every lesson is one decision,
+              demonstrated on real editorial work from start to finish — no
+              slide decks, no theory without a page attached.
+            </p>
+          </div>
+          <div
+            id="imnwxqk"
+            class="col-12 md:col-6 lg:col-4 border-t border-subtle pt-6"
+          >
+            <img
+              alt="The printed course manual lying open on warm linen, a thick perfect-bound book showing a specimen spread, soft daylight and no hard shadow"
+              src="assets/4a30edd1-6630-4a08-b8bb-cb998964f1d2.webp"
+              id="ipx26y"
+              class="w-full aspect-[4/3] object-cover block"
+            />
+            <h3 class="text-lg font-semibold text-emphasis mt-6">
+              The 180-page manual
+            </h3>
+            <p class="text-sm text-muted leading-relaxed mt-2">
+              A working reference, not a companion PDF. Printed and posted
+              anywhere in the world, plus a DRM-free digital copy that you can
+              mark up on the day it lands.
+            </p>
+          </div>
+          <div
+            id="i1atr0f"
+            class="col-12 md:col-6 lg:col-4 border-t border-subtle pt-6"
+          >
+            <img
+              alt="A live critique on a laptop screen: a student's page shared in a call with rose annotation marks drawn over the headline and the rag"
+              src="assets/11854a2d-9c6c-4dd4-a0aa-54e2fac67c2c.webp"
+              id="ikzvrm"
+              class="w-full aspect-[4/3] object-cover block"
+            />
+            <h3 class="text-lg font-semibold text-emphasis mt-6">
+              Six live critiques
+            </h3>
+            <p class="text-sm text-muted leading-relaxed mt-2">
+              Ninety minutes each, capped at twenty seats, your work on the
+              screen. This is the part that cannot be replaced by watching
+              somebody else be corrected.
+            </p>
+          </div>
+          <div
+            id="inmhzwg"
+            class="col-12 md:col-6 lg:col-4 border-t border-subtle pt-6"
+          >
+            <img
+              alt="An InDesign document open with the layers panel exposed and the baseline grid visible over a two-column editorial spread"
+              src="assets/34cd2b2c-91a2-4b6f-bd19-9274042caca1.webp"
+              id="ii9eto"
+              class="w-full aspect-[4/3] object-cover block"
+            />
+            <h3 class="text-lg font-semibold text-emphasis mt-6">
+              Every working file
+            </h3>
+            <p class="text-sm text-muted leading-relaxed mt-2">
+              The InDesign documents and Figma files behind all forty-two
+              lessons, unlocked and unflattened, so you can take a layout apart
+              rather than squint at a video.
+            </p>
+          </div>
+          <div
+            id="ift5fcn"
+            class="col-12 md:col-6 lg:col-4 border-t border-subtle pt-6"
+          >
+            <img
+              alt="Type specimen sheets fanned across a pale desk, each tabbed with a small dusty rose paper marker"
+              src="assets/5bf1cf3d-58c8-4c02-b388-ed0db211c618.webp"
+              id="ih3nhx"
+              class="w-full aspect-[4/3] object-cover block"
+            />
+            <h3 class="text-lg font-semibold text-emphasis mt-6">
+              The specimen library
+            </h3>
+            <p class="text-sm text-muted leading-relaxed mt-2">
+              Ninety faces worth owning, each with a written note on what it is
+              for, what it fights with, and the licence you will actually need
+              to buy.
+            </p>
+          </div>
+          <div
+            id="i1ln9it"
+            class="col-12 md:col-6 lg:col-4 border-t border-subtle pt-6"
+          >
+            <img
+              alt="A phone held in one hand showing a studio chat thread full of layout screenshots and short written critiques, warm daylight behind"
+              src="assets/1ee916b1-7577-4ebe-b5c2-1691c8db467b.webp"
+              id="ixaue9"
+              class="w-full aspect-[4/3] object-cover block"
+            />
+            <h3 class="text-lg font-semibold text-emphasis mt-6">
+              The studio channel
+            </h3>
+            <p class="text-sm text-muted leading-relaxed mt-2">
+              A private room with every past cohort in it. Post a page, get it
+              read by people who have done the work. Access does not end when
+              your nine weeks do.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="curriculum"
+      data-swebsy-block-id="module-list-ruled-rows"
+      data-swebsy-block='{"tags":["timeline","process"],"description":"A curriculum or agenda list as evenly ruled specimen rows: a narrow period label, the module title and summary, and right-aligned counts and runtimes."}'
+      class="bg-default py-16 md:py-20 lg:py-28"
+    >
+      <div class="container">
+        <div id="ir9tx1f" class="row g-6">
+          <div class="col-12 lg:col-3">
+            <div class="border-t-2 border-emphasis pt-3">
+              <span
+                class="block text-xs uppercase tracking-widest text-primary font-semibold"
+                >The curriculum</span
+              >
+            </div>
+          </div>
+          <div class="col-12 lg:col-9">
+            <h2
+              id="idxmm8n"
+              class="text-4xl md:text-5xl lg:text-6xl leading-tight text-emphasis max-w-3xl mt-6 lg:mt-0"
+            >
+              Nine weeks, six modules, in this order for a reason.
+            </h2>
+            <p class="text-base text-muted leading-relaxed max-w-xl mt-6">
+              Each module ends with a piece of your own work rebuilt and
+              critiqued. You cannot skip ahead, and after week two you will not
+              want to.
+            </p>
+          </div>
+        </div>
+        <div class="mt-14 md:mt-20">
+          <div
+            id="i6fomt5"
+            class="row g-4 items-baseline border-t border-subtle py-7 md:py-9"
+          >
+            <div class="col-12 md:col-2">
+              <span class="block text-xs uppercase tracking-widest text-muted"
+                >Week 1</span
+              >
+            </div>
+            <div id="ic9dort" class="col-12 md:col-7">
+              <h3 class="text-xl font-semibold text-emphasis">The measure</h3>
+              <p class="text-sm text-muted leading-relaxed mt-2 max-w-xl">
+                Line length and leading, and why they are one decision rather
+                than two. We set the same paragraph eleven times until the
+                difference stops being invisible to you.
+              </p>
+            </div>
+            <div id="iroxu6l" class="col-12 md:col-3 md:text-end">
+              <span class="block text-sm text-emphasis font-medium"
+                >7 lessons</span
+              ><span class="block text-sm text-subtle mt-1">1 h 48 m</span>
+            </div>
+          </div>
+          <div
+            id="iqvbvqq"
+            class="row g-4 items-baseline border-t border-subtle py-7 md:py-9"
+          >
+            <div class="col-12 md:col-2">
+              <span class="block text-xs uppercase tracking-widest text-muted"
+                >Week 2</span
+              >
+            </div>
+            <div id="i78rhxl" class="col-12 md:col-7">
+              <h3 class="text-xl font-semibold text-emphasis">The face</h3>
+              <p class="text-sm text-muted leading-relaxed mt-2 max-w-xl">
+                Choosing type, and why the honest shortlist is far shorter than
+                the foundry wants you to believe. Includes the licence maths
+                nobody explains before an invoice arrives.
+              </p>
+            </div>
+            <div id="iuuc3b6" class="col-12 md:col-3 md:text-end">
+              <span class="block text-sm text-emphasis font-medium"
+                >6 lessons</span
+              ><span class="block text-sm text-subtle mt-1">1 h 32 m</span>
+            </div>
+          </div>
+          <div
+            id="iz30off"
+            class="row g-4 items-baseline border-t border-subtle py-7 md:py-9"
+          >
+            <div class="col-12 md:col-2">
+              <span class="block text-xs uppercase tracking-widest text-muted"
+                >Weeks 3–4</span
+              >
+            </div>
+            <div id="ijyluj2" class="col-12 md:col-7">
+              <h3 class="text-xl font-semibold text-emphasis">The scale</h3>
+              <p class="text-sm text-muted leading-relaxed mt-2 max-w-xl">
+                Building a type ramp that survives contact with a real CMS, a
+                marketing team, and a headline nobody warned you about. Six
+                steps, not fourteen.
+              </p>
+            </div>
+            <div id="i541z18" class="col-12 md:col-3 md:text-end">
+              <span class="block text-sm text-emphasis font-medium"
+                >8 lessons</span
+              ><span class="block text-sm text-subtle mt-1">2 h 15 m</span>
+            </div>
+          </div>
+          <div
+            id="i1u62ma"
+            class="row g-4 items-baseline border-t border-subtle py-7 md:py-9"
+          >
+            <div class="col-12 md:col-2">
+              <span class="block text-xs uppercase tracking-widest text-muted"
+                >Weeks 5–6</span
+              >
+            </div>
+            <div id="iewsscw" class="col-12 md:col-7">
+              <h3 class="text-xl font-semibold text-emphasis">The grid</h3>
+              <p class="text-sm text-muted leading-relaxed mt-2 max-w-xl">
+                Columns, gutters and the baseline — then the far harder lesson
+                of when to break all three on purpose and still look deliberate
+                about it.
+              </p>
+            </div>
+            <div id="ioyxou9" class="col-12 md:col-3 md:text-end">
+              <span class="block text-sm text-emphasis font-medium"
+                >8 lessons</span
+              ><span class="block text-sm text-subtle mt-1">2 h 04 m</span>
+            </div>
+          </div>
+          <div
+            id="i90eij5"
+            class="row g-4 items-baseline border-t border-subtle py-7 md:py-9"
+          >
+            <div class="col-12 md:col-2">
+              <span class="block text-xs uppercase tracking-widest text-muted"
+                >Weeks 7–8</span
+              >
+            </div>
+            <div id="im2bqp9" class="col-12 md:col-7">
+              <h3 class="text-xl font-semibold text-emphasis">The page</h3>
+              <p class="text-sm text-muted leading-relaxed mt-2 max-w-xl">
+                Hierarchy, entry points, and the rag. The module where most
+                students say the thing they had been squinting at for years
+                finally resolved.
+              </p>
+            </div>
+            <div id="ib8yde8" class="col-12 md:col-3 md:text-end">
+              <span class="block text-sm text-emphasis font-medium"
+                >7 lessons</span
+              ><span class="block text-sm text-subtle mt-1">2 h 21 m</span>
+            </div>
+          </div>
+          <div
+            id="ivugpcs"
+            class="row g-4 items-baseline border-y border-subtle py-7 md:py-9"
+          >
+            <div class="col-12 md:col-2">
+              <span class="block text-xs uppercase tracking-widest text-muted"
+                >Week 9</span
+              >
+            </div>
+            <div id="ifj4bll" class="col-12 md:col-7">
+              <h3 class="text-xl font-semibold text-emphasis">The proof</h3>
+              <p class="text-sm text-muted leading-relaxed mt-2 max-w-xl">
+                Print, screen, and the review. How to test a page properly, and
+                how to defend a typographic decision to someone who outranks you
+                and wants it bigger.
+              </p>
+            </div>
+            <div id="iy45md1" class="col-12 md:col-3 md:text-end">
+              <span class="block text-sm text-emphasis font-medium"
+                >6 lessons</span
+              ><span class="block text-sm text-subtle mt-1">1 h 39 m</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="iyh2txl"
+      data-swebsy-block-id="dark-preview-band"
+      data-swebsy-block='{"tags":["gallery","features"],"description":"A full-bleed near-black band that shows the product: one wide screenshot over three captioned thumbnails, with its own surface tokens so it inverts cleanly."}'
+      class="w-full py-16 md:py-20 lg:py-28"
+    >
+      <div class="container">
+        <div id="ik3nkmr" class="row g-6">
+          <div class="col-12 lg:col-3">
+            <div class="border-t-2 border-emphasis pt-3">
+              <span
+                class="block text-xs uppercase tracking-widest text-primary font-semibold"
+                >The product</span
+              >
+            </div>
+          </div>
+          <div class="col-12 lg:col-9">
+            <h2
+              id="iy4t79f"
+              class="text-4xl md:text-5xl lg:text-6xl leading-tight text-emphasis max-w-2xl mt-6 lg:mt-0"
+            >
+              Look at it before you buy it.
+            </h2>
+            <p class="text-base text-muted leading-relaxed max-w-xl mt-6">
+              Most course pages ask you to take the material on faith. Here is
+              the lesson player, a manual spread, a marked-up critique and the
+              working files — photographed, not mocked up.
+            </p>
+          </div>
+        </div>
+        <img
+          alt="Open editorial typography proof with a ruler, paper strips, and a dusty-rose pencil on a pale oak worktable"
+          src="assets/86a0cde2-f82c-47f2-bf7f-7fb3889d2424.webp"
+          id="ikqfrv"
+          class="w-full aspect-[16/7] object-cover block mt-14 md:mt-20"
+        />
+        <div id="i9p8yt5" class="row g-4 mt-4">
+          <div class="col-12 md:col-4">
+            <img
+              alt="A manual spread photographed under lamplight, the running text set in two columns with a marginal note in rose ink"
+              src="assets/bb5f22e1-6921-4cb7-85d8-b9ecfa8cc656.webp"
+              id="issfw8"
+              class="w-full aspect-[3/2] object-cover block"
+            /><span
+              class="block text-xs uppercase tracking-widest text-subtle mt-3"
+              >The manual</span
+            >
+          </div>
+          <div id="injy5fm" class="col-12 md:col-4">
+            <img
+              alt="A student's layout covered in rose critique marks calling out the measure and the ragged right edge"
+              src="assets/ce364fb4-bf67-494b-bb9d-e8c73f4502b5.webp"
+              id="izqlmf"
+              class="w-full aspect-[3/2] object-cover block"
+            /><span
+              class="block text-xs uppercase tracking-widest text-subtle mt-3"
+              >A critique</span
+            >
+          </div>
+          <div id="i0yhzog" class="col-12 md:col-4">
+            <img
+              alt="An unlocked InDesign file in a dark interface with every layer exposed and the baseline grid switched on"
+              src="assets/b0c8c2e8-bbf6-490d-a137-d3ffd746f7e6.webp"
+              id="if8b3i"
+              class="w-full aspect-[3/2] object-cover block"
+            /><span
+              class="block text-xs uppercase tracking-widest text-subtle mt-3"
+              >The working files</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="iwb3uwc"
+      data-swebsy-block-id="qualifier-two-lists"
+      data-swebsy-block='{"tags":["features","about"],"description":"An honest-fit section: two ruled lists split by a vertical hairline, the qualifying side headed by an accent rule and the disqualifying side muted."}'
+      class="bg-default py-16 md:py-20 lg:py-28"
+    >
+      <div class="container">
+        <div id="i36otna" class="row g-6">
+          <div class="col-12 lg:col-3">
+            <div class="border-t-2 border-emphasis pt-3">
+              <span
+                class="block text-xs uppercase tracking-widest text-primary font-semibold"
+                >Honest fit</span
+              >
+            </div>
+          </div>
+          <div class="col-12 lg:col-9">
+            <h2
+              id="ias8ybk"
+              class="text-4xl md:text-5xl lg:text-6xl leading-tight text-emphasis max-w-2xl mt-6 lg:mt-0"
+            >
+              This is not for everybody, and that is fine.
+            </h2>
+          </div>
+        </div>
+        <div id="i05yhst" class="row g-0 mt-14 md:mt-20">
+          <div class="col-12 lg:col-6 lg:pe-12">
+            <div class="border-t-2 border-primary pt-4">
+              <h3 class="text-lg font-semibold text-emphasis">
+                Take the course if you already ship work and it still isn't
+                right
+              </h3>
+            </div>
+            <p
+              class="text-sm text-default leading-relaxed border-t border-subtle pt-4 mt-6"
+            >
+              You design for a living, or you are close enough that a portfolio
+              matters.
+            </p>
+            <p
+              class="text-sm text-default leading-relaxed border-t border-subtle pt-4 mt-4"
+            >
+              You can open InDesign or Figma without a tutorial, but nobody ever
+              taught you type.
+            </p>
+            <p
+              class="text-sm text-default leading-relaxed border-t border-subtle pt-4 mt-4"
+            >
+              You want to be told what is wrong with your own pages, by name,
+              out loud.
+            </p>
+            <p
+              class="text-sm text-default leading-relaxed border-y border-subtle py-4 mt-4"
+            >
+              You have four to five hours a week for nine weeks, and you will
+              actually take them.
+            </p>
+          </div>
+          <div
+            class="col-12 lg:col-6 lg:ps-12 lg:border-s lg:border-subtle mt-14 lg:mt-0"
+          >
+            <div class="border-t-2 border-subtle pt-4">
+              <h3 class="text-lg font-semibold text-muted">
+                Skip it if you want a font pairing list and a quiet afternoon
+              </h3>
+            </div>
+            <p
+              class="text-sm text-muted leading-relaxed border-t border-subtle pt-4 mt-6"
+            >
+              You have never opened a layout tool. Start somewhere cheaper and
+              come back.
+            </p>
+            <p
+              class="text-sm text-muted leading-relaxed border-t border-subtle pt-4 mt-4"
+            >
+              You want templates to ship on Friday. This teaches decisions,
+              which is slower.
+            </p>
+            <p
+              class="text-sm text-muted leading-relaxed border-t border-subtle pt-4 mt-4"
+            >
+              You are hoping to watch it through once at double speed. It will
+              not take.
+            </p>
+            <p
+              class="text-sm text-muted leading-relaxed border-y border-subtle py-4 mt-4"
+            >
+              You would rather not show your work to anyone. The critiques are
+              the course.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="instructor"
+      data-swebsy-block-id="bio-portrait-pullquote"
+      data-swebsy-block='{"tags":["team","about"],"description":"A biography split: a tall square-cropped portrait with a caption beside a display headline, body copy, an accented pull quote and a ruled credentials list."}'
+      class="bg-default py-16 md:py-20 lg:py-28"
+    >
+      <div class="container">
+        <div id="ig1i8kn" class="row g-6 items-start">
+          <div class="col-12 lg:col-5">
+            <img
+              alt="Della Voss, a woman in her forties in a linen work apron, standing beside a studio wall of pinned printed proofs in soft window light, looking directly at the camera"
+              src="assets/ed9d4281-a0e6-44fc-bd59-6b26f0b6ebc8.webp"
+              id="im5snq"
+              class="w-full aspect-[3/4] object-cover block"
+            /><span
+              class="block text-xs uppercase tracking-widest text-subtle mt-3"
+              >Della Voss · Rotterdam</span
+            >
+          </div>
+          <div id="iuq6vtl" class="col-12 lg:col-7 lg:ps-12">
+            <div class="border-t-2 border-emphasis pt-3">
+              <span
+                class="block text-xs uppercase tracking-widest text-primary font-semibold"
+                >Who is teaching</span
+              >
+            </div>
+            <h2
+              id="io4enem"
+              class="text-4xl md:text-5xl leading-tight text-emphasis mt-8"
+            >
+              Della Voss has been setting type since before it was a job title.
+            </h2>
+            <p class="text-base text-muted leading-relaxed mt-8 max-w-2xl">
+              Eighteen years of it. Nine as art director of a national weekly,
+              where the front page had to be reset by hand every Tuesday night
+              and there was never enough time to be precious about it. Four
+              running the studio at a book publisher. Five freelancing for
+              people who could not afford to be wrong in print.
+            </p>
+            <blockquote
+              id="in7t3ch"
+              class="text-2xl md:text-3xl leading-snug text-emphasis border-s-2 border-primary ps-6 mt-10 max-w-2xl"
+            >
+              I am not going to give you rules. I am going to give you the
+              questions the rules came from, and then make you answer them on
+              your own work.
+            </blockquote>
+            <div class="mt-10 max-w-2xl">
+              <div
+                class="flex items-baseline justify-between gap-4 border-t border-subtle py-3"
+              >
+                <span class="text-xs uppercase tracking-widest text-muted"
+                  >Cohorts taught</span
+                ><span class="font-serif text-xl text-emphasis">9</span>
+              </div>
+              <div
+                class="flex items-baseline justify-between gap-4 border-t border-subtle py-3"
+              >
+                <span class="text-xs uppercase tracking-widest text-muted"
+                  >Designers through the course</span
+                ><span class="font-serif text-xl text-emphasis">1,140</span>
+              </div>
+              <div
+                class="flex items-baseline justify-between gap-4 border-y border-subtle py-3"
+              >
+                <span class="text-xs uppercase tracking-widest text-muted"
+                  >Years setting type</span
+                ><span class="font-serif text-xl text-emphasis">18</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="ir7j8kj"
+      data-swebsy-block-id="quote-feature-plus-grid"
+      data-swebsy-block='{"tags":["testimonials"],"description":"Social proof as one oversized featured quote with a square portrait, followed by an evenly ruled six-cell grid of shorter quotes with no card fills."}'
+      class="bg-default py-16 md:py-20 lg:py-28"
+    >
+      <div class="container">
+        <div id="it0atus" class="row g-6">
+          <div class="col-12 lg:col-3">
+            <div class="border-t-2 border-emphasis pt-3">
+              <span
+                class="block text-xs uppercase tracking-widest text-primary font-semibold"
+                >The proof</span
+              >
+            </div>
+          </div>
+          <div class="col-12 lg:col-9">
+            <h2
+              id="i604ofu"
+              class="text-4xl md:text-5xl lg:text-6xl leading-tight text-emphasis max-w-4xl mt-6 lg:mt-0"
+            >
+              Eleven hundred designers, and the same sentence keeps coming back.
+            </h2>
+          </div>
+        </div>
+        <div
+          id="iybofs6"
+          class="border-t border-subtle py-12 md:py-16 mt-14 md:mt-20"
+        >
+          <blockquote
+            id="iq5fcw3"
+            class="text-3xl md:text-4xl lg:text-5xl text-emphasis max-w-4xl"
+          >
+            I came in able to make things look nice and came out able to explain
+            why they look nice. That second thing is what got me promoted.
+          </blockquote>
+          <div class="flex items-center gap-4 mt-10">
+            <img
+              alt="Square head-and-shoulders portrait of Esther Lindqvist, a woman in her thirties, soft plain background, natural daylight"
+              src="assets/5372754c-87cc-4a53-95ad-bef2db925a53.webp"
+              id="ivyzrm"
+              class="w-14 h-14 object-cover block"
+            />
+            <div>
+              <span class="block text-sm font-semibold text-emphasis"
+                >Esther Lindqvist</span
+              ><span class="block text-sm text-muted">Senior designer</span>
+            </div>
+          </div>
+        </div>
+        <div id="i53684k" class="row g-6">
+          <div
+            class="col-12 md:col-6 lg:col-4 border-t border-subtle pt-6 mt-10"
+          >
+            <p class="text-sm text-default leading-relaxed">
+              Week four rearranged how I look at a page. I rebuilt our entire
+              section front the weekend after and my editor asked who redesigned
+              it.
+            </p>
+            <div class="flex items-center gap-3 mt-6">
+              <img
+                alt="Square head-and-shoulders portrait of Marguerite Okonjo, a Black woman in her forties, soft plain background, natural daylight"
+                src="assets/c2ab76aa-be05-407e-a581-d89679bdf885.webp"
+                id="iucg69"
+                class="w-10 h-10 object-cover block"
+              />
+              <div>
+                <span class="block text-sm font-semibold text-emphasis"
+                  >Marguerite Okonjo</span
+                ><span class="block text-xs text-muted"
+                  >Art director, regional daily</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 md:col-6 lg:col-4 border-t border-subtle pt-6 mt-10"
+          >
+            <p class="text-sm text-default leading-relaxed">
+              I had watched maybe thirty hours of type videos before this. None
+              of it stuck, because none of it was a person showing you a page
+              and saying: that is too tight, here is why, fix it.
+            </p>
+            <div class="flex items-center gap-3 mt-6">
+              <img
+                alt="Square head-and-shoulders portrait of Sam Achterberg, a man in his late twenties, soft plain background, natural daylight"
+                src="assets/4a268111-5acf-48bb-b2a5-68cd0e314ef2.webp"
+                id="idu03d"
+                class="w-10 h-10 object-cover block"
+              />
+              <div>
+                <span class="block text-sm font-semibold text-emphasis"
+                  >Sam Achterberg</span
+                ><span class="block text-xs text-muted"
+                  >Designer, software company</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 md:col-6 lg:col-4 border-t border-subtle pt-6 mt-10"
+          >
+            <p class="text-sm text-default leading-relaxed">
+              The working files alone are worth the fee. Being able to open the
+              exact document and see how it was built beats any amount of
+              watching.
+            </p>
+            <div class="flex items-center gap-3 mt-6">
+              <img
+                alt="Square head-and-shoulders portrait of Noor Haddad, a woman in her thirties wearing a headscarf, soft plain background, natural daylight"
+                src="assets/6d0633e8-bb3b-4165-8ac7-5ba27060ba74.webp"
+                id="izcjot"
+                class="w-10 h-10 object-cover block"
+              />
+              <div>
+                <span class="block text-sm font-semibold text-emphasis"
+                  >Noor Haddad</span
+                ><span class="block text-xs text-muted"
+                  >Editorial designer</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 md:col-6 lg:col-4 border-t border-subtle pt-6 mt-10"
+          >
+            <p class="text-sm text-default leading-relaxed">
+              The critique is worth the whole fee. Watching someone take my page
+              apart in real time was excruciating for about four minutes and
+              then genuinely the most useful hour of my year.
+            </p>
+            <div class="flex items-center gap-3 mt-6">
+              <img
+                alt="Square head-and-shoulders portrait of Tobias Renner, a man in his fifties with grey hair, soft plain background, natural daylight"
+                src="assets/d2bcac93-7856-4a20-a52f-3ab4ab713b67.webp"
+                id="i6qz8f"
+                class="w-10 h-10 object-cover block"
+              />
+              <div>
+                <span class="block text-sm font-semibold text-emphasis"
+                  >Tobias Renner</span
+                ><span class="block text-xs text-muted">Product designer</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 md:col-6 lg:col-4 border-t border-subtle pt-6 mt-10"
+          >
+            <p class="text-sm text-default leading-relaxed">
+              Week one is eleven versions of the same paragraph and I nearly
+              quit. By version nine I could see it. I think about that exercise
+              every time I open a document now.
+            </p>
+            <div class="flex items-center gap-3 mt-6">
+              <img
+                alt="Square head-and-shoulders portrait of Priya Raghunathan, a South Asian woman in her thirties, soft plain background, natural daylight"
+                src="assets/996f9720-649d-43be-bf0f-81d8c8b845dc.webp"
+                id="ijex9h"
+                class="w-10 h-10 object-cover block"
+              />
+              <div>
+                <span class="block text-sm font-semibold text-emphasis"
+                  >Priya Raghunathan</span
+                ><span class="block text-xs text-muted">Brand designer</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 md:col-6 lg:col-4 border-t border-subtle pt-6 mt-10"
+          >
+            <p class="text-sm text-default leading-relaxed">
+              I bought it for the manual and stayed for the licensing lesson,
+              which saved my studio about four thousand pounds in the first
+              month. Nobody tells you that part.
+            </p>
+            <div class="flex items-center gap-3 mt-6">
+              <img
+                alt="Square head-and-shoulders portrait of Hilde Bakker, a woman in her sixties with short white hair, soft plain background, natural daylight"
+                src="assets/05271057-cf2f-4ff5-ad2d-7c26ecc1582d.webp"
+                id="ii1s7h"
+                class="w-10 h-10 object-cover block"
+              />
+              <div>
+                <span class="block text-sm font-semibold text-emphasis"
+                  >Hilde Bakker</span
+                ><span class="block text-xs text-muted">Studio owner</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="pricing"
+      data-swebsy-block-id="pricing-two-column-ruled"
+      data-swebsy-block='{"tags":["pricing","cta"],"description":"Two pricing tiers as ruled columns split by a hairline rather than floating cards, the recommended tier marked by an accent rule, over a guarantee and team-quote strip."}'
+      class="bg-default py-16 md:py-20 lg:py-28"
+    >
+      <div class="container">
+        <div id="ifvi1gj" class="row g-6">
+          <div class="col-12 lg:col-3">
+            <div class="border-t-2 border-emphasis pt-3">
+              <span
+                class="block text-xs uppercase tracking-widest text-primary font-semibold"
+                >Enrolment</span
+              >
+            </div>
+          </div>
+          <div class="col-12 lg:col-9">
+            <h2
+              id="ilb7jhb"
+              class="text-4xl md:text-5xl lg:text-6xl leading-tight text-emphasis max-w-2xl mt-6 lg:mt-0"
+            >
+              One payment. No subscription, ever.
+            </h2>
+          </div>
+        </div>
+        <div id="imo3aq8" class="row g-0 mt-14 md:mt-20">
+          <div class="col-12 lg:col-6 lg:pe-14">
+            <div
+              class="border-t-2 border-subtle pt-5 flex items-baseline justify-between gap-4"
+            >
+              <span class="text-xs uppercase tracking-widest text-muted"
+                >Self-paced</span
+              >
+            </div>
+            <div class="flex items-baseline gap-3 mt-6">
+              <span
+                class="font-serif text-6xl md:text-7xl leading-none text-emphasis"
+                >$189</span
+              ><span class="text-sm text-muted">one payment</span>
+            </div>
+            <p class="text-sm text-muted leading-relaxed mt-6">
+              The whole curriculum on your own clock. Everything except the live
+              room.
+            </p>
+            <div class="mt-8">
+              <p class="text-sm text-default border-t border-subtle py-3">
+                All 42 filmed lessons, forever
+              </p>
+              <p class="text-sm text-default border-t border-subtle py-3">
+                The 180-page manual, digital and DRM-free
+              </p>
+              <p class="text-sm text-default border-t border-subtle py-3">
+                Every working file and the specimen library
+              </p>
+              <p class="text-sm text-default border-y border-subtle py-3">
+                The studio channel, with no end date
+              </p>
+            </div>
+            <a
+              href="#pricing"
+              id="induzze"
+              class="btn btn-outline-neutral btn-lg w-full mt-8"
+              >Buy self-paced — $189</a
+            >
+          </div>
+          <div
+            class="col-12 lg:col-6 lg:ps-14 lg:border-s lg:border-subtle mt-16 lg:mt-0"
+          >
+            <div
+              class="border-t-2 border-primary pt-5 flex items-baseline justify-between gap-4"
+            >
+              <span
+                class="text-xs uppercase tracking-widest text-primary font-semibold"
+                >Full course</span
+              ><span class="text-xs uppercase tracking-widest text-muted"
+                >Includes the critiques</span
+              >
+            </div>
+            <div class="flex items-baseline gap-3 mt-6">
+              <span
+                class="font-serif text-6xl md:text-7xl leading-none text-emphasis"
+                >$349</span
+              ><span class="text-sm text-muted">one payment</span>
+            </div>
+            <p class="text-sm text-muted leading-relaxed mt-6">
+              Everything above, plus the six live sessions where your own work
+              goes on the screen.
+            </p>
+            <div class="mt-8">
+              <p class="text-sm text-default border-t border-subtle py-3">
+                Everything in self-paced
+              </p>
+              <p class="text-sm text-default border-t border-subtle py-3">
+                Six live critiques, twenty seats each
+              </p>
+              <p class="text-sm text-default border-t border-subtle py-3">
+                The manual printed and posted to you
+              </p>
+              <p class="text-sm text-default border-y border-subtle py-3">
+                Certificate, and a written end-of-course review
+              </p>
+            </div>
+            <a href="#pricing" class="btn btn-primary btn-lg w-full mt-8"
+              >Enrol — $349</a
+            >
+          </div>
+        </div>
+        <div
+          id="isowbqc"
+          class="row g-6 mt-16 md:mt-20 border-t border-subtle pt-10"
+        >
+          <div class="col-12 md:col-7">
+            <div class="flex items-start gap-6">
+              <img
+                alt="A circular embossed guarantee seal printed in dusty rose ink on cream paper, reading THIRTY DAYS around the edge"
+                src="assets/4f208771-1f07-4c21-a327-bed43d94d6f8.svg"
+                id="i9ilxx"
+                class="w-20 h-20 object-contain shrink-0 dark:invert"
+              />
+              <div>
+                <h3 class="text-lg font-semibold text-emphasis">
+                  Thirty days, no argument
+                </h3>
+                <p class="text-sm text-muted leading-relaxed mt-2 max-w-lg">
+                  Work through as much as you like. If it has not changed how
+                  you set a page, reply to the receipt and the money goes back
+                  the same day — no form, no exit interview, and you keep the
+                  manual.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 md:col-5 mt-10 md:mt-0 md:ps-10 md:border-s md:border-subtle"
+          >
+            <h3 class="text-lg font-semibold text-emphasis">
+              Buying for a team?
+            </h3>
+            <p class="text-sm text-muted leading-relaxed mt-2">
+              Three seats or more come with a shared critique slot and one
+              invoice. Purchase orders are fine.
+            </p>
+            <a href="#pricing" id="ijtzbnk" class="btn btn-outline-neutral mt-5"
+              >Get a team quote</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="faq"
+      data-swebsy-block-id="faq-two-column-ruled"
+      data-swebsy-block='{"tags":["faq"],"description":"Eight questions in two columns of hairline-separated entries, split by a vertical rule, with sans headings and muted answers and no card fills."}'
+      class="bg-default py-16 md:py-20 lg:py-28"
+    >
+      <div class="container">
+        <div id="ib9geao" class="row g-6">
+          <div class="col-12 lg:col-3">
+            <div class="border-t-2 border-emphasis pt-3">
+              <span
+                class="block text-xs uppercase tracking-widest text-primary font-semibold"
+                >Before you ask</span
+              >
+            </div>
+          </div>
+          <div class="col-12 lg:col-9">
+            <h2
+              id="ik38b2c"
+              class="text-4xl md:text-5xl lg:text-6xl leading-tight text-emphasis max-w-2xl mt-6 lg:mt-0"
+            >
+              The eight questions we get every cohort.
+            </h2>
+          </div>
+        </div>
+        <div id="icg50vi" class="row g-0 mt-14 md:mt-20">
+          <div class="col-12 lg:col-6 lg:pe-14">
+            <div class="border-t border-subtle pt-6">
+              <h3 class="text-base font-semibold text-emphasis">
+                How much time does it take each week?
+              </h3>
+              <p class="text-sm text-muted leading-relaxed mt-2">
+                Four to five hours: roughly ninety minutes of lessons and the
+                rest spent setting the exercise. The people who get the most out
+                of it treat the exercise as the course and the video as the
+                briefing.
+              </p>
+            </div>
+            <div class="border-t border-subtle pt-6 mt-8">
+              <h3 class="text-base font-semibold text-emphasis">
+                Is there a beginner version?
+              </h3>
+              <p class="text-sm text-muted leading-relaxed mt-2">
+                No, and that is deliberate. Primer assumes you can already build
+                a layout. If you cannot, the first four weeks will move too fast
+                to be useful.
+              </p>
+            </div>
+            <div class="border-t border-subtle pt-6 mt-8">
+              <h3 class="text-base font-semibold text-emphasis">
+                Do I have to buy typefaces?
+              </h3>
+              <p class="text-sm text-muted leading-relaxed mt-2">
+                Not to complete the course. Every exercise can be done with
+                faces that are free to licence, and week two covers exactly when
+                paying is worth it and when it is not.
+              </p>
+            </div>
+            <div class="border-y border-subtle py-6 mt-8">
+              <h3 class="text-base font-semibold text-emphasis">
+                Is the price in your currency?
+              </h3>
+              <p class="text-sm text-muted leading-relaxed mt-2">
+                Prices are in US dollars and charged as shown. Purchasing-power
+                pricing is available for around forty countries — the checkout
+                applies it automatically.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-12 lg:col-6 lg:ps-14 lg:border-s lg:border-subtle mt-8 lg:mt-0"
+          >
+            <div class="border-t border-subtle pt-6">
+              <h3 class="text-base font-semibold text-emphasis">
+                When do the live critiques run?
+              </h3>
+              <p class="text-sm text-muted leading-relaxed mt-2">
+                Every other Thursday at 18:00 CET, six times across the nine
+                weeks. All six are recorded and posted, so a missed session
+                costs you the room, not the material.
+              </p>
+            </div>
+            <div class="border-t border-subtle pt-6 mt-8">
+              <h3 class="text-base font-semibold text-emphasis">
+                Are the videos captioned?
+              </h3>
+              <p class="text-sm text-muted leading-relaxed mt-2">
+                All forty-two, in English, hand-corrected rather than
+                auto-generated. Transcripts are downloadable and the player runs
+                at any speed without pitch artefacts.
+              </p>
+            </div>
+            <div class="border-t border-subtle pt-6 mt-8">
+              <h3 class="text-base font-semibold text-emphasis">
+                Will this get me a job?
+              </h3>
+              <p class="text-sm text-muted leading-relaxed mt-2">
+                On its own, no, and be suspicious of anyone who promises
+                otherwise. It will make your portfolio noticeably better and
+                give you the vocabulary to talk about it.
+              </p>
+            </div>
+            <div class="border-y border-subtle py-6 mt-8">
+              <h3 class="text-base font-semibold text-emphasis">
+                What if it is not for me?
+              </h3>
+              <p class="text-sm text-muted leading-relaxed mt-2">
+                Reply to the receipt inside thirty days and the money goes back
+                the same day. Under two per cent of students ask, and nobody has
+                ever been argued with.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="i8x1znk"
+      data-swebsy-block-id="cta-band-accent-split"
+      data-swebsy-block='{"tags":["cta"],"description":"A full-bleed accent-coloured closing band with its own surface tokens: display headline, deck and two buttons beside a square-cropped product image."}'
+      class="w-full py-16 md:py-20 lg:py-28"
+    >
+      <div class="container">
+        <div id="ixqx5vh" class="row g-6 items-center">
+          <div class="col-12 lg:col-7">
+            <div class="border-t-2 border-emphasis pt-3">
+              <span
+                class="block text-xs uppercase tracking-widest text-default font-semibold"
+                >Cohort ten · opens 4 March · 20 critique seats</span
+              >
+            </div>
+            <h2
+              id="i5c5s5s"
+              class="text-4xl md:text-6xl leading-tight text-emphasis mt-8 max-w-2xl"
+            >
+              Nine weeks from now you could know exactly why it works.
+            </h2>
+            <p class="text-base text-muted leading-relaxed mt-6 max-w-xl">
+              One payment, lifetime access, and thirty days to decide it was
+              worth it. The critique seats are the part that runs out.
+            </p>
+            <div class="flex flex-wrap items-center gap-3 mt-10">
+              <a href="#pricing" class="btn btn-primary btn-lg">Enrol — $349</a
+              ><a
+                href="free-lesson.html"
+                id="iaxbkcn"
+                class="btn btn-outline-neutral btn-lg"
+                >Read a free lesson first</a
+              >
+            </div>
+          </div>
+          <div id="ibb4kil" class="col-12 lg:col-5">
+            <img
+              alt="The printed course manual standing upright on a pale desk beside marked-up proofs and a dusty rose pencil, morning light raking across the paper"
+              src="assets/133ecd9a-ec99-4f65-9bef-a547c5b66640.webp"
+              id="i2krcf"
+              class="w-full aspect-[4/3] object-cover block"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="footer-dark-ruled"
+      data-swebsy-block='{"tags":["footer","copyright"],"description":"A flush dark footer with its own surface tokens: a brand column, two ruled link columns, a cohort note with a button, and a hairline bottom bar."}'
+      id="iijyxmr"
+      class="w-full pt-16 md:pt-20 pb-10"
+    >
+      <div id="irfyeyc" class="container">
+        <div id="il8fniv" class="row g-6">
+          <div id="iwxwnyf" class="col-12 lg:col-5">
+            <span id="iuv1on7" class="block font-serif text-3xl text-emphasis"
+              >Primer</span
+            >
+            <p
+              id="ihgwv7m"
+              class="text-sm text-muted leading-relaxed mt-4 max-w-sm"
+            >
+              A field course in editorial typography, taught in nine weeks by
+              Della Voss. Published by Primer Editions, Rotterdam.
+            </p>
+          </div>
+          <div id="irv7502" class="col-6 lg:col-2">
+            <span
+              id="i5frqsg"
+              class="block text-xs uppercase tracking-widest text-subtle"
+              >The course</span
+            ><a
+              href="#curriculum"
+              id="ifiv98d"
+              class="block text-sm text-default mt-4 no-underline"
+              >Curriculum</a
+            ><a
+              href="#pricing"
+              id="ictsxxy"
+              class="block text-sm text-default mt-3 no-underline"
+              >Pricing</a
+            ><a
+              href="free-lesson.html"
+              id="i23xcnf"
+              class="block text-sm text-default mt-3 no-underline"
+              >Free lesson</a
+            ><a
+              href="#faq"
+              id="i686rxp"
+              class="block text-sm text-default mt-3 no-underline"
+              >Questions</a
+            >
+          </div>
+          <div id="ieyumnv" class="col-6 lg:col-2">
+            <span
+              id="iaivox6"
+              class="block text-xs uppercase tracking-widest text-subtle"
+              >Primer Editions</span
+            ><a
+              href="#instructor"
+              id="i74jyt1"
+              class="block text-sm text-default mt-4 no-underline"
+              >Della Voss</a
+            ><a
+              href="#pricing"
+              id="ijlr7q1"
+              class="block text-sm text-default mt-3 no-underline"
+              >Team enrolment</a
+            ><a
+              href="#faq"
+              id="iv7va1g"
+              class="block text-sm text-default mt-3 no-underline"
+              >Refund policy</a
+            ><a
+              href="#pricing"
+              id="izwecgk"
+              class="block text-sm text-default mt-3 no-underline"
+              >Contact</a
+            >
+          </div>
+          <div id="ipw9rph" class="col-12 lg:col-3">
+            <span
+              id="iiamu91"
+              class="block text-xs uppercase tracking-widest text-subtle"
+              >Next cohort</span
+            >
+            <p id="iajkw0k" class="text-sm text-muted leading-relaxed mt-4">
+              Cohort ten opens 4 March. Twenty critique seats, and they have
+              gone early every time so far.
+            </p>
+            <a
+              href="#pricing"
+              id="idxf5av"
+              class="btn btn-outline-neutral btn-sm mt-5"
+              >Enrol — $349</a
+            >
+          </div>
+        </div>
+        <div
+          id="i15c815"
+          class="border-t border-subtle mt-14 pt-6 flex flex-wrap items-center gap-x-6 gap-y-2"
+        >
+          <span id="idwm322" class="text-xs text-subtle"
+            >© 2026 Primer Editions</span
+          ><span id="iuw7nd3" class="text-xs text-subtle"
+            >Set in Gloock and Figtree</span
+          ><span id="iwcvakn" class="text-xs text-subtle ms-auto"
+            >Rotterdam · Netherlands</span
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/swebsy-components.6dc3166180.js" defer></script>
+  <a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

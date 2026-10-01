@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artup - Showcase your creative edge</title>
+    <meta
+      name="description"
+      content="A polished personal portfolio template for designers and creators to showcase work, story, and style."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Artup - Showcase your creative edge" />
+    <meta
+      property="og:description"
+      content="A polished personal portfolio template for designers and creators to showcase work, story, and style."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Artup - Showcase your creative edge" />
+    <meta
+      name="twitter:description"
+      content="A polished personal portfolio template for designers and creators to showcase work, story, and style."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-instrumentserif-jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjgn7MsNo.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-instrumentserif-jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjjH7M.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-instrumentserif-jizBRFtNs2ka5fXjeivQ4LroWlx-6zsTjmbI.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-instrumentserif-jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "system";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.49a7695260.css" />
+  </head>
+  <body id="ib48">
+    <div id="i2dxf" class="lg:p-24 md:p-12 p-0">
+      <nav
+        data-navbar-collapse-on="sm"
+        id="iw5j"
+        data-swebsy-block-id="navbar"
+        data-swebsy-block='{"tags":["navigation"],"description":"Minimal responsive portfolio navbar with a serif wordmark and right-aligned anchor links."}'
+        class="navbar navbar-expand-sm"
+      >
+        <div data-navbar-part="container" class="container">
+          <a href="#" data-navbar-part="brand" class="navbar-brand"
+            ><strong id="irum">Julian</strong></a
+          ><button
+            type="button"
+            data-navbar-part="toggler"
+            data-swebsy-toggle="collapse"
+            data-swebsy-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="btn btn-icon navbar-toggler"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"
+                stroke-width="0.5"
+                stroke="currentColor"
+              ></path>
+            </svg>
+          </button>
+          <div
+            id="navbarMenu"
+            data-navbar-part="collapse"
+            class="collapse navbar-collapse"
+          >
+            <ul data-navbar-part="links" class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#work" aria-current="page" id="i4u5f" class="nav-link"
+                  >Work</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#about" id="iqu3s" class="nav-link">About</a>
+              </li>
+              <li class="nav-item"></li>
+              <li class="nav-item">
+                <a href="#contact" id="ijq62" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="i1eya-2" class="container py-12 md:py-24 xl:py-48">
+        <h1
+          id="i06n1-2"
+          class="2xl:text-9xl xl:text-8xl lg:text-7xl sm:text-6xl text-5xl font-medium font-serif 2xl:tracking-[-3px] md:tracking-[-2px] tracking-[-1px]"
+        >
+          Hi, I am Julian - Brand Designer &amp; Product Strategist for founders
+          and ambitious new ventures.
+        </h1>
+      </div>
+      <div id="irwgx" class="container">
+        <div id="ibx49" class="row">
+          <div id="im2f5" class="lg:offset-5 lg:col-7 xl:col-5 xl:offset-7">
+            <p id="iy6k6" class="mb-8 text-3xl">
+              The best
+              <span id="iwihg" class="bg-danger px-1 text-white">brands</span>
+              earn attention by making complex ideas feel simple, credible, and
+              worth acting on.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        id="iingl"
+        data-swebsy-block-id="gallery-pair"
+        data-swebsy-block='{"tags":["gallery","video","portfolio"],"description":"Two-column portfolio media showcase pairing a rounded portrait image with a tall embedded video."}'
+        class="container"
+      >
+        <div id="iu9n9" class="row">
+          <div id="itf07" class="col-6">
+            <img
+              alt="Image"
+              src="assets/0333ac9d-bd90-4354-b6bc-d52838dd5e93.webp"
+              id="ilz1l"
+              class="h-full w-full object-cover rounded-2xl"
+            />
+          </div>
+          <div id="ib5bj" class="col-6">
+            <iframe
+              controls="true"
+              playsinline="true"
+              id="i69lp"
+              referrerpolicy="strict-origin-when-cross-origin"
+              class="object-cover w-full aspect-[9/16] rounded-2xl overflow-hidden"
+              src="https://www.youtube.com/embed/3X4mhXHXlhA?&amp;autoplay=1&amp;mute=1&amp;controls=0&amp;showinfo=0&amp;loop=1&amp;playlist=3X4mhXHXlhA&amp;rel=0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <div
+        id="about"
+        data-swebsy-block-id="about-two-column"
+        data-swebsy-block='{"tags":["about","content"],"description":"Spacious editorial about section with an oversized experience heading and two columns of supporting copy."}'
+        class="container lg:py-48 md:py-24 py-12"
+      >
+        <div id="i4ch9g" class="row">
+          <div id="icdbwg" class="lg:col-6">
+            <h2
+              id="ik4wl"
+              class="md:text-6xl xl:text-8xl font-normal font-serif mb-12"
+            >
+              12+ years turning ideas into brands
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div id="igxrl" class="md:col-6">
+            <p id="id5h4" class="text-muted sm:text-2xl lg:text-3xl">
+              I came up through small agencies and product teams where every
+              decision had to carry its weight. That made me practical about
+              design: the story needs to be sharp, the interface needs to work,
+              and the business has to feel real before anyone clicks, buys, or
+              believes.
+            </p>
+            <p id="id5h4-3-2" class="text-muted sm:text-2xl lg:text-3xl">
+              I like working near the beginning, when the offer is promising but
+              still hard to explain. My job is to find the plainspoken truth
+              inside the complexity, then build the language and product
+              surfaces that help it travel.
+            </p>
+          </div>
+          <div id="id8gek" class="md:col-6">
+            <p id="id5h4-3" class="text-muted sm:text-2xl lg:text-3xl">
+              The strongest launches usually come from close collaboration with
+              founders, engineers, and operators. I listen for the details
+              customers repeat, the objections sales teams hear, and the moments
+              where a product finally becomes obvious.
+            </p>
+            <p id="id5h4-3-5" class="text-muted sm:text-2xl lg:text-3xl">
+              Good design gives a young company the confidence to be understood
+              quickly.<br />
+            </p>
+            <img
+              alt="Image"
+              src="assets/bac81947-a14f-42ab-a8c9-c34b8e8ba22d.webp"
+              id="io02by"
+              class="mx-auto w-1/2 mt-24"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        id="i9jfbi"
+        data-swebsy-block-id="services-image-split"
+        data-swebsy-block='{"tags":["features","content","logos","cta"],"description":"Dark rounded split section pairing brand-service copy and a CTA with a contrasting four-logo grid."}'
+        class="rounded-2xl bg-slate-900 md:px-12 md:-mx-12 px-6"
+      >
+        <div id="ir0cw" class="container py-24">
+          <div id="ic03h" class="row">
+            <div id="i0h7n" class="pe-8 md:col-6">
+              <h2
+                id="ik4wl-2"
+                class="md:text-6xl xl:text-8xl font-normal font-serif text-white md:mb-12 mb-6"
+              >
+                I create identities
+              </h2>
+              <p id="id5h4-2" class="text-subtle sm:text-2xl lg:text-3xl mb-12">
+                From positioning and naming to product pages and interface
+                systems, I help early teams make their work easier to grasp,
+                trust, and choose.
+              </p>
+              <a
+                href="#"
+                id="ikt7n-4"
+                class="btn btn-neutral btn-lg mt-auto bg-white text-default dark:text-black md:mb-0 mb-12"
+                >View all projects</a
+              >
+            </div>
+            <div id="iayug" class="md:col-6">
+              <div id="iq81l" class="row row-cols-2">
+                <div id="ipsdh" class="col">
+                  <div
+                    id="i6ilk"
+                    class="dark:bg-slate-200 bg-subtle mb-4 rounded-2xl md:h-[12rem] h-[6rem] flex items-center justify-center overflow-hidden p-4 md:p-6"
+                  >
+                    <img
+                      alt="Image"
+                      src="assets/ed60a20c-0d3b-4d26-9f25-e7013a815528.webp"
+                      id="i3xrl-2"
+                      class="max-h-full max-w-full w-auto object-contain"
+                    />
+                  </div>
+                </div>
+                <div id="ihere" class="col">
+                  <div
+                    id="i6ilk-2-2"
+                    class="dark:bg-slate-200 bg-subtle mb-4 rounded-2xl md:h-[12rem] h-[6rem] flex items-center justify-center overflow-hidden p-4 md:p-6"
+                  >
+                    <img
+                      alt="Image"
+                      src="assets/744720b0-33c0-4ffe-b0ac-c3ee16559a4d.webp"
+                      id="i3xrl-2-2-2"
+                      class="max-h-full max-w-full w-auto object-contain"
+                    />
+                  </div>
+                </div>
+                <div id="ipi7c" class="col">
+                  <div
+                    id="i6ilk-2-3"
+                    class="dark:bg-slate-200 bg-subtle mb-4 rounded-2xl md:h-[12rem] h-[6rem] flex items-center justify-center overflow-hidden p-4 md:p-6"
+                  >
+                    <img
+                      alt="Image"
+                      src="assets/05a4c382-c331-4a6a-974d-e5239c440115.webp"
+                      id="i3xrl-2-2-3"
+                      class="max-h-full max-w-full w-auto object-contain"
+                    />
+                  </div>
+                </div>
+                <div id="ipi7c-2" class="col">
+                  <div
+                    id="i6ilk-2-4"
+                    class="dark:bg-slate-200 bg-subtle mb-4 rounded-2xl md:h-[12rem] h-[6rem] flex items-center justify-center overflow-hidden p-4 md:p-6"
+                  >
+                    <img
+                      alt="Image"
+                      src="assets/0daf4328-ba1f-485b-a7ec-7fbaaeddc823.webp"
+                      id="i3xrl-2-2-4"
+                      class="max-h-full max-w-full w-auto object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="work"
+        data-swebsy-block-id="portfolio-project-stack"
+        data-swebsy-block='{"tags":["portfolio","content","gallery"],"description":"Editorial recent-project section with a large heading and stacked image-and-copy case-study rows."}'
+        class="container pt-12 md:pt-24 lg:pt-48"
+      >
+        <h2
+          id="i06n1"
+          class="md:text-6xl xl:text-8xl font-normal font-serif mb-12"
+        >
+          Recent projects
+        </h2>
+        <div id="iid5b" class="card card-img-overlay mb-8 rounded-2xl">
+          <img
+            alt="Image"
+            src="assets/f0c1d886-9f3a-4f81-92a0-c627ef1e2a24.webp"
+            id="i94zr"
+            class="card-img-top"
+          />
+          <div
+            id="ihxog"
+            class="card-body flex flex-col items-start xl:p-24 md:p-8"
+          >
+            <div id="i1yn7" class="container">
+              <div id="iqy12" class="row">
+                <div id="iajgz" class="2xl:col-5 xl:col-7">
+                  <h2
+                    id="i3r7n"
+                    class="font-medium text-3xl md:text-4xl lg:text-5xl mb-4 card-title font-serif tracking-none"
+                  >
+                    A calmer platform for recovery planning
+                  </h2>
+                  <p
+                    id="i7ecg"
+                    class="mb-16 md:text-2xl text-xl hidden md:block"
+                  >
+                    Messaging, product storytelling, and shop architecture for
+                    an outdoor gear brand built around durability,
+                    serviceability, and lower-waste production.
+                  </p>
+                  <a
+                    href="#"
+                    id="ikt7n"
+                    class="btn btn-neutral mt-auto bg-white text-default dark:text-black lg:btn-lg btn-sm"
+                    >Go to project</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="imyc1x" class="card card-img-overlay mb-8 rounded-2xl">
+          <img
+            alt="Image"
+            src="assets/ed1719ea-252d-4556-b37b-2c6c7ddac8df.webp"
+            id="i94zr-2-2"
+            class="card-img-top"
+          />
+          <div
+            id="ik8515"
+            class="card-body flex flex-col items-start xl:p-24 md:p-8"
+          >
+            <div id="ih4t8l" class="container">
+              <div id="iswb44" class="row">
+                <div id="iwz8ii" class="2xl:col-5 xl:col-7">
+                  <h2
+                    id="ik3pf"
+                    class="font-medium text-3xl md:text-4xl lg:text-5xl mb-4 card-title font-serif tracking-none"
+                  >
+                    A route planner for remote field teams
+                  </h2>
+                  <p
+                    id="imhdy7"
+                    class="mb-16 md:text-2xl text-xl hidden md:block"
+                  >
+                    A full launch narrative and ecommerce framework for an
+                    adventure equipment company designing long-lasting gear that
+                    can be fixed, reused, and trusted season after season.
+                  </p>
+                  <a
+                    href="#"
+                    id="ia697a"
+                    class="btn btn-neutral mt-auto bg-white text-default dark:text-black lg:btn-lg btn-sm"
+                    >Watch overview</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="iukjqw" class="card card-img-overlay mb-8 rounded-2xl">
+          <img
+            alt="Image"
+            src="assets/b959f196-d9d1-4a1b-9b36-993a36126f48.webp"
+            id="i94zr-2-3"
+            class="card-img-top"
+          />
+          <div
+            id="iu17cr"
+            class="card-body flex flex-col items-start xl:p-24 md:p-8"
+          >
+            <div id="im2idq" class="container">
+              <div id="i0whzw" class="row">
+                <div id="ihndns" class="2xl:col-5 xl:col-7">
+                  <h2
+                    id="i0qtun"
+                    class="font-medium text-3xl md:text-4xl lg:text-5xl mb-4 card-title font-serif tracking-none"
+                  >
+                    Durable gear for longer seasons outside
+                  </h2>
+                  <p
+                    id="irbt25"
+                    class="mb-16 md:text-2xl text-xl hidden md:block"
+                  >
+                    Positioning, campaign copy, and buying flows for an outdoor
+                    brand making rugged equipment with repair in mind and a
+                    lighter manufacturing footprint.
+                  </p>
+                  <a
+                    href="#"
+                    id="i141fu"
+                    class="btn btn-neutral mt-auto bg-white text-default dark:text-black lg:btn-lg btn-sm"
+                    >View work</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="ifond-2" class="card card-img-overlay mb-8 rounded-2xl">
+          <img
+            alt="Image"
+            src="assets/864e1325-1ae3-4208-a2b2-99c5c2beb73e.webp"
+            id="i94zr-2-4"
+            class="card-img-top"
+          />
+          <div
+            id="ix16n-2"
+            class="card-body flex flex-col items-start xl:p-24 md:p-8"
+          >
+            <div id="i7qa9-2" class="container">
+              <div id="ibtzj-2" class="row">
+                <div id="i09wc-2" class="2xl:col-5 xl:col-7">
+                  <h2
+                    id="i8mgt-2"
+                    class="font-medium text-3xl md:text-4xl lg:text-5xl mb-4 card-title font-serif tracking-none"
+                  >
+                    Compact transport for campus operations
+                  </h2>
+                  <p
+                    id="it98h-2"
+                    class="mb-16 md:text-2xl text-xl hidden md:block"
+                  >
+                    Brand language and commerce strategy for a field-ready gear
+                    company focused on practical design, responsible materials,
+                    and products made to stay.
+                  </p>
+                  <a
+                    href="#"
+                    id="iw1e7-2"
+                    class="btn btn-neutral mt-auto bg-white text-default dark:text-black lg:btn-lg btn-sm"
+                    >Coming soon</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="contact"
+        data-swebsy-block-id="contact-social-footer"
+        data-swebsy-block='{"tags":["contact","footer","cta","copyright"],"description":"Portfolio contact footer with an oversized CTA, location and email details, social buttons, and copyright copy."}'
+        class="container"
+      >
+        <a
+          href="#"
+          id="i4qsvp"
+          class="btn btn-danger w-full h-1/2 group sm:text-2xl p-12"
+          ><span
+            id="ijkxm4"
+            class="font-normal font-serif md:text-6xl xl:text-8xl text-5xl"
+            >Work with me</span
+          ><span
+            data-icon-pack="stroke"
+            data-icon-name="arrow-right"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="icuagg"
+            class="[--icon-stroke:2] inline-flex items-center leading-none transition-transform duration-500 group-hover:translate-x-2 -translate-x-2 size-12 lg:size-24 md:size-18"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" /></svg></span
+        ></a>
+        <h2
+          id="i06n1-3"
+          class="font-medium md:text-6xl xl:text-8xl mb-12 mt-24 font-serif"
+        >
+          Start a conversation
+        </h2>
+        <p id="ilq6jl" class="text-muted">
+          Barcelona, Spain 🇪🇸<br />julian@gmail.com
+        </p>
+        <div id="iauyjh" class="mb-6">
+          <a
+            href="#"
+            id="ij08j1"
+            class="btn-icon btn btn-subtle-neutral btn-lg btn-circle mr-2"
+            ><span
+              data-icon-pack="brands"
+              data-icon-name="faLinkedinIn"
+              data-icon-decorative="true"
+              data-icon-label=""
+              aria-hidden="true"
+              id="iyj08x"
+              class="size-6 inline-flex items-center leading-none [--icon-stroke:2]"
+              ><svg
+                width="100%"
+                height="100%"
+                data-prefix="fab"
+                data-icon="linkedin-in"
+                class="svg-inline--fa fa-linkedin-in"
+                role="img"
+                viewBox="0 0 448 512"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M100.3 448l-92.9 0 0-299.1 92.9 0 0 299.1zM53.8 108.1C24.1 108.1 0 83.5 0 53.8 0 39.5 5.7 25.9 15.8 15.8s23.8-15.8 38-15.8 27.9 5.7 38 15.8 15.8 23.8 15.8 38c0 29.7-24.1 54.3-53.8 54.3zM447.9 448l-92.7 0 0-145.6c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7l0 148.1-92.8 0 0-299.1 89.1 0 0 40.8 1.3 0c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3l0 164.3-.1 0z"
+                ></path></svg></span></a
+          ><a
+            href="#"
+            id="iqwong"
+            class="btn-icon btn btn-subtle-neutral btn-lg btn-circle mr-2"
+            ><span
+              data-icon-pack="brands"
+              data-icon-name="faInstagram"
+              data-icon-decorative="true"
+              data-icon-label=""
+              aria-hidden="true"
+              id="i3ufxd"
+              class="size-6 inline-flex items-center leading-none [--icon-stroke:2]"
+              ><svg
+                width="100%"
+                height="100%"
+                data-prefix="fab"
+                data-icon="instagram"
+                class="svg-inline--fa fa-instagram"
+                role="img"
+                viewBox="0 0 448 512"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                ></path></svg></span></a
+          ><a
+            href="#"
+            id="ilojgu"
+            class="btn-icon btn btn-subtle-neutral btn-lg btn-circle"
+            ><span
+              data-icon-pack="brands"
+              data-icon-name="faYoutube"
+              data-icon-decorative="true"
+              data-icon-label=""
+              aria-hidden="true"
+              id="ic4ee8"
+              class="size-6 inline-flex items-center leading-none [--icon-stroke:2]"
+              ><svg
+                width="100%"
+                height="100%"
+                data-prefix="fab"
+                data-icon="youtube"
+                class="svg-inline--fa fa-youtube"
+                role="img"
+                viewBox="0 0 576 512"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M549.7 124.1C543.5 100.4 524.9 81.8 501.4 75.5 458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5C51.2 81.8 32.7 100.4 26.4 124.1 15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8 42.6 11.5 213.4 11.5 213.4 11.5s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6l0-162.4 142.7 81.2-142.7 81.2z"
+                ></path></svg></span
+          ></a>
+        </div>
+        <p id="icclqi" class="text-muted">
+          Site content © Julian Vale. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="./js/swebsy-components.6f64a50317.js" defer></script>
+  <a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

@@ -1,0 +1,882 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope — Fixed-scope brand and web sprints</title>
+    <meta
+      name="description"
+      content="Scope is a senior brand and web studio delivering focused website sprints with clear scope, pricing, and timelines."
+    />
+    <meta
+      name="keywords"
+      content="productized design agency, website sprint, brand studio, design subscription, fixed-price web design"
+    />
+    <meta name="author" content="Scope Studio" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Scope — Your next website, properly scoped"
+    />
+    <meta
+      property="og:description"
+      content="Senior brand and web design delivered through focused, fixed-price sprints."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Scope — Fixed-scope brand and web sprints"
+    />
+    <meta
+      name="twitter:description"
+      content="A senior studio for focused brand and website sprints."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-dmmono-aFTU7PB1QTsUX8KYthSQBLyM.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-dmmono-aFTU7PB1QTsUX8KYthqQBA.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-dmmono-aFTR7PB1QTsUX8KYvumzEY2tbZX9.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-dmmono-aFTR7PB1QTsUX8KYvumzEYOtbQ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-instrumentserif-jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjgn7MsNo.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-instrumentserif-jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjjH7M.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-instrumentserif-jizBRFtNs2ka5fXjeivQ4LroWlx-6zsTjmbI.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-instrumentserif-jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-8.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-9.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-10.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-11.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-12.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-13.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "light";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.48ee4ef553.css" />
+  </head>
+  <body>
+    <nav
+      data-navbar-collapse-on="sm"
+      data-swebsy-block-id="navigation-studio"
+      data-swebsy-block='{"tags":["navigation"],"description":"Sticky responsive studio navbar with wordmark, compact links, and a primary project CTA."}'
+      id="i90b-2-3"
+      class="navbar navbar-expand-sm bg-default border-b border-default sticky top-0 z-50"
+    >
+      <div data-navbar-part="container" id="i2yhg6" class="container py-3">
+        <a
+          href="./index.html"
+          data-navbar-part="brand"
+          id="ibthqc"
+          class="navbar-brand flex items-center gap-2 no-underline"
+          ><strong id="i449wt" class="text-2xl text-emphasis">Scope</strong
+          ><span
+            aria-hidden="true"
+            id="i3da7l"
+            class="inline-block size-2 rounded-full bg-secondary"
+          ></span></a
+        ><button
+          type="button"
+          data-navbar-part="toggler"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="ip6i8r"
+          class="btn btn-icon navbar-toggler"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="ilvymy"
+            class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="navbarMenu-2-3"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse"
+        >
+          <ul
+            data-navbar-part="links"
+            id="i3jraj"
+            class="navbar-nav ms-auto items-md-center gap-md-1"
+          >
+            <li id="io5wo1" class="nav-item">
+              <a href="./index.html" id="idw6z9" class="nav-link">Home</a>
+            </li>
+            <li id="i5pe8x" class="nav-item">
+              <a href="./services.html" id="inxysb" class="nav-link"
+                >Services</a
+              >
+            </li>
+            <li id="im3vlt" class="nav-item">
+              <a
+                href="./work.html"
+                id="io5gdy"
+                class="nav-link active"
+                aria-current="page"
+                >Work</a
+              >
+            </li>
+            <li id="i2bg29" class="nav-item">
+              <a href="./studio.html" id="ir9mhk" class="nav-link">Studio</a>
+            </li>
+            <li id="idfxvb" class="nav-item md:ms-3">
+              <a
+                href="./start.html"
+                id="icbg8l-2-2-4"
+                class="nav-link btn btn-primary text-white px-4 py-2 whitespace-nowrap"
+                >Start a project</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      data-swebsy-block-id="work-hero"
+      data-swebsy-block='{"tags":["hero"],"description":"Large editorial work-page hero with a concise transformation-focused introduction."}'
+      id="ikalde4"
+      class="border-b border-default"
+    >
+      <div class="container py-16 md:py-24 lg:py-28">
+        <div class="row items-end gap-y-8">
+          <div class="col-12 lg:col-8">
+            <p
+              data-animate-trigger="scroll"
+              id="iw1h1v"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-sm text-primary mb-4"
+            >
+              Selected work · 2024–2026
+            </p>
+            <h1
+              id="ih9o3f"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-4xl md:text-6xl lg:text-7xl leading-none text-emphasis mb-0"
+            >
+              Proof,
+              <span id="ih01rmk" class="font-light italic font-serif"
+                >not decoration</span
+              >.
+            </h1>
+          </div>
+          <div class="col-12 lg:col-4">
+            <p
+              data-animate-trigger="scroll"
+              id="ix1d5y"
+              class="animate-soft-reveal-up text-xl text-default mb-0"
+            >
+              Brand, product, and web systems built for moments when looking
+              credible is part of moving forward.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="case-study-featured"
+      data-swebsy-block='{"tags":["portfolio"],"description":"Full-width featured case study card pairing a large generated brand image with project summary and outcome."}'
+      id="iur6vhv"
+      class="bg-default"
+    >
+      <div class="container py-16 md:py-24 lg:py-28">
+        <div class="row gap-y-8">
+          <div class="col-12">
+            <a
+              href="./work-rill.html"
+              data-link-block="true"
+              class="block w-full no-underline"
+              ><div
+                id="img6om"
+                data-animate-trigger="scroll"
+                class="animate-soft-reveal-up card card-action no-underline bg-highlight border border-emphasis rounded-2xl overflow-hidden"
+              >
+                <img
+                  alt="Rill botanical tea identity across cans, carton, and printed brand materials"
+                  src="assets/fd5a6a12-98f5-4292-871d-9fda93c7b1bf.webp"
+                  id="i35nzy"
+                  class="w-full"
+                />
+                <div class="card-body p-6 md:p-10">
+                  <div class="row items-end gap-y-6">
+                    <div class="col-12 lg:col-8">
+                      <p
+                        class="font-mono uppercase tracking-widest text-sm text-primary mb-3"
+                      >
+                        Rill · Brand launch
+                      </p>
+                      <h2
+                        id="iiwegfo"
+                        class="text-4xl md:text-6xl text-emphasis mb-4"
+                      >
+                        A botanical drink with shelf presence.
+                      </h2>
+                      <p class="text-lg text-muted max-w-3xl mb-0">
+                        Positioning, identity, packaging, campaign system, and a
+                        direct-to-consumer launch site completed across two
+                        connected sprints.
+                      </p>
+                    </div>
+                    <div class="col-12 lg:col-4 text-start lg:text-end">
+                      <p
+                        class="font-mono uppercase tracking-widest text-xs text-muted mb-2"
+                      >
+                        Result
+                      </p>
+                      <h3 id="i7wizre" class="text-3xl text-emphasis mb-0">
+                        Sold out in 11 days
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="case-study-pair"
+      data-swebsy-block='{"tags":["portfolio"],"description":"Two-up supporting project grid with contrasting generated campaign and product-system imagery."}'
+      id="ivs35su"
+      class="bg-subtle border-y border-default"
+    >
+      <div class="container py-16 md:py-24 lg:py-28">
+        <div class="row gap-y-8">
+          <div class="col-12 lg:col-6">
+            <div
+              data-animate-trigger="scroll"
+              id="ik56gi"
+              class="animate-soft-reveal-up card h-full bg-default border border-default rounded-2xl overflow-hidden"
+            >
+              <img
+                alt="Relay operations product dashboard and mobile workflow screens"
+                src="assets/e596c2cc-0282-4b2b-9e4c-d2aca1d6fbca.webp"
+                id="ic8met"
+                class="w-full"
+              />
+              <div class="card-body p-6 md:p-8">
+                <p
+                  class="font-mono uppercase tracking-widest text-sm text-primary mb-3"
+                >
+                  Relay · B2B software
+                </p>
+                <h2
+                  id="i6imv6f"
+                  class="text-3xl md:text-4xl text-emphasis mb-4"
+                >
+                  Complex operations, explained at a glance.
+                </h2>
+                <p class="text-muted mb-8">
+                  A product narrative, interface system, and investor-ready
+                  marketing site built around one clear operational promise.
+                </p>
+                <div
+                  class="flex justify-between gap-4 border-t border-default pt-5"
+                >
+                  <p
+                    class="font-mono uppercase tracking-widest text-xs text-muted mb-0"
+                  >
+                    5-week engagement
+                  </p>
+                  <p
+                    class="font-mono uppercase tracking-widest text-xs text-primary mb-0"
+                  >
+                    +34% demo conversion
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 lg:col-6">
+            <div
+              data-animate-trigger="scroll"
+              id="ii66bk"
+              class="animate-soft-reveal-up card h-full bg-default border border-default rounded-2xl overflow-hidden"
+            >
+              <img
+                alt="Common Ground festival campaign on posters, program, social card, and wristband"
+                src="assets/c72e2a76-a9c2-4e4a-85f3-88787e2e59a3.webp"
+                id="iyg7c6"
+                class="w-full"
+              />
+              <div class="card-body p-6 md:p-8">
+                <p
+                  class="font-mono uppercase tracking-widest text-sm text-primary mb-3"
+                >
+                  Common Ground · Culture
+                </p>
+                <h2
+                  id="iu30jli"
+                  class="text-3xl md:text-4xl text-emphasis mb-4"
+                >
+                  One identity across a whole city.
+                </h2>
+                <p class="text-muted mb-8">
+                  A flexible campaign language for print, social, signage, and a
+                  festival website—all unmistakably part of the same gathering.
+                </p>
+                <div
+                  class="flex justify-between gap-4 border-t border-default pt-5"
+                >
+                  <p
+                    class="font-mono uppercase tracking-widest text-xs text-muted mb-0"
+                  >
+                    3-week sprint
+                  </p>
+                  <p
+                    class="font-mono uppercase tracking-widest text-xs text-primary mb-0"
+                  >
+                    4,200 tickets
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="outcomes-stats"
+      data-swebsy-block='{"tags":["stats"],"description":"Four-column outcomes band showing commercial and delivery metrics across selected projects."}'
+      id="io5lgzo"
+      class="relative overflow-hidden"
+    >
+      <div class="container relative py-16 md:py-24 lg:py-28">
+        <div class="row gap-y-10 mb-12">
+          <div class="col-12 lg:col-7">
+            <p
+              data-animate-trigger="scroll"
+              id="il5hhh"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-sm text-secondary mb-4"
+            >
+              What the work changed
+            </p>
+            <h2
+              id="i4xt7yn"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up animate-delay-100 text-3xl md:text-5xl text-white"
+            >
+              <span id="il2q43k" class="font-light italic font-serif"
+                >Good design</span
+              >
+              should leave evidence.
+            </h2>
+          </div>
+        </div>
+        <div class="row gap-y-8">
+          <div class="col-6 lg:col-3">
+            <h3
+              id="ivbkhc5"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-4xl md:text-6xl text-white"
+            >
+              34%
+            </h3>
+            <p
+              data-animate-trigger="scroll"
+              id="i294g5"
+              class="animate-soft-reveal-up animate-delay-100 text-white/75 mb-0"
+            >
+              increase in qualified demos
+            </p>
+          </div>
+          <div class="col-6 lg:col-3">
+            <h3
+              id="ihe0281"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-4xl md:text-6xl text-white"
+            >
+              2.1×
+            </h3>
+            <p
+              data-animate-trigger="scroll"
+              id="ihffuh"
+              class="animate-soft-reveal-up animate-delay-100 text-white/75 mb-0"
+            >
+              longer product-page visits
+            </p>
+          </div>
+          <div class="col-6 lg:col-3">
+            <h3
+              id="i95u46f"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-4xl md:text-6xl text-white"
+            >
+              11d
+            </h3>
+            <p
+              data-animate-trigger="scroll"
+              id="igmv1f"
+              class="animate-soft-reveal-up animate-delay-100 text-white/75 mb-0"
+            >
+              to sell out first release
+            </p>
+          </div>
+          <div class="col-6 lg:col-3">
+            <h3
+              id="i4sl9xi"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-4xl md:text-6xl text-white"
+            >
+              4.2k
+            </h3>
+            <p
+              data-animate-trigger="scroll"
+              id="iyxzh4"
+              class="animate-soft-reveal-up animate-delay-100 text-white/75 mb-0"
+            >
+              festival tickets moved
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="work-philosophy"
+      data-swebsy-block='{"tags":["content"],"description":"Split editorial statement explaining the studio approach to useful, decisive design work."}'
+      id="icivuaf"
+      class="bg-default"
+    >
+      <div class="container py-16 md:py-24 lg:py-28">
+        <div class="row gap-y-10">
+          <div class="col-12 lg:col-4">
+            <p
+              data-animate-trigger="scroll"
+              id="ir43gl"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-sm text-primary mb-4"
+            >
+              The common thread
+            </p>
+            <h2
+              id="ixo6l3p"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-3xl md:text-5xl text-emphasis mb-0"
+            >
+              <span id="igyi8me" class="font-light italic font-serif"
+                >Different</span
+              >
+              markets.<br />Same job.
+            </h2>
+          </div>
+          <div class="col-12 lg:col-7 lg:offset-1">
+            <p
+              data-animate-trigger="scroll"
+              id="i4mwci"
+              class="animate-soft-reveal-up text-2xl md:text-3xl text-emphasis mb-8"
+            >
+              Make the offer easier to understand, the company easier to trust,
+              and the next action easier to take.
+            </p>
+            <p
+              data-animate-trigger="scroll"
+              id="i1z5mn"
+              class="animate-soft-reveal-up text-lg text-muted mb-0"
+            >
+              That might mean rebuilding a brand system, clarifying a technical
+              product, or turning a scattered campaign into one coherent public
+              experience. The medium changes. The standard does not.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="work-testimonial"
+      data-swebsy-block='{"tags":["testimonials"],"description":"Client testimonial section with oversized quote, role attribution, and compact project context."}'
+      id="i1vkslh"
+      class="bg-subtle border-y border-default"
+    >
+      <div class="container py-16 md:py-24 lg:py-28">
+        <div class="row">
+          <div class="col-12 lg:col-10 mx-auto">
+            <blockquote
+              data-animate-trigger="scroll"
+              id="iho64a"
+              class="animate-soft-reveal-up text-3xl md:text-5xl leading-tight text-emphasis mb-8 font-light italic font-serif"
+            >
+              “They did not just make the launch look good. They found the
+              version of the story our customers could finally repeat.”
+            </blockquote>
+            <p
+              data-animate-trigger="scroll"
+              id="i77z7j"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-sm text-muted mb-0"
+            >
+              Imani Brooks · Director, Common Ground
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="project-cta"
+      data-swebsy-block='{"tags":["cta"],"description":"High-contrast project CTA band with availability note, oversized closing line, and action button."}'
+      id="start-2-3"
+    >
+      <div id="i69f7i-2-3" class="container py-16 md:py-24 lg:py-28">
+        <div id="i9o7sx-2-3" class="row items-end gap-y-8">
+          <div id="i7ec0o-2-3" class="col-12 lg:col-8">
+            <p
+              id="i0i05w-2-3"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-stone-950 mb-4"
+            >
+              Two September starts
+            </p>
+            <h2
+              id="ihrn3p-2-3"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-4xl md:text-6xl lg:text-7xl leading-none text-stone-950 mb-0"
+            >
+              Bring the brief.
+              <span
+                data-selectme=""
+                id="i7pr6af"
+                class="font-light italic font-serif"
+                >Leave with the site.</span
+              >
+            </h2>
+          </div>
+          <div id="iltnyg-2-3" class="col-12 lg:col-4 text-start lg:text-end">
+            <a
+              href="./start.html"
+              id="icbe7x-2-3"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up btn btn-neutral btn-lg"
+              ><span id="icynbi-2-3">Start a project</span
+              ><span
+                data-icon-pack="stroke"
+                data-icon-name="arrow-right"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="i13hki-2-3"
+                class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" /></svg></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="footer-studio"
+      data-swebsy-block='{"tags":["footer"],"description":"Multi-column dark studio footer with brand statement, navigation, social links, and location."}'
+      id="im60bsu-3"
+      class="bg-emphasis border-t border-emphasis"
+    >
+      <div id="ihq0629-3" class="container py-12 md:py-16 lg:py-20">
+        <div id="i1foali-3" class="row gap-y-10 mb-16">
+          <div id="i4qkeze-3" class="col-12 lg:col-5">
+            <h2
+              data-animate-trigger="scroll"
+              id="irvtyul-3"
+              class="animate-soft-reveal-up text-4xl text-white dark:text-stone-900 mb-4"
+            >
+              Scope.
+            </h2>
+            <p
+              data-animate-trigger="scroll"
+              id="isx2j03-3"
+              class="animate-soft-reveal-up text-white/60 dark:text-stone-700 max-w-md mb-6"
+            >
+              A small senior studio for brand systems, focused websites, and the
+              work that moves a launch forward.
+            </p>
+          </div>
+          <div id="i44iyg3-3" class="col-6 lg:col-2 lg:offset-1">
+            <p
+              data-animate-trigger="scroll"
+              id="i8w3qxj-3"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-white/50 dark:text-stone-500"
+            >
+              Explore
+            </p>
+            <div id="i75v2zg-3" class="flex flex-col gap-3">
+              <a
+                href="./work.html"
+                data-animate-trigger="scroll"
+                id="ia78thi-3"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >Work</a
+              ><a
+                href="./services.html"
+                data-animate-trigger="scroll"
+                id="iv2rnl6-3"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >Services</a
+              ><a
+                href="./studio.html"
+                data-animate-trigger="scroll"
+                id="i2nq6px-3"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >Studio</a
+              >
+            </div>
+          </div>
+          <div id="ir6ufdj-3" class="col-6 lg:col-2">
+            <p
+              data-animate-trigger="scroll"
+              id="i560kff-3"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-white/50 dark:text-stone-500"
+            >
+              Social
+            </p>
+            <div id="i7x0sei-3" class="flex flex-col gap-3">
+              <a
+                href="#"
+                data-animate-trigger="scroll"
+                id="is0am91-3"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >Instagram</a
+              ><a
+                href="#"
+                data-animate-trigger="scroll"
+                id="iewhr3q-3"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >LinkedIn</a
+              ><a
+                href="mailto:hello@scope.studio"
+                data-animate-trigger="scroll"
+                id="ieb12ri-3"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >Email</a
+              >
+            </div>
+          </div>
+          <div id="i9jxsm5-3" class="col-12 lg:col-2">
+            <p
+              data-animate-trigger="scroll"
+              id="i91vwlg-3"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-white/50 dark:text-stone-500"
+            >
+              Based
+            </p>
+            <p
+              data-animate-trigger="scroll"
+              id="i0pgawa-3"
+              class="animate-soft-reveal-up text-white/80 dark:text-stone-800 mb-1"
+            >
+              Vancouver, BC
+            </p>
+            <p
+              data-animate-trigger="scroll"
+              id="iklqcqw-3"
+              class="animate-soft-reveal-up text-white/50 dark:text-stone-600 mb-0"
+            >
+              Working worldwide
+            </p>
+          </div>
+        </div>
+        <hr id="iznk77l-3" class="border-emphasis mb-6" />
+        <div
+          id="i3yal4y-3"
+          class="flex flex-col md:flex-row md:items-center justify-between gap-3"
+        >
+          <p
+            data-animate-trigger="scroll"
+            id="ijh1dke-3"
+            class="animate-soft-reveal-up text-sm text-white/50 dark:text-stone-600 mb-0"
+          >
+            © 2026 Scope Studio
+          </p>
+          <p
+            data-animate-trigger="scroll"
+            id="i1iut08-3"
+            class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-white/50 dark:text-stone-600"
+          >
+            Clear scope · Senior work · Full ownership
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/swebsy-components.a8a0f945e5.js" defer></script>
+  <script src="js/swebsy-scroll-observer.5f2059a125.js"></script>
+  <noscript
+    ><style>
+      [data-animate-trigger] {
+        opacity: 1 !important;
+        animation: none !important;
+      }
+    </style></noscript
+  ><a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

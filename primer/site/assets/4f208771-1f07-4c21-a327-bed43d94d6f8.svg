@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" aria-label="30 day guarantee">
+  <path fill="none" stroke="#000" stroke-width="4" d="M60 5a55 55 0 1 0 0 110A55 55 0 0 0 60 5Zm0 10a45 45 0 1 0 0 90 45 45 0 0 0 0-90Z"></path>
+  <path fill="none" stroke="#000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M31 42c4-6 9-9 15-9 8 0 13 5 13 12 0 6-4 10-11 11 8 1 13 6 13 13 0 9-6 15-16 15-7 0-12-3-16-9M91 60c0-17-5-27-13-27S65 43 65 60s5 27 13 27 13-10 13-27Z"></path>
+  <path fill="#000" d="M19 57h6v6h-6zM95 57h6v6h-6z"></path>
+</svg>

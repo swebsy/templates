@@ -1,0 +1,1108 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope — Fixed-scope brand and web sprints</title>
+    <meta
+      name="description"
+      content="Scope is a senior brand and web studio delivering focused website sprints with clear scope, pricing, and timelines."
+    />
+    <meta
+      name="keywords"
+      content="productized design agency, website sprint, brand studio, design subscription, fixed-price web design"
+    />
+    <meta name="author" content="Scope Studio" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Scope — Your next website, properly scoped"
+    />
+    <meta
+      property="og:description"
+      content="Senior brand and web design delivered through focused, fixed-price sprints."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Scope — Fixed-scope brand and web sprints"
+    />
+    <meta
+      name="twitter:description"
+      content="A senior studio for focused brand and website sprints."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-dmmono-aFTU7PB1QTsUX8KYthSQBLyM.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-dmmono-aFTU7PB1QTsUX8KYthqQBA.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-dmmono-aFTR7PB1QTsUX8KYvumzEY2tbZX9.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-dmmono-aFTR7PB1QTsUX8KYvumzEYOtbQ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-instrumentserif-jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjgn7MsNo.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-instrumentserif-jizHRFtNs2ka5fXjeivQ4LroWlx-6zAjjH7M.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-instrumentserif-jizBRFtNs2ka5fXjeivQ4LroWlx-6zsTjmbI.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-instrumentserif-jizBRFtNs2ka5fXjeivQ4LroWlx-6zUTjg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-8.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-9.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-10.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-11.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-12.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-robotoflex-13.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "light";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.48ee4ef553.css" />
+  </head>
+  <body>
+    <nav
+      data-navbar-collapse-on="sm"
+      data-swebsy-block-id="navigation-studio"
+      data-swebsy-block='{"tags":["navigation"],"description":"Sticky responsive studio navbar with wordmark, compact links, and a primary project CTA."}'
+      id="i90b-2-6"
+      class="navbar navbar-expand-sm bg-default border-b border-default sticky top-0 z-50"
+    >
+      <div data-navbar-part="container" id="irgs5iv" class="container py-3">
+        <a
+          href="./index.html"
+          data-navbar-part="brand"
+          id="i2pmvi9"
+          class="navbar-brand flex items-center gap-2 no-underline"
+          ><strong id="iupkcbi" class="text-2xl text-emphasis">Scope</strong
+          ><span
+            aria-hidden="true"
+            id="iahaf8h"
+            class="inline-block size-2 rounded-full bg-secondary"
+          ></span></a
+        ><button
+          type="button"
+          data-navbar-part="toggler"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="ih3drjk"
+          class="btn btn-icon navbar-toggler"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="i1jac04"
+            class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="navbarMenu-2-6"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse"
+        >
+          <ul
+            data-navbar-part="links"
+            id="innl3fm"
+            class="navbar-nav ms-auto items-md-center gap-md-1"
+          >
+            <li id="izvpjsf" class="nav-item">
+              <a href="./index.html" id="ifntyvp" class="nav-link">Home</a>
+            </li>
+            <li id="if8t8h6" class="nav-item">
+              <a href="./services.html" id="iawjp3k" class="nav-link"
+                >Services</a
+              >
+            </li>
+            <li id="i8p3zlz" class="nav-item">
+              <a href="./work.html" id="iktzhpm" class="nav-link">Work</a>
+            </li>
+            <li id="i5rglyp" class="nav-item">
+              <a href="./studio.html" id="iji24by" class="nav-link">Studio</a>
+            </li>
+            <li id="i50af0n" class="nav-item md:ms-3">
+              <a
+                href="./start.html"
+                id="icbg8l-2-2-7"
+                class="nav-link btn btn-primary text-white px-4 py-2 whitespace-nowrap active"
+                aria-current="page"
+                >Start a project</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="i7ub1mf"
+      data-swebsy-block-id="contact-hero"
+      data-swebsy-block='{"tags":["hero"],"description":"Project-start hero with direct email CTA, response expectations, and current availability card."}'
+      class="bg-default border-b border-default relative overflow-hidden"
+    >
+      <div class="container py-16 md:py-24 lg:py-28">
+        <div class="row items-end gap-y-10">
+          <div class="col-12 lg:col-8">
+            <p
+              data-animate-trigger="scroll"
+              id="is7lppi"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-secondary mb-4"
+            >
+              START A PROJECT
+            </p>
+            <h1
+              data-animate-trigger="scroll"
+              id="i2u8lcf"
+              class="animate-soft-reveal-up text-4xl md:text-6xl lg:text-7xl leading-none text-emphasis mb-8"
+            >
+              <span>Tell us what </span
+              ><span id="iv6he94" class="font-light italic font-serif"
+                >needs to move.</span
+              >
+            </h1>
+            <p
+              data-animate-trigger="scroll"
+              id="ipqdm0i"
+              class="animate-soft-reveal-up text-xl md:text-2xl text-default max-w-3xl mb-8"
+            >
+              Share the problem, the pressure, and the finish line. We’ll reply
+              with a direct recommendation—even when the right answer is not
+              Scope.
+            </p>
+            <a
+              href="mailto:hello@scope.studio?subject=New%20project%20for%20Scope"
+              data-animate-trigger="scroll"
+              id="ij1h7rf"
+              class="animate-soft-reveal-up btn btn-primary btn-lg"
+              >hello@scope.studio</a
+            >
+          </div>
+          <div class="col-12 lg:col-4">
+            <div
+              data-animate-trigger="scroll"
+              id="ihyu0vy"
+              class="animate-soft-reveal-up card relative overflow-hidden border-0 rounded-2xl"
+            >
+              <div class="card-body relative p-6 md:p-8">
+                <p
+                  class="font-mono uppercase tracking-widest text-xs text-white/75 mb-3"
+                >
+                  CURRENT AVAILABILITY
+                </p>
+                <p class="text-2xl text-white mb-6">
+                  Two September sprint starts
+                </p>
+                <hr class="border-white/25 mb-6" />
+                <div class="grid grid-cols-2 gap-4">
+                  <div>
+                    <p class="text-sm text-white/70 mb-1">Reply</p>
+                    <p class="text-lg text-white mb-0">1 workday</p>
+                  </div>
+                  <div>
+                    <p class="text-sm text-white/70 mb-1">First call</p>
+                    <p class="text-lg text-white mb-0">30 minutes</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="engagement-choice"
+      data-swebsy-block='{"tags":["pricing"],"description":"Two-card engagement chooser comparing a fixed website sprint with a monthly design desk."}'
+      id="idktr66"
+      class="bg-subtle border-b border-default"
+    >
+      <div class="container py-16 md:py-24">
+        <div class="row gap-y-6 mb-12">
+          <div class="col-12 lg:col-5">
+            <p
+              data-animate-trigger="scroll"
+              id="iizee77"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-primary mb-4"
+            >
+              PICK A LANE
+            </p>
+            <h2
+              data-animate-trigger="scroll"
+              id="imawdyn"
+              class="animate-soft-reveal-up text-3xl md:text-5xl leading-tight text-emphasis mb-0"
+            >
+              <span>Two clear ways to </span
+              ><span id="ih21vii" class="font-light italic font-serif"
+                >work together.</span
+              >
+            </h2>
+          </div>
+          <div class="col-12 lg:col-6 lg:offset-1">
+            <p
+              data-animate-trigger="scroll"
+              id="ipmfyag"
+              class="animate-soft-reveal-up text-xl text-default mb-0"
+            >
+              Choose the closest fit. We’ll confirm the scope together before
+              anything is booked.
+            </p>
+          </div>
+        </div>
+        <div id="iqb6h7z" class="grid lg:grid-cols-2 gap-4">
+          <div
+            data-animate-trigger="scroll"
+            id="ifkumdj"
+            class="animate-soft-reveal-up card relative overflow-hidden h-full border-0 rounded-2xl"
+          >
+            <div class="card-body relative p-6 md:p-10">
+              <div class="flex items-center justify-between gap-4 mb-8">
+                <p
+                  class="font-mono uppercase tracking-widest text-xs text-white/75 mb-0"
+                >
+                  WEBSITE SPRINT
+                </p>
+                <span
+                  class="badge font-mono uppercase tracking-widest text-white border border-white/40 bg-white/10"
+                  >10 DAYS</span
+                >
+              </div>
+              <h3 class="text-3xl text-white mb-4">
+                A new site with a defined finish line.
+              </h3>
+              <p class="text-lg text-white/85 mb-8">
+                Best for a launch, repositioning, or overdue redesign that needs
+                strategy, design, and build in one focused push.
+              </p>
+              <hr class="border-white/25 mb-6" />
+              <p
+                class="font-mono uppercase tracking-widest text-xs text-white mb-0"
+              >
+                From $8,500 · Up to 6 pages
+              </p>
+            </div>
+          </div>
+          <div
+            data-animate-trigger="scroll"
+            id="ipy0jiv"
+            class="animate-soft-reveal-up card relative overflow-hidden h-full border-0 rounded-2xl"
+          >
+            <div class="card-body relative p-6 md:p-10">
+              <div class="flex items-center justify-between gap-4 mb-8">
+                <p
+                  class="font-mono uppercase tracking-widest text-xs text-stone-900 mb-0"
+                >
+                  DESIGN DESK
+                </p>
+                <span
+                  class="badge font-mono uppercase tracking-widest text-stone-950 border border-stone-900/40 bg-white/20"
+                  >MONTHLY</span
+                >
+              </div>
+              <h3 class="text-3xl text-stone-950 mb-4">
+                An embedded senior design rhythm.
+              </h3>
+              <p class="text-lg text-stone-900 mb-8">
+                Best for a team with a steady queue of landing pages, campaigns,
+                product flows, and brand-system work.
+              </p>
+              <hr class="border-stone-900/25 mb-6" />
+              <p
+                class="font-mono uppercase tracking-widest text-xs text-stone-950 mb-0"
+              >
+                $5,900 / month · Pause anytime
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="project-brief"
+      data-swebsy-block='{"tags":["contact"],"description":"Five-part project brief checklist with a prefilled email CTA and detailed prompts."}'
+      id="iec5bxk"
+      class="bg-default border-b border-default"
+    >
+      <div class="container py-16 md:py-24">
+        <div class="row gap-y-10">
+          <div class="col-12 lg:col-5">
+            <p
+              data-animate-trigger="scroll"
+              id="igi6beu"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-secondary mb-4"
+            >
+              THE USEFUL BRIEF
+            </p>
+            <h2
+              data-animate-trigger="scroll"
+              id="ianuz8f"
+              class="animate-soft-reveal-up text-3xl md:text-5xl leading-tight text-emphasis mb-6"
+            >
+              <span>Five things make a </span
+              ><span id="iq1aulm" class="font-light italic font-serif"
+                >great first email.</span
+              >
+            </h2>
+            <p
+              data-animate-trigger="scroll"
+              id="itnmg4v"
+              class="animate-soft-reveal-up text-lg text-default mb-8"
+            >
+              No polished deck required. A few honest sentences are enough.
+            </p>
+            <a
+              href="mailto:hello@scope.studio?subject=Project%20brief&amp;body=What%20are%20you%20launching%20or%20changing%3F%0A%0AWhy%20now%3F%0A%0AWhat%20must%20be%20included%3F%0A%0AWhat%20is%20your%20target%20date%3F%0A%0AWho%20makes%20the%20final%20decision%3F"
+              data-animate-trigger="scroll"
+              id="ihl3d3g"
+              class="animate-soft-reveal-up btn btn-outline-neutral btn-lg"
+              >Write your brief</a
+            >
+          </div>
+          <div class="col-12 lg:col-6 lg:offset-1">
+            <div class="border-t border-default">
+              <div id="ipfd4vb" class="py-5 border-b border-default">
+                <div>
+                  <h3
+                    data-animate-trigger="scroll"
+                    id="i47yqcx"
+                    class="animate-soft-reveal-up text-xl text-emphasis mb-1"
+                  >
+                    What are you launching or changing?
+                  </h3>
+                  <p
+                    data-animate-trigger="scroll"
+                    id="ibhqy4h"
+                    class="animate-soft-reveal-up text-default mb-0"
+                  >
+                    The product, service, audience, and current state.
+                  </p>
+                </div>
+              </div>
+              <div id="i2sehol" class="py-5 border-b border-default">
+                <div>
+                  <h3
+                    data-animate-trigger="scroll"
+                    id="ikcbqxo"
+                    class="animate-soft-reveal-up text-xl text-emphasis mb-1"
+                  >
+                    Why now?
+                  </h3>
+                  <p
+                    data-animate-trigger="scroll"
+                    id="isda876"
+                    class="animate-soft-reveal-up text-default mb-0"
+                  >
+                    The deadline, opportunity, or friction creating urgency.
+                  </p>
+                </div>
+              </div>
+              <div id="i8zj8j3" class="py-5 border-b border-default">
+                <div>
+                  <h3
+                    data-animate-trigger="scroll"
+                    id="icxg5dd"
+                    class="animate-soft-reveal-up text-xl text-emphasis mb-1"
+                  >
+                    What must be included?
+                  </h3>
+                  <p
+                    data-animate-trigger="scroll"
+                    id="i0fwqw3"
+                    class="animate-soft-reveal-up text-default mb-0"
+                  >
+                    Pages, deliverables, integrations, and non-negotiables.
+                  </p>
+                </div>
+              </div>
+              <div id="ir7wai5" class="py-5 border-b border-default">
+                <div>
+                  <h3
+                    data-animate-trigger="scroll"
+                    id="is9siae"
+                    class="animate-soft-reveal-up text-xl text-emphasis mb-1"
+                  >
+                    What is the target date?
+                  </h3>
+                  <p
+                    data-animate-trigger="scroll"
+                    id="ia9swck"
+                    class="animate-soft-reveal-up text-default mb-0"
+                  >
+                    A real launch date or the window you are aiming for.
+                  </p>
+                </div>
+              </div>
+              <div id="inumhjf" class="py-5 border-b border-default">
+                <div>
+                  <h3
+                    data-animate-trigger="scroll"
+                    id="irpptqc"
+                    class="animate-soft-reveal-up text-xl text-emphasis mb-1"
+                  >
+                    Who makes the final decision?
+                  </h3>
+                  <p
+                    data-animate-trigger="scroll"
+                    id="inje4gf"
+                    class="animate-soft-reveal-up text-default mb-0"
+                  >
+                    The person or group who can keep reviews moving.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="project-brief-form"
+      data-swebsy-block='{"scope":"section","tags":["contact","form"],"description":"A structured project-brief form turning the five qualifying questions into labelled fields, with a monospace eyebrow and hairline rule above."}'
+      class="bg-subtle border-b border-default"
+    >
+      <div class="container py-16 md:py-24">
+        <div class="row gap-y-10">
+          <div class="col-12 lg:col-4">
+            <p
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-secondary mb-4"
+            >
+              SEND THE BRIEF
+            </p>
+            <h2
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-3xl md:text-5xl leading-tight text-emphasis mb-6"
+            >
+              <span>Or answer them</span
+              ><span class="font-light italic font-serif"> right here.</span>
+            </h2>
+            <p
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-lg text-default"
+            >
+              Same five questions, no email client. We read briefs the morning
+              they arrive and reply within two working days.
+            </p>
+          </div>
+          <div class="col-12 lg:col-7 lg:offset-1">
+            <form
+              method="post"
+              action="/__forms/project-brief"
+              data-success-message="Brief received. We read them the morning they arrive — expect a reply within two working days."
+              id="i42228v"
+              class="block border-t border-default pt-8"
+            >
+              <div class="row g-6">
+                <div class="col-12 md:col-6">
+                  <label
+                    for="sc-name"
+                    class="block font-mono uppercase tracking-widest text-xs text-secondary mb-2"
+                    >Name</label
+                  ><input
+                    type="text"
+                    name="name"
+                    id="sc-name"
+                    autocomplete="name"
+                    required
+                    class="block w-full bg-default border border-default text-base text-default px-4 py-3"
+                  />
+                </div>
+                <div class="col-12 md:col-6">
+                  <label
+                    for="sc-email"
+                    class="block font-mono uppercase tracking-widest text-xs text-secondary mb-2"
+                    >Email</label
+                  ><input
+                    type="email"
+                    name="email"
+                    id="sc-email"
+                    autocomplete="email"
+                    required
+                    class="block w-full bg-default border border-default text-base text-default px-4 py-3"
+                  />
+                </div>
+                <div class="col-12">
+                  <label
+                    for="sc-what"
+                    class="block font-mono uppercase tracking-widest text-xs text-secondary mb-2"
+                    >What are you launching or changing?</label
+                  ><textarea
+                    rows="3"
+                    name="launching"
+                    id="sc-what"
+                    placeholder="The product, service, audience, and current state."
+                    class="block w-full bg-default border border-default text-base text-default px-4 py-3"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <label
+                    for="sc-why"
+                    class="block font-mono uppercase tracking-widest text-xs text-secondary mb-2"
+                    >Why now?</label
+                  ><textarea
+                    rows="3"
+                    name="why_now"
+                    id="sc-why"
+                    placeholder="The deadline, opportunity, or friction creating urgency."
+                    class="block w-full bg-default border border-default text-base text-default px-4 py-3"
+                  ></textarea>
+                </div>
+                <div class="col-12 md:col-6">
+                  <label
+                    for="sc-date"
+                    class="block font-mono uppercase tracking-widest text-xs text-secondary mb-2"
+                    >Target date</label
+                  ><input
+                    type="text"
+                    name="target_date"
+                    id="sc-date"
+                    placeholder="A real launch date, or the window"
+                    class="block w-full bg-default border border-default text-base text-default px-4 py-3"
+                  />
+                </div>
+                <div class="col-12 md:col-6">
+                  <label
+                    for="sc-decider"
+                    class="block font-mono uppercase tracking-widest text-xs text-secondary mb-2"
+                    >Who signs off?</label
+                  ><input
+                    type="text"
+                    name="decision_maker"
+                    id="sc-decider"
+                    placeholder="The person who keeps reviews moving"
+                    class="block w-full bg-default border border-default text-base text-default px-4 py-3"
+                  />
+                </div>
+                <div class="col-12">
+                  <button
+                    type="submit"
+                    data-animate-trigger="scroll"
+                    class="animate-soft-reveal-up btn btn-outline-neutral btn-lg"
+                  >
+                    Send the brief
+                  </button>
+                </div>
+              </div>
+              <input
+                type="text"
+                name="_swebsy_hp"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+                id="i41mzmf"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="inquiry-process"
+      data-swebsy-block='{"tags":["process"],"description":"Dark three-step inquiry process covering fit check, scope call, and booking."}'
+      id="iylrjen"
+      class="bg-subtle border-b border-default"
+    >
+      <div class="container py-16 md:py-24">
+        <p
+          data-animate-trigger="scroll"
+          id="icwvoyg"
+          class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-primary mb-4"
+        >
+          AFTER YOU WRITE
+        </p>
+        <h2
+          data-animate-trigger="scroll"
+          id="i8rcias"
+          class="animate-soft-reveal-up text-3xl md:text-5xl text-emphasis mb-12"
+        >
+          <span>No long </span
+          ><span id="i6p4l7g" class="font-light italic font-serif"
+            >sales maze.</span
+          >
+        </h2>
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class="border-t border-default pt-6">
+            <p
+              data-animate-trigger="scroll"
+              id="ilvdphm"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-primary mb-4"
+            >
+              FIT CHECK
+            </p>
+            <h3
+              data-animate-trigger="scroll"
+              id="iq9o314"
+              class="animate-soft-reveal-up text-2xl text-emphasis mb-3"
+            >
+              A direct reply
+            </h3>
+            <p
+              data-animate-trigger="scroll"
+              id="i5m48na"
+              class="animate-soft-reveal-up text-default mb-0"
+            >
+              Within one workday, we’ll tell you whether the project fits and
+              what we recommend.
+            </p>
+          </div>
+          <div class="border-t border-default pt-6">
+            <p
+              data-animate-trigger="scroll"
+              id="iqgcjgw"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-primary mb-4"
+            >
+              SCOPE CALL
+            </p>
+            <h3
+              data-animate-trigger="scroll"
+              id="if1whm8"
+              class="animate-soft-reveal-up text-2xl text-emphasis mb-3"
+            >
+              Thirty focused minutes
+            </h3>
+            <p
+              data-animate-trigger="scroll"
+              id="ij7o7yk"
+              class="animate-soft-reveal-up text-default mb-0"
+            >
+              We confirm the problem, decision-makers, inputs, exclusions, and
+              launch date.
+            </p>
+          </div>
+          <div class="border-t border-default pt-6">
+            <p
+              data-animate-trigger="scroll"
+              id="iqjb14j"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-primary mb-4"
+            >
+              BOOKING
+            </p>
+            <h3
+              data-animate-trigger="scroll"
+              id="i87dhsp"
+              class="animate-soft-reveal-up text-2xl text-emphasis mb-3"
+            >
+              One-page agreement
+            </h3>
+            <p
+              data-animate-trigger="scroll"
+              id="i2i16xt"
+              class="animate-soft-reveal-up text-default mb-0"
+            >
+              A plain-language scope, fixed price, start date, and payment
+              schedule. Then we begin.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="fit-boundaries"
+      data-swebsy-block='{"tags":["features"],"description":"Two-card qualification section contrasting strong-fit signals with work outside the studio model."}'
+      id="i35386r"
+      class="bg-default border-b border-default"
+    >
+      <div class="container py-16 md:py-24">
+        <div class="row gap-y-10">
+          <div class="col-12 lg:col-5">
+            <p
+              data-animate-trigger="scroll"
+              id="iprnhor"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-primary mb-4"
+            >
+              BEFORE YOU SEND
+            </p>
+            <h2
+              data-animate-trigger="scroll"
+              id="ijvrcev"
+              class="max-w-xl animate-soft-reveal-up text-3xl md:text-5xl leading-tight text-emphasis mb-0"
+            >
+              <span id="ivrre7q">The best work starts with a </span
+              ><span id="izb231i" class="font-light italic font-serif"
+                >good match.</span
+              >
+            </h2>
+          </div>
+          <div class="col-12 lg:col-6 lg:offset-1">
+            <div class="grid md:grid-cols-2 gap-4">
+              <div
+                data-animate-trigger="scroll"
+                id="iustj8l"
+                class="animate-soft-reveal-up card bg-subtle border border-default rounded-2xl"
+              >
+                <div class="card-body p-6">
+                  <p
+                    class="font-mono uppercase tracking-widest text-xs text-primary mb-5"
+                  >
+                    A STRONG FIT
+                  </p>
+                  <ul class="list-none p-0 m-0 space-y-3 text-default mb-0">
+                    <li>A real deadline or decision point</li>
+                    <li>One accountable project lead</li>
+                    <li>Fast, consolidated feedback</li>
+                    <li>A preference for clarity over ceremony</li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                data-animate-trigger="scroll"
+                id="i00is0w"
+                class="animate-soft-reveal-up card bg-subtle border border-default rounded-2xl"
+              >
+                <div class="card-body p-6">
+                  <p
+                    class="font-mono uppercase tracking-widest text-xs text-secondary mb-5"
+                  >
+                    NOT OUR MODEL
+                  </p>
+                  <ul class="list-none p-0 m-0 space-y-3 text-default mb-0">
+                    <li>Open-ended discovery retainers</li>
+                    <li>Large stakeholder committees</li>
+                    <li>Speculative pitch work</li>
+                    <li>Production-only overflow</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="email-cta"
+      data-swebsy-block='{"tags":["cta"],"description":"Orange direct-email closing band with a short prompt and prominent mail action."}'
+      id="i3dlmzd"
+    >
+      <div class="container py-16 md:py-20">
+        <div class="row items-end gap-y-8">
+          <div class="col-12 lg:col-8">
+            <p
+              data-animate-trigger="scroll"
+              id="ilzmu4t"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-stone-900 mb-4"
+            >
+              READY WHEN YOU ARE
+            </p>
+            <h2
+              data-animate-trigger="scroll"
+              id="itf3a1n"
+              class="animate-soft-reveal-up text-3xl md:text-5xl text-stone-950 mb-0"
+            >
+              <span>A useful first email </span
+              ><span id="i06v94i" class="font-light italic font-serif"
+                >is enough.</span
+              >
+            </h2>
+          </div>
+          <div class="col-12 lg:col-4 lg:text-right">
+            <a
+              href="mailto:hello@scope.studio?subject=New%20project%20for%20Scope"
+              data-animate-trigger="scroll"
+              id="ieey9cv"
+              class="animate-soft-reveal-up btn btn-neutral btn-lg"
+              >hello@scope.studio</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="footer-studio"
+      data-swebsy-block='{"tags":["footer"],"description":"Multi-column dark studio footer with brand statement, navigation, social links, and location."}'
+      id="idjt0fk"
+      class="bg-emphasis border-t border-emphasis"
+    >
+      <div id="ivmh1hr" class="container py-12 md:py-16 lg:py-20">
+        <div id="id4ixx3" class="row gap-y-10 mb-16">
+          <div id="i136z0j" class="col-12 lg:col-5">
+            <h2
+              data-animate-trigger="scroll"
+              id="ig0owh7"
+              class="animate-soft-reveal-up text-4xl text-white dark:text-stone-900 mb-4"
+            >
+              Scope.
+            </h2>
+            <p
+              data-animate-trigger="scroll"
+              id="igcrb0a"
+              class="animate-soft-reveal-up text-white/60 dark:text-stone-700 max-w-md mb-6"
+            >
+              A small senior studio for brand systems, focused websites, and the
+              work that moves a launch forward.
+            </p>
+          </div>
+          <div id="ip3tub1" class="col-6 lg:col-2 lg:offset-1">
+            <p
+              data-animate-trigger="scroll"
+              id="id4w95u"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-white/50 dark:text-stone-500"
+            >
+              Explore
+            </p>
+            <div id="i0wf7i1" class="flex flex-col gap-3">
+              <a
+                href="./work.html"
+                data-animate-trigger="scroll"
+                id="ijmma1y"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >Work</a
+              ><a
+                href="./services.html"
+                data-animate-trigger="scroll"
+                id="i1gc0xg"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >Services</a
+              ><a
+                href="./studio.html"
+                data-animate-trigger="scroll"
+                id="ixuhyls"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >Studio</a
+              >
+            </div>
+          </div>
+          <div id="inxazuc" class="col-6 lg:col-2">
+            <p
+              data-animate-trigger="scroll"
+              id="inziqjj"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-white/50 dark:text-stone-500"
+            >
+              Social
+            </p>
+            <div id="iu85afl" class="flex flex-col gap-3">
+              <a
+                href="#"
+                data-animate-trigger="scroll"
+                id="i2av48o"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >Instagram</a
+              ><a
+                href="#"
+                data-animate-trigger="scroll"
+                id="i67wq7l"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >LinkedIn</a
+              ><a
+                href="mailto:hello@scope.studio"
+                data-animate-trigger="scroll"
+                id="i7amy0h"
+                class="animate-soft-reveal-up text-white/80 dark:text-stone-800 no-underline"
+                >Email</a
+              >
+            </div>
+          </div>
+          <div id="i06xy79" class="col-12 lg:col-2">
+            <p
+              data-animate-trigger="scroll"
+              id="ivxaedp"
+              class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-white/50 dark:text-stone-500"
+            >
+              Based
+            </p>
+            <p
+              data-animate-trigger="scroll"
+              id="idkp1ib"
+              class="animate-soft-reveal-up text-white/80 dark:text-stone-800 mb-1"
+            >
+              Vancouver, BC
+            </p>
+            <p
+              data-animate-trigger="scroll"
+              id="irkut2g"
+              class="animate-soft-reveal-up text-white/50 dark:text-stone-600 mb-0"
+            >
+              Working worldwide
+            </p>
+          </div>
+        </div>
+        <hr id="i48t28w" class="border-emphasis mb-6" />
+        <div
+          id="i5fya8g"
+          class="flex flex-col md:flex-row md:items-center justify-between gap-3"
+        >
+          <p
+            data-animate-trigger="scroll"
+            id="ielctgx"
+            class="animate-soft-reveal-up text-sm text-white/50 dark:text-stone-600 mb-0"
+          >
+            © 2026 Scope Studio
+          </p>
+          <p
+            data-animate-trigger="scroll"
+            id="izlg1nj"
+            class="animate-soft-reveal-up font-mono uppercase tracking-widest text-xs text-white/50 dark:text-stone-600"
+          >
+            Clear scope · Senior work · Full ownership
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/swebsy-components.a8a0f945e5.js" defer></script>
+  <script src="js/swebsy-scroll-observer.5f2059a125.js"></script>
+  <noscript
+    ><style>
+      [data-animate-trigger] {
+        opacity: 1 !important;
+        animation: none !important;
+      }
+    </style></noscript
+  ><a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

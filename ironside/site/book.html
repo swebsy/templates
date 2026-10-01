@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IRONSIDE — Barber Co.</title>
+    <meta
+      name="description"
+      content="Independent barbershop. Sharp cuts, no small talk. Fades, beard work, hot-towel shaves. Book your chair."
+    />
+    <meta
+      name="keywords"
+      content="barbershop, barber, fades, haircut, beard trim, hot towel shave, grooming"
+    />
+    <meta name="author" content="IRONSIDE Barber Co." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="IRONSIDE — Barber Co." />
+    <meta
+      property="og:description"
+      content="Sharp cuts. No small talk. Book your chair at IRONSIDE."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="IRONSIDE — Barber Co." />
+    <meta
+      name="twitter:description"
+      content="Sharp cuts. No small talk. Book your chair at IRONSIDE."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-bricolagegrotesque-3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawDFXplDs.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-bricolagegrotesque-3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawDVXplDs.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-bricolagegrotesque-3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawA1Xp.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-oswald-TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlbHYjedg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-oswald-TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlSHYjedg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-oswald-TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlZHYjedg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-oswald-TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlYHYjedg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-oswald-TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlWHYg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-yesevaone-OpNJno4ck8vc-xYpwWWxliBVWyXD.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-yesevaone-OpNJno4ck8vc-xYpwWWxlilVWyXD.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-yesevaone-OpNJno4ck8vc-xYpwWWxliJVWyXD.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-yesevaone-OpNJno4ck8vc-xYpwWWxliNVWyXD.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-yesevaone-OpNJno4ck8vc-xYpwWWxli1VWw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "system";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.5e8cc39bb3.css" />
+  </head>
+  <body>
+    <nav
+      data-navbar-collapse-on="sm"
+      data-swebsy-block-id="navbar-mono"
+      data-swebsy-block='{"tags":["navigation"],"description":"Sticky top navbar with a square logo mark, uppercase mono links, and a bordered Book CTA button."}'
+      id="ici4-2-5"
+      class="navbar navbar-expand-sm bg-default sticky top-0 z-50 border-b-2 border-default"
+    >
+      <div
+        data-navbar-part="container"
+        id="iecp8l-5"
+        class="container flex items-center justify-between py-1"
+      >
+        <a
+          href="./index.html"
+          data-navbar-part="brand"
+          id="icei-6"
+          class="navbar-brand flex items-center gap-2 no-underline"
+          ><span
+            id="i9cd-6"
+            class="size-7 bg-secondary border-2 border-default inline-block"
+          ></span
+          ><strong
+            id="iuw6-6"
+            class="font-serif font-black text-xl tracking-tight uppercase text-default leading-none"
+            >Ironside</strong
+          ></a
+        ><button
+          type="button"
+          data-navbar-part="toggler"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="im1nvh-5"
+          class="btn btn-icon navbar-toggler"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="iiv20y-5"
+            class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="navbarMenu-2-5"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse"
+        >
+          <ul
+            data-navbar-part="links"
+            id="ig9yxs-5"
+            class="navbar-nav ms-auto items-center gap-1"
+          >
+            <li id="iwh9kk-5" class="nav-item">
+              <a
+                href="./index.html"
+                id="i0fae9-5"
+                class="nav-link font-mono uppercase text-xs tracking-widest"
+                >Home</a
+              >
+            </li>
+            <li id="ihx5t5-5" class="nav-item">
+              <a
+                href="./services.html"
+                id="i4u23r-5"
+                class="nav-link font-mono uppercase text-xs tracking-widest"
+                >Services</a
+              >
+            </li>
+            <li id="i9plui-5" class="nav-item">
+              <a
+                href="./barbers.html"
+                id="iwyrzs-5"
+                class="nav-link font-mono uppercase text-xs tracking-widest"
+                >Barbers</a
+              >
+            </li>
+            <li id="ir61qh-5" class="nav-item">
+              <a
+                href="./gallery.html"
+                id="icbe4c-5"
+                class="nav-link font-mono uppercase text-xs tracking-widest"
+                >Gallery</a
+              >
+            </li>
+            <li id="imswcc-5" class="nav-item ms-2">
+              <a
+                href="./book.html"
+                id="ibq044-5"
+                class="btn btn-primary btn-sm font-mono uppercase tracking-widest"
+                >Book a Chair</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="bg-default border-b-2 border-default py-16">
+      <div class="container">
+        <div class="font-mono uppercase text-xs tracking-widest text-muted">
+          // Book
+        </div>
+        <h1 class="text-6xl md:text-8xl font-black uppercase leading-none mt-3">
+          Grab A Chair
+        </h1>
+        <p class="text-lg text-muted max-w-xl mt-6">
+          Call, book online, or just walk in. Chairs turn fast — mornings are
+          the quietest if you hate waiting.
+        </p>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="booking-methods"
+      data-swebsy-block='{"tags":["contact","cta"],"description":"Booking options block presenting phone, online booking, and walk-in paths with a section label and heading."}'
+      class="bg-subtle border-b-2 border-default py-20"
+    >
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+          <div
+            id="ivql2i"
+            class="bg-default border-2 border-default p-8 flex flex-col"
+          >
+            <div class="font-mono uppercase text-xs tracking-widest text-muted">
+              // Fastest Way
+            </div>
+            <h2 class="text-3xl font-black uppercase leading-none mt-3">
+              Call The Shop
+            </h2>
+            <a
+              href="tel:+15550182016"
+              class="block text-4xl md:text-5xl font-black text-secondary mt-6 leading-none"
+              >(555) 018-2016</a
+            >
+            <div class="border-t-2 border-default mt-8 pt-8">
+              <p
+                class="font-mono uppercase text-xs tracking-widest text-muted mb-4"
+              >
+                Prefer online?
+              </p>
+              <a
+                href="https://booksy.com"
+                class="btn btn-primary font-mono uppercase"
+                >Book on Booksy →</a
+              >
+              <p
+                class="font-mono text-xs uppercase tracking-widest text-muted mt-6"
+              >
+                Walk-ins welcome · Cash & card
+              </p>
+            </div>
+          </div>
+          <div class="bg-default border-2 border-default p-8">
+            <div class="font-mono uppercase text-xs tracking-widest text-muted">
+              // Hours
+            </div>
+            <div class="border-2 border-default mt-4">
+              <div
+                class="flex items-center justify-between gap-4 px-5 py-4 border-b-2 border-default font-mono uppercase text-sm"
+              >
+                <span>Mon – Fri</span
+                ><span class="text-secondary">9:00 – 19:00</span>
+              </div>
+              <div
+                class="flex items-center justify-between gap-4 px-5 py-4 border-b-2 border-default font-mono uppercase text-sm"
+              >
+                <span>Saturday</span
+                ><span class="text-secondary">8:00 – 18:00</span>
+              </div>
+              <div
+                class="flex items-center justify-between gap-4 px-5 py-4 font-mono uppercase text-sm"
+              >
+                <span>Sunday</span><span class="text-muted">Closed</span>
+              </div>
+            </div>
+            <div class="mt-8">
+              <div
+                class="font-mono uppercase text-xs tracking-widest text-muted"
+              >
+                // Find Us
+              </div>
+              <p class="text-xl font-black uppercase leading-tight mt-3">
+                47 Anvil Street, Eastside
+              </p>
+              <p class="font-mono text-sm text-muted mt-2">
+                Corner of Anvil & 7th · Metered parking out front
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="faq-list"
+      data-swebsy-block='{"tags":["faq"],"description":"FAQ section with a label, heading, and a stacked list of question-and-answer pairs."}'
+      class="bg-default py-20"
+    >
+      <div class="container">
+        <div class="font-mono uppercase text-xs tracking-widest text-muted">
+          // Good To Know
+        </div>
+        <h2 class="text-4xl md:text-6xl font-black uppercase mt-3 mb-10">
+          Questions
+        </h2>
+        <div class="border-t-2 border-default">
+          <div class="border-b-2 border-default py-6">
+            <h3 class="text-xl font-black uppercase">
+              Do I need an appointment?
+            </h3>
+            <p class="text-muted mt-2 max-w-2xl">
+              Nope — walk-ins are always welcome. Booking just guarantees your
+              slot and your barber, especially on weekends.
+            </p>
+          </div>
+          <div class="border-b-2 border-default py-6">
+            <h3 class="text-xl font-black uppercase">How should I pay?</h3>
+            <p class="text-muted mt-2 max-w-2xl">
+              Cash or card, whatever's easy. Tips are appreciated but never
+              expected.
+            </p>
+          </div>
+          <div class="border-b-2 border-default py-6">
+            <h3 class="text-xl font-black uppercase">
+              Can I request a specific barber?
+            </h3>
+            <p class="text-muted mt-2 max-w-2xl">
+              Always. Pick your barber when you book online, or just ask at the
+              desk when you walk in.
+            </p>
+          </div>
+          <div class="border-b-2 border-default py-6">
+            <h3 class="text-xl font-black uppercase">What about the kids?</h3>
+            <p class="text-muted mt-2 max-w-2xl">
+              Under-12 cuts are $28 and we keep it quick and calm. First-ever
+              cut comes with a little keepsake.
+            </p>
+          </div>
+          <div class="border-b-2 border-default py-6">
+            <h3 class="text-xl font-black uppercase">Running late?</h3>
+            <p class="text-muted mt-2 max-w-2xl">
+              Give us a call. We hold your chair for ten minutes, then it goes
+              to whoever's next up.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      data-swebsy-block-id="footer-brand"
+      data-swebsy-block='{"tags":["footer"],"description":"Site footer with a brand mark, tagline, navigation links, and social handles."}'
+      id="imqv2p-5"
+      class="bg-default border-t-2 border-default"
+    >
+      <div id="iz0vdk-5" class="container py-16">
+        <div
+          id="iy6j6j-6"
+          class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12"
+        >
+          <div id="iv59is-7">
+            <div id="icxx3d-7" class="flex items-center gap-2 mb-4">
+              <span
+                id="isxqoc-7"
+                class="size-7 bg-secondary border-2 border-default inline-block"
+              ></span
+              ><strong
+                id="ixkmjz-7"
+                class="font-black text-xl tracking-tight uppercase text-default leading-none"
+                >Ironside</strong
+              >
+            </div>
+            <p id="itw26f-7" class="text-muted max-w-xs mb-4">
+              Sharp cuts. No small talk. An independent barbershop on the
+              Eastside since 2016.
+            </p>
+            <div
+              id="io6nzi-7"
+              class="text-xs uppercase tracking-widest leading-relaxed"
+            >
+              <span id="i6cr5ai-7"
+                >47 Anvil Street · Eastside · (555) 018-2016</span
+              >
+            </div>
+          </div>
+          <div id="inijyh-7">
+            <div
+              id="i2wthz-7"
+              class="font-mono text-xs uppercase tracking-widest text-secondary mb-4"
+            >
+              <span id="iqucqy6-7">Menu</span>
+            </div>
+            <ul id="io9wu2-7" class="flex flex-col gap-2 list-none p-0 m-0">
+              <li id="i0ldzv-7">
+                <a
+                  href="./index.html"
+                  id="ijflvv-7"
+                  class="text-default font-bold uppercase no-underline"
+                  >Home</a
+                >
+              </li>
+              <li id="imcwxk-7">
+                <a
+                  href="./services.html"
+                  id="izc1df-7"
+                  class="text-default font-bold uppercase no-underline"
+                  >Services</a
+                >
+              </li>
+              <li id="itsash-7">
+                <a
+                  href="./barbers.html"
+                  id="ivgprl-7"
+                  class="text-default font-bold uppercase no-underline"
+                  >Barbers</a
+                >
+              </li>
+              <li id="intbjf-7">
+                <a
+                  href="./gallery.html"
+                  id="iuixss-7"
+                  class="text-default font-bold uppercase no-underline"
+                  >Gallery</a
+                >
+              </li>
+              <li id="i4r43e-7">
+                <a
+                  href="./book.html"
+                  id="i0e04t-7"
+                  class="text-default font-bold uppercase no-underline"
+                  >Book</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="ig253i-7">
+            <div
+              id="i3qi8l-7"
+              class="font-mono text-xs uppercase tracking-widest text-secondary mb-4"
+            >
+              <span id="iwvb72m-7">Follow</span>
+            </div>
+            <ul
+              id="imz1vh-7"
+              class="flex flex-col gap-2 list-none p-0 m-0 mb-6"
+            >
+              <li id="ige5jg-7">
+                <a
+                  href="https://instagram.com"
+                  id="iswzee-7"
+                  class="text-default font-bold uppercase no-underline"
+                  >Instagram ↗</a
+                >
+              </li>
+              <li id="iqj2jh-7">
+                <a
+                  href="https://tiktok.com"
+                  id="innyrz-7"
+                  class="text-default font-bold uppercase no-underline"
+                  >TikTok ↗</a
+                >
+              </li>
+            </ul>
+            <a
+              href="./book.html"
+              id="itw3uj-7"
+              class="btn btn-primary font-mono uppercase tracking-widest"
+              >Book a Chair</a
+            >
+          </div>
+        </div>
+        <div id="i05dbu-5" class="mt-14 border-t-2 border-default pt-6">
+          <h2
+            id="irl1u8-5"
+            class="text-6xl md:text-9xl font-black uppercase leading-none tracking-tight text-default mb-8"
+          >
+            Ironside<span
+              data-selectme=""
+              id="i07vzfr"
+              class="dark:text-secondary"
+              >.</span
+            >
+          </h2>
+        </div>
+        <div
+          data-dark-mode-switch="true"
+          data-mode="system"
+          data-switch-style="segmented"
+          role="group"
+          aria-label="Theme toggle"
+          id="i5cl9kl-6"
+          class="dark-mode-switch btn-group"
+        >
+          <input
+            type="radio"
+            name="dark-mode-toggle"
+            id="dark-mode-system-6"
+            autocomplete="off"
+            data-mode="system"
+            checked
+            class="btn-check"
+          /><label
+            for="dark-mode-system"
+            title="System"
+            id="iy7tl8s"
+            class="btn btn-outline-neutral"
+            ><span
+              data-icon-pack="stroke"
+              data-icon-name="monitor"
+              data-icon-decorative="false"
+              data-icon-label="System theme"
+              role="img"
+              aria-label="System theme"
+              id="i3616zw"
+              class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="100%"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="var(--icon-stroke, 2)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect width="20" height="14" x="2" y="3" rx="2" />
+                <line x1="8" x2="16" y1="21" y2="21" />
+                <line x1="12" x2="12" y1="17" y2="21" /></svg></span></label
+          ><input
+            type="radio"
+            name="dark-mode-toggle"
+            id="dark-mode-light-6"
+            autocomplete="off"
+            data-mode="light"
+            class="btn-check"
+          /><label
+            for="dark-mode-light"
+            title="Light"
+            id="i6iqc5h"
+            class="btn btn-outline-neutral"
+            ><span
+              data-icon-pack="stroke"
+              data-icon-name="sun"
+              data-icon-decorative="false"
+              data-icon-label="Light theme"
+              role="img"
+              aria-label="Light theme"
+              id="ic1q9ak"
+              class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="100%"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="var(--icon-stroke, 2)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2" />
+                <path d="M12 20v2" />
+                <path d="m4.93 4.93 1.41 1.41" />
+                <path d="m17.66 17.66 1.41 1.41" />
+                <path d="M2 12h2" />
+                <path d="M20 12h2" />
+                <path d="m6.34 17.66-1.41 1.41" />
+                <path d="m19.07 4.93-1.41 1.41" /></svg></span></label
+          ><input
+            type="radio"
+            name="dark-mode-toggle"
+            id="dark-mode-dark-6"
+            autocomplete="off"
+            data-mode="dark"
+            class="btn-check"
+          /><label
+            for="dark-mode-dark"
+            title="Dark"
+            id="ilo0ysl"
+            class="btn btn-outline-neutral"
+            ><span
+              data-icon-pack="stroke"
+              data-icon-name="moon"
+              data-icon-decorative="false"
+              data-icon-label="Dark theme"
+              role="img"
+              aria-label="Dark theme"
+              id="iv8920d"
+              class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="100%"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="var(--icon-stroke, 2)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
+                /></svg></span
+          ></label>
+        </div>
+        <div
+          id="isb1kj-5"
+          class="mt-8 flex flex-wrap gap-3 justify-between font-mono text-xs uppercase tracking-widest text-muted"
+        >
+          <span id="iplhdg-5">© 2026 Ironside Barber Co.</span
+          ><span id="i94wc6-5">Est. 2016 — Eastside</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/swebsy-components.595d9f5a4a.js" defer></script>
+  <a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

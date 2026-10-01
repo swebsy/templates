@@ -1,0 +1,986 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Ember &amp; Oak — Public House &amp; Kitchen</title>
+    <meta
+      name="description"
+      content="A proper public house on the old wharf. Cask ale, open fire, Sunday roasts and live folk in the back room. Booking open seven days."
+    />
+    <meta
+      name="keywords"
+      content="pub, gastropub, cask ale, sunday roast, live music, bar, kitchen"
+    />
+    <meta name="author" content="The Ember &amp;amp; Oak" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="The Ember &amp;amp; Oak — Public House &amp;amp; Kitchen"
+    />
+    <meta
+      property="og:description"
+      content="A proper public house on the old wharf. Cask ale, open fire, Sunday roasts and live folk in the back room. Booking open seven days."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="The Ember &amp;amp; Oak — Public House &amp;amp; Kitchen"
+    />
+    <meta
+      name="twitter:description"
+      content="A proper public house on the old wharf. Cask ale, open fire, Sunday roasts and live folk in the back room. Booking open seven days."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-fraunces-6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxCBTeO-U.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-fraunces-6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxCFTeO-U.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-fraunces-6NU78FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0KxC9TeA.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-karla-qkB9XvYC6trAT55ZBi1ueQVIjQTD-JrIH2G7nytkHRyQ8p4wUjm6bnEr.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-karla-qkB9XvYC6trAT55ZBi1ueQVIjQTD-JrIH2G7nytkHRyQ8p4wUje6bg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "dark";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.35424d3404.css" />
+  </head>
+  <body>
+    <nav
+      data-navbar-collapse-on="sm"
+      data-swebsy-block-id="inner-navigation"
+      data-swebsy-block='{"tags":[],"description":"Responsive inner-page navigation with compact pub brand, page links, active state, and reservations action."}'
+      id="idbk-3-2-2-4"
+      class="navbar navbar-expand-sm bg-default border-b border-subtle sticky top-0 z-50"
+    >
+      <div
+        data-navbar-part="container"
+        id="is1urp-3-2-2-4"
+        class="container mx-auto max-w-6xl px-6 min-h-10"
+      >
+        <a
+          href="./index.html"
+          data-navbar-part="brand"
+          id="i2l133-2-2-2-4"
+          class="navbar-brand flex items-center gap-3 no-underline"
+          ><span
+            data-icon-pack="stroke"
+            data-icon-name="flame"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="ixh34g-2-2-2-4"
+            class="inline-flex items-center leading-none size-7 text-primary [--icon-stroke:1.5]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"
+              /></svg></span
+          ><span
+            id="ig2irf-2-2-2-4"
+            class="text-xl font-semibold tracking-tight text-emphasis leading-none"
+            >The Ember &amp; Oak</span
+          ></a
+        ><button
+          href="#"
+          type="button"
+          data-navbar-part="toggler"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="ijb2yd-2-2-2-4"
+          class="btn btn-icon navbar-toggler"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="ianc5r-2-2-2-4"
+            class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="navbarMenu-3-2-2-4"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse"
+        >
+          <ul
+            data-navbar-part="links"
+            id="ien1nk-2-2-2-4"
+            class="navbar-nav ms-auto"
+          >
+            <li id="iuo8f6-2-2-2-4" class="nav-item">
+              <a href="./index.html" id="i5aurp-2-2-2-4" class="nav-link"
+                >Home</a
+              >
+            </li>
+            <li id="izl48h-2-2-2-4" class="nav-item">
+              <a
+                href="./food-and-drink.html"
+                id="ilv52g-2-2-2-4"
+                class="nav-link"
+                >Food & Drink</a
+              >
+            </li>
+            <li id="iuadlb-2-2-2-4" class="nav-item">
+              <a href="./the-bar.html" id="i136cj-2-2-2-4" class="nav-link"
+                >The Bar</a
+              >
+            </li>
+            <li id="i3x74w-2-2-2-4" class="nav-item">
+              <a href="./whats-on.html" id="irfkrq-2-2-2-4" class="nav-link"
+                >What's On</a
+              >
+            </li>
+            <li id="ibsome-2-2-2-4" class="nav-item">
+              <a href="./find-us.html" id="i1cxvm-2-2-2-4" class="nav-link"
+                >Find Us</a
+              >
+            </li>
+          </ul>
+          <div
+            id="isoxfh-3-2-2-4"
+            class="flex items-center gap-2 mt-4 lg:mt-0 lg:ms-4"
+          >
+            <a
+              href="./reservations.html"
+              id="i8zu7x-2-2-2-3"
+              class="btn btn-primary"
+              >Reservations</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div
+      data-swebsy-block-id="story-image-hero"
+      data-swebsy-block='{"tags":[],"description":"Firelit heritage hero with photographic background, dark overlay, editorial headline, and introductory copy."}'
+      class="relative overflow-hidden bg-emphasis"
+    >
+      <img
+        alt="The snug at The Ember &amp; Oak with a glowing fire and worn leather benches"
+        src="assets/d69d2ea5-475a-4674-a6de-fb403e2900e6.webp"
+        data-animate-trigger="scroll"
+        id="iri1g6a"
+        class="animate-soft-reveal-up absolute inset-0 w-full h-full object-cover"
+      /><span class="absolute inset-0 block bg-stone-950/65"></span>
+      <div
+        class="container mx-auto max-w-6xl px-6 py-20 md:py-28 lg:py-36 relative"
+      >
+        <div class="row">
+          <div class="col-12 lg:col-8">
+            <span
+              class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-6"
+              >Licensed since 1904</span
+            >
+            <h1
+              data-animate-trigger="scroll"
+              id="iqm0cbh"
+              class="animate-soft-reveal-up text-4xl md:text-5xl lg:text-7xl text-white dark:text-white mb-6"
+            >
+              Built for work. Kept for company.
+            </h1>
+            <p
+              data-animate-trigger="scroll"
+              id="irtsdvd"
+              class="animate-soft-reveal-up text-lg md:text-xl text-stone-300 dark:text-stone-300 max-w-2xl"
+            >
+              A lamp store became a dockers' refuge, then the public house
+              generations decided not to let disappear.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="story-2"
+      data-swebsy-block-id="origin-story-editorial"
+      data-swebsy-block='{"tags":[],"description":"Centered long-form origin story with restrained typography and generous spacing."}'
+      class="bg-default py-16 md:py-20 lg:py-28"
+    >
+      <div class="container mx-auto max-w-6xl px-6">
+        <div class="row g-12 items-center">
+          <div class="col-12 lg:col-5">
+            <span
+              class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-5"
+              >The beginning</span
+            >
+            <h2
+              data-animate-trigger="scroll"
+              id="ikf0nff"
+              class="animate-soft-reveal-up text-3xl md:text-4xl lg:text-5xl text-emphasis mb-6"
+            >
+              The chimney came before the pint.
+            </h2>
+            <p
+              data-animate-trigger="scroll"
+              id="i8tx9gu"
+              class="animate-soft-reveal-up text-base md:text-lg text-muted mb-5"
+            >
+              The building opened as a lamp store for Kilngate Wharf. Its
+              enormous chimney drew dockers to the warmth long before anyone
+              thought to apply for a licence.
+            </p>
+            <p
+              data-animate-trigger="scroll"
+              id="ihxrwfr"
+              class="animate-soft-reveal-up text-base md:text-lg text-muted"
+            >
+              By 1904 the shelves held fewer lamps and the room held more
+              people. The name changed. The oak counter, flagstone floor and
+              habit of staying late did not.
+            </p>
+          </div>
+          <div class="col-12 lg:col-7">
+            <img
+              alt="The wharfside terrace at dusk looking over the water"
+              src="assets/ad1ee78d-8c6f-4074-93e3-045a98af9159.webp"
+              data-animate-trigger="scroll"
+              id="iizvusn"
+              class="animate-soft-reveal-up w-full h-80 md:h-[520px] object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="pub-history-timeline"
+      data-swebsy-block='{"tags":[],"description":"Four-point historical timeline presenting milestone years and concise venue stories."}'
+      class="bg-subtle py-16 md:py-20 lg:py-28"
+    >
+      <div class="container mx-auto max-w-6xl px-6">
+        <span
+          class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-5"
+          >Four turns of the key</span
+        >
+        <h2
+          data-animate-trigger="scroll"
+          id="iampxtm"
+          class="animate-soft-reveal-up text-3xl md:text-4xl lg:text-5xl text-emphasis mb-12"
+        >
+          The house changes slowly
+        </h2>
+        <div class="row g-8">
+          <div class="col-12 sm:col-6 lg:col-3">
+            <div class="border-t border-primary pt-6 h-full">
+              <span class="block text-4xl text-primary mb-4">1904</span>
+              <h3
+                data-animate-trigger="scroll"
+                id="iwtqoa2"
+                class="animate-soft-reveal-up text-xl text-emphasis mb-3"
+              >
+                The licence
+              </h3>
+              <p
+                data-animate-trigger="scroll"
+                id="i3sbqk7"
+                class="animate-soft-reveal-up text-sm text-muted"
+              >
+                Ale joins paraffin on the ledger. The dockers approve
+                immediately.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 sm:col-6 lg:col-3">
+            <div class="border-t border-primary pt-6 h-full">
+              <span class="block text-4xl text-primary mb-4">1956</span>
+              <h3
+                data-animate-trigger="scroll"
+                id="igu21zx"
+                class="animate-soft-reveal-up text-xl text-emphasis mb-3"
+              >
+                The back room
+              </h3>
+              <p
+                data-animate-trigger="scroll"
+                id="i1hdpif"
+                class="animate-soft-reveal-up text-sm text-muted"
+              >
+                A coal store is cleared, a piano appears, and Friday music
+                begins.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 sm:col-6 lg:col-3">
+            <div class="border-t border-primary pt-6 h-full">
+              <span class="block text-4xl text-primary mb-4">1987</span>
+              <h3
+                data-animate-trigger="scroll"
+                id="i9bbp9j"
+                class="animate-soft-reveal-up text-xl text-emphasis mb-3"
+              >
+                Ember Best
+              </h3>
+              <p
+                data-animate-trigger="scroll"
+                id="iiubfjt"
+                class="animate-soft-reveal-up text-sm text-muted"
+              >
+                Kilngate brews the first house bitter. The recipe has barely
+                moved since.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 sm:col-6 lg:col-3">
+            <div class="border-t border-primary pt-6 h-full">
+              <span class="block text-4xl text-primary mb-4">2019</span>
+              <h3
+                data-animate-trigger="scroll"
+                id="ig4n7mm"
+                class="animate-soft-reveal-up text-xl text-emphasis mb-3"
+              >
+                The kitchen
+              </h3>
+              <p
+                data-animate-trigger="scroll"
+                id="if8a813"
+                class="animate-soft-reveal-up text-sm text-muted"
+              >
+                The old scullery becomes a proper kitchen, with the range facing
+                the fire.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="pub-values-grid"
+      data-swebsy-block='{"tags":[],"description":"Three-column values section describing the fires, communal tables, and independent character."}'
+      class="bg-default py-16 md:py-20 lg:py-28"
+    >
+      <div class="container mx-auto max-w-6xl px-6">
+        <span
+          class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-5"
+          >What matters</span
+        >
+        <h2
+          data-animate-trigger="scroll"
+          id="iww82qi"
+          class="animate-soft-reveal-up text-3xl md:text-4xl lg:text-5xl text-emphasis mb-10"
+        >
+          Keep the useful things. Fix the rest.
+        </h2>
+        <div class="row g-8">
+          <div class="col-12 md:col-4">
+            <h3
+              data-animate-trigger="scroll"
+              id="iqenj3i"
+              class="animate-soft-reveal-up text-2xl text-emphasis mb-3"
+            >
+              The fires
+            </h3>
+            <p
+              data-animate-trigger="scroll"
+              id="i9qfqio"
+              class="animate-soft-reveal-up text-sm text-muted"
+            >
+              Both burn every cold day. The chimney still draws beautifully and
+              the seats nearest it remain unofficially competitive.
+            </p>
+          </div>
+          <div class="col-12 md:col-4">
+            <h3
+              data-animate-trigger="scroll"
+              id="ihlvmb6"
+              class="animate-soft-reveal-up text-2xl text-emphasis mb-3"
+            >
+              The long tables
+            </h3>
+            <p
+              data-animate-trigger="scroll"
+              id="ivop502"
+              class="animate-soft-reveal-up text-sm text-muted"
+            >
+              You may arrive as two and leave having met eight. That is the
+              furniture doing its job.
+            </p>
+          </div>
+          <div class="col-12 md:col-4">
+            <h3
+              data-animate-trigger="scroll"
+              id="i0x5l2d"
+              class="animate-soft-reveal-up text-2xl text-emphasis mb-3"
+            >
+              The independence
+            </h3>
+            <p
+              data-animate-trigger="scroll"
+              id="icd27vj"
+              class="animate-soft-reveal-up text-sm text-muted"
+            >
+              No tie, no central buying list, no television package. The
+              kitchen, cellar and decisions are all ours.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="gallery-2"
+      data-swebsy-block-id="rooms-photo-gallery"
+      data-swebsy-block='{"tags":[],"description":"Atmospheric gallery section showing four distinct pub rooms beneath an editorial heading."}'
+      class="bg-subtle py-16 md:py-20 lg:py-28"
+    >
+      <div class="container mx-auto max-w-6xl px-6">
+        <span
+          class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-5"
+          >Around the house</span
+        >
+        <h2
+          data-animate-trigger="scroll"
+          id="ir5neui"
+          class="animate-soft-reveal-up text-3xl md:text-4xl lg:text-5xl text-emphasis mb-10"
+        >
+          Four rooms, one unmistakable pub
+        </h2>
+        <div class="row g-4">
+          <div class="col-12 md:col-8">
+            <img
+              alt="The long oak bar at The Ember &amp; Oak"
+              src="assets/d85aa830-bf99-4605-a4ed-90ee54c9fb41.webp"
+              data-animate-trigger="scroll"
+              id="ignazmt"
+              class="animate-soft-reveal-up w-full h-72 md:h-[480px] object-cover"
+            />
+          </div>
+          <div class="col-12 md:col-4">
+            <img
+              alt="Leather armchairs gathered around the snug fireplace"
+              src="assets/52c82342-1dc5-4f26-839f-b425d471e465.webp"
+              data-animate-trigger="scroll"
+              id="i0dyt5b"
+              class="animate-soft-reveal-up w-full h-72 md:h-[480px] object-cover"
+            />
+          </div>
+          <div class="col-12 md:col-4">
+            <img
+              alt="Casks in the pub cellar"
+              src="assets/60840dd0-94da-4859-8bcf-2e1432f2d591.webp"
+              data-animate-trigger="scroll"
+              id="ihpa5uj"
+              class="animate-soft-reveal-up w-full h-64 object-cover"
+            />
+          </div>
+          <div class="col-12 md:col-4">
+            <img
+              alt="Chairs arranged for music in the back room"
+              src="assets/fccb8e60-172f-44c8-9b4c-481b9022b7af.webp"
+              data-animate-trigger="scroll"
+              id="iy0ztji"
+              class="animate-soft-reveal-up w-full h-64 object-cover"
+            />
+          </div>
+          <div class="col-12 md:col-4">
+            <img
+              alt="The terrace beside Kilngate Wharf at dusk"
+              src="assets/ad1ee78d-8c6f-4074-93e3-045a98af9159.webp"
+              data-animate-trigger="scroll"
+              id="ixe6hek"
+              class="animate-soft-reveal-up w-full h-64 object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="ir8fv4d"
+      data-swebsy-block-id="story-booking-cta"
+      data-swebsy-block='{"tags":[],"description":"Dark heritage-themed reservation banner with concise copy and external booking action."}'
+      class="bg-stone-950 dark:bg-stone-950 py-16 md:py-20 lg:py-28"
+    >
+      <div class="container mx-auto max-w-6xl px-6 text-center">
+        <span
+          class="inline-block text-xs font-semibold uppercase tracking-widest text-primary mb-5"
+          >Come in</span
+        >
+        <h2
+          data-animate-trigger="scroll"
+          id="icoamzi"
+          class="animate-soft-reveal-up text-3xl md:text-4xl lg:text-5xl text-white dark:text-white mb-5"
+        >
+          The next chapter starts at the bar.
+        </h2>
+        <p
+          data-animate-trigger="scroll"
+          id="igalf2k"
+          class="animate-soft-reveal-up text-base md:text-lg text-stone-300 dark:text-stone-300 max-w-xl mx-auto mb-9"
+        >
+          Walk in for a pint, stay for supper, or reserve a table with our
+          external booking partner.
+        </p>
+        <a
+          href="https://reserve.example.com/ember-and-oak"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-animate-trigger="scroll"
+          id="iw8eip2"
+          class="animate-soft-reveal-up btn btn-primary btn-lg"
+          >Reserve with Tablehouse ↗</a
+        >
+      </div>
+    </div>
+    <footer
+      data-ai-symbol="true"
+      data-swebsy-block-id="inner-footer"
+      data-swebsy-block='{"tags":[],"description":"Multi-column inner-page footer with linked sections for pub information, menus, and visiting details."}'
+      id="ixf7ul-2-2-4"
+      class="bg-subtle border-t border-subtle pt-16 md:pt-20 lg:pt-24"
+    >
+      <div id="izqjlc-2-2-2-4" class="container mx-auto max-w-6xl px-6">
+        <div id="icaluy-2-2-2-4" class="row g-10">
+          <div id="i1627t-2-2-2-4" class="col-12 lg:col-4">
+            <div id="ie8pa5-2-2-2-4" class="flex items-center gap-3 mb-5">
+              <span
+                data-icon-pack="stroke"
+                data-icon-name="flame"
+                data-icon-decorative="true"
+                data-icon-label=""
+                aria-hidden="true"
+                id="ihvjv1-2-2-2-4"
+                class="inline-flex items-center leading-none size-7 text-primary [--icon-stroke:1.5]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"
+                  /></svg></span
+              ><span
+                id="irewyf-2-2-2-4"
+                class="text-xl font-semibold tracking-tight text-emphasis leading-none"
+                >The Ember &amp; Oak</span
+              >
+            </div>
+            <p
+              id="irmhxn-2-2-2-4"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-sm text-muted mb-6 max-w-sm"
+            >
+              A public house and kitchen on Kilngate Wharf. Cask ale, two
+              working fires, and a Sunday roast worth the walk. Licensed since
+              1904.
+            </p>
+            <div id="i8xg8t-2-2-2-4" class="flex items-center gap-2">
+              <a
+                href="#"
+                aria-label="The Ember and Oak on Instagram"
+                id="iraltt-2-2-2-4"
+                data-animate-trigger="scroll"
+                class="animate-soft-reveal-up btn btn-icon btn-outline-neutral btn-sm"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faInstagram"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="icmho4-2-2-2-4"
+                  class="inline-flex items-center leading-none size-4"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="instagram"
+                    class="svg-inline--fa fa-instagram"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    ></path></svg></span></a
+              ><a
+                href="#"
+                aria-label="The Ember and Oak on Facebook"
+                id="i4g3lx-2-2-2-4"
+                data-animate-trigger="scroll"
+                class="animate-soft-reveal-up btn btn-icon btn-outline-neutral btn-sm"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faFacebookF"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="i3y6oo-2-2-2-4"
+                  class="inline-flex items-center leading-none size-4"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="facebook-f"
+                    class="svg-inline--fa fa-facebook-f"
+                    role="img"
+                    viewBox="0 0 320 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M80 299.3l0 212.7 116 0 0-212.7 86.5 0 18-97.8-104.5 0 0-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4 .4 37 1.2l0-88.7C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4l0 42.1-66 0 0 97.8 66 0z"
+                    ></path></svg></span></a
+              ><a
+                href="#"
+                aria-label="The Ember and Oak on X"
+                id="i9a466-2-2-2-4"
+                data-animate-trigger="scroll"
+                class="animate-soft-reveal-up btn btn-icon btn-outline-neutral btn-sm"
+                ><span
+                  data-icon-pack="brands"
+                  data-icon-name="faXTwitter"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  id="iy1nt5-2-2-2-4"
+                  class="inline-flex items-center leading-none size-4"
+                  ><svg
+                    width="100%"
+                    height="100%"
+                    data-prefix="fab"
+                    data-icon="x-twitter"
+                    class="svg-inline--fa fa-x-twitter"
+                    role="img"
+                    viewBox="0 0 448 512"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M357.2 48L427.8 48 273.6 224.2 455 464 313 464 201.7 318.6 74.5 464 3.8 464 168.7 275.5-5.2 48 140.4 48 240.9 180.9 357.2 48zM332.4 421.8l39.1 0-252.4-333.8-42 0 255.3 333.8z"
+                    ></path></svg></span
+              ></a>
+            </div>
+          </div>
+          <div id="ik7vbj-2-2-2-4" class="col-12 sm:col-4 lg:col-2">
+            <h3
+              id="igkbyp-2-2-2-4"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-xs uppercase tracking-widest text-emphasis mb-5"
+            >
+              The Pub
+            </h3>
+            <p
+              id="ipoipa-2-2-2-4"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up mb-3"
+            >
+              <a
+                href="./our-story.html"
+                id="ig7444-2-2-2-3"
+                class="text-sm text-muted no-underline hover:text-primary"
+                >Our Story</a
+              >
+            </p>
+            <p
+              id="it9p4s-2-2-2-4"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up mb-3"
+            >
+              <a
+                href="./our-story.html"
+                id="iy3dom-2-2-2-3"
+                class="text-sm text-muted no-underline hover:text-primary"
+                >Gallery</a
+              >
+            </p>
+            <p
+              id="isgj2l-2-2-2-4"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up mb-3"
+            >
+              <a
+                href="./whats-on.html"
+                id="i6p2jg-2-2-2-3"
+                class="text-sm text-muted no-underline hover:text-primary"
+                >Private Hire</a
+              >
+            </p>
+            <p
+              id="iqndch-2-2-2-4"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up mb-3"
+            >
+              <a
+                href="./find-us.html"
+                id="io6bxj-2-2-2-3"
+                class="text-sm text-muted no-underline hover:text-primary"
+                >Work With Us</a
+              >
+            </p>
+          </div>
+          <div id="iia1fh-2-2-2-4" class="col-12 sm:col-4 lg:col-3">
+            <h3
+              id="ianb32-2-2-2-4"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-xs uppercase tracking-widest text-emphasis mb-5"
+            >
+              Eat &amp; Drink
+            </h3>
+            <p
+              id="i5ypzy-2-2-2-4"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up mb-3"
+            >
+              <a
+                href="./food-and-drink.html"
+                id="ixzaeq-2-2-2-3"
+                class="text-sm text-muted no-underline hover:text-primary"
+                >Kitchen Menu</a
+              >
+            </p>
+            <p
+              id="iw4qal-2-2-2-4"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up mb-3"
+            >
+              <a
+                href="./food-and-drink.html"
+                id="i2tsuf-2-2-2-3"
+                class="text-sm text-muted no-underline hover:text-primary"
+                >Sunday Roast</a
+              >
+            </p>
+            <p
+              id="iu6v0f-2-2-2-4"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up mb-3"
+            >
+              <a
+                href="./the-bar.html"
+                id="i90zmg-2-2-2-3"
+                class="text-sm text-muted no-underline hover:text-primary"
+                >What's On the Bar</a
+              >
+            </p>
+            <p
+              id="iki1w1-2-2-2-4"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up mb-3"
+            >
+              <a
+                href="./the-bar.html"
+                id="io5tjh-2-2-2-4"
+                class="text-sm text-muted no-underline hover:text-primary"
+                >Wine &amp; Spirits</a
+              >
+            </p>
+          </div>
+          <div id="iaid31-2-2-2-4" class="col-12 sm:col-4 lg:col-3">
+            <h3
+              id="i86icr-2-2-2-4"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-xs uppercase tracking-widest text-emphasis mb-5"
+            >
+              Visit
+            </h3>
+            <p
+              id="iup2zh-2-2-2-4"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-sm text-muted mb-4"
+            >
+              17 Kilngate Wharf<br />Bristol BS1 4RN
+            </p>
+            <p
+              id="i8v26m-2-2-2-4"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up mb-3"
+            >
+              <a
+                href="tel:+441174960231"
+                id="i95gjw-2-2-2-4"
+                class="text-sm text-muted no-underline hover:text-primary"
+                >0117 496 0231</a
+              >
+            </p>
+            <p
+              id="il03he-2-2-2-4"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up mb-3"
+            >
+              <a
+                href="mailto:hello@emberandoak.co.uk"
+                id="irhw7i-2-2-2-4"
+                class="text-sm text-muted no-underline hover:text-primary"
+                >hello@emberandoak.co.uk</a
+              >
+            </p>
+          </div>
+        </div>
+        <div
+          id="i97l5o-2-2-2-4"
+          class="flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-default mt-14 py-7"
+        >
+          <p
+            id="iwn6ho-2-2-2-4"
+            data-animate-trigger="scroll"
+            class="animate-soft-reveal-up text-xs text-subtle"
+          >
+            &copy; 2026 The Ember &amp; Oak Public House. Please drink
+            responsibly.
+          </p>
+          <div
+            id="isdtmr-2-2-2-4"
+            class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2"
+          >
+            <a
+              href="./index.html"
+              id="itvm4c-2-2-2-3"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-xs text-subtle no-underline hover:text-primary"
+              >Privacy</a
+            ><a
+              href="./food-and-drink.html"
+              id="i9lwqw-2-2-2-3"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-xs text-subtle no-underline hover:text-primary"
+              >Allergens</a
+            ><a
+              href="./find-us.html"
+              id="irksot-2-2-2-3"
+              data-animate-trigger="scroll"
+              class="animate-soft-reveal-up text-xs text-subtle no-underline hover:text-primary"
+              >Accessibility</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/swebsy-components.0428791abb.js" defer></script>
+  <script src="js/swebsy-scroll-observer.5f2059a125.js"></script>
+  <noscript
+    ><style>
+      [data-animate-trigger] {
+        opacity: 1 !important;
+        animation: none !important;
+      }
+    </style></noscript
+  ><a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

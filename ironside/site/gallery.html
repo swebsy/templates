@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IRONSIDE — Barber Co.</title>
+    <meta
+      name="description"
+      content="Independent barbershop. Sharp cuts, no small talk. Fades, beard work, hot-towel shaves. Book your chair."
+    />
+    <meta
+      name="keywords"
+      content="barbershop, barber, fades, haircut, beard trim, hot towel shave, grooming"
+    />
+    <meta name="author" content="IRONSIDE Barber Co." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="IRONSIDE — Barber Co." />
+    <meta
+      property="og:description"
+      content="Sharp cuts. No small talk. Book your chair at IRONSIDE."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="IRONSIDE — Barber Co." />
+    <meta
+      name="twitter:description"
+      content="Sharp cuts. No small talk. Book your chair at IRONSIDE."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-bricolagegrotesque-3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawDFXplDs.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-bricolagegrotesque-3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawDVXplDs.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-bricolagegrotesque-3y9H6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiawA1Xp.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-oswald-TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlbHYjedg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-oswald-TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlSHYjedg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-oswald-TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlZHYjedg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-oswald-TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlYHYjedg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-oswald-TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlWHYg.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-yesevaone-OpNJno4ck8vc-xYpwWWxliBVWyXD.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-yesevaone-OpNJno4ck8vc-xYpwWWxlilVWyXD.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-yesevaone-OpNJno4ck8vc-xYpwWWxliJVWyXD.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-yesevaone-OpNJno4ck8vc-xYpwWWxliNVWyXD.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-yesevaone-OpNJno4ck8vc-xYpwWWxli1VWw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "system";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.5e8cc39bb3.css" />
+  </head>
+  <body>
+    <nav
+      data-navbar-collapse-on="sm"
+      data-swebsy-block-id="navbar-mono"
+      data-swebsy-block='{"tags":["navigation"],"description":"Sticky top navbar with a square logo mark, uppercase mono links, and a bordered Book CTA button."}'
+      id="ici4-2-4"
+      class="navbar navbar-expand-sm bg-default sticky top-0 z-50 border-b-2 border-default"
+    >
+      <div
+        data-navbar-part="container"
+        id="iecp8l-4"
+        class="container flex items-center justify-between py-1"
+      >
+        <a
+          href="./index.html"
+          data-navbar-part="brand"
+          id="icei-5"
+          class="navbar-brand flex items-center gap-2 no-underline"
+          ><span
+            id="i9cd-5"
+            class="size-7 bg-secondary border-2 border-default inline-block"
+          ></span
+          ><strong
+            id="iuw6-5"
+            class="font-serif font-black text-xl tracking-tight uppercase text-default leading-none"
+            >Ironside</strong
+          ></a
+        ><button
+          type="button"
+          data-navbar-part="toggler"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="im1nvh-4"
+          class="btn btn-icon navbar-toggler"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="iiv20y-4"
+            class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="navbarMenu-2-4"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse"
+        >
+          <ul
+            data-navbar-part="links"
+            id="ig9yxs-4"
+            class="navbar-nav ms-auto items-center gap-1"
+          >
+            <li id="iwh9kk-4" class="nav-item">
+              <a
+                href="./index.html"
+                id="i0fae9-4"
+                class="nav-link font-mono uppercase text-xs tracking-widest"
+                >Home</a
+              >
+            </li>
+            <li id="ihx5t5-4" class="nav-item">
+              <a
+                href="./services.html"
+                id="i4u23r-4"
+                class="nav-link font-mono uppercase text-xs tracking-widest"
+                >Services</a
+              >
+            </li>
+            <li id="i9plui-4" class="nav-item">
+              <a
+                href="./barbers.html"
+                id="iwyrzs-4"
+                class="nav-link font-mono uppercase text-xs tracking-widest"
+                >Barbers</a
+              >
+            </li>
+            <li id="ir61qh-4" class="nav-item">
+              <a
+                href="./gallery.html"
+                id="icbe4c-4"
+                class="nav-link font-mono uppercase text-xs tracking-widest active"
+                aria-current="page"
+                >Gallery</a
+              >
+            </li>
+            <li id="imswcc-4" class="nav-item ms-2">
+              <a
+                href="./book.html"
+                id="ibq044-4"
+                class="btn btn-primary btn-sm font-mono uppercase tracking-widest"
+                >Book a Chair</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      data-swebsy-block-id="gallery-grid-full"
+      data-swebsy-block='{"tags":["gallery"],"description":"Full-page photo gallery grid of work shots with a section label and heading."}'
+      class="bg-default border-b-2 border-default py-16"
+    >
+      <div class="container">
+        <div class="font-mono uppercase text-xs tracking-widest text-muted">
+          // The Work
+        </div>
+        <h1 class="text-6xl md:text-8xl font-black uppercase leading-none mt-3">
+          In The Chair
+        </h1>
+        <p class="text-lg text-muted max-w-xl mt-6">
+          Real work off real chairs. Drop your photos into these slots — fades,
+          sculpts, and finishes straight from the floor.
+        </p>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="stat-cta-band"
+      data-swebsy-block='{"tags":["stats","cta"],"description":"Split band pairing a large highlight statistic with a call-to-action and button."}'
+      class="bg-subtle py-20"
+    >
+      <div class="container">
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 grid-flow-dense gap-4 auto-rows-[200px]"
+        >
+          <div
+            class="col-span-2 row-span-2 relative bg-muted border-2 border-default flex items-center justify-center"
+          >
+            <img
+              alt="Image"
+              src="assets/bdadac8e-4d5f-494a-9a15-4101064828b4.webp"
+              id="itt4tvb"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            id="iy914yx"
+            class="relative bg-muted border-2 border-default flex items-center justify-center"
+          >
+            <img
+              alt="Image"
+              src="assets/082a288b-5c06-4be2-9834-3a0ccdec8f88.webp"
+              id="itt4tvb-2"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="relative bg-muted border-2 border-default flex items-center justify-center"
+          >
+            <img
+              alt="Image"
+              src="assets/90388442-557d-478f-8d70-281f0c59d04a.webp"
+              id="itt4tvb-2-2"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="bg-secondary border-2 border-default p-5 flex flex-col justify-between"
+          >
+            <div
+              class="font-mono uppercase text-xs tracking-widest text-neutral"
+            >
+              // Volume
+            </div>
+            <div
+              class="text-4xl font-black uppercase leading-none text-neutral"
+            >
+              500+ Fades / Month
+            </div>
+          </div>
+          <div
+            class="col-span-2 relative bg-muted border-2 border-default flex items-center justify-center"
+          >
+            <img
+              alt="Image"
+              src="assets/d2cf48ed-9722-4aba-aace-de7f5f5f84af.webp"
+              id="itt4tvb-2-3"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="row-span-2 relative bg-muted border-2 border-default flex items-center justify-center"
+          >
+            <img
+              alt="Image"
+              src="assets/a99550c8-2681-4ed6-95b7-3f3211206dbb.webp"
+              id="itt4tvb-2-3-2-2"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="relative bg-muted border-2 border-default flex items-center justify-center"
+          >
+            <img
+              alt="Image"
+              src="assets/41c0c7b5-c079-4f48-8729-d0b4017b48e2.webp"
+              id="itt4tvb-2-3-2"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="relative bg-muted border-2 border-default flex items-center justify-center"
+          >
+            <img
+              alt="Image"
+              src="assets/14356db5-508d-4d8e-b489-8a81c28f25b3.webp"
+              id="itt4tvb-2-3-2-3"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="relative bg-muted border-2 border-default flex items-center justify-center"
+          >
+            <img
+              alt="Image"
+              src="assets/94f7e7f6-e796-4bb1-a6ee-1a4f4e9bcebb.webp"
+              id="itt4tvb-2-3-2-3-3"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="relative bg-muted border-2 border-default flex items-center justify-center"
+          >
+            <img
+              alt="Image"
+              src="assets/b2e6f7e5-c243-4a51-96b0-9c06ec7c942c.webp"
+              id="itt4tvb-2-3-2-3-2"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div
+            class="bg-secondary border-2 border-default p-5 flex flex-col justify-between"
+          >
+            <div
+              class="font-mono uppercase text-xs tracking-widest text-neutral"
+            >
+              // Your Turn
+            </div>
+            <div
+              class="text-2xl font-black uppercase leading-none text-neutral"
+            >
+              Book The Look →
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-swebsy-block-id="social-feed-grid"
+      data-swebsy-block='{"tags":["gallery"],"description":"Instagram feed section with a follower-count label, heading, follow link, and a grid of post thumbnails."}'
+      class="bg-neutral border-b-2 border-default py-16"
+    >
+      <div class="container">
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-6"
+        >
+          <div>
+            <div
+              class="font-mono uppercase text-xs tracking-widest text-inverse opacity-70"
+            >
+              // The Feed · 12.4K
+            </div>
+            <h2
+              class="text-4xl md:text-6xl font-black uppercase leading-none mt-3 text-inverse"
+            >
+              Tag Us @Ironside
+            </h2>
+          </div>
+          <a
+            href="https://instagram.com"
+            class="btn btn-secondary font-mono uppercase"
+            >Follow →</a
+          >
+        </div>
+      </div>
+    </div>
+    <footer
+      data-swebsy-block-id="footer-brand"
+      data-swebsy-block='{"tags":["footer"],"description":"Site footer with a brand mark, tagline, navigation links, and social handles."}'
+      id="imqv2p-4"
+      class="bg-default border-t-2 border-default"
+    >
+      <div id="iz0vdk-4" class="container py-16">
+        <div
+          id="iy6j6j-5"
+          class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12"
+        >
+          <div id="iv59is-6">
+            <div id="icxx3d-6" class="flex items-center gap-2 mb-4">
+              <span
+                id="isxqoc-6"
+                class="size-7 bg-secondary border-2 border-default inline-block"
+              ></span
+              ><strong
+                id="ixkmjz-6"
+                class="font-black text-xl tracking-tight uppercase text-default leading-none"
+                >Ironside</strong
+              >
+            </div>
+            <p id="itw26f-6" class="text-muted max-w-xs mb-4">
+              Sharp cuts. No small talk. An independent barbershop on the
+              Eastside since 2016.
+            </p>
+            <div
+              id="io6nzi-6"
+              class="text-xs uppercase tracking-widest leading-relaxed"
+            >
+              <span id="i6cr5ai-6"
+                >47 Anvil Street · Eastside · (555) 018-2016</span
+              >
+            </div>
+          </div>
+          <div id="inijyh-6">
+            <div
+              id="i2wthz-6"
+              class="font-mono text-xs uppercase tracking-widest text-secondary mb-4"
+            >
+              <span id="iqucqy6-6">Menu</span>
+            </div>
+            <ul id="io9wu2-6" class="flex flex-col gap-2 list-none p-0 m-0">
+              <li id="i0ldzv-6">
+                <a
+                  href="./index.html"
+                  id="ijflvv-6"
+                  class="text-default font-bold uppercase no-underline"
+                  >Home</a
+                >
+              </li>
+              <li id="imcwxk-6">
+                <a
+                  href="./services.html"
+                  id="izc1df-6"
+                  class="text-default font-bold uppercase no-underline"
+                  >Services</a
+                >
+              </li>
+              <li id="itsash-6">
+                <a
+                  href="./barbers.html"
+                  id="ivgprl-6"
+                  class="text-default font-bold uppercase no-underline"
+                  >Barbers</a
+                >
+              </li>
+              <li id="intbjf-6">
+                <a
+                  href="./gallery.html"
+                  id="iuixss-6"
+                  class="text-default font-bold uppercase no-underline"
+                  >Gallery</a
+                >
+              </li>
+              <li id="i4r43e-6">
+                <a
+                  href="./book.html"
+                  id="i0e04t-6"
+                  class="text-default font-bold uppercase no-underline"
+                  >Book</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="ig253i-6">
+            <div
+              id="i3qi8l-6"
+              class="font-mono text-xs uppercase tracking-widest text-secondary mb-4"
+            >
+              <span id="iwvb72m-6">Follow</span>
+            </div>
+            <ul
+              id="imz1vh-6"
+              class="flex flex-col gap-2 list-none p-0 m-0 mb-6"
+            >
+              <li id="ige5jg-6">
+                <a
+                  href="https://instagram.com"
+                  id="iswzee-6"
+                  class="text-default font-bold uppercase no-underline"
+                  >Instagram ↗</a
+                >
+              </li>
+              <li id="iqj2jh-6">
+                <a
+                  href="https://tiktok.com"
+                  id="innyrz-6"
+                  class="text-default font-bold uppercase no-underline"
+                  >TikTok ↗</a
+                >
+              </li>
+            </ul>
+            <a
+              href="./book.html"
+              id="itw3uj-6"
+              class="btn btn-primary font-mono uppercase tracking-widest"
+              >Book a Chair</a
+            >
+          </div>
+        </div>
+        <div id="i05dbu-4" class="mt-14 border-t-2 border-default pt-6">
+          <h2
+            id="irl1u8-4"
+            class="text-6xl md:text-9xl font-black uppercase leading-none tracking-tight text-default mb-8"
+          >
+            Ironside<span
+              data-selectme=""
+              id="iqo8osv"
+              class="dark:text-secondary"
+              >.</span
+            >
+          </h2>
+        </div>
+        <div
+          data-dark-mode-switch="true"
+          data-mode="system"
+          data-switch-style="segmented"
+          role="group"
+          aria-label="Theme toggle"
+          id="i5cl9kl-5"
+          class="dark-mode-switch btn-group"
+        >
+          <input
+            type="radio"
+            name="dark-mode-toggle"
+            id="dark-mode-system-5"
+            autocomplete="off"
+            data-mode="system"
+            checked
+            class="btn-check"
+          /><label
+            for="dark-mode-system"
+            title="System"
+            id="ini9gdh"
+            class="btn btn-outline-neutral"
+            ><span
+              data-icon-pack="stroke"
+              data-icon-name="monitor"
+              data-icon-decorative="false"
+              data-icon-label="System theme"
+              role="img"
+              aria-label="System theme"
+              id="i89lqix"
+              class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="100%"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="var(--icon-stroke, 2)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect width="20" height="14" x="2" y="3" rx="2" />
+                <line x1="8" x2="16" y1="21" y2="21" />
+                <line x1="12" x2="12" y1="17" y2="21" /></svg></span></label
+          ><input
+            type="radio"
+            name="dark-mode-toggle"
+            id="dark-mode-light-5"
+            autocomplete="off"
+            data-mode="light"
+            class="btn-check"
+          /><label
+            for="dark-mode-light"
+            title="Light"
+            id="iu2imj2"
+            class="btn btn-outline-neutral"
+            ><span
+              data-icon-pack="stroke"
+              data-icon-name="sun"
+              data-icon-decorative="false"
+              data-icon-label="Light theme"
+              role="img"
+              aria-label="Light theme"
+              id="itcwsvg"
+              class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="100%"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="var(--icon-stroke, 2)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2" />
+                <path d="M12 20v2" />
+                <path d="m4.93 4.93 1.41 1.41" />
+                <path d="m17.66 17.66 1.41 1.41" />
+                <path d="M2 12h2" />
+                <path d="M20 12h2" />
+                <path d="m6.34 17.66-1.41 1.41" />
+                <path d="m19.07 4.93-1.41 1.41" /></svg></span></label
+          ><input
+            type="radio"
+            name="dark-mode-toggle"
+            id="dark-mode-dark-5"
+            autocomplete="off"
+            data-mode="dark"
+            class="btn-check"
+          /><label
+            for="dark-mode-dark"
+            title="Dark"
+            id="ikz34kk"
+            class="btn btn-outline-neutral"
+            ><span
+              data-icon-pack="stroke"
+              data-icon-name="moon"
+              data-icon-decorative="false"
+              data-icon-label="Dark theme"
+              role="img"
+              aria-label="Dark theme"
+              id="iu8529y"
+              class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="100%"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="var(--icon-stroke, 2)"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
+                /></svg></span
+          ></label>
+        </div>
+        <div
+          id="isb1kj-4"
+          class="mt-8 flex flex-wrap gap-3 justify-between font-mono text-xs uppercase tracking-widest text-muted"
+        >
+          <span id="iplhdg-4">© 2026 Ironside Barber Co.</span
+          ><span id="i94wc6-4">Est. 2016 — Eastside</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/swebsy-components.595d9f5a4a.js" defer></script>
+  <a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

@@ -274,10 +274,13 @@ A calm services template for executive, leadership, and career coaches to explai
 
 ## License
 
-Free for personal and commercial use under [CC BY 4.0](LICENSE). The
-attribution we ask for is the **"Made with Swebsy" badge**: keep it on the site
-as shipped. On a paid [Swebsy](https://swebsy.com/pricing) plan you may remove
-it.
+Free for any number of personal and commercial sites, changed however you like,
+under the [Swebsy Free Template License](LICENSE). Two conditions:
 
-Photos keep their own licenses (Unsplash, Pexels and similar, all free to
-redistribute); fonts keep their open font licenses (mostly SIL OFL).
+- Keep the **"Made with Swebsy" badge** on the site as shipped. On a paid
+  [Swebsy](https://swebsy.com/pricing) plan you may remove it.
+- Don't redistribute or sell the templates as templates without permission.
+  Linking here is always fine.
+
+Photos keep their own licenses (mostly Unsplash and Pexels); fonts keep their
+open font licenses (mostly SIL OFL).

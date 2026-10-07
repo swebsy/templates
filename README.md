@@ -1,6 +1,6 @@
 # Free HTML website templates
 
-33 static HTML/CSS templates made with
+34 static HTML/CSS templates made with
 [Swebsy](https://swebsy.com), a free visual website builder. Each folder's
 `site/` is a complete website: open `index.html`, or upload the folder to
 GitHub Pages, Netlify, Cloudflare Pages or any static host.
@@ -47,6 +47,14 @@ A crisp, high-contrast SaaS site for scheduling and practice-management products
 A calm five-page template for dental and health practices: flat pastel panels, full-bleed photo bands, plain-spoken pricing and a booking CTA on every page.
 
 [Live demo](https://studio.swebsy.com/templates/fennel/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=fennel&ref=github) · [Details](https://swebsy.com/templates/fennel/)
+
+### [Kindred](kindred/)
+
+[![Kindred](kindred/thumb.webp)](kindred/)
+
+A warm, paper-textured template for a small immigration law practice, with flat fees, partner stories, client outcomes and a consultation form.
+
+[Live demo](https://studio.swebsy.com/templates/kindred/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=kindred&ref=github) · [Details](https://swebsy.com/templates/kindred/)
 
 ### [Cindermoth](cindermoth/)
 

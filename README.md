@@ -1,6 +1,6 @@
 # Free HTML website templates
 
-34 static HTML/CSS templates made with
+37 static HTML/CSS templates made with
 [Swebsy](https://swebsy.com), a free visual website builder. Each folder's
 `site/` is a complete website: open `index.html`, or upload the folder to
 GitHub Pages, Netlify, Cloudflare Pages or any static host.
@@ -144,6 +144,14 @@ A warm editorial link-in-bio template for small shops and makers, with tactile l
 
 [Live demo](https://studio.swebsy.com/templates/wren-wildflower/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=wren-wildflower&ref=github) · [Details](https://swebsy.com/templates/wren-wildflower/)
 
+### [Tally](tally/)
+
+[![Tally](tally/thumb.webp)](tally/)
+
+A CV website for a new data analyst: real charts as the work, a dated experience ledger, a PDF CV link and a detailed project write-up.
+
+[Live demo](https://studio.swebsy.com/templates/tally/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=tally&ref=github) · [Details](https://swebsy.com/templates/tally/)
+
 ### [Craft](craft/)
 
 [![Craft](craft/thumb.webp)](craft/)
@@ -151,6 +159,22 @@ A warm editorial link-in-bio template for small shops and makers, with tactile l
 A focused, minimal portfolio template for makers and creators who want their strongest projects and capabilities to take center stage.
 
 [Live demo](https://studio.swebsy.com/templates/craft/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=craft&ref=github) · [Details](https://swebsy.com/templates/craft/)
+
+### [Recess](recess/)
+
+[![Recess](recess/thumb.webp)](recess/)
+
+A teaching portfolio for a new science teacher: a slab-type name, photos printed as blue and pink duotones, classroom units, a mentor quote and a résumé PDF.
+
+[Live demo](https://studio.swebsy.com/templates/recess/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=recess&ref=github) · [Details](https://swebsy.com/templates/recess/)
+
+### [Byline](byline/)
+
+[![Byline](byline/thumb.webp)](byline/)
+
+A clips site for a reporter: the beat as one serif sentence, captioned photos, selected stories with what each one changed, an editor's quote and a résumé PDF.
+
+[Live demo](https://studio.swebsy.com/templates/byline/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=byline&ref=github) · [Details](https://swebsy.com/templates/byline/)
 
 ### [Ironside](ironside/)
 

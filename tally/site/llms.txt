@@ -1,0 +1,8 @@
+# Elena Marsh — Junior Data Analyst
+
+> Elena Marsh is a junior data analyst in Manchester. Selected projects, experience and CV.
+
+## Pages
+
+- [Home](/)
+- [Bike hires and rain](/bike-hires-rain.html): Three years of daily Santander Cycles hires matched to London rainfall: wet weekends lose 32% of riders, wet weekdays 23%.

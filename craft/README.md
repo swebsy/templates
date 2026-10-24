@@ -1,4 +1,4 @@
-# Craft — free portfolio website template
+# Craft — free resume website template
 
 ![Craft](thumb.webp)
 

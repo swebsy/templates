@@ -1,6 +1,6 @@
 # Free HTML website templates
 
-37 static HTML/CSS templates made with
+40 static HTML/CSS templates made with
 [Swebsy](https://swebsy.com), a free visual website builder. Each folder's
 `site/` is a complete website: open `index.html`, or upload the folder to
 GitHub Pages, Netlify, Cloudflare Pages or any static host.
@@ -151,6 +151,30 @@ A warm editorial link-in-bio template for small shops and makers, with tactile l
 A CV website for a new data analyst: real charts as the work, a dated experience ledger, a PDF CV link and a detailed project write-up.
 
 [Live demo](https://studio.swebsy.com/templates/tally/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=tally&ref=github) · [Details](https://swebsy.com/templates/tally/)
+
+### [Plumb](plumb/)
+
+[![Plumb](plumb/thumb.webp)](plumb/)
+
+A renovation-contractor website for older houses: before, during and after photos for every job, a price list set in large type, and a site-visit request form.
+
+[Live demo](https://studio.swebsy.com/templates/plumb/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=plumb&ref=github) · [Details](https://swebsy.com/templates/plumb/)
+
+### [Cadenza](cadenza/)
+
+[![Cadenza](cadenza/thumb.webp)](cadenza/)
+
+A community music school website: lessons by age, one rate for every instrument, teachers who still perform, and the next student recital set as a printed concert program.
+
+[Live demo](https://studio.swebsy.com/templates/cadenza/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=cadenza&ref=github) · [Details](https://swebsy.com/templates/cadenza/)
+
+### [Porchlight](porchlight/)
+
+[![Porchlight](porchlight/thumb.webp)](porchlight/)
+
+A real estate website for a small agent team: big house numbers, every sale on the record, neighborhood guides and a price-opinion form.
+
+[Live demo](https://studio.swebsy.com/templates/porchlight/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=porchlight&ref=github) · [Details](https://swebsy.com/templates/porchlight/)
 
 ### [Craft](craft/)
 

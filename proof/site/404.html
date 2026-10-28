@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <script>
+      if (location.protocol !== "file:") {
+        var b = document.createElement("base");
+        b.href = "/";
+        document.head.prepend(b);
+        document.addEventListener("click", function (e) {
+          var a =
+            !e.defaultPrevented &&
+            e.target.closest &&
+            e.target.closest('a[href^="#"]');
+          if (a) {
+            e.preventDefault();
+            location.hash = a.getAttribute("href");
+          }
+        });
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>
+      Page not found · Ostrem Bakery — Sourdough and pastry in Northeast
+      Minneapolis
+    </title>
+    <link rel="stylesheet" href="./css/styles.68df8b0f6c.css" />
+    <style>
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-content: center;
+        gap: 1rem;
+        padding: 1.5rem;
+        text-align: center;
+      }
+      h1 {
+        margin: 0;
+        text-wrap: balance;
+      }
+      p {
+        margin: 0;
+      }
+      .home-link {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        padding: 0 0.75rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Page not found</h1>
+    <p>This page does not exist.</p>
+    <p><a class="home-link" href="./index.html">Go to the home page</a></p>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 # Free HTML website templates
 
-40 static HTML/CSS templates made with
+43 static HTML/CSS templates made with
 [Swebsy](https://swebsy.com), a free visual website builder. Each folder's
 `site/` is a complete website: open `index.html`, or upload the folder to
 GitHub Pages, Netlify, Cloudflare Pages or any static host.
@@ -176,6 +176,22 @@ A real estate website for a small agent team: big house numbers, every sale on t
 
 [Live demo](https://studio.swebsy.com/templates/porchlight/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=porchlight&ref=github) · [Details](https://swebsy.com/templates/porchlight/)
 
+### [Calltime](calltime/)
+
+[![Calltime](calltime/thumb.webp)](calltime/)
+
+A bridal hair and makeup website for a two-artist team: named weddings with ready-by times, a printed call sheet of the morning, every price, and a trial studio page.
+
+[Live demo](https://studio.swebsy.com/templates/calltime/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=calltime&ref=github) · [Details](https://swebsy.com/templates/calltime/)
+
+### [Proof](proof/)
+
+[![Proof](proof/thumb.webp)](proof/)
+
+A neighborhood bakery website: the week's breads by day, a photo shelf with prices and times, weekend and cake pre-orders, wholesale for cafés, and the two owners.
+
+[Live demo](https://studio.swebsy.com/templates/proof/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=proof&ref=github) · [Details](https://swebsy.com/templates/proof/)
+
 ### [Craft](craft/)
 
 [![Craft](craft/thumb.webp)](craft/)
@@ -327,6 +343,14 @@ A bold editorial studio template for fixed-scope brand and web services, with pr
 A crisp, high-contrast SaaS site for scheduling and practice-management products, pairing deep navy with electric blue across a product tour, pricing tiers and customer stories.
 
 [Live demo](https://studio.swebsy.com/templates/marigold/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=marigold&ref=github) · [Details](https://swebsy.com/templates/marigold/)
+
+### [Afterparty](afterparty/)
+
+[![Afterparty](afterparty/thumb.webp)](afterparty/)
+
+A one-page party invitation that opens as you scroll: a card that says "We eloped." swings open to "You're invited.", then the night in order, the venue, what to know and an RSVP.
+
+[Live demo](https://studio.swebsy.com/templates/afterparty/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=afterparty&ref=github) · [Details](https://swebsy.com/templates/afterparty/)
 
 ## License
 

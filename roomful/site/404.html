@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <script>
+      if (location.protocol !== "file:") {
+        var b = document.createElement("base");
+        b.href = "/";
+        document.head.prepend(b);
+        document.addEventListener("click", function (e) {
+          var a =
+            !e.defaultPrevented &&
+            e.target.closest &&
+            e.target.closest('a[href^="#"]');
+          if (a) {
+            e.preventDefault();
+            location.hash = a.getAttribute("href");
+          }
+        });
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>
+      Page not found · Lacemaker — art-pop four-piece from Nottingham
+    </title>
+    <link rel="stylesheet" href="./css/styles.914ba27883.css" />
+    <style>
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-content: center;
+        gap: 1rem;
+        padding: 1.5rem;
+        text-align: center;
+      }
+      h1 {
+        margin: 0;
+        text-wrap: balance;
+        font-size: clamp(2rem, 8vw, 3.5rem);
+      }
+      p {
+        margin: 0;
+      }
+      .home-link {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        padding: 0 0.75rem;
+        color: var(--text-color-emphasis, currentColor);
+        text-decoration: underline;
+        text-underline-offset: 0.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Page not found</h1>
+    <p>This page does not exist.</p>
+    <p><a class="home-link" href="./index.html">Go to the home page</a></p>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 # Free HTML website templates
 
-43 static HTML/CSS templates made with
+45 static HTML/CSS templates made with
 [Swebsy](https://swebsy.com), a free visual website builder. Each folder's
 `site/` is a complete website: open `index.html`, or upload the folder to
 GitHub Pages, Netlify, Cloudflare Pages or any static host.
@@ -192,6 +192,30 @@ A neighborhood bakery website: the week's breads by day, a photo shelf with pric
 
 [Live demo](https://studio.swebsy.com/templates/proof/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=proof&ref=github) · [Details](https://swebsy.com/templates/proof/)
 
+### [Afterparty](afterparty/)
+
+[![Afterparty](afterparty/thumb.webp)](afterparty/)
+
+A one-page party invitation that opens as you scroll: a card that says "We eloped." swings open to "You're invited.", then the night in order, the venue, what to know and an RSVP.
+
+[Live demo](https://studio.swebsy.com/templates/afterparty/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=afterparty&ref=github) · [Details](https://swebsy.com/templates/afterparty/)
+
+### [Roomful](roomful/)
+
+[![Roomful](roomful/thumb.webp)](roomful/)
+
+A band website in two grounds: the band and records on white, the shows in a dark full room. Tour dates by leg, tracklists and a real press kit.
+
+[Live demo](https://studio.swebsy.com/templates/roomful/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=roomful&ref=github) · [Details](https://swebsy.com/templates/roomful/)
+
+### [Backrow](backrow/)
+
+[![Backrow](backrow/thumb.webp)](backrow/)
+
+A yoga and Pilates studio site for nervous beginners: regulars by where they put their mat, the week, three ways to start and prices.
+
+[Live demo](https://studio.swebsy.com/templates/backrow/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=backrow&ref=github) · [Details](https://swebsy.com/templates/backrow/)
+
 ### [Craft](craft/)
 
 [![Craft](craft/thumb.webp)](craft/)
@@ -343,14 +367,6 @@ A bold editorial studio template for fixed-scope brand and web services, with pr
 A crisp, high-contrast SaaS site for scheduling and practice-management products, pairing deep navy with electric blue across a product tour, pricing tiers and customer stories.
 
 [Live demo](https://studio.swebsy.com/templates/marigold/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=marigold&ref=github) · [Details](https://swebsy.com/templates/marigold/)
-
-### [Afterparty](afterparty/)
-
-[![Afterparty](afterparty/thumb.webp)](afterparty/)
-
-A one-page party invitation that opens as you scroll: a card that says "We eloped." swings open to "You're invited.", then the night in order, the venue, what to know and an RSVP.
-
-[Live demo](https://studio.swebsy.com/templates/afterparty/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=afterparty&ref=github) · [Details](https://swebsy.com/templates/afterparty/)
 
 ## License
 

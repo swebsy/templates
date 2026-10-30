@@ -1,6 +1,6 @@
 # Free HTML website templates
 
-45 static HTML/CSS templates made with
+46 static HTML/CSS templates made with
 [Swebsy](https://swebsy.com), a free visual website builder. Each folder's
 `site/` is a complete website: open `index.html`, or upload the folder to
 GitHub Pages, Netlify, Cloudflare Pages or any static host.
@@ -191,6 +191,14 @@ A bridal hair and makeup website for a two-artist team: named weddings with read
 A neighborhood bakery website: the week's breads by day, a photo shelf with prices and times, weekend and cake pre-orders, wholesale for cafés, and the two owners.
 
 [Live demo](https://studio.swebsy.com/templates/proof/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=proof&ref=github) · [Details](https://swebsy.com/templates/proof/)
+
+### [Undercoat](undercoat/)
+
+[![Undercoat](undercoat/thumb.webp)](undercoat/)
+
+A dog groomer's site built around each coat's routine: how often it comes back, the finish, prices by coat and a short new-dog enquiry.
+
+[Live demo](https://studio.swebsy.com/templates/undercoat/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=undercoat&ref=github) · [Details](https://swebsy.com/templates/undercoat/)
 
 ### [Afterparty](afterparty/)
 

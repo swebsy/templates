@@ -1,0 +1,1228 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The lights — Gather Glass</title>
+    <meta
+      name="description"
+      content="Four hand-blown lights with sizes, fittings and prices, how ordering works, and the commission form."
+    />
+    <meta name="author" content="Gather Glass" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="The lights — Gather Glass" />
+    <meta
+      property="og:description"
+      content="Four hand-blown lights with sizes, fittings and prices, how ordering works, and the commission form."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The lights — Gather Glass" />
+    <meta
+      name="twitter:description"
+      content="Four hand-blown lights with sizes, fittings and prices, how ordering works, and the commission form."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/565bcba9-2f8b-468b-a0c4-d11b2661350a.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/fe4c7e8d-847c-4771-8021-03b6a5c12552.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/cf3a1d0b-556a-4123-8e24-0f665c3ea089.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/8f29c898-d6e2-4980-a3ba-169788441018.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/9f3a7ec0-d8ba-4be5-abf1-56884437de43.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "dark";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.e091a94970.css" />
+  </head>
+  <body>
+    <nav
+      data-navbar-collapse-on="sm"
+      data-swebsy-block-id="navbar-overlay-wordmark"
+      data-swebsy-block='{"tags":["navigation","header"],"description":"Transparent navbar laid over a dark hero: wordmark left, three links and a thin-cornered commission button right."}'
+      id="iy8g-2-2"
+      class="navbar navbar-expand-sm absolute inset-x-0 top-0 z-30 bg-transparent py-4 text-default [--background-color-default:#0B0F15] [--background-color-subtle:#121822] [--background-color-muted:#232B38] [--text-color-emphasis:#F2EDE6] [--text-color-highlight:#F2EDE6] [--text-color-default:#BDB6AB] [--text-color-muted:#8C877F] [--border-color-default:#232B38] [--border-color-emphasis:#BDB6AB] [--color-primary:#F2EDE6] [--color-primary-dark:#BDB6AB] [--color-inverse:#0B0F15] [--color-secondary:#F0B45C] px-0"
+    >
+      <div
+        data-navbar-part="container"
+        id="ih3oaxh-2"
+        class="container mx-auto max-w-7xl px-6"
+      >
+        <a
+          href="./index.html"
+          data-navbar-part="brand"
+          id="im0y0cq-2"
+          class="navbar-brand font-serif text-2xl text-emphasis tracking-tight"
+          >Gather</a
+        ><button
+          type="button"
+          data-navbar-part="toggler"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#navbarMenu-2-2"
+          aria-controls="navbarMenu-2-2"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="iv5kn11-3"
+          class="btn btn-icon navbar-toggler size-11"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            id="idzvxtd-3"
+            class="inline-flex items-center leading-none size-5 [--icon-stroke:2]"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="navbarMenu-2-2"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse"
+        >
+          <ul
+            data-navbar-part="links"
+            id="iel6709-2"
+            class="navbar-nav ms-auto items-center gap-2"
+          >
+            <li id="i9crfvi-2" class="nav-item">
+              <a
+                href="./lights.html"
+                id="iaey55j-3"
+                class="nav-link text-sm min-h-11 inline-flex items-center active"
+                aria-current="page"
+                >Lights</a
+              >
+            </li>
+            <li id="izdactx-2" class="nav-item">
+              <a
+                href="./index.html#rooms"
+                id="ik36sdd-3"
+                class="nav-link text-sm min-h-11 inline-flex items-center"
+                >Commissions</a
+              >
+            </li>
+            <li id="i1c8gyx-2" class="nav-item">
+              <a
+                href="./index.html#visit"
+                id="ijrrx0l-3"
+                class="nav-link text-sm min-h-11 inline-flex items-center"
+                >Visit</a
+              >
+            </li>
+            <li id="iaqwnee-2" class="nav-item ms-md-4">
+              <a
+                href="./lights.html#commission"
+                id="iiim181-3"
+                class="btn btn-primary min-h-11"
+                >Start a commission</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section
+      id="intro"
+      data-custom-name="Intro"
+      data-swebsy-block-id="page-header-order-timeline"
+      data-swebsy-block='{"tags":["header","timeline"],"description":"Dark page header: big title, lead and two actions, over a four-step order timeline from today to 8–10 weeks."}'
+      class="bg-default text-default pt-[5.5rem] pb-20 md:pt-44 md:pb-28 [--background-color-default:#0B0F15] [--background-color-subtle:#121822] [--background-color-muted:#232B38] [--text-color-emphasis:#F2EDE6] [--text-color-highlight:#F2EDE6] [--text-color-default:#BDB6AB] [--text-color-muted:#8C877F] [--text-color-subtle:#8C877F] [--border-color-default:#232B38] [--border-color-subtle:#232B38] [--border-color-emphasis:#BDB6AB] [--color-primary:#F2EDE6] [--color-primary-dark:#BDB6AB] [--color-inverse:#0B0F15] [--color-secondary:#F0B45C]"
+    >
+      <div class="container mx-auto max-w-7xl px-6">
+        <div
+          id="iruvd3v"
+          class="grid gap-8 md:grid-cols-12 md:items-end animate-fade-in-up"
+        >
+          <h1
+            class="font-light text-emphasis text-[4rem] md:text-[6.5rem] lg:text-[8rem] leading-[0.9] tracking-[-0.03em] md:col-span-7"
+          >
+            The lights
+          </h1>
+          <div class="md:col-span-5 lg:col-span-4 lg:col-start-9">
+            <p class="text-default">
+              Four lights, each made to order in your choice of glass. No cart:
+              you tell us the room, we answer within two working days with a
+              price and a date.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
+              <a href="#commission" class="btn btn-primary btn-lg"
+                >Start a commission</a
+              ><a
+                href="#collection"
+                id="i914igz"
+                class="link py-2.5 text-emphasis underline underline-offset-4"
+                >See the lights</a
+              >
+            </div>
+          </div>
+        </div>
+        <ol
+          id="ilezj16"
+          class="mt-10 grid list-none grid-cols-2 gap-x-6 gap-y-8 border-t border-default ps-0 pt-8 md:mt-24 md:pt-10 md:gap-y-10 lg:grid-cols-4 lg:gap-12 animate-fade-in-up animate-delay-200"
+        >
+          <li>
+            <p
+              class="font-serif lining-nums tabular-nums text-emphasis text-[2rem] sm:text-[2.5rem] xl:text-[3rem] leading-none whitespace-nowrap"
+            >
+              Today
+            </p>
+            <p class="mt-3 font-medium text-emphasis">Choose a light</p>
+            <p class="mt-2 max-w-[17rem] text-[0.9375rem] text-default">
+              Pick the shape and the glass: Cedar, Rain or Narrows.
+            </p>
+          </li>
+          <li>
+            <p
+              class="font-serif lining-nums tabular-nums text-emphasis text-[2rem] sm:text-[2.5rem] xl:text-[3rem] leading-none whitespace-nowrap"
+            >
+              2 days
+            </p>
+            <p class="mt-3 font-medium text-emphasis">Tell us the room</p>
+            <p class="mt-2 max-w-[17rem] text-[0.9375rem] text-default">
+              Ceiling height, what it hangs over, how many. We reply with a
+              price and a date.
+            </p>
+          </li>
+          <li>
+            <p
+              class="font-serif lining-nums tabular-nums text-emphasis text-[2rem] sm:text-[2.5rem] xl:text-[3rem] leading-none whitespace-nowrap"
+            >
+              1 week
+            </p>
+            <p class="mt-3 font-medium text-emphasis">Hold the glass</p>
+            <p class="mt-2 max-w-[17rem] text-[0.9375rem] text-default">
+              We post you a chip of it. Once it's right, you pay half by an
+              emailed link.
+            </p>
+          </li>
+          <li>
+            <p
+              class="font-serif lining-nums tabular-nums text-secondary text-[2rem] sm:text-[2.5rem] xl:text-[3rem] leading-none whitespace-nowrap"
+            >
+              8–10 weeks
+            </p>
+            <p class="mt-3 font-medium text-emphasis">Hang it</p>
+            <p class="mt-2 max-w-[17rem] text-[0.9375rem] text-default">
+              Blown, fitted and lit here. We ship it, or you collect on a
+              Saturday.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section
+      id="collection"
+      data-custom-name="Collection"
+      data-swebsy-block-id="product-rows-lit-twice-specs"
+      data-swebsy-block='{"tags":["features","card"],"description":"Alternating dark product rows: photo, name and price, then a spec list led by when the glass and bulb were lit, and a commission link."}'
+      class="bg-default text-default pb-12 md:pb-20 [--background-color-default:#0B0F15] [--background-color-subtle:#121822] [--background-color-muted:#232B38] [--text-color-emphasis:#F2EDE6] [--text-color-highlight:#F2EDE6] [--text-color-default:#BDB6AB] [--text-color-muted:#8C877F] [--text-color-subtle:#8C877F] [--border-color-default:#232B38] [--border-color-subtle:#232B38] [--border-color-emphasis:#BDB6AB] [--color-primary:#F2EDE6] [--color-primary-dark:#BDB6AB] [--color-inverse:#0B0F15] [--color-secondary:#F0B45C]"
+    >
+      <div class="container mx-auto max-w-7xl px-6">
+        <article
+          data-animate-trigger="scroll"
+          id="rain-drop"
+          class="grid gap-8 border-t border-default py-14 md:grid-cols-12 md:items-center md:gap-x-8 md:py-20 animate-fade-in-up"
+        >
+          <img
+            alt="A clear hand-blown drop pendant, lit, hanging in a dark room"
+            src="assets/130bce56-0869-43db-b09e-6f23d2d7dd64.webp"
+            class="aspect-[3/4] [mask-image:radial-gradient(closest-side,#000_72%,transparent)] w-full object-cover md:col-span-5"
+          />
+          <div class="md:col-span-6 md:col-start-7">
+            <div
+              class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1"
+            >
+              <h2
+                class="font-light text-emphasis text-[2.25rem] md:text-[3rem] leading-none tracking-[-0.02em]"
+              >
+                Rain drop
+              </h2>
+              <p class="text-[1.25rem] lining-nums tabular-nums text-emphasis">
+                from $640
+              </p>
+            </div>
+            <p class="mt-4 max-w-md text-default">
+              A clear drop on a fine cord. Hung alone over a side table, or as a
+              run of three over a counter.
+            </p>
+            <dl class="mt-8 border-b border-default">
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-t border-emphasis py-3"
+              >
+                <dt class="text-sm text-emphasis">First lit</dt>
+                <dd class="text-[0.9375rem] text-emphasis">
+                  Rain glass (shown), or Cedar or Narrows, blown at
+                  <span class="whitespace-nowrap lining-nums tabular-nums"
+                    >1,120 °C</span
+                  >
+                </dd>
+              </div>
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-t border-emphasis py-3"
+              >
+                <dt class="text-sm text-emphasis">Second lit</dt>
+                <dd class="text-[0.9375rem] text-emphasis">
+                  G9 capsule at
+                  <span
+                    class="whitespace-nowrap lining-nums tabular-nums text-secondary"
+                    >2,700 K</span
+                  >, dimmable
+                </dd>
+              </div>
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-t border-default py-3"
+              >
+                <dt class="text-sm text-muted">Size</dt>
+                <dd class="text-[0.9375rem] text-default">
+                  7 in wide, 11 in tall
+                </dd>
+              </div>
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-t border-default py-3"
+              >
+                <dt class="text-sm text-muted">Cord</dt>
+                <dd class="text-[0.9375rem] text-default">
+                  6 ft, cut to your ceiling
+                </dd>
+              </div>
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-t border-default py-3"
+              >
+                <dt class="text-sm text-muted">Made in</dt>
+                <dd class="text-[0.9375rem] text-default">8–10 weeks</dd>
+              </div>
+            </dl>
+            <a
+              href="#commission"
+              class="link mt-6 inline-block py-2.5 text-emphasis underline underline-offset-4"
+              >Start a commission</a
+            >
+          </div>
+        </article>
+        <article
+          data-animate-trigger="scroll"
+          id="low-dish"
+          class="grid gap-8 border-t border-default py-14 md:grid-cols-12 md:items-center md:gap-x-8 md:py-20 animate-fade-in-up"
+        >
+          <img
+            alt="A clear low dish pendant, lit, hanging low"
+            src="assets/922964fd-32c2-4106-959f-e4220ba3dccd.webp"
+            class="aspect-[3/4] [mask-image:radial-gradient(closest-side,#000_72%,transparent)] w-full object-cover md:col-span-5 md:col-start-8 md:row-start-1"
+          />
+          <div class="md:col-span-6 md:col-start-1 md:row-start-1">
+            <div
+              class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1"
+            >
+              <h2
+                class="font-light text-emphasis text-[2.25rem] md:text-[3rem] leading-none tracking-[-0.02em]"
+              >
+                Low dish
+              </h2>
+              <p class="text-[1.25rem] lining-nums tabular-nums text-emphasis">
+                from $760
+              </p>
+            </div>
+            <p class="mt-4 max-w-md text-default">
+              A wide, shallow bowl that throws light down onto the table and
+              keeps it out of your eyes.
+            </p>
+            <dl class="mt-8 border-b border-default">
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-t border-emphasis py-3"
+              >
+                <dt class="text-sm text-emphasis">First lit</dt>
+                <dd class="text-[0.9375rem] text-emphasis">
+                  Rain glass (shown), or Cedar or Narrows, blown at
+                  <span class="whitespace-nowrap lining-nums tabular-nums"
+                    >1,120 °C</span
+                  >
+                </dd>
+              </div>
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-t border-emphasis py-3"
+              >
+                <dt class="text-sm text-emphasis">Second lit</dt>
+                <dd class="text-[0.9375rem] text-emphasis">
+                  E26 LED filament at
+                  <span
+                    class="whitespace-nowrap lining-nums tabular-nums text-secondary"
+                    >2,700 K</span
+                  >, dimmable
+                </dd>
+              </div>
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-t border-default py-3"
+              >
+                <dt class="text-sm text-muted">Size</dt>
+                <dd class="text-[0.9375rem] text-default">
+                  15 in wide, 6 in tall
+                </dd>
+              </div>
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-t border-default py-3"
+              >
+                <dt class="text-sm text-muted">Cord</dt>
+                <dd class="text-[0.9375rem] text-default">
+                  6 ft, cut to your ceiling
+                </dd>
+              </div>
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-t border-default py-3"
+              >
+                <dt class="text-sm text-muted">Made in</dt>
+                <dd class="text-[0.9375rem] text-default">8–10 weeks</dd>
+              </div>
+            </dl>
+            <a
+              href="#commission"
+              class="link mt-6 inline-block py-2.5 text-emphasis underline underline-offset-4"
+              >Start a commission</a
+            >
+          </div>
+        </article>
+        <article
+          data-animate-trigger="scroll"
+          id="seeded-drop"
+          class="grid gap-8 border-t border-default py-14 md:grid-cols-12 md:items-center md:gap-x-8 md:py-20 animate-fade-in-up"
+        >
+          <img
+            alt="Two amber seeded drop pendants, lit"
+            src="assets/d277c6bc-7ac1-4577-b9da-65753966f8ed.webp"
+            class="aspect-[3/4] [mask-image:radial-gradient(closest-side,#000_72%,transparent)] w-full object-cover md:col-span-5"
+          />
+          <div class="md:col-span-6 md:col-start-7">
+            <div
+              class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1"
+            >
+              <h2
+                class="font-light text-emphasis text-[2.25rem] md:text-[3rem] leading-none tracking-[-0.02em]"
+              >
+                Seeded drop
+              </h2>
+              <p class="text-[1.25rem] lining-nums tabular-nums text-emphasis">
+                from $720
+              </p>
+            </div>
+            <p class="mt-4 max-w-md text-default">
+              Cedar glass with the air left in. Each seed catches the bulb, so
+              no two drops light the same.
+            </p>
+            <dl class="mt-8 border-b border-default">
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-t border-emphasis py-3"
+              >
+                <dt class="text-sm text-emphasis">First lit</dt>
+                <dd class="text-[0.9375rem] text-emphasis">
+                  Cedar glass, seeded (shown), or Rain, blown at
+                  <span class="whitespace-nowrap lining-nums tabular-nums"
+                    >1,120 °C</span
+                  >
+                </dd>
+              </div>
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-t border-emphasis py-3"
+              >
+                <dt class="text-sm text-emphasis">Second lit</dt>
+                <dd class="text-[0.9375rem] text-emphasis">
+                  E26 LED filament at
+                  <span
+                    class="whitespace-nowrap lining-nums tabular-nums text-secondary"
+                    >2,700 K</span
+                  >, dimmable
+                </dd>
+              </div>
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-t border-default py-3"
+              >
+                <dt class="text-sm text-muted">Size</dt>
+                <dd class="text-[0.9375rem] text-default">
+                  8 in wide, 12 in tall
+                </dd>
+              </div>
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-t border-default py-3"
+              >
+                <dt class="text-sm text-muted">Cord</dt>
+                <dd class="text-[0.9375rem] text-default">
+                  6 ft, cut to your ceiling
+                </dd>
+              </div>
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-t border-default py-3"
+              >
+                <dt class="text-sm text-muted">Made in</dt>
+                <dd class="text-[0.9375rem] text-default">8–10 weeks</dd>
+              </div>
+            </dl>
+            <a
+              href="#commission"
+              class="link mt-6 inline-block py-2.5 text-emphasis underline underline-offset-4"
+              >Start a commission</a
+            >
+          </div>
+        </article>
+        <article
+          data-animate-trigger="scroll"
+          id="seeded-globe"
+          class="grid gap-8 border-t border-default py-14 md:grid-cols-12 md:items-center md:gap-x-8 md:py-20 animate-fade-in-up"
+        >
+          <img
+            alt="A clear seeded globe table lamp, lit, on a table"
+            src="assets/1db63189-d513-4763-a0ed-aa212fd22a6a.webp"
+            class="aspect-[4/3] w-full object-cover md:col-span-5 md:col-start-8 md:row-start-1"
+          />
+          <div class="md:col-span-6 md:col-start-1 md:row-start-1">
+            <div
+              class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1"
+            >
+              <h2
+                class="font-light text-emphasis text-[2.25rem] md:text-[3rem] leading-none tracking-[-0.02em]"
+              >
+                Seeded globe
+              </h2>
+              <p class="text-[1.25rem] lining-nums tabular-nums text-emphasis">
+                from $980
+              </p>
+            </div>
+            <p class="mt-4 max-w-md text-default">
+              A seeded globe for a table or a deep sill. Shown in Rain; in Cedar
+              it glows amber.
+            </p>
+            <dl class="mt-8 border-b border-default">
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-t border-emphasis py-3"
+              >
+                <dt class="text-sm text-emphasis">First lit</dt>
+                <dd class="text-[0.9375rem] text-emphasis">
+                  Rain glass, seeded (shown), or Cedar, blown at
+                  <span class="whitespace-nowrap lining-nums tabular-nums"
+                    >1,120 °C</span
+                  >
+                </dd>
+              </div>
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-t border-emphasis py-3"
+              >
+                <dt class="text-sm text-emphasis">Second lit</dt>
+                <dd class="text-[0.9375rem] text-emphasis">
+                  E26 LED filament at
+                  <span
+                    class="whitespace-nowrap lining-nums tabular-nums text-secondary"
+                    >2,700 K</span
+                  >, inline dimmer
+                </dd>
+              </div>
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-t border-default py-3"
+              >
+                <dt class="text-sm text-muted">Size</dt>
+                <dd class="text-[0.9375rem] text-default">
+                  10 in globe, 16 in tall
+                </dd>
+              </div>
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-t border-default py-3"
+              >
+                <dt class="text-sm text-muted">Cord</dt>
+                <dd class="text-[0.9375rem] text-default">8 ft cloth cord</dd>
+              </div>
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-baseline gap-4 border-t border-default py-3"
+              >
+                <dt class="text-sm text-muted">Made in</dt>
+                <dd class="text-[0.9375rem] text-default">8–10 weeks</dd>
+              </div>
+            </dl>
+            <a
+              href="#commission"
+              class="link mt-6 inline-block py-2.5 text-emphasis underline underline-offset-4"
+              >Start a commission</a
+            >
+          </div>
+        </article>
+      </div>
+    </section>
+    <section
+      id="commission"
+      data-custom-name="Commission"
+      data-swebsy-block-id="commission-form-with-contacts"
+      data-swebsy-block='{"tags":["form","contact"],"description":"Commission enquiry: large heading and email, phone and run details beside a form with a light picker."}'
+      class="bg-default text-default border-t border-default py-20 md:py-28"
+    >
+      <div class="container mx-auto max-w-7xl px-6">
+        <div
+          data-animate-trigger="scroll"
+          class="grid gap-12 lg:grid-cols-12 lg:gap-x-12 animate-fade-in-up"
+        >
+          <div class="lg:col-span-5">
+            <h2
+              class="font-light text-emphasis text-[3rem] md:text-[4.25rem] leading-[0.95] tracking-[-0.025em]"
+              id="i4qe8z4"
+            >
+              Start a commission.
+            </h2>
+            <p class="mt-6 max-w-md text-default">
+              Tell us the room and the light you have in mind. Eli answers every
+              message within two working days, with a price, a date and a
+              question or two.
+            </p>
+            <dl class="mt-10 max-w-md border-b border-default">
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-center gap-4 border-t border-default py-1"
+              >
+                <dt class="text-sm text-muted">Email</dt>
+                <dd>
+                  <a
+                    href="mailto:studio@gatherglass.com"
+                    class="link inline-block py-2.5 text-emphasis underline underline-offset-4"
+                    >studio@gatherglass.com</a
+                  >
+                </dd>
+              </div>
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-center gap-4 border-t border-default py-1"
+              >
+                <dt class="text-sm text-muted">Phone</dt>
+                <dd>
+                  <a
+                    href="tel:+12535550143"
+                    class="link inline-block py-2.5 text-emphasis underline underline-offset-4 lining-nums tabular-nums"
+                    >(253) 555-0143</a
+                  >
+                </dd>
+              </div>
+              <div
+                class="grid grid-cols-[6.5rem_1fr] items-center gap-4 border-t border-default py-3"
+              >
+                <dt class="text-sm text-muted">Runs</dt>
+                <dd class="text-[0.9375rem] text-emphasis">
+                  Six to forty lights for a room take
+                  <span class="whitespace-nowrap">12–16 weeks</span>.
+                </dd>
+              </div>
+            </dl>
+          </div>
+          <form
+            method="post"
+            action="/__forms/commission"
+            data-success-message="Thanks. Eli will reply within two working days."
+            id="i1e8gg"
+            class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:col-span-7"
+          >
+            <div class="flex flex-col gap-1">
+              <label for="c-name" class="text-sm text-muted">Your name</label
+              ><input
+                type="text"
+                id="c-name"
+                name="name"
+                autocomplete="name"
+                required="true"
+                class="h-12 w-full bg-transparent border-0 border-b border-emphasis px-0 text-[1.125rem] text-emphasis"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="c-email" class="text-sm text-muted">Email</label
+              ><input
+                type="email"
+                id="c-email"
+                name="email"
+                autocomplete="email"
+                required="true"
+                class="h-12 w-full bg-transparent border-0 border-b border-emphasis px-0 text-[1.125rem] text-emphasis"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="c-light" class="text-sm text-muted">Which light</label
+              ><select
+                id="c-light"
+                name="light"
+                required="true"
+                class="h-12 w-full bg-transparent border-0 border-b border-emphasis px-0 text-[1.125rem] text-emphasis invalid:text-muted"
+              >
+                <option value="" selected="true" disabled="true">
+                  Choose a light
+                </option>
+                <option value="Rain drop">Rain drop</option>
+                <option value="Low dish">Low dish</option>
+                <option value="Seeded drop">Seeded drop</option>
+                <option value="Seeded globe">Seeded globe</option>
+                <option value="A run for a room">A run for a room</option>
+                <option value="Not sure yet">Not sure yet</option>
+              </select>
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="c-count" class="text-sm text-muted">How many</label
+              ><input
+                type="number"
+                id="c-count"
+                name="count"
+                min="1"
+                value="1"
+                inputmode="numeric"
+                class="h-12 w-full bg-transparent border-0 border-b border-emphasis px-0 text-[1.125rem] text-emphasis lining-nums tabular-nums"
+              />
+            </div>
+            <div class="flex flex-col gap-1 sm:col-span-2">
+              <label for="c-room" class="text-sm text-muted">The room</label
+              ><textarea
+                rows="3"
+                id="c-room"
+                name="room"
+                placeholder="A kitchen island, 9 ft ceiling, three over the counter."
+                class="w-full bg-transparent border-0 border-b border-emphasis px-0 py-3 text-[1.125rem] text-emphasis placeholder:text-muted"
+              ></textarea>
+            </div>
+            <div class="sm:col-span-2">
+              <button
+                type="submit"
+                class="btn btn-primary btn-lg w-full sm:w-auto"
+              >
+                Send to the studio
+              </button>
+            </div>
+            <input
+              type="text"
+              name="_swebsy_hp"
+              tabindex="-1"
+              autocomplete="off"
+              aria-hidden="true"
+              id="iqveof"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    <section
+      id="questions"
+      data-custom-name="Questions"
+      data-swebsy-block-id="questions-accordion"
+      data-swebsy-block='{"tags":["faq"],"description":"Five common questions as a quiet open-and-close accordion on a subtle band."}'
+      class="bg-subtle text-default py-20 md:py-28"
+    >
+      <div class="container mx-auto max-w-7xl px-6">
+        <div
+          data-animate-trigger="scroll"
+          id="iogbbgp"
+          class="grid gap-10 lg:grid-cols-12 lg:gap-x-12 animate-fade-in-up"
+        >
+          <div class="lg:col-span-5">
+            <h2
+              class="font-light text-emphasis text-[3rem] md:text-[4.25rem] leading-[0.95] tracking-[-0.025em]"
+            >
+              Before you ask.
+            </h2>
+            <p class="mt-6 max-w-sm text-default">
+              The five things people ask us most. Anything else, put it in the
+              form.
+            </p>
+          </div>
+          <div
+            data-accordion="true"
+            data-accordion-exclusive="true"
+            data-accordion-first-open="true"
+            class="border-b border-default lg:col-span-7"
+          >
+            <details
+              class="group border-t border-emphasis"
+              name="accordion-il82cr"
+              open
+            >
+              <summary
+                class="flex items-start justify-between gap-6 py-5 cursor-pointer focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-primary"
+              >
+                <h3
+                  id="icfe87j"
+                  class="text-lg md:text-xl leading-snug text-emphasis"
+                >
+                  Can I see a light before I order?
+                </h3>
+                <span
+                  data-icon-pack="stroke"
+                  data-icon-name="chevron-down"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  class="inline-flex shrink-0 size-5 mt-1 text-emphasis transition-transform duration-200 group-open:rotate-180 motion-reduce:transition-none"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="var(--icon-stroke, 2)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="m6 9 6 6 6-6" /></svg
+                ></span>
+              </summary>
+              <div class="pb-6 pr-12">
+                <p class="max-w-2xl text-default">
+                  Yes. On Saturdays, 11 am to 4 pm, every light on this page
+                  hangs lit in the studio, and a light is blown on the hour. If
+                  Tacoma is too far, we post you a chip of the glass.
+                </p>
+              </div>
+            </details>
+            <details
+              class="group border-t border-default"
+              name="accordion-il82cr"
+            >
+              <summary
+                class="flex items-start justify-between gap-6 py-5 cursor-pointer focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-primary"
+              >
+                <h3
+                  id="irb14b2"
+                  class="text-lg md:text-xl leading-snug text-emphasis"
+                >
+                  Will mine look like the photo?
+                </h3>
+                <span
+                  data-icon-pack="stroke"
+                  data-icon-name="chevron-down"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  class="inline-flex shrink-0 size-5 mt-1 text-emphasis transition-transform duration-200 group-open:rotate-180 motion-reduce:transition-none"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="var(--icon-stroke, 2)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="m6 9 6 6 6-6" /></svg
+                ></span>
+              </summary>
+              <div class="pb-6 pr-12">
+                <p class="max-w-2xl text-default">
+                  Close, not identical: hand-blown glass shifts a little in
+                  colour and seed from one gather to the next. The chip we post
+                  comes from the batch your light is blown from.
+                </p>
+              </div>
+            </details>
+            <details
+              class="group border-t border-default"
+              name="accordion-il82cr"
+            >
+              <summary
+                class="flex items-start justify-between gap-6 py-5 cursor-pointer focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-primary"
+              >
+                <h3 class="text-lg md:text-xl leading-snug text-emphasis">
+                  Who wires it?
+                </h3>
+                <span
+                  data-icon-pack="stroke"
+                  data-icon-name="chevron-down"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  class="inline-flex shrink-0 size-5 mt-1 text-emphasis transition-transform duration-200 group-open:rotate-180 motion-reduce:transition-none"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="var(--icon-stroke, 2)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="m6 9 6 6 6-6" /></svg
+                ></span>
+              </summary>
+              <div class="pb-6 pr-12">
+                <p class="max-w-2xl text-default">
+                  Eli wires and tests every light here with UL-listed parts.
+                  Pendants hang from a standard ceiling box; your electrician
+                  fits them in about twenty minutes.
+                </p>
+              </div>
+            </details>
+            <details
+              class="group border-t border-default"
+              name="accordion-il82cr"
+            >
+              <summary
+                class="flex items-start justify-between gap-6 py-5 cursor-pointer focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-primary"
+              >
+                <h3 class="text-lg md:text-xl leading-snug text-emphasis">
+                  Do you ship?
+                </h3>
+                <span
+                  data-icon-pack="stroke"
+                  data-icon-name="chevron-down"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  class="inline-flex shrink-0 size-5 mt-1 text-emphasis transition-transform duration-200 group-open:rotate-180 motion-reduce:transition-none"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="var(--icon-stroke, 2)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="m6 9 6 6 6-6" /></svg
+                ></span>
+              </summary>
+              <div class="pb-6 pr-12">
+                <p class="max-w-2xl text-default">
+                  Anywhere in the US, double-boxed with the glass floated in
+                  foam. If a light arrives broken, send us a photo and we blow
+                  it again.
+                </p>
+              </div>
+            </details>
+            <details
+              class="group border-t border-default"
+              name="accordion-il82cr"
+            >
+              <summary
+                class="flex items-start justify-between gap-6 py-5 cursor-pointer focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-primary"
+              >
+                <h3 class="text-lg md:text-xl leading-snug text-emphasis">
+                  How does paying work?
+                </h3>
+                <span
+                  data-icon-pack="stroke"
+                  data-icon-name="chevron-down"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  class="inline-flex shrink-0 size-5 mt-1 text-emphasis transition-transform duration-200 group-open:rotate-180 motion-reduce:transition-none"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="var(--icon-stroke, 2)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="m6 9 6 6 6-6" /></svg
+                ></span>
+              </summary>
+              <div class="pb-6 pr-12">
+                <p class="max-w-2xl text-default">
+                  Half when you approve the chip, by a link we email you; the
+                  rest before it ships. Nothing is paid on this site.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      data-swebsy-block-id="footer-studio-hours-switch"
+      data-swebsy-block='{"tags":["footer"],"description":"Studio footer: wordmark and one-line story, studio address and hours, contact links, and a light/dark switch."}'
+      class="bg-default border-t border-default py-14"
+      id="i3tlibh"
+    >
+      <div id="if4c66g-2" class="container mx-auto max-w-7xl px-6">
+        <div id="icf9mkt-2" class="grid gap-10 sm:grid-cols-2 md:grid-cols-12">
+          <div id="ijipkhh-2" class="md:col-span-4">
+            <a
+              href="./index.html"
+              id="i0ckxwa-2"
+              class="font-serif text-2xl text-emphasis no-underline"
+              >Gather</a
+            >
+            <p id="ilqwiiq-2" class="mt-3 max-w-xs text-sm text-default">
+              Hand-blown lights from a two-person studio in Tacoma, since
+              <span id="ijd023b-2" class="lining-nums">2015</span>.
+            </p>
+          </div>
+          <div id="io7m8m8-2" class="text-sm md:col-span-3">
+            <p id="i0bkfv8-2" class="text-muted">Studio</p>
+            <p id="i4dd9tf-2" class="mt-2 text-default">
+              <span id="iznqh8h-2" class="lining-nums">5418</span> South Tacoma
+              Way<br id="ijm2p3s-2" />Tacoma, WA<br id="i2bhg6q-2" />Saturdays,
+              11 am – 4 pm
+            </p>
+          </div>
+          <div id="inpfbos-2" class="text-sm md:col-span-3">
+            <p id="ihnfvd7-2" class="text-muted">Write to us</p>
+            <p id="iv9ozc3-2" class="mt-1 flex flex-col items-start">
+              <a
+                href="mailto:studio@gatherglass.com"
+                id="i1w0y4g-3"
+                class="link inline-block py-[13px] text-default"
+                >studio@gatherglass.com</a
+              ><a
+                href="https://instagram.com/"
+                id="izf8m6i-3"
+                class="link inline-block py-[13px] text-default"
+                >Instagram</a
+              >
+            </p>
+          </div>
+          <div id="ixd3cig-2" class="text-sm md:col-span-2 md:justify-self-end">
+            <p id="iz50m1i-2" class="text-muted">The room light</p>
+            <div
+              data-dark-mode-switch="true"
+              data-mode="dark"
+              data-switch-style="icon"
+              role="group"
+              aria-label="Theme toggle"
+              id="iv3x8k2-2-2"
+              class="dark-mode-switch btn-group mt-2"
+            >
+              <button
+                type="button"
+                data-theme-cycle-button="true"
+                aria-label="Theme: Dark. Click to switch to System."
+                title="Theme: Dark. Click to switch to System."
+                id="i4dhrru-3"
+                class="btn btn-outline-neutral dark-mode-switch__cycle inline-flex items-center justify-center min-h-11"
+              >
+                <span
+                  data-theme-mode-icon="system"
+                  hidden="true"
+                  id="i3ewgnl-3"
+                  class="inline-flex items-center justify-center leading-none size-4"
+                  ><span
+                    data-icon-pack="stroke"
+                    data-icon-name="monitor"
+                    data-icon-decorative="false"
+                    data-icon-label="System theme"
+                    role="img"
+                    aria-label="System theme"
+                    id="iv9w8il-3"
+                    class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <rect width="20" height="14" x="2" y="3" rx="2" />
+                      <line x1="8" x2="16" y1="21" y2="21" />
+                      <line
+                        x1="12"
+                        x2="12"
+                        y1="17"
+                        y2="21"
+                      /></svg></span></span
+                ><span
+                  data-theme-mode-icon="light"
+                  hidden="true"
+                  id="ixoqs6r-3"
+                  class="inline-flex items-center justify-center leading-none size-4"
+                  ><span
+                    data-icon-pack="stroke"
+                    data-icon-name="sun"
+                    data-icon-decorative="false"
+                    data-icon-label="Light theme"
+                    role="img"
+                    aria-label="Light theme"
+                    id="iugvu79-3"
+                    class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <circle cx="12" cy="12" r="4" />
+                      <path d="M12 2v2" />
+                      <path d="M12 20v2" />
+                      <path d="m4.93 4.93 1.41 1.41" />
+                      <path d="m17.66 17.66 1.41 1.41" />
+                      <path d="M2 12h2" />
+                      <path d="M20 12h2" />
+                      <path d="m6.34 17.66-1.41 1.41" />
+                      <path d="m19.07 4.93-1.41 1.41" /></svg></span></span
+                ><span
+                  data-theme-mode-icon="dark"
+                  id="igvtvrw-3"
+                  class="inline-flex items-center justify-center leading-none size-4"
+                  ><span
+                    data-icon-pack="stroke"
+                    data-icon-name="moon"
+                    data-icon-decorative="false"
+                    data-icon-label="Dark theme"
+                    role="img"
+                    aria-label="Dark theme"
+                    id="iscni8p-3"
+                    class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100%"
+                      height="100%"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="var(--icon-stroke, 2)"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
+                      /></svg></span
+                ></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <p
+          id="i5oe3np-2"
+          class="mt-12 border-t border-default pt-6 text-sm text-muted"
+        >
+          © <span id="izyp7pc-2" class="lining-nums">2026</span> Gather Glass.
+          Noor Haddad and Eli Marsh.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/swebsy-components.488de40397.js" defer></script>
+  <script src="js/swebsy-scroll-observer.5f2059a125.js"></script>
+  <noscript
+    ><style>
+      [data-animate-trigger] {
+        opacity: 1 !important;
+        animation: none !important;
+      }
+    </style></noscript
+  ><a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+    ><svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path
+        class="swebsy-badge-mark-inner"
+        d="M75 63.5L26 39L26 88L75 63.5Z"
+      /></svg
+    ><span class="swebsy-badge-text">Swebsy</span></a
+  >
+</html>

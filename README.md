@@ -1,6 +1,6 @@
 # Free HTML website templates
 
-48 static HTML/CSS templates made with
+49 static HTML/CSS templates made with
 [Swebsy](https://swebsy.com), a free visual website builder. Each folder's
 `site/` is a complete website: open `index.html`, or upload the folder to
 GitHub Pages, Netlify, Cloudflare Pages or any static host.
@@ -199,6 +199,14 @@ A neighborhood bakery website: the week's breads by day, a photo shelf with pric
 A dog groomer's site built around each coat's routine: how often it comes back, the finish, prices by coat and a short new-dog enquiry.
 
 [Live demo](https://studio.swebsy.com/templates/undercoat/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=undercoat&ref=github) · [Details](https://swebsy.com/templates/undercoat/)
+
+### [Gather](gather/)
+
+[![Gather](gather/thumb.webp)](gather/)
+
+A glass studio that hand-blows lighting, dark by default: a lamp that fades up from dark, a wall of lights that switch on as you scroll, and a commission form.
+
+[Live demo](https://studio.swebsy.com/templates/gather/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=gather&ref=github) · [Details](https://swebsy.com/templates/gather/)
 
 ### [Halflight](halflight/)
 

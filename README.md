@@ -208,6 +208,14 @@ A walk-in aperitivo and cocktail bar: a sunlit room, menus by the clock, and cop
 
 [Live demo](https://studio.swebsy.com/templates/halflight/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=halflight&ref=github) · [Details](https://swebsy.com/templates/halflight/)
 
+### [Clearcoat](clearcoat/)
+
+[![Clearcoat](clearcoat/thumb.webp)](clearcoat/)
+
+A paint-care and detailing studio: a before/after slider, treatments with honest limits and prices, and job notes on what was agreed.
+
+[Live demo](https://studio.swebsy.com/templates/clearcoat/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=clearcoat&ref=github) · [Details](https://swebsy.com/templates/clearcoat/)
+
 ### [Afterparty](afterparty/)
 
 [![Afterparty](afterparty/thumb.webp)](afterparty/)
@@ -383,14 +391,6 @@ A bold editorial studio template for fixed-scope brand and web services, with pr
 A crisp, high-contrast SaaS site for scheduling and practice-management products, pairing deep navy with electric blue across a product tour, pricing tiers and customer stories.
 
 [Live demo](https://studio.swebsy.com/templates/marigold/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=marigold&ref=github) · [Details](https://swebsy.com/templates/marigold/)
-
-### [Clearcoat](clearcoat/)
-
-[![Clearcoat](clearcoat/thumb.webp)](clearcoat/)
-
-A paint-care and detailing studio: a before/after slider, treatments with honest limits and prices, and job notes on what was agreed.
-
-[Live demo](https://studio.swebsy.com/templates/clearcoat/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=clearcoat&ref=github) · [Details](https://swebsy.com/templates/clearcoat/)
 
 ## License
 

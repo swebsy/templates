@@ -1,6 +1,6 @@
 # Free HTML website templates
 
-46 static HTML/CSS templates made with
+48 static HTML/CSS templates made with
 [Swebsy](https://swebsy.com), a free visual website builder. Each folder's
 `site/` is a complete website: open `index.html`, or upload the folder to
 GitHub Pages, Netlify, Cloudflare Pages or any static host.
@@ -200,6 +200,14 @@ A dog groomer's site built around each coat's routine: how often it comes back, 
 
 [Live demo](https://studio.swebsy.com/templates/undercoat/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=undercoat&ref=github) · [Details](https://swebsy.com/templates/undercoat/)
 
+### [Halflight](halflight/)
+
+[![Halflight](halflight/thumb.webp)](halflight/)
+
+A walk-in aperitivo and cocktail bar: a sunlit room, menus by the clock, and copyable texts that help visitors invite friends.
+
+[Live demo](https://studio.swebsy.com/templates/halflight/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=halflight&ref=github) · [Details](https://swebsy.com/templates/halflight/)
+
 ### [Afterparty](afterparty/)
 
 [![Afterparty](afterparty/thumb.webp)](afterparty/)
@@ -375,6 +383,14 @@ A bold editorial studio template for fixed-scope brand and web services, with pr
 A crisp, high-contrast SaaS site for scheduling and practice-management products, pairing deep navy with electric blue across a product tour, pricing tiers and customer stories.
 
 [Live demo](https://studio.swebsy.com/templates/marigold/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=marigold&ref=github) · [Details](https://swebsy.com/templates/marigold/)
+
+### [Clearcoat](clearcoat/)
+
+[![Clearcoat](clearcoat/thumb.webp)](clearcoat/)
+
+A paint-care and detailing studio: a before/after slider, treatments with honest limits and prices, and job notes on what was agreed.
+
+[Live demo](https://studio.swebsy.com/templates/clearcoat/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=clearcoat&ref=github) · [Details](https://swebsy.com/templates/clearcoat/)
 
 ## License
 

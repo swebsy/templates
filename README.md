@@ -1,6 +1,6 @@
 # Free HTML website templates
 
-49 static HTML/CSS templates made with
+50 static HTML/CSS templates made with
 [Swebsy](https://swebsy.com), a free visual website builder. Each folder's
 `site/` is a complete website: open `index.html`, or upload the folder to
 GitHub Pages, Netlify, Cloudflare Pages or any static host.
@@ -207,6 +207,14 @@ A dog groomer's site built around each coat's routine: how often it comes back, 
 A glass studio that hand-blows lighting, dark by default: a lamp that fades up from dark, a wall of lights that switch on as you scroll, and a commission form.
 
 [Live demo](https://studio.swebsy.com/templates/gather/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=gather&ref=github) · [Details](https://swebsy.com/templates/gather/)
+
+### [Ocho Ventanas](ocho-ventanas/)
+
+[![Ocho Ventanas](ocho-ventanas/thumb.webp)](ocho-ventanas/)
+
+A small cliffside guesthouse where every photo is a window cut in a terracotta wall, drawn to true scale, with a building elevation as the room index.
+
+[Live demo](https://studio.swebsy.com/templates/ocho-ventanas/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=ocho-ventanas&ref=github) · [Details](https://swebsy.com/templates/ocho-ventanas/)
 
 ### [Halflight](halflight/)
 

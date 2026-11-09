@@ -1,6 +1,6 @@
 # Free HTML website templates
 
-50 static HTML/CSS templates made with
+55 static HTML/CSS templates made with
 [Swebsy](https://swebsy.com), a free visual website builder. Each folder's
 `site/` is a complete website: open `index.html`, or upload the folder to
 GitHub Pages, Netlify, Cloudflare Pages or any static host.
@@ -24,13 +24,13 @@ A wood-fired restaurant site in warm paper and ember red: oversized serif displa
 
 [Live demo](https://studio.swebsy.com/templates/ember/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=ember&ref=github) · [Details](https://swebsy.com/templates/ember/)
 
-### [Cindermoth](cindermoth/)
+### [Folio](folio/)
 
-[![Cindermoth](cindermoth/thumb.webp)](cindermoth/)
+[![Folio](folio/thumb.webp)](folio/)
 
-A dark editorial launch and press-kit template for indie games, with cinematic galleries, store calls to action, support resources, and legal pages.
+A clean, single-page portfolio template that gives independent creators a direct way to introduce themselves and highlight selected work.
 
-[Live demo](https://studio.swebsy.com/templates/cindermoth/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=cindermoth&ref=github) · [Details](https://swebsy.com/templates/cindermoth/)
+[Live demo](https://studio.swebsy.com/templates/folio/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=folio&ref=github) · [Details](https://swebsy.com/templates/folio/)
 
 ### [Pulsar](pulsar/)
 
@@ -40,341 +40,13 @@ A dark-first product site for developer tools and B2B SaaS, with a glowing cente
 
 [Live demo](https://studio.swebsy.com/templates/pulsar/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=pulsar&ref=github) · [Details](https://swebsy.com/templates/pulsar/)
 
-### [Folio](folio/)
+### [Cindermoth](cindermoth/)
 
-[![Folio](folio/thumb.webp)](folio/)
+[![Cindermoth](cindermoth/thumb.webp)](cindermoth/)
 
-A clean, single-page portfolio template that gives independent creators a direct way to introduce themselves and highlight selected work.
+A dark editorial launch and press-kit template for indie games, with cinematic galleries, store calls to action, support resources, and legal pages.
 
-[Live demo](https://studio.swebsy.com/templates/folio/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=folio&ref=github) · [Details](https://swebsy.com/templates/folio/)
-
-### [Neon Nocturne](neon-nocturne-link-in-bio/)
-
-[![Neon Nocturne](neon-nocturne-link-in-bio/thumb.webp)](neon-nocturne-link-in-bio/)
-
-A club-ready link-in-bio template with featured releases, live sets, social profiles, and glowing link buttons over animated neon spotlights.
-
-[Live demo](https://studio.swebsy.com/templates/neon-nocturne-link-in-bio/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=neon-nocturne-link-in-bio&ref=github) · [Details](https://swebsy.com/templates/neon-nocturne-link-in-bio/)
-
-### [Daybreak](daybreak/)
-
-[![Daybreak](daybreak/thumb.webp)](daybreak/)
-
-An editorial, multi-page template for specialty coffee roasters, with dedicated spaces for the menu, coffee, story, and visit information.
-
-[Live demo](https://studio.swebsy.com/templates/daybreak/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=daybreak&ref=github) · [Details](https://swebsy.com/templates/daybreak/)
-
-### [Imprint](imprint/)
-
-[![Imprint](imprint/thumb.webp)](imprint/)
-
-A refined multi-page designer portfolio for presenting identity work, creative services, client proof, and a focused inquiry path.
-
-[Live demo](https://studio.swebsy.com/templates/imprint/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=imprint&ref=github) · [Details](https://swebsy.com/templates/imprint/)
-
-### [Poplink](poplink/)
-
-[![Poplink](poplink/thumb.webp)](poplink/)
-
-A bright, playful link-in-bio template that helps creators collect social profiles, featured content, and essential links on one memorable page.
-
-[Live demo](https://studio.swebsy.com/templates/poplink/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=poplink&ref=github) · [Details](https://swebsy.com/templates/poplink/)
-
-### [Aurora Glass](aurora-glass-link-in-bio/)
-
-[![Aurora Glass](aurora-glass-link-in-bio/thumb.webp)](aurora-glass-link-in-bio/)
-
-A luminous glass link-in-bio template with social links, featured media, product cards, and an animated aurora background in light and dark modes.
-
-[Live demo](https://studio.swebsy.com/templates/aurora-glass-link-in-bio/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=aurora-glass-link-in-bio&ref=github) · [Details](https://swebsy.com/templates/aurora-glass-link-in-bio/)
-
-### [Stdout](stdout/)
-
-[![Stdout](stdout/thumb.webp)](stdout/)
-
-A dark terminal-inspired developer tool template with product storytelling, pricing, changelog, legal, and conversion pages.
-
-[Live demo](https://studio.swebsy.com/templates/stdout/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=stdout&ref=github) · [Details](https://swebsy.com/templates/stdout/)
-
-### [Artup](artup/)
-
-[![Artup](artup/thumb.webp)](artup/)
-
-A polished personal portfolio template for designers and creators to showcase their work, story, process, and distinctive style.
-
-[Live demo](https://studio.swebsy.com/templates/artup/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=artup&ref=github) · [Details](https://swebsy.com/templates/artup/)
-
-### [Kindred](kindred/)
-
-[![Kindred](kindred/thumb.webp)](kindred/)
-
-A warm, paper-textured template for a small immigration law practice, with flat fees, partner stories, client outcomes and a consultation form.
-
-[Live demo](https://studio.swebsy.com/templates/kindred/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=kindred&ref=github) · [Details](https://swebsy.com/templates/kindred/)
-
-### [Booked](booked/)
-
-[![Booked](booked/thumb.webp)](booked/)
-
-An editorial services template for independent specialists who need to present their work, explain their offers, and turn interest into inquiries.
-
-[Live demo](https://studio.swebsy.com/templates/booked/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=booked&ref=github) · [Details](https://swebsy.com/templates/booked/)
-
-### [Vantage](vantage/)
-
-[![Vantage](vantage/thumb.webp)](vantage/)
-
-A bold portfolio template for product designers, creative leads, and independent consultants who want to show work and strategic range.
-
-[Live demo](https://studio.swebsy.com/templates/vantage/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=vantage&ref=github) · [Details](https://swebsy.com/templates/vantage/)
-
-### [Linker](linker/)
-
-[![Linker](linker/thumb.webp)](linker/)
-
-A sleek link-in-bio template for collecting important links, featured highlights, social profiles, and personal brand essentials in one place.
-
-[Live demo](https://studio.swebsy.com/templates/linker/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=linker&ref=github) · [Details](https://swebsy.com/templates/linker/)
-
-### [Wren & Wildflower](wren-wildflower/)
-
-[![Wren & Wildflower](wren-wildflower/thumb.webp)](wren-wildflower/)
-
-A warm editorial link-in-bio template for small shops and makers, with tactile link buttons, featured products, and a soft clay and sage palette.
-
-[Live demo](https://studio.swebsy.com/templates/wren-wildflower/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=wren-wildflower&ref=github) · [Details](https://swebsy.com/templates/wren-wildflower/)
-
-### [Tally](tally/)
-
-[![Tally](tally/thumb.webp)](tally/)
-
-A CV website for a new data analyst: real charts as the work, a dated experience ledger, a PDF CV link and a detailed project write-up.
-
-[Live demo](https://studio.swebsy.com/templates/tally/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=tally&ref=github) · [Details](https://swebsy.com/templates/tally/)
-
-### [Plumb](plumb/)
-
-[![Plumb](plumb/thumb.webp)](plumb/)
-
-A renovation-contractor website for older houses: before, during and after photos for every job, a price list set in large type, and a site-visit request form.
-
-[Live demo](https://studio.swebsy.com/templates/plumb/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=plumb&ref=github) · [Details](https://swebsy.com/templates/plumb/)
-
-### [Cadenza](cadenza/)
-
-[![Cadenza](cadenza/thumb.webp)](cadenza/)
-
-A community music school website: lessons by age, one rate for every instrument, teachers who still perform, and the next student recital set as a printed concert program.
-
-[Live demo](https://studio.swebsy.com/templates/cadenza/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=cadenza&ref=github) · [Details](https://swebsy.com/templates/cadenza/)
-
-### [Porchlight](porchlight/)
-
-[![Porchlight](porchlight/thumb.webp)](porchlight/)
-
-A real estate website for a small agent team: big house numbers, every sale on the record, neighborhood guides and a price-opinion form.
-
-[Live demo](https://studio.swebsy.com/templates/porchlight/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=porchlight&ref=github) · [Details](https://swebsy.com/templates/porchlight/)
-
-### [Calltime](calltime/)
-
-[![Calltime](calltime/thumb.webp)](calltime/)
-
-A bridal hair and makeup website for a two-artist team: named weddings with ready-by times, a printed call sheet of the morning, every price, and a trial studio page.
-
-[Live demo](https://studio.swebsy.com/templates/calltime/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=calltime&ref=github) · [Details](https://swebsy.com/templates/calltime/)
-
-### [Proof](proof/)
-
-[![Proof](proof/thumb.webp)](proof/)
-
-A neighborhood bakery website: the week's breads by day, a photo shelf with prices and times, weekend and cake pre-orders, wholesale for cafés, and the two owners.
-
-[Live demo](https://studio.swebsy.com/templates/proof/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=proof&ref=github) · [Details](https://swebsy.com/templates/proof/)
-
-### [Undercoat](undercoat/)
-
-[![Undercoat](undercoat/thumb.webp)](undercoat/)
-
-A dog groomer's site built around each coat's routine: how often it comes back, the finish, prices by coat and a short new-dog enquiry.
-
-[Live demo](https://studio.swebsy.com/templates/undercoat/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=undercoat&ref=github) · [Details](https://swebsy.com/templates/undercoat/)
-
-### [Gather](gather/)
-
-[![Gather](gather/thumb.webp)](gather/)
-
-A glass studio that hand-blows lighting, dark by default: a lamp that fades up from dark, a wall of lights that switch on as you scroll, and a commission form.
-
-[Live demo](https://studio.swebsy.com/templates/gather/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=gather&ref=github) · [Details](https://swebsy.com/templates/gather/)
-
-### [Ocho Ventanas](ocho-ventanas/)
-
-[![Ocho Ventanas](ocho-ventanas/thumb.webp)](ocho-ventanas/)
-
-A small cliffside guesthouse where every photo is a window cut in a terracotta wall, drawn to true scale, with a building elevation as the room index.
-
-[Live demo](https://studio.swebsy.com/templates/ocho-ventanas/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=ocho-ventanas&ref=github) · [Details](https://swebsy.com/templates/ocho-ventanas/)
-
-### [Halflight](halflight/)
-
-[![Halflight](halflight/thumb.webp)](halflight/)
-
-A walk-in aperitivo and cocktail bar: a sunlit room, menus by the clock, and copyable texts that help visitors invite friends.
-
-[Live demo](https://studio.swebsy.com/templates/halflight/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=halflight&ref=github) · [Details](https://swebsy.com/templates/halflight/)
-
-### [Clearcoat](clearcoat/)
-
-[![Clearcoat](clearcoat/thumb.webp)](clearcoat/)
-
-A paint-care and detailing studio: a before/after slider, treatments with honest limits and prices, and job notes on what was agreed.
-
-[Live demo](https://studio.swebsy.com/templates/clearcoat/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=clearcoat&ref=github) · [Details](https://swebsy.com/templates/clearcoat/)
-
-### [Afterparty](afterparty/)
-
-[![Afterparty](afterparty/thumb.webp)](afterparty/)
-
-A one-page party invitation that opens as you scroll: a card that says "We eloped." swings open to "You're invited.", then the night in order, the venue, what to know and an RSVP.
-
-[Live demo](https://studio.swebsy.com/templates/afterparty/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=afterparty&ref=github) · [Details](https://swebsy.com/templates/afterparty/)
-
-### [Roomful](roomful/)
-
-[![Roomful](roomful/thumb.webp)](roomful/)
-
-A band website in two grounds: the band and records on white, the shows in a dark full room. Tour dates by leg, tracklists and a real press kit.
-
-[Live demo](https://studio.swebsy.com/templates/roomful/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=roomful&ref=github) · [Details](https://swebsy.com/templates/roomful/)
-
-### [Backrow](backrow/)
-
-[![Backrow](backrow/thumb.webp)](backrow/)
-
-A yoga and Pilates studio site for nervous beginners: regulars by where they put their mat, the week, three ways to start and prices.
-
-[Live demo](https://studio.swebsy.com/templates/backrow/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=backrow&ref=github) · [Details](https://swebsy.com/templates/backrow/)
-
-### [Craft](craft/)
-
-[![Craft](craft/thumb.webp)](craft/)
-
-A focused, minimal portfolio template for makers and creators who want their strongest projects and capabilities to take center stage.
-
-[Live demo](https://studio.swebsy.com/templates/craft/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=craft&ref=github) · [Details](https://swebsy.com/templates/craft/)
-
-### [Recess](recess/)
-
-[![Recess](recess/thumb.webp)](recess/)
-
-A teaching portfolio for a new science teacher: a slab-type name, photos printed as blue and pink duotones, classroom units, a mentor quote and a résumé PDF.
-
-[Live demo](https://studio.swebsy.com/templates/recess/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=recess&ref=github) · [Details](https://swebsy.com/templates/recess/)
-
-### [Byline](byline/)
-
-[![Byline](byline/thumb.webp)](byline/)
-
-A clips site for a reporter: the beat as one serif sentence, captioned photos, selected stories with what each one changed, an editor's quote and a résumé PDF.
-
-[Live demo](https://studio.swebsy.com/templates/byline/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=byline&ref=github) · [Details](https://swebsy.com/templates/byline/)
-
-### [Ironside](ironside/)
-
-[![Ironside](ironside/thumb.webp)](ironside/)
-
-A bold neo-brutalist barbershop template with hard borders, offset shadows, expressive type, services, pricing, and booking details.
-
-[Live demo](https://studio.swebsy.com/templates/ironside/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=ironside&ref=github) · [Details](https://swebsy.com/templates/ironside/)
-
-### [Juno](juno/)
-
-[![Juno](juno/thumb.webp)](juno/)
-
-A colorful neo-brutalist portfolio template for creative makers who want to present projects, personality, and contact details with confidence.
-
-[Live demo](https://studio.swebsy.com/templates/juno/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=juno&ref=github) · [Details](https://swebsy.com/templates/juno/)
-
-### [Nimbus](nimbus/)
-
-[![Nimbus](nimbus/thumb.webp)](nimbus/)
-
-An instrument-precise template for a hardware product and its app, with a full specification, a support hub with firmware release notes, a retailer directory and a warranty page.
-
-[Live demo](https://studio.swebsy.com/templates/nimbus/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=nimbus&ref=github) · [Details](https://swebsy.com/templates/nimbus/)
-
-### [Lume](lume/)
-
-[![Lume](lume/thumb.webp)](lume/)
-
-A bright portfolio template for freelance UX and product designers to introduce their practice, selected work, services, and contact path.
-
-[Live demo](https://studio.swebsy.com/templates/lume/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=lume&ref=github) · [Details](https://swebsy.com/templates/lume/)
-
-### [Morrow](morrow/)
-
-[![Morrow](morrow/thumb.webp)](morrow/)
-
-A premium editorial website for residential landscape design-build studios, with immersive project storytelling, services, studio profile, and direct-contact conversion.
-
-[Live demo](https://studio.swebsy.com/templates/morrow/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=morrow&ref=github) · [Details](https://swebsy.com/templates/morrow/)
-
-### [Primer](primer/)
-
-[![Primer](primer/thumb.webp)](primer/)
-
-A two-page editorial template for a paid online course: hairline rules and a display serif instead of cards, plus a full sample lesson to give away.
-
-[Live demo](https://studio.swebsy.com/templates/primer/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=primer&ref=github) · [Details](https://swebsy.com/templates/primer/)
-
-### [Marquee](marquee/)
-
-[![Marquee](marquee/thumb.webp)](marquee/)
-
-A photography-led conference site: full-bleed image plates, hairline-ruled schedules and ticket tiers, and a warm near-black ground that lets the pictures carry all the colour.
-
-[Live demo](https://studio.swebsy.com/templates/marquee/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=marquee&ref=github) · [Details](https://swebsy.com/templates/marquee/)
-
-### [Compass](compass/)
-
-[![Compass](compass/thumb.webp)](compass/)
-
-A calm services template for executive, leadership, and career coaches to explain outcomes, compare pathways, and invite discovery calls.
-
-[Live demo](https://studio.swebsy.com/templates/compass/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=compass&ref=github) · [Details](https://swebsy.com/templates/compass/)
-
-### [Clarity](clarity/)
-
-[![Clarity](clarity/thumb.webp)](clarity/)
-
-A polished advisory template for consultants and strategy firms to present their method, proof, workshops, and inquiry path with confidence.
-
-[Live demo](https://studio.swebsy.com/templates/clarity/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=clarity&ref=github) · [Details](https://swebsy.com/templates/clarity/)
-
-### [Good Work](good-work/)
-
-[![Good Work](good-work/thumb.webp)](good-work/)
-
-A bold multi-page nonprofit template for community relief, transparent impact reporting, fundraising, volunteer opportunities, and human stories.
-
-[Live demo](https://studio.swebsy.com/templates/good-work/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=good-work&ref=github) · [Details](https://swebsy.com/templates/good-work/)
-
-### [Forge](forge/)
-
-[![Forge](forge/thumb.webp)](forge/)
-
-A bold training website for coaches who build sustainable strength through real movement, honest progress, and focused one-to-one support.
-
-[Live demo](https://studio.swebsy.com/templates/forge/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=forge&ref=github) · [Details](https://swebsy.com/templates/forge/)
-
-### [Atelier](atelier/)
-
-[![Atelier](atelier/thumb.webp)](atelier/)
-
-Showcase your work in a clean, gallery-inspired portfolio designed to let each artwork, project, and studio story speak first.
-
-[Live demo](https://studio.swebsy.com/templates/atelier/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=atelier&ref=github) · [Details](https://swebsy.com/templates/atelier/)
+[Live demo](https://studio.swebsy.com/templates/cindermoth/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=cindermoth&ref=github) · [Details](https://swebsy.com/templates/cindermoth/)
 
 ### [Fennel](fennel/)
 
@@ -384,13 +56,181 @@ A calm five-page template for dental and health practices: flat pastel panels, f
 
 [Live demo](https://studio.swebsy.com/templates/fennel/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=fennel&ref=github) · [Details](https://swebsy.com/templates/fennel/)
 
-### [Varnish](varnish/)
+### [Ironside](ironside/)
 
-[![Varnish](varnish/thumb.webp)](varnish/)
+[![Ironside](ironside/thumb.webp)](ironside/)
 
-A refined multi-page portfolio template for artists and creative studios to frame signature work, studio context, and thoughtful inquiries.
+A bold neo-brutalist barbershop template with hard borders, offset shadows, expressive type, services, pricing, and booking details.
 
-[Live demo](https://studio.swebsy.com/templates/varnish/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=varnish&ref=github) · [Details](https://swebsy.com/templates/varnish/)
+[Live demo](https://studio.swebsy.com/templates/ironside/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=ironside&ref=github) · [Details](https://swebsy.com/templates/ironside/)
+
+### [Nimbus](nimbus/)
+
+[![Nimbus](nimbus/thumb.webp)](nimbus/)
+
+An instrument-precise template for a hardware product and its app, with a full specification, a support hub with firmware release notes, a retailer directory and a warranty page.
+
+[Live demo](https://studio.swebsy.com/templates/nimbus/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=nimbus&ref=github) · [Details](https://swebsy.com/templates/nimbus/)
+
+### [Plumb](plumb/)
+
+[![Plumb](plumb/thumb.webp)](plumb/)
+
+A renovation-contractor website for older houses: before, during and after photos for every job, a price list set in large type, and a site-visit request form.
+
+[Live demo](https://studio.swebsy.com/templates/plumb/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=plumb&ref=github) · [Details](https://swebsy.com/templates/plumb/)
+
+### [Neon Nocturne](neon-nocturne-link-in-bio/)
+
+[![Neon Nocturne](neon-nocturne-link-in-bio/thumb.webp)](neon-nocturne-link-in-bio/)
+
+A club-ready link-in-bio template with featured releases, live sets, social profiles, and glowing link buttons over animated neon spotlights.
+
+[Live demo](https://studio.swebsy.com/templates/neon-nocturne-link-in-bio/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=neon-nocturne-link-in-bio&ref=github) · [Details](https://swebsy.com/templates/neon-nocturne-link-in-bio/)
+
+### [Afterparty](afterparty/)
+
+[![Afterparty](afterparty/thumb.webp)](afterparty/)
+
+A one-page party invitation that opens as you scroll: a card that says "We eloped." swings open to "You're invited.", then the night in order, the venue, what to know and an RSVP.
+
+[Live demo](https://studio.swebsy.com/templates/afterparty/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=afterparty&ref=github) · [Details](https://swebsy.com/templates/afterparty/)
+
+### [Atelier](atelier/)
+
+[![Atelier](atelier/thumb.webp)](atelier/)
+
+Showcase your work in a clean, gallery-inspired portfolio designed to let each artwork, project, and studio story speak first.
+
+[Live demo](https://studio.swebsy.com/templates/atelier/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=atelier&ref=github) · [Details](https://swebsy.com/templates/atelier/)
+
+### [Calltime](calltime/)
+
+[![Calltime](calltime/thumb.webp)](calltime/)
+
+A bridal hair and makeup website for a two-artist team: named weddings with ready-by times, a printed call sheet of the morning, every price, and a trial studio page.
+
+[Live demo](https://studio.swebsy.com/templates/calltime/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=calltime&ref=github) · [Details](https://swebsy.com/templates/calltime/)
+
+### [Primer](primer/)
+
+[![Primer](primer/thumb.webp)](primer/)
+
+A two-page editorial template for a paid online course: hairline rules and a display serif instead of cards, plus a full sample lesson to give away.
+
+[Live demo](https://studio.swebsy.com/templates/primer/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=primer&ref=github) · [Details](https://swebsy.com/templates/primer/)
+
+### [Stdout](stdout/)
+
+[![Stdout](stdout/thumb.webp)](stdout/)
+
+A dark terminal-inspired developer tool template with product storytelling, pricing, changelog, legal, and conversion pages.
+
+[Live demo](https://studio.swebsy.com/templates/stdout/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=stdout&ref=github) · [Details](https://swebsy.com/templates/stdout/)
+
+### [Booked](booked/)
+
+[![Booked](booked/thumb.webp)](booked/)
+
+An editorial services template for independent specialists who need to present their work, explain their offers, and turn interest into inquiries.
+
+[Live demo](https://studio.swebsy.com/templates/booked/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=booked&ref=github) · [Details](https://swebsy.com/templates/booked/)
+
+### [Tally](tally/)
+
+[![Tally](tally/thumb.webp)](tally/)
+
+A CV website for a new data analyst: real charts as the work, a dated experience ledger, a PDF CV link and a detailed project write-up.
+
+[Live demo](https://studio.swebsy.com/templates/tally/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=tally&ref=github) · [Details](https://swebsy.com/templates/tally/)
+
+### [Between](between/)
+
+[![Between](between/thumb.webp)](between/)
+
+A six-page template for a therapist who sees teens and young adults: each page speaks to the young person and the parent, with privacy and fees up front.
+
+[Live demo](https://studio.swebsy.com/templates/between/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=between&ref=github) · [Details](https://swebsy.com/templates/between/)
+
+### [Fairweather](fairweather/)
+
+[![Fairweather](fairweather/thumb.webp)](fairweather/)
+
+A four-page template for an owner-run wedding barn: every place is shown with its rain plan in a second ink, with prices and tours up front.
+
+[Live demo](https://studio.swebsy.com/templates/fairweather/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=fairweather&ref=github) · [Details](https://swebsy.com/templates/fairweather/)
+
+### [Setpoint](setpoint/)
+
+[![Setpoint](setpoint/thumb.webp)](setpoint/)
+
+A five-page template for a two-person AC repair company: the hottest house goes first, shown as a ranked temperature scale, with prices and the phone up front.
+
+[Live demo](https://studio.swebsy.com/templates/setpoint/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=setpoint&ref=github) · [Details](https://swebsy.com/templates/setpoint/)
+
+### [Free Edge](free-edge/)
+
+[![Free Edge](free-edge/thumb.webp)](free-edge/)
+
+A one-chair nail studio site where every set shows its total and its time: a staircase of hands stepping with length, sets priced as booked, and a price page with no "from".
+
+[Live demo](https://studio.swebsy.com/templates/free-edge/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=free-edge&ref=github) · [Details](https://swebsy.com/templates/free-edge/)
+
+### [Slackwater](slackwater/)
+
+[![Slackwater](slackwater/thumb.webp)](slackwater/)
+
+A one-boat day-trip company in Hạ Long Bay: the day as three ways of moving, each with its own photo shape, effort in numbers and an opt-out, plus prices, rules and the crew.
+
+[Live demo](https://studio.swebsy.com/templates/slackwater/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=slackwater&ref=github) · [Details](https://swebsy.com/templates/slackwater/)
+
+### [Good Work](good-work/)
+
+[![Good Work](good-work/thumb.webp)](good-work/)
+
+A bold multi-page nonprofit template for community relief, transparent impact reporting, fundraising, volunteer opportunities, and human stories.
+
+[Live demo](https://studio.swebsy.com/templates/good-work/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=good-work&ref=github) · [Details](https://swebsy.com/templates/good-work/)
+
+### [Cadenza](cadenza/)
+
+[![Cadenza](cadenza/thumb.webp)](cadenza/)
+
+A community music school website: lessons by age, one rate for every instrument, teachers who still perform, and the next student recital set as a printed concert program.
+
+[Live demo](https://studio.swebsy.com/templates/cadenza/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=cadenza&ref=github) · [Details](https://swebsy.com/templates/cadenza/)
+
+### [Clarity](clarity/)
+
+[![Clarity](clarity/thumb.webp)](clarity/)
+
+A polished advisory template for consultants and strategy firms to present their method, proof, workshops, and inquiry path with confidence.
+
+[Live demo](https://studio.swebsy.com/templates/clarity/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=clarity&ref=github) · [Details](https://swebsy.com/templates/clarity/)
+
+### [Marquee](marquee/)
+
+[![Marquee](marquee/thumb.webp)](marquee/)
+
+A photography-led conference site: full-bleed image plates, hairline-ruled schedules and ticket tiers, and a warm near-black ground that lets the pictures carry all the colour.
+
+[Live demo](https://studio.swebsy.com/templates/marquee/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=marquee&ref=github) · [Details](https://swebsy.com/templates/marquee/)
+
+### [Proof](proof/)
+
+[![Proof](proof/thumb.webp)](proof/)
+
+A neighborhood bakery website: the week's breads by day, a photo shelf with prices and times, weekend and cake pre-orders, wholesale for cafés, and the two owners.
+
+[Live demo](https://studio.swebsy.com/templates/proof/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=proof&ref=github) · [Details](https://swebsy.com/templates/proof/)
+
+### [Juno](juno/)
+
+[![Juno](juno/thumb.webp)](juno/)
+
+A colorful neo-brutalist portfolio template for creative makers who want to present projects, personality, and contact details with confidence.
+
+[Live demo](https://studio.swebsy.com/templates/juno/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=juno&ref=github) · [Details](https://swebsy.com/templates/juno/)
 
 ### [Scope](scope/)
 
@@ -400,6 +240,110 @@ A bold editorial studio template for fixed-scope brand and web services, with pr
 
 [Live demo](https://studio.swebsy.com/templates/scope/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=scope&ref=github) · [Details](https://swebsy.com/templates/scope/)
 
+### [Ocho Ventanas](ocho-ventanas/)
+
+[![Ocho Ventanas](ocho-ventanas/thumb.webp)](ocho-ventanas/)
+
+A small cliffside guesthouse where every photo is a window cut in a terracotta wall, drawn to true scale, with a building elevation as the room index.
+
+[Live demo](https://studio.swebsy.com/templates/ocho-ventanas/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=ocho-ventanas&ref=github) · [Details](https://swebsy.com/templates/ocho-ventanas/)
+
+### [Forge](forge/)
+
+[![Forge](forge/thumb.webp)](forge/)
+
+A bold training website for coaches who build sustainable strength through real movement, honest progress, and focused one-to-one support.
+
+[Live demo](https://studio.swebsy.com/templates/forge/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=forge&ref=github) · [Details](https://swebsy.com/templates/forge/)
+
+### [Poplink](poplink/)
+
+[![Poplink](poplink/thumb.webp)](poplink/)
+
+A bright, playful link-in-bio template that helps creators collect social profiles, featured content, and essential links on one memorable page.
+
+[Live demo](https://studio.swebsy.com/templates/poplink/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=poplink&ref=github) · [Details](https://swebsy.com/templates/poplink/)
+
+### [Varnish](varnish/)
+
+[![Varnish](varnish/thumb.webp)](varnish/)
+
+A refined multi-page portfolio template for artists and creative studios to frame signature work, studio context, and thoughtful inquiries.
+
+[Live demo](https://studio.swebsy.com/templates/varnish/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=varnish&ref=github) · [Details](https://swebsy.com/templates/varnish/)
+
+### [Gather](gather/)
+
+[![Gather](gather/thumb.webp)](gather/)
+
+A glass studio that hand-blows lighting, dark by default: a lamp that fades up from dark, a wall of lights that switch on as you scroll, and a commission form.
+
+[Live demo](https://studio.swebsy.com/templates/gather/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=gather&ref=github) · [Details](https://swebsy.com/templates/gather/)
+
+### [Clearcoat](clearcoat/)
+
+[![Clearcoat](clearcoat/thumb.webp)](clearcoat/)
+
+A paint-care and detailing studio: a before/after slider, treatments with honest limits and prices, and job notes on what was agreed.
+
+[Live demo](https://studio.swebsy.com/templates/clearcoat/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=clearcoat&ref=github) · [Details](https://swebsy.com/templates/clearcoat/)
+
+### [Morrow](morrow/)
+
+[![Morrow](morrow/thumb.webp)](morrow/)
+
+A premium editorial website for residential landscape design-build studios, with immersive project storytelling, services, studio profile, and direct-contact conversion.
+
+[Live demo](https://studio.swebsy.com/templates/morrow/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=morrow&ref=github) · [Details](https://swebsy.com/templates/morrow/)
+
+### [Backrow](backrow/)
+
+[![Backrow](backrow/thumb.webp)](backrow/)
+
+A yoga and Pilates studio site for nervous beginners: regulars by where they put their mat, the week, three ways to start and prices.
+
+[Live demo](https://studio.swebsy.com/templates/backrow/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=backrow&ref=github) · [Details](https://swebsy.com/templates/backrow/)
+
+### [Imprint](imprint/)
+
+[![Imprint](imprint/thumb.webp)](imprint/)
+
+A refined multi-page designer portfolio for presenting identity work, creative services, client proof, and a focused inquiry path.
+
+[Live demo](https://studio.swebsy.com/templates/imprint/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=imprint&ref=github) · [Details](https://swebsy.com/templates/imprint/)
+
+### [Aurora Glass](aurora-glass-link-in-bio/)
+
+[![Aurora Glass](aurora-glass-link-in-bio/thumb.webp)](aurora-glass-link-in-bio/)
+
+A luminous glass link-in-bio template with social links, featured media, product cards, and an animated aurora background in light and dark modes.
+
+[Live demo](https://studio.swebsy.com/templates/aurora-glass-link-in-bio/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=aurora-glass-link-in-bio&ref=github) · [Details](https://swebsy.com/templates/aurora-glass-link-in-bio/)
+
+### [Kindred](kindred/)
+
+[![Kindred](kindred/thumb.webp)](kindred/)
+
+A warm, paper-textured template for a small immigration law practice, with flat fees, partner stories, client outcomes and a consultation form.
+
+[Live demo](https://studio.swebsy.com/templates/kindred/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=kindred&ref=github) · [Details](https://swebsy.com/templates/kindred/)
+
+### [Vantage](vantage/)
+
+[![Vantage](vantage/thumb.webp)](vantage/)
+
+A bold portfolio template for product designers, creative leads, and independent consultants who want to show work and strategic range.
+
+[Live demo](https://studio.swebsy.com/templates/vantage/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=vantage&ref=github) · [Details](https://swebsy.com/templates/vantage/)
+
+### [Undercoat](undercoat/)
+
+[![Undercoat](undercoat/thumb.webp)](undercoat/)
+
+A dog groomer's site built around each coat's routine: how often it comes back, the finish, prices by coat and a short new-dog enquiry.
+
+[Live demo](https://studio.swebsy.com/templates/undercoat/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=undercoat&ref=github) · [Details](https://swebsy.com/templates/undercoat/)
+
 ### [Marigold](marigold/)
 
 [![Marigold](marigold/thumb.webp)](marigold/)
@@ -407,6 +351,102 @@ A bold editorial studio template for fixed-scope brand and web services, with pr
 A crisp, high-contrast SaaS site for scheduling and practice-management products, pairing deep navy with electric blue across a product tour, pricing tiers and customer stories.
 
 [Live demo](https://studio.swebsy.com/templates/marigold/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=marigold&ref=github) · [Details](https://swebsy.com/templates/marigold/)
+
+### [Wren & Wildflower](wren-wildflower/)
+
+[![Wren & Wildflower](wren-wildflower/thumb.webp)](wren-wildflower/)
+
+A warm editorial link-in-bio template for small shops and makers, with tactile link buttons, featured products, and a soft clay and sage palette.
+
+[Live demo](https://studio.swebsy.com/templates/wren-wildflower/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=wren-wildflower&ref=github) · [Details](https://swebsy.com/templates/wren-wildflower/)
+
+### [Halflight](halflight/)
+
+[![Halflight](halflight/thumb.webp)](halflight/)
+
+A walk-in aperitivo and cocktail bar: a sunlit room, menus by the clock, and copyable texts that help visitors invite friends.
+
+[Live demo](https://studio.swebsy.com/templates/halflight/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=halflight&ref=github) · [Details](https://swebsy.com/templates/halflight/)
+
+### [Porchlight](porchlight/)
+
+[![Porchlight](porchlight/thumb.webp)](porchlight/)
+
+A real estate website for a small agent team: big house numbers, every sale on the record, neighborhood guides and a price-opinion form.
+
+[Live demo](https://studio.swebsy.com/templates/porchlight/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=porchlight&ref=github) · [Details](https://swebsy.com/templates/porchlight/)
+
+### [Recess](recess/)
+
+[![Recess](recess/thumb.webp)](recess/)
+
+A teaching portfolio for a new science teacher: a slab-type name, photos printed as blue and pink duotones, classroom units, a mentor quote and a résumé PDF.
+
+[Live demo](https://studio.swebsy.com/templates/recess/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=recess&ref=github) · [Details](https://swebsy.com/templates/recess/)
+
+### [Roomful](roomful/)
+
+[![Roomful](roomful/thumb.webp)](roomful/)
+
+A band website in two grounds: the band and records on white, the shows in a dark full room. Tour dates by leg, tracklists and a real press kit.
+
+[Live demo](https://studio.swebsy.com/templates/roomful/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=roomful&ref=github) · [Details](https://swebsy.com/templates/roomful/)
+
+### [Linker](linker/)
+
+[![Linker](linker/thumb.webp)](linker/)
+
+A sleek link-in-bio template for collecting important links, featured highlights, social profiles, and personal brand essentials in one place.
+
+[Live demo](https://studio.swebsy.com/templates/linker/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=linker&ref=github) · [Details](https://swebsy.com/templates/linker/)
+
+### [Lume](lume/)
+
+[![Lume](lume/thumb.webp)](lume/)
+
+A bright portfolio template for freelance UX and product designers to introduce their practice, selected work, services, and contact path.
+
+[Live demo](https://studio.swebsy.com/templates/lume/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=lume&ref=github) · [Details](https://swebsy.com/templates/lume/)
+
+### [Compass](compass/)
+
+[![Compass](compass/thumb.webp)](compass/)
+
+A calm services template for executive, leadership, and career coaches to explain outcomes, compare pathways, and invite discovery calls.
+
+[Live demo](https://studio.swebsy.com/templates/compass/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=compass&ref=github) · [Details](https://swebsy.com/templates/compass/)
+
+### [Byline](byline/)
+
+[![Byline](byline/thumb.webp)](byline/)
+
+A clips site for a reporter: the beat as one serif sentence, captioned photos, selected stories with what each one changed, an editor's quote and a résumé PDF.
+
+[Live demo](https://studio.swebsy.com/templates/byline/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=byline&ref=github) · [Details](https://swebsy.com/templates/byline/)
+
+### [Craft](craft/)
+
+[![Craft](craft/thumb.webp)](craft/)
+
+A focused, minimal portfolio template for makers and creators who want their strongest projects and capabilities to take center stage.
+
+[Live demo](https://studio.swebsy.com/templates/craft/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=craft&ref=github) · [Details](https://swebsy.com/templates/craft/)
+
+### [Artup](artup/)
+
+[![Artup](artup/thumb.webp)](artup/)
+
+A polished personal portfolio template for designers and creators to showcase their work, story, process, and distinctive style.
+
+[Live demo](https://studio.swebsy.com/templates/artup/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=artup&ref=github) · [Details](https://swebsy.com/templates/artup/)
+
+### [Daybreak](daybreak/)
+
+[![Daybreak](daybreak/thumb.webp)](daybreak/)
+
+An editorial, multi-page template for specialty coffee roasters, with dedicated spaces for the menu, coffee, story, and visit information.
+
+[Live demo](https://studio.swebsy.com/templates/daybreak/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=daybreak&ref=github) · [Details](https://swebsy.com/templates/daybreak/)
 
 ## License
 

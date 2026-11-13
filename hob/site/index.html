@@ -1,0 +1,1536 @@
+<!doctype html>
+<html lang="en-GB" dir="ltr" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hob — whose night is it to cook?</title>
+    <meta
+      name="description"
+      content="Hob keeps the dinner rota, the shopping list and who owes whom for your shared flat. Free on iPhone. Join the waitlist."
+    />
+    <meta
+      name="keywords"
+      content="dinner rota app, shared flat app, flatmates shopping list, split costs flatmates, app waitlist"
+    />
+    <meta name="author" content="Hob" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Hob — whose night is it to cook?" />
+    <meta
+      property="og:description"
+      content="Hob keeps the dinner rota, the shopping list and who owes whom for your shared flat. Free on iPhone. Join the waitlist."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/og-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hob — whose night is it to cook?" />
+    <meta
+      name="twitter:description"
+      content="Hob keeps the dinner rota, the shopping list and who owes whom for your shared flat. Free on iPhone. Join the waitlist."
+    />
+    <meta name="twitter:image" content="assets/og-card.png" />
+    <link
+      rel="preload"
+      href="fonts/google-hedviglettersserif-OD5puN2I2mekHmyoU1Kj2AXOd5_7v7gIDlX8quj7viQ_N1HixEApBL3dnyS5Z-uVuPw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-hedviglettersserif-OD5puN2I2mekHmyoU1Kj2AXOd5_7v7gIDlX8quj7viQ_N1HixEApFr3dnyS5Z-uVuPw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-hedviglettersserif-OD5puN2I2mekHmyoU1Kj2AXOd5_7v7gIDlX8quj7viQ_N1HixEApdr3dnyS5Z-uVuPw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-hedviglettersserif-OD5puN2I2mekHmyoU1Kj2AXOd5_7v7gIDlX8quj7viQ_N1HixEApeL3dnyS5Z-uV.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-rubik-iJWKBXyIfDnIV7nErXyw023e1Ik.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-rubik-iJWKBXyIfDnIV7nMrXyw023e1Ik.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-rubik-iJWKBXyIfDnIV7nFrXyw023e1Ik.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-rubik-iJWKBXyIfDnIV7nDrXyw023e1Ik.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-rubik-iJWKBXyIfDnIV7nPrXyw023e1Ik.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="fonts/google-rubik-iJWKBXyIfDnIV7nBrXyw023e.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin=""
+    />
+    <style>
+      html.light {
+        background: #ffffff;
+        color: #1f2937;
+        color-scheme: light;
+      }
+      html.dark {
+        background: #030712;
+        color: #f3f4f6;
+        color-scheme: dark;
+      }
+    </style>
+    <script>
+      (function () {
+        var storageKey = "swebsy:color-mode";
+        var defaultMode = "light";
+        var root = document.documentElement;
+        function normalize(mode) {
+          return mode === "light" || mode === "dark" || mode === "system"
+            ? mode
+            : null;
+        }
+        function readStoredMode() {
+          try {
+            return normalize(
+              window.localStorage && window.localStorage.getItem(storageKey)
+            );
+          } catch (_) {
+            return null;
+          }
+        }
+        function systemMode() {
+          return window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+        function resolve(mode) {
+          return mode === "system" ? systemMode() : mode;
+        }
+        var resolved = resolve(readStoredMode() || defaultMode);
+        root.classList.remove("light", "dark");
+        root.classList.add(resolved);
+        root.style.colorScheme = resolved;
+      })();
+    </script>
+    <link rel="stylesheet" href="./css/styles.d38646ca4a.css" />
+  </head>
+  <body>
+    <nav
+      data-navbar-collapse-on="md"
+      aria-label="Main"
+      id="i29l"
+      class="navbar navbar-expand-md sticky top-0 z-40 px-3 md:px-6 py-2 md:py-4 bg-transparent"
+    >
+      <div
+        class="container relative mx-auto max-w-[75rem] flex flex-wrap items-center rounded-[20px] bg-highlight border border-default shadow-[0_2px_10px_rgba(30,27,46,0.06)] ps-5 pe-2 py-1.5"
+      >
+        <a
+          href="./index.html"
+          class="navbar-brand me-auto no-underline min-h-11 inline-flex items-center font-serif text-[1.75rem] leading-none text-emphasis"
+          >hob</a
+        ><a
+          href="#join"
+          class="btn btn-primary md:hidden min-h-11 px-4 font-sans font-semibold text-[0.9375rem] no-underline me-2"
+          >Join</a
+        ><button
+          type="button"
+          data-swebsy-toggle="collapse"
+          data-swebsy-target="#hobMenu"
+          aria-controls="hobMenu"
+          aria-expanded="false"
+          aria-label="Open menu"
+          data-navbar-part="toggler"
+          class="btn btn-icon navbar-toggler md:hidden min-h-11 min-w-11 bg-transparent border-0 shadow-none"
+        >
+          <span
+            data-icon-pack="stroke"
+            data-icon-name="menu"
+            data-icon-decorative="true"
+            data-icon-label=""
+            aria-hidden="true"
+            class="size-6"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="var(--icon-stroke, 2)"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M4 5h16" />
+              <path d="M4 12h16" />
+              <path d="M4 19h16" /></svg
+          ></span>
+        </button>
+        <div
+          id="hobMenu"
+          data-navbar-part="collapse"
+          class="collapse navbar-collapse basis-full md:basis-auto md:grow-0"
+        >
+          <ul class="navbar-nav ms-0 md:me-4 md:gap-1 py-2 md:py-0">
+            <li class="nav-item">
+              <a
+                href="#week"
+                class="nav-link font-sans text-[0.9375rem] font-medium text-default min-h-11 flex items-center"
+                >The week</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="#proof"
+                class="nav-link font-sans text-[0.9375rem] font-medium text-default min-h-11 flex items-center"
+                >Who's using it</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="#faq"
+                class="nav-link font-sans text-[0.9375rem] font-medium text-default min-h-11 flex items-center"
+                >Questions</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a
+          href="#join"
+          class="btn btn-primary hidden md:inline-flex min-h-11 px-5 font-sans font-semibold text-[0.9375rem] no-underline"
+          >Join the waitlist</a
+        >
+      </div>
+    </nav>
+    <section
+      id="top"
+      data-swebsy-block-id="section-1o8y"
+      data-swebsy-block='{"tags":[],"title":"Waitlist hero with week strip and phone"}'
+      class="bg-default pt-8 md:pt-12 pb-16 md:pb-24"
+    >
+      <div class="container mx-auto max-w-[75rem] px-5 md:px-8">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-12 items-center"
+          id="im5w52"
+        >
+          <div class="lg:col-span-7">
+            <p
+              class="font-sans font-semibold text-[0.875rem] text-muted mb-4 animate-fade-in-up"
+            >
+              Thursday, 19:30
+            </p>
+            <h1
+              class="font-serif text-[3rem] md:text-[4.5rem] xl:text-[6rem] leading-[0.95] text-emphasis mb-6 animate-fade-in-up animate-delay-100"
+            >
+              Whose night is it to cook?
+            </h1>
+            <p
+              class="font-sans text-[1.125rem] md:text-[1.25rem] text-default mb-8 max-w-[34rem] animate-fade-in-up animate-delay-200"
+            >
+              Hob keeps the dinner rota, the shopping list and who owes whom for
+              your flat. Free on iPhone. Testing opens soon.
+            </p>
+            <form
+              method="post"
+              action="/__forms/waitlist"
+              data-success-message="You're on the list. One email when testing opens, that's all."
+              id="ic75j"
+              class="flex flex-col sm:flex-row gap-3 mb-3 max-w-[34rem] animate-fade-in-up animate-delay-200"
+            >
+              <label for="hero-email" class="sr-only">Email</label
+              ><input
+                type="email"
+                id="hero-email"
+                name="email"
+                autocomplete="email"
+                required="true"
+                placeholder="you@yourflat.com"
+                class="form-control flex-1 min-h-14 rounded-full bg-highlight border border-emphasis px-6 text-[1rem] text-emphasis placeholder:text-muted"
+              /><button
+                type="submit"
+                class="btn btn-primary min-h-14 px-7 font-sans font-semibold text-[1rem] whitespace-nowrap"
+              >
+                Join the waitlist</button
+              ><input
+                type="text"
+                name="_swebsy_hp"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+                id="i7v9o"
+              />
+            </form>
+            <p class="font-sans text-[0.875rem] text-muted mb-8">
+              1,284 on the list. No spam: one email when testing opens.
+            </p>
+            <ol
+              aria-label="This week's rota"
+              class="list-none ps-0 mb-3 grid grid-cols-7 gap-1.5 md:gap-2 max-w-[30rem] animate-fade-in-up animate-delay-300"
+            >
+              <li
+                class="flex flex-col items-center justify-center rounded-xl bg-subtle h-14 md:h-16"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] text-default"
+                  >M</span
+                ><span
+                  class="font-serif text-[1.5rem] md:text-[1.875rem] leading-none text-emphasis"
+                  >I</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center justify-center rounded-xl bg-subtle h-14 md:h-16"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] text-default"
+                  >T</span
+                ><span
+                  class="font-serif text-[1.5rem] md:text-[1.875rem] leading-none text-emphasis"
+                  >D</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center justify-center rounded-xl bg-subtle h-14 md:h-16"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] text-default"
+                  >W</span
+                ><span
+                  class="font-serif text-[1.5rem] md:text-[1.875rem] leading-none text-emphasis"
+                  >T</span
+                >
+              </li>
+              <li
+                aria-current="date"
+                class="flex flex-col items-center justify-center rounded-xl bg-amber-300 ring-[1.5px] ring-stone-950 h-14 md:h-16"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] text-stone-950"
+                  >T</span
+                ><span
+                  class="font-serif text-[1.5rem] md:text-[1.875rem] leading-none text-stone-950"
+                  >M</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center justify-center rounded-xl bg-subtle h-14 md:h-16"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] text-default"
+                  >F</span
+                ><span
+                  class="font-serif text-[1.5rem] md:text-[1.875rem] leading-none text-emphasis"
+                  >I</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center justify-center rounded-xl bg-subtle h-14 md:h-16"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] text-default"
+                  >S</span
+                ><span
+                  class="font-serif text-[1.5rem] md:text-[1.875rem] leading-none text-emphasis"
+                  >D</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center justify-center rounded-xl bg-subtle h-14 md:h-16"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] text-default"
+                  >S</span
+                ><span
+                  class="font-serif text-[1.5rem] md:text-[1.875rem] leading-none text-emphasis"
+                  >T</span
+                >
+              </li>
+            </ol>
+            <p
+              class="font-sans text-[0.9375rem] text-default mb-0"
+              id="i1chetf"
+            >
+              <span class="font-semibold text-emphasis">M is Marta.</span>
+              Thursday is her night; Inês has Friday.
+            </p>
+          </div>
+          <div
+            class="lg:col-span-5 flex justify-center lg:justify-end animate-fade-in-up animate-delay-300"
+          >
+            <div
+              class="w-[17rem] md:w-[19rem] rounded-[2.75rem] bg-stone-950 p-2.5 shadow-[0_24px_60px_rgba(30,27,46,0.18)]"
+            >
+              <img
+                alt="Hob's Thursday screen: Marta is cooking Thai green curry, three flatmates in, Inês cooks tomorrow"
+                src="assets/4cc869a7-7a7b-41b0-ad54-873f896935ee.webp"
+                class="block w-full aspect-[300/620] object-cover rounded-[2.2rem]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="week"
+      data-swebsy-block-id="section-3d1z"
+      data-swebsy-block='{"tags":[],"title":"Feature band with phone"}'
+      class="band-butter py-[4.5rem] md:py-24"
+    >
+      <div
+        data-animate-trigger="scroll"
+        class="container mx-auto max-w-[75rem] px-5 md:px-8 animate-soft-reveal-up"
+      >
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-12 items-center"
+        >
+          <div class="lg:col-span-7">
+            <p class="flex items-baseline gap-3 mb-4">
+              <span
+                class="font-serif text-[2.5rem] md:text-[3.5rem] leading-none text-emphasis"
+                >17:00</span
+              ><span class="font-sans font-semibold text-[0.875rem] text-muted"
+                >Friday</span
+              >
+            </p>
+            <h2
+              class="font-serif text-[2.75rem] md:text-[4.5rem] leading-[1] text-emphasis mb-6"
+            >
+              In or out by five?
+            </h2>
+            <p
+              class="font-sans text-[1.125rem] md:text-[1.25rem] text-default mb-4 max-w-[44ch]"
+            >
+              Whoever's cooking asks once. Everyone answers with a tap, even the
+              flatmate who never installed it: the link works in any browser.
+            </p>
+            <p class="font-sans text-[1rem] text-muted mb-0 max-w-[40ch]">
+              No more counting heads in the group chat at half six.
+            </p>
+            <ol
+              aria-label="Friday on the rota: Inês cooks"
+              class="list-none ps-0 mt-10 mb-0 grid grid-cols-7 gap-1.5 max-w-[24rem]"
+            >
+              <li
+                class="flex flex-col items-center justify-center rounded-lg h-12 md:h-14 ring-1 ring-inset ring-stone-950/35 text-emphasis"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] leading-none mb-1"
+                  >M</span
+                ><span
+                  class="font-serif text-[1.375rem] md:text-[1.5rem] leading-none"
+                  >I</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center justify-center rounded-lg h-12 md:h-14 ring-1 ring-inset ring-stone-950/35 text-emphasis"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] leading-none mb-1"
+                  >T</span
+                ><span
+                  class="font-serif text-[1.375rem] md:text-[1.5rem] leading-none"
+                  >D</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center justify-center rounded-lg h-12 md:h-14 ring-1 ring-inset ring-stone-950/35 text-emphasis"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] leading-none mb-1"
+                  >W</span
+                ><span
+                  class="font-serif text-[1.375rem] md:text-[1.5rem] leading-none"
+                  >T</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center justify-center rounded-lg h-12 md:h-14 ring-1 ring-inset ring-stone-950/35 text-emphasis"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] leading-none mb-1"
+                  >T</span
+                ><span
+                  class="font-serif text-[1.375rem] md:text-[1.5rem] leading-none"
+                  >M</span
+                >
+              </li>
+              <li
+                aria-current="date"
+                class="flex flex-col items-center justify-center rounded-lg h-12 md:h-14 bg-stone-950 text-stone-50"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] leading-none mb-1"
+                  >F</span
+                ><span
+                  class="font-serif text-[1.375rem] md:text-[1.5rem] leading-none"
+                  >I</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center justify-center rounded-lg h-12 md:h-14 ring-1 ring-inset ring-stone-950/35 text-emphasis"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] leading-none mb-1"
+                  >S</span
+                ><span
+                  class="font-serif text-[1.375rem] md:text-[1.5rem] leading-none"
+                  >D</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center justify-center rounded-lg h-12 md:h-14 ring-1 ring-inset ring-stone-950/35 text-emphasis"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] leading-none mb-1"
+                  >S</span
+                ><span
+                  class="font-serif text-[1.375rem] md:text-[1.5rem] leading-none"
+                  >T</span
+                >
+              </li>
+            </ol>
+          </div>
+          <div class="lg:col-span-5 flex justify-center lg:justify-end">
+            <div
+              class="w-[16rem] md:w-[17rem] rounded-[2.75rem] bg-stone-950 p-2.5 shadow-[0_24px_60px_rgba(30,27,46,0.22)]"
+            >
+              <img
+                alt="The link Inês sent, open in a browser: 'Inês is making risotto. Are you eating tonight?' with I'm in and Out tonight buttons, no app needed"
+                src="assets/d96f364f-91ad-43ca-8337-cb290bea8e29.webp"
+                loading="lazy"
+                class="block w-full aspect-[300/620] object-cover rounded-[2.2rem]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="saturday"
+      data-swebsy-block-id="section-z0xc"
+      data-swebsy-block='{"tags":[],"title":"Feature band with a typeset list"}'
+      class="band-blue py-[4.5rem] md:py-24"
+    >
+      <div
+        data-animate-trigger="scroll"
+        class="container mx-auto max-w-[75rem] px-5 md:px-8 animate-soft-reveal-up"
+      >
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-12 items-start"
+        >
+          <div class="lg:col-span-5">
+            <p class="flex items-baseline gap-3 mb-4">
+              <span
+                class="font-serif text-[2.5rem] md:text-[3.5rem] leading-none text-emphasis"
+                >11:00</span
+              ><span class="font-sans font-semibold text-[0.875rem] text-muted"
+                >Saturday</span
+              >
+            </p>
+            <h2
+              class="font-serif text-[2.75rem] md:text-[4.5rem] leading-[1] text-emphasis mb-6"
+            >
+              Who's buying the oil?
+            </h2>
+            <p
+              class="font-sans text-[1.125rem] md:text-[1.25rem] text-default mb-4 max-w-[40ch]"
+            >
+              One list for the flat, with a name against every item. Tick it in
+              the shop and it's ticked on everyone's phone.
+            </p>
+            <p class="font-sans text-[1.125rem] text-muted mb-0 max-w-[40ch]">
+              Two bottles of olive oil in one week becomes none.
+            </p>
+            <ol
+              aria-label="Saturday on the rota: Dan cooks"
+              class="list-none ps-0 mt-10 mb-0 grid grid-cols-7 gap-1.5 max-w-[24rem]"
+            >
+              <li
+                class="flex flex-col items-center justify-center rounded-lg h-12 md:h-14 ring-1 ring-inset ring-stone-50/45 text-emphasis"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] leading-none mb-1"
+                  >M</span
+                ><span
+                  class="font-serif text-[1.375rem] md:text-[1.5rem] leading-none"
+                  >I</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center justify-center rounded-lg h-12 md:h-14 ring-1 ring-inset ring-stone-50/45 text-emphasis"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] leading-none mb-1"
+                  >T</span
+                ><span
+                  class="font-serif text-[1.375rem] md:text-[1.5rem] leading-none"
+                  >D</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center justify-center rounded-lg h-12 md:h-14 ring-1 ring-inset ring-stone-50/45 text-emphasis"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] leading-none mb-1"
+                  >W</span
+                ><span
+                  class="font-serif text-[1.375rem] md:text-[1.5rem] leading-none"
+                  >T</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center justify-center rounded-lg h-12 md:h-14 ring-1 ring-inset ring-stone-50/45 text-emphasis"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] leading-none mb-1"
+                  >T</span
+                ><span
+                  class="font-serif text-[1.375rem] md:text-[1.5rem] leading-none"
+                  >M</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center justify-center rounded-lg h-12 md:h-14 ring-1 ring-inset ring-stone-50/45 text-emphasis"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] leading-none mb-1"
+                  >F</span
+                ><span
+                  class="font-serif text-[1.375rem] md:text-[1.5rem] leading-none"
+                  >I</span
+                >
+              </li>
+              <li
+                aria-current="date"
+                class="flex flex-col items-center justify-center rounded-lg h-12 md:h-14 bg-stone-50 text-blue-700"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] leading-none mb-1"
+                  >S</span
+                ><span
+                  class="font-serif text-[1.375rem] md:text-[1.5rem] leading-none"
+                  >D</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center justify-center rounded-lg h-12 md:h-14 ring-1 ring-inset ring-stone-50/45 text-emphasis"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] leading-none mb-1"
+                  >S</span
+                ><span
+                  class="font-serif text-[1.375rem] md:text-[1.5rem] leading-none"
+                  >T</span
+                >
+              </li>
+            </ol>
+          </div>
+          <div class="lg:col-span-7 lg:pt-4">
+            <p class="font-sans font-semibold text-[0.875rem] text-muted mb-3">
+              The flat list · 6 things
+            </p>
+            <ul
+              aria-label="The flat's shopping list"
+              class="list-none ps-0 mb-0 border-t border-default"
+            >
+              <li
+                class="flex items-baseline justify-between gap-6 border-b border-stone-50/30 py-3 md:py-4"
+              >
+                <span
+                  class="font-serif text-[1.75rem] md:text-[2.5rem] leading-[1.1] text-emphasis line-through decoration-2 opacity-70"
+                  >Rice, 1kg</span
+                ><span
+                  class="font-sans font-semibold text-[1rem] text-default shrink-0"
+                  >Dan · got it</span
+                >
+              </li>
+              <li
+                class="flex items-baseline justify-between gap-6 border-b border-stone-50/30 py-3 md:py-4"
+              >
+                <span
+                  class="font-serif text-[1.75rem] md:text-[2.5rem] leading-[1.1] text-emphasis"
+                  >Olive oil</span
+                ><span
+                  class="font-sans font-semibold text-[1rem] text-default shrink-0"
+                  >Marta</span
+                >
+              </li>
+              <li
+                class="flex items-baseline justify-between gap-6 border-b border-stone-50/30 py-3 md:py-4"
+              >
+                <span
+                  class="font-serif text-[1.75rem] md:text-[2.5rem] leading-[1.1] text-emphasis"
+                  >Coconut milk ×2</span
+                ><span
+                  class="font-sans font-semibold text-[1rem] text-default shrink-0"
+                  >Marta</span
+                >
+              </li>
+              <li
+                class="flex items-baseline justify-between gap-6 border-b border-stone-50/30 py-3 md:py-4"
+              >
+                <span
+                  class="font-serif text-[1.75rem] md:text-[2.5rem] leading-[1.1] text-emphasis line-through decoration-2 opacity-70"
+                  >Lemons</span
+                ><span
+                  class="font-sans font-semibold text-[1rem] text-default shrink-0"
+                  >Inês · got it</span
+                >
+              </li>
+              <li
+                class="flex items-baseline justify-between gap-6 border-b border-stone-50/30 py-3 md:py-4"
+              >
+                <span
+                  class="font-serif text-[1.75rem] md:text-[2.5rem] leading-[1.1] text-emphasis"
+                  >Washing-up liquid</span
+                ><span
+                  class="font-sans font-semibold text-[1rem] text-default shrink-0"
+                  >Tomás</span
+                >
+              </li>
+              <li
+                class="flex items-baseline justify-between gap-6 border-b border-stone-50/30 py-3 md:py-4"
+              >
+                <span
+                  class="font-serif text-[1.75rem] md:text-[2.5rem] leading-[1.1] text-emphasis"
+                  >Parmesan</span
+                ><span
+                  class="font-sans font-semibold text-[1rem] text-default shrink-0"
+                  >Inês</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="sunday"
+      data-swebsy-block-id="section-8452"
+      data-swebsy-block='{"tags":[],"title":"Feature band with a display number"}'
+      class="band-radish py-[4.5rem] md:py-24"
+    >
+      <div
+        data-animate-trigger="scroll"
+        class="container mx-auto max-w-[75rem] px-5 md:px-8 animate-soft-reveal-up"
+      >
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-12 items-center"
+        >
+          <div class="lg:col-span-7 lg:order-2">
+            <p class="flex items-baseline gap-3 mb-4">
+              <span
+                class="font-serif text-[2.5rem] md:text-[3.5rem] leading-none text-emphasis"
+                >21:00</span
+              ><span class="font-sans font-semibold text-[0.875rem] text-muted"
+                >Sunday</span
+              >
+            </p>
+            <h2
+              class="font-serif text-[2.25rem] md:text-[3.5rem] leading-[1.02] text-emphasis mb-2"
+            >
+              Marta owes Dan
+            </h2>
+            <p
+              class="font-serif text-[6rem] md:text-[10rem] xl:text-[12.5rem] leading-[0.85] text-emphasis mb-8"
+            >
+              €3.40
+            </p>
+            <p
+              class="font-sans text-[1.125rem] md:text-[1.25rem] text-default mb-0 max-w-[44ch]"
+            >
+              Shared shopping splits itself. On Sunday Hob shows who owes whom,
+              and nobody has to be the one who asks.
+            </p>
+            <ol
+              aria-label="Sunday on the rota: Tomás cooks"
+              class="list-none ps-0 mt-10 mb-0 grid grid-cols-7 gap-1.5 max-w-[24rem]"
+            >
+              <li
+                class="flex flex-col items-center justify-center rounded-lg h-12 md:h-14 ring-1 ring-inset ring-stone-50/45 text-emphasis"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] leading-none mb-1"
+                  >M</span
+                ><span
+                  class="font-serif text-[1.375rem] md:text-[1.5rem] leading-none"
+                  >I</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center justify-center rounded-lg h-12 md:h-14 ring-1 ring-inset ring-stone-50/45 text-emphasis"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] leading-none mb-1"
+                  >T</span
+                ><span
+                  class="font-serif text-[1.375rem] md:text-[1.5rem] leading-none"
+                  >D</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center justify-center rounded-lg h-12 md:h-14 ring-1 ring-inset ring-stone-50/45 text-emphasis"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] leading-none mb-1"
+                  >W</span
+                ><span
+                  class="font-serif text-[1.375rem] md:text-[1.5rem] leading-none"
+                  >T</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center justify-center rounded-lg h-12 md:h-14 ring-1 ring-inset ring-stone-50/45 text-emphasis"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] leading-none mb-1"
+                  >T</span
+                ><span
+                  class="font-serif text-[1.375rem] md:text-[1.5rem] leading-none"
+                  >M</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center justify-center rounded-lg h-12 md:h-14 ring-1 ring-inset ring-stone-50/45 text-emphasis"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] leading-none mb-1"
+                  >F</span
+                ><span
+                  class="font-serif text-[1.375rem] md:text-[1.5rem] leading-none"
+                  >I</span
+                >
+              </li>
+              <li
+                class="flex flex-col items-center justify-center rounded-lg h-12 md:h-14 ring-1 ring-inset ring-stone-50/45 text-emphasis"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] leading-none mb-1"
+                  >S</span
+                ><span
+                  class="font-serif text-[1.375rem] md:text-[1.5rem] leading-none"
+                  >D</span
+                >
+              </li>
+              <li
+                aria-current="date"
+                class="flex flex-col items-center justify-center rounded-lg h-12 md:h-14 bg-stone-50 text-rose-700"
+              >
+                <span
+                  class="font-sans font-semibold text-[0.75rem] leading-none mb-1"
+                  >S</span
+                ><span
+                  class="font-serif text-[1.375rem] md:text-[1.5rem] leading-none"
+                  >T</span
+                >
+              </li>
+            </ol>
+          </div>
+          <div
+            class="lg:col-span-5 lg:order-1 flex justify-center lg:justify-start"
+          >
+            <div
+              class="w-[16rem] md:w-[17rem] rounded-[2.75rem] bg-stone-950 p-2.5 shadow-[0_24px_60px_rgba(0,0,0,0.25)]"
+            >
+              <img
+                alt="Hob's balances screen: Marta owes Dan €3.40, with the week's other small debts"
+                src="assets/8e40cbaf-760b-46f9-ad11-f1a89c0947e5.webp"
+                loading="lazy"
+                class="block w-full aspect-[300/620] object-cover rounded-[2.2rem]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="proof"
+      data-swebsy-block-id="section-3d7z"
+      data-swebsy-block='{"tags":[],"title":"Test results with quotes"}'
+      class="bg-default py-16 md:py-24"
+    >
+      <div
+        data-animate-trigger="scroll"
+        class="container mx-auto max-w-[75rem] px-5 md:px-8 animate-soft-reveal-up"
+      >
+        <h2
+          class="font-serif text-[2.5rem] md:text-[4rem] leading-[1] text-emphasis mb-10 md:mb-14"
+          id="ialp847"
+        >
+          Nine weeks.<br />41 flats. 38 kept it.
+        </h2>
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-10 items-stretch"
+          id="i5x7891"
+        >
+          <img
+            alt="Four flatmates in a big shared kitchen, two cooking at the island"
+            src="assets/f367b97e-573d-42b2-8df2-daeebf8b8b35.webp"
+            loading="lazy"
+            class="lg:col-span-7 block w-full aspect-[3/2] lg:aspect-auto lg:h-full object-cover rounded-3xl"
+          />
+          <div class="lg:col-span-5 flex flex-col gap-8">
+            <p class="font-sans text-[1.0625rem] text-default mb-0">
+              Before the waitlist, 41 flats in Lisbon and Porto ran Hob for nine
+              weeks in a private test. At the end, 38 were still using it, and
+              most of them had stopped the dinner group chat.
+            </p>
+            <blockquote class="m-0 border-t border-default pt-6">
+              <p
+                class="font-serif text-[1.5rem] md:text-[1.75rem] leading-snug text-emphasis mb-3"
+              >
+                “I used to text four people every afternoon. Now I tap once and
+                know how much rice to make.”
+              </p>
+              <p class="font-sans text-[0.9375rem] text-muted mb-0">
+                Marta, a flat of four in Lisbon, private test
+              </p>
+            </blockquote>
+            <blockquote class="m-0 border-t border-default pt-6">
+              <p
+                class="font-serif text-[1.5rem] md:text-[1.75rem] leading-snug text-emphasis mb-3"
+              >
+                “The Sunday number ended a three-month argument about olive
+                oil.”
+              </p>
+              <p class="font-sans text-[0.9375rem] text-muted mb-0">
+                Dan, a flat of three in Porto, private test
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="limits"
+      data-swebsy-block-id="section-tcft"
+      data-swebsy-block='{"tags":[],"title":"What the app won&apos;t do"}'
+      class="bg-default border-t border-default py-16 md:py-20"
+    >
+      <div
+        data-animate-trigger="scroll"
+        class="container mx-auto max-w-[75rem] px-5 md:px-8 animate-soft-reveal-up"
+      >
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-8">
+          <h2
+            class="lg:col-span-4 font-serif text-[2.25rem] md:text-[3rem] leading-[1.02] text-emphasis mb-0"
+          >
+            What Hob won't do.
+          </h2>
+          <ul
+            class="lg:col-span-8 list-none ps-0 mb-0 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6 font-sans text-[1.0625rem] text-default"
+          >
+            <li class="border-t border-emphasis pt-4">
+              <span class="block font-semibold text-emphasis mb-1"
+                >Never asks for your bank.</span
+              >Hob keeps a tally. You pay each other however you already do.
+            </li>
+            <li class="border-t border-emphasis pt-4">
+              <span class="block font-semibold text-emphasis mb-1"
+                >No ads, now or later.</span
+              >We'd rather charge for extras than sell your dinners.
+            </li>
+            <li class="border-t border-emphasis pt-4">
+              <span class="block font-semibold text-emphasis mb-1"
+                >Free for flats up to six.</span
+              >Hob Plus (€2.99 a month per flat) comes later and never takes the
+              free rota away.
+            </li>
+            <li class="border-t border-emphasis pt-4">
+              <span class="block font-semibold text-emphasis mb-1"
+                >iPhone first.</span
+              >Android flatmates answer from the link, like anyone without the
+              app.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section
+      id="how"
+      data-swebsy-block-id="section-lh82"
+      data-swebsy-block='{"tags":[],"title":"Three timed steps"}'
+      class="band-butter-soft py-16 md:py-24"
+    >
+      <div
+        data-animate-trigger="scroll"
+        class="container mx-auto max-w-[75rem] px-5 md:px-8 animate-soft-reveal-up"
+      >
+        <p class="font-sans font-semibold text-[0.875rem] text-muted mb-4">
+          Monday · 09:00
+        </p>
+        <h2
+          class="font-serif text-[2.5rem] md:text-[3.5rem] leading-[1] text-emphasis mb-12 md:mb-14 max-w-[20ch]"
+        >
+          You start the week. They tap a link.
+        </h2>
+        <ol
+          class="list-none ps-0 mb-0 grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-10"
+        >
+          <li>
+            <p class="font-serif text-[4rem] leading-none text-primary mb-4">
+              09:00
+            </p>
+            <h3
+              class="font-serif text-[1.625rem] leading-tight text-emphasis mb-2"
+            >
+              Make the flat.
+            </h3>
+            <p class="font-sans text-[1.0625rem] text-default mb-0">
+              Add who lives there and which nights they usually cook. Two
+              minutes.
+            </p>
+          </li>
+          <li>
+            <p class="font-serif text-[4rem] leading-none text-primary mb-4">
+              09:05
+            </p>
+            <h3
+              class="font-serif text-[1.625rem] leading-tight text-emphasis mb-2"
+            >
+              Send one link.
+            </h3>
+            <p class="font-sans text-[1.0625rem] text-default mb-0">
+              Drop it in the group chat. Nobody has to install anything to
+              answer.
+            </p>
+          </li>
+          <li>
+            <p class="font-serif text-[4rem] leading-none text-primary mb-4">
+              17:00
+            </p>
+            <h3
+              class="font-serif text-[1.625rem] leading-tight text-emphasis mb-2"
+            >
+              Answer once.
+            </h3>
+            <p class="font-sans text-[1.0625rem] text-default mb-0">
+              Every day, in or out by five. Hob does the counting, the list and
+              the sums.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section
+      id="join"
+      data-swebsy-block-id="section-hfbc"
+      data-swebsy-block='{"tags":[],"title":"Waitlist band with an empty Monday"}'
+      class="band-ink py-16 md:py-24"
+    >
+      <div
+        data-animate-trigger="scroll"
+        class="container mx-auto max-w-[75rem] px-5 md:px-8 text-center animate-soft-reveal-up"
+      >
+        <ol
+          aria-label="Next week's rota"
+          class="list-none ps-0 mb-10 grid grid-cols-7 gap-2 md:gap-3 max-w-[34rem] mx-auto"
+        >
+          <li
+            class="flex flex-col items-center justify-center rounded-xl border-2 border-dashed border-amber-300 text-amber-300 dark:border-stone-950 dark:text-stone-950 h-16 md:h-20"
+          >
+            <span class="font-sans font-semibold text-[0.75rem]">M</span
+            ><span
+              class="font-serif text-[0.9375rem] md:text-[1.375rem] leading-none"
+              >you?</span
+            >
+          </li>
+          <li
+            class="flex flex-col items-center justify-center rounded-xl bg-zinc-700 dark:bg-stone-100 h-16 md:h-20"
+          >
+            <span class="font-sans font-semibold text-[0.75rem] text-muted"
+              >T</span
+            ><span
+              class="font-serif text-[1.5rem] md:text-[1.875rem] leading-none text-emphasis"
+              >I</span
+            >
+          </li>
+          <li
+            class="flex flex-col items-center justify-center rounded-xl bg-zinc-700 dark:bg-stone-100 h-16 md:h-20"
+          >
+            <span class="font-sans font-semibold text-[0.75rem] text-muted"
+              >W</span
+            ><span
+              class="font-serif text-[1.5rem] md:text-[1.875rem] leading-none text-emphasis"
+              >D</span
+            >
+          </li>
+          <li
+            class="flex flex-col items-center justify-center rounded-xl bg-zinc-700 dark:bg-stone-100 h-16 md:h-20"
+          >
+            <span class="font-sans font-semibold text-[0.75rem] text-muted"
+              >T</span
+            ><span
+              class="font-serif text-[1.5rem] md:text-[1.875rem] leading-none text-emphasis"
+              >T</span
+            >
+          </li>
+          <li
+            class="flex flex-col items-center justify-center rounded-xl bg-zinc-700 dark:bg-stone-100 h-16 md:h-20"
+          >
+            <span class="font-sans font-semibold text-[0.75rem] text-muted"
+              >F</span
+            ><span
+              class="font-serif text-[1.5rem] md:text-[1.875rem] leading-none text-emphasis"
+              >M</span
+            >
+          </li>
+          <li
+            class="flex flex-col items-center justify-center rounded-xl bg-zinc-700 dark:bg-stone-100 h-16 md:h-20"
+          >
+            <span class="font-sans font-semibold text-[0.75rem] text-muted"
+              >S</span
+            ><span
+              class="font-serif text-[1.5rem] md:text-[1.875rem] leading-none text-emphasis"
+              >I</span
+            >
+          </li>
+          <li
+            class="flex flex-col items-center justify-center rounded-xl bg-zinc-700 dark:bg-stone-100 h-16 md:h-20"
+          >
+            <span class="font-sans font-semibold text-[0.75rem] text-muted"
+              >S</span
+            ><span
+              class="font-serif text-[1.5rem] md:text-[1.875rem] leading-none text-emphasis"
+              >D</span
+            >
+          </li>
+        </ol>
+        <h2
+          class="font-serif text-[2.75rem] md:text-[4.5rem] leading-[0.98] text-emphasis mb-5 max-w-[16ch] mx-auto"
+        >
+          Monday's free. Put your flat on it.
+        </h2>
+        <p
+          class="font-sans text-[1.125rem] text-default mb-8 max-w-[30rem] mx-auto"
+        >
+          Leave your email and we'll write once, when testing opens.
+        </p>
+        <form
+          method="post"
+          action="/__forms/waitlist"
+          data-success-message="You're on the list. One email when testing opens, that's all."
+          id="ico4eed"
+          class="flex flex-col sm:flex-row gap-3 max-w-[32rem] mx-auto mb-4"
+        >
+          <label for="join-email" class="sr-only">Email</label
+          ><input
+            type="email"
+            id="join-email"
+            name="email"
+            autocomplete="email"
+            required="true"
+            placeholder="you@yourflat.com"
+            class="form-control flex-1 min-h-14 rounded-full bg-zinc-50 text-stone-950 border-0 dark:border dark:border-stone-950 px-6 text-[1rem] placeholder:text-stone-500"
+          /><button
+            type="submit"
+            class="btn btn-primary min-h-14 px-7 font-sans font-semibold text-[1rem] whitespace-nowrap"
+          >
+            Join the waitlist</button
+          ><input
+            type="text"
+            name="_swebsy_hp"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+            class="hidden"
+          />
+        </form>
+        <p class="font-sans text-[0.875rem] text-muted mb-0">
+          1,284 on the list.
+        </p>
+      </div>
+    </section>
+    <section
+      id="faq"
+      data-swebsy-block-id="section-ecfa"
+      data-swebsy-block='{"tags":[],"title":"App FAQ accordion"}'
+      class="bg-default py-16 md:py-24"
+    >
+      <div
+        data-animate-trigger="scroll"
+        class="container mx-auto max-w-[75rem] px-5 md:px-8 animate-soft-reveal-up"
+      >
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-x-12 gap-y-8"
+          id="iucogas"
+        >
+          <h2
+            class="lg:col-span-4 font-serif text-[2.25rem] md:text-[3rem] leading-[1.02] text-emphasis mb-0"
+          >
+            Questions.
+          </h2>
+          <div
+            data-accordion=""
+            data-accordion-exclusive="true"
+            data-accordion-first-open="true"
+            data-accordion-icon="plus"
+            class="lg:col-span-8 max-w-[46rem]"
+          >
+            <details
+              class="group border-b border-default"
+              name="accordion-ibd3frs"
+              open
+            >
+              <summary
+                class="flex items-start justify-between gap-6 py-5 cursor-pointer focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-primary"
+              >
+                <h3
+                  class="font-serif text-[1.375rem] md:text-[1.625rem] leading-snug text-emphasis mb-0"
+                >
+                  Do my flatmates need the app?
+                </h3>
+                <span
+                  data-icon-pack="stroke"
+                  data-icon-name="plus"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  class="inline-flex size-5 mt-1.5 shrink-0 text-emphasis transition-transform duration-300 motion-reduce:transition-none group-open:rotate-45"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="var(--icon-stroke, 2)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="M12 5v14" /></svg
+                ></span>
+              </summary>
+              <div class="pb-6 pe-10">
+                <p class="font-sans text-[1.0625rem] text-default mb-0">
+                  No. One person runs the flat in the app; everyone else answers
+                  from a link in any browser.
+                </p>
+              </div>
+            </details>
+            <details
+              class="group border-b border-default"
+              name="accordion-ibd3frs"
+            >
+              <summary
+                class="flex items-start justify-between gap-6 py-5 cursor-pointer focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-primary"
+              >
+                <h3
+                  class="font-serif text-[1.375rem] md:text-[1.625rem] leading-snug text-emphasis mb-0"
+                >
+                  What if only I use it?
+                </h3>
+                <span
+                  data-icon-pack="stroke"
+                  data-icon-name="plus"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  class="inline-flex size-5 mt-1.5 shrink-0 text-emphasis transition-transform duration-300 motion-reduce:transition-none group-open:rotate-45"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="var(--icon-stroke, 2)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="M12 5v14" /></svg
+                ></span>
+              </summary>
+              <div class="pb-6 pe-10">
+                <p class="font-sans text-[1.0625rem] text-default mb-0">
+                  Then it's still your rota and your list. Most flats in the
+                  test started with one person and the rest followed within a
+                  week.
+                </p>
+              </div>
+            </details>
+            <details
+              class="group border-b border-default"
+              name="accordion-ibd3frs"
+            >
+              <summary
+                class="flex items-start justify-between gap-6 py-5 cursor-pointer focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-primary"
+              >
+                <h3
+                  class="font-serif text-[1.375rem] md:text-[1.625rem] leading-snug text-emphasis mb-0"
+                >
+                  What do you do with my email?
+                </h3>
+                <span
+                  data-icon-pack="stroke"
+                  data-icon-name="plus"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  class="inline-flex size-5 mt-1.5 shrink-0 text-emphasis transition-transform duration-300 motion-reduce:transition-none group-open:rotate-45"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="var(--icon-stroke, 2)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="M12 5v14" /></svg
+                ></span>
+              </summary>
+              <div class="pb-6 pe-10">
+                <p class="font-sans text-[1.0625rem] text-default mb-0">
+                  We use it once, to tell you testing is open, and then delete
+                  the list. Nothing else, no newsletter.
+                </p>
+              </div>
+            </details>
+            <details
+              class="group border-b border-default"
+              name="accordion-ibd3frs"
+            >
+              <summary
+                class="flex items-start justify-between gap-6 py-5 cursor-pointer focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-primary"
+              >
+                <h3
+                  class="font-serif text-[1.375rem] md:text-[1.625rem] leading-snug text-emphasis mb-0"
+                >
+                  Who's behind Hob?
+                </h3>
+                <span
+                  data-icon-pack="stroke"
+                  data-icon-name="plus"
+                  data-icon-decorative="true"
+                  data-icon-label=""
+                  aria-hidden="true"
+                  class="inline-flex size-5 mt-1.5 shrink-0 text-emphasis transition-transform duration-300 motion-reduce:transition-none group-open:rotate-45"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="var(--icon-stroke, 2)"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M5 12h14" />
+                    <path d="M12 5v14" /></svg
+                ></span>
+              </summary>
+              <div class="pb-6 pe-10">
+                <p class="font-sans text-[1.0625rem] text-default mb-0">
+                  Inês Carvalho (design) and Tomás Reis (code), two flatmates in
+                  Porto who got tired of the group chat. Write to us at
+                  hello@hob.house.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      id="ixl5ag"
+      class="bg-default border-t border-default pt-14 md:pt-20 pb-10"
+    >
+      <div
+        class="container mx-auto max-w-[75rem] px-5 md:px-8 flex flex-wrap items-end justify-between gap-6"
+      >
+        <div>
+          <p
+            class="font-serif text-[6rem] md:text-[10rem] leading-[0.8] text-emphasis mb-6"
+          >
+            hob
+          </p>
+          <p class="font-sans text-[0.9375rem] text-muted mb-0">
+            © Hob. Made by Inês and Tomás in a flat in Porto.
+            <a
+              href="mailto:hello@hob.house"
+              class="text-emphasis underline underline-offset-2 inline-flex items-center min-h-11"
+              >hello@hob.house</a
+            >
+          </p>
+        </div>
+        <div
+          data-dark-mode-switch="true"
+          data-mode="light"
+          data-switch-style="icon"
+          role="group"
+          id="ia5zlk"
+          class="dark-mode-switch btn-group"
+        >
+          <button
+            type="button"
+            data-theme-cycle-button="true"
+            aria-label="Theme: Light. Click to switch to Dark."
+            title="Theme: Light. Click to switch to Dark."
+            class="btn btn-outline-neutral dark-mode-switch__cycle inline-flex items-center justify-center"
+          >
+            <span
+              data-theme-mode-icon="system"
+              hidden="true"
+              class="inline-flex items-center justify-center leading-none size-4"
+              ><span
+                data-icon-pack="stroke"
+                data-icon-name="monitor"
+                data-icon-decorative="false"
+                data-icon-label="System theme"
+                role="img"
+                aria-label="System theme"
+                class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect width="20" height="14" x="2" y="3" rx="2" />
+                  <line x1="8" x2="16" y1="21" y2="21" />
+                  <line x1="12" x2="12" y1="17" y2="21" /></svg></span></span
+            ><span
+              data-theme-mode-icon="light"
+              class="inline-flex items-center justify-center leading-none size-4"
+              ><span
+                data-icon-pack="stroke"
+                data-icon-name="sun"
+                data-icon-decorative="false"
+                data-icon-label="Light theme"
+                role="img"
+                aria-label="Light theme"
+                class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2" />
+                  <path d="M12 20v2" />
+                  <path d="m4.93 4.93 1.41 1.41" />
+                  <path d="m17.66 17.66 1.41 1.41" />
+                  <path d="M2 12h2" />
+                  <path d="M20 12h2" />
+                  <path d="m6.34 17.66-1.41 1.41" />
+                  <path d="m19.07 4.93-1.41 1.41" /></svg></span></span
+            ><span
+              data-theme-mode-icon="dark"
+              hidden="true"
+              class="inline-flex items-center justify-center leading-none size-4"
+              ><span
+                data-icon-pack="stroke"
+                data-icon-name="moon"
+                data-icon-decorative="false"
+                data-icon-label="Dark theme"
+                role="img"
+                aria-label="Dark theme"
+                class="inline-flex items-center leading-none size-4 [--icon-stroke:2]"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="var(--icon-stroke, 2)"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
+                  /></svg></span
+            ></span>
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/swebsy-components.c98f9d4685.js" defer></script>
+  <script src="js/swebsy-scroll-observer.5f2059a125.js"></script>
+  <noscript
+    ><style>
+      [data-animate-trigger] {
+        opacity: 1 !important;
+        animation: none !important;
+      }
+    </style></noscript
+  >
+  <a
+    href="https://swebsy.com?utm_source=badge&utm_medium=referral"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="swebsy-badge"
+    aria-label="Made with Swebsy"
+  >
+    <svg
+      class="swebsy-badge-mark"
+      width="14"
+      height="14"
+      viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path class="swebsy-badge-mark-outer" d="M128 64L0 0L0 128L128 64Z" />
+      <path class="swebsy-badge-mark-inner" d="M75 63.5L26 39L26 88L75 63.5Z" />
+    </svg>
+    <span class="swebsy-badge-text">Swebsy</span>
+  </a>
+</html>

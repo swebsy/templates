@@ -1,6 +1,6 @@
 # Free HTML website templates
 
-55 static HTML/CSS templates made with
+73 static HTML/CSS templates made with
 [Swebsy](https://swebsy.com), a free visual website builder. Each folder's
 `site/` is a complete website: open `index.html`, or upload the folder to
 GitHub Pages, Netlify, Cloudflare Pages or any static host.
@@ -200,6 +200,46 @@ A community music school website: lessons by age, one rate for every instrument,
 
 [Live demo](https://studio.swebsy.com/templates/cadenza/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=cadenza&ref=github) · [Details](https://swebsy.com/templates/cadenza/)
 
+### [Red Door](red-door/)
+
+[![Red Door](red-door/thumb.webp)](red-door/)
+
+A preschool site read down a doorframe: each section hangs at its real height, from the gate latch to the fee noticeboard to the skirting.
+
+[Live demo](https://studio.swebsy.com/templates/red-door/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=red-door&ref=github) · [Details](https://swebsy.com/templates/red-door/)
+
+### [Sixth Week](sixth-week/)
+
+[![Sixth Week](sixth-week/thumb.webp)](sixth-week/)
+
+A physio clinic site drawn as one 12-week recovery line, re-cropped per section, with visit counts and prices shown up front.
+
+[Live demo](https://studio.swebsy.com/templates/sixth-week/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=sixth-week&ref=github) · [Details](https://swebsy.com/templates/sixth-week/)
+
+### [Twelve](twelve/)
+
+[![Twelve](twelve/thumb.webp)](twelve/)
+
+A two-partner accounting practice set as a wall planner: every CRA date filled in lime, the fixed fee in each month, your 22 minutes.
+
+[Live demo](https://studio.swebsy.com/templates/twelve/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=twelve&ref=github) · [Details](https://swebsy.com/templates/twelve/)
+
+### [Keane & Hurley](keane-hurley/)
+
+[![Keane & Hurley](keane-hurley/thumb.webp)](keane-hurley/)
+
+An interior studio whose every photo is a room marked up with painter's tape, each numbered tab keyed to a priced list of what stayed and what was bought.
+
+[Live demo](https://studio.swebsy.com/templates/keane-hurley/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=keane-hurley&ref=github) · [Details](https://swebsy.com/templates/keane-hurley/)
+
+### [Last Customer](last-customer/)
+
+[![Last Customer](last-customer/thumb.webp)](last-customer/)
+
+A shop-interview podcast set as its own transcript: timecoded turns, and every episode closes on the bracketed thing the host bought.
+
+[Live demo](https://studio.swebsy.com/templates/last-customer/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=last-customer&ref=github) · [Details](https://swebsy.com/templates/last-customer/)
+
 ### [Clarity](clarity/)
 
 [![Clarity](clarity/thumb.webp)](clarity/)
@@ -224,6 +264,14 @@ A neighborhood bakery website: the week's breads by day, a photo shelf with pric
 
 [Live demo](https://studio.swebsy.com/templates/proof/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=proof&ref=github) · [Details](https://swebsy.com/templates/proof/)
 
+### [Tolland](tolland/)
+
+[![Tolland](tolland/thumb.webp)](tolland/)
+
+A two-bay independent garage that tells you what can wait: every finding gets a measurement and an outcome, Leave alone marked in hi-vis yellow.
+
+[Live demo](https://studio.swebsy.com/templates/tolland/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=tolland&ref=github) · [Details](https://swebsy.com/templates/tolland/)
+
 ### [Juno](juno/)
 
 [![Juno](juno/thumb.webp)](juno/)
@@ -231,6 +279,14 @@ A neighborhood bakery website: the week's breads by day, a photo shelf with pric
 A colorful neo-brutalist portfolio template for creative makers who want to present projects, personality, and contact details with confidence.
 
 [Live demo](https://studio.swebsy.com/templates/juno/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=juno&ref=github) · [Details](https://swebsy.com/templates/juno/)
+
+### [Halsey](halsey/)
+
+[![Halsey](halsey/thumb.webp)](halsey/)
+
+A home-cleaning site built around a floor plan of your home, with room notes, a price table by bedrooms and your regular pair.
+
+[Live demo](https://studio.swebsy.com/templates/halsey/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=halsey&ref=github) · [Details](https://swebsy.com/templates/halsey/)
 
 ### [Scope](scope/)
 
@@ -248,6 +304,14 @@ A small cliffside guesthouse where every photo is a window cut in a terracotta w
 
 [Live demo](https://studio.swebsy.com/templates/ocho-ventanas/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=ocho-ventanas&ref=github) · [Details](https://swebsy.com/templates/ocho-ventanas/)
 
+### [Hollis](hollis/)
+
+[![Hollis](hollis/thumb.webp)](hollis/)
+
+A small-business site where each section answers the question a client would ask, with a worked monthly bill, plain services, steps, team and a request form.
+
+[Live demo](https://studio.swebsy.com/templates/hollis/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=hollis&ref=github) · [Details](https://swebsy.com/templates/hollis/)
+
 ### [Forge](forge/)
 
 [![Forge](forge/thumb.webp)](forge/)
@@ -256,6 +320,22 @@ A bold training website for coaches who build sustainable strength through real 
 
 [Live demo](https://studio.swebsy.com/templates/forge/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=forge&ref=github) · [Details](https://swebsy.com/templates/forge/)
 
+### [Ottoline](ottoline/)
+
+[![Ottoline](ottoline/thumb.webp)](ottoline/)
+
+A neighbourhood florist where every stem hangs on a kraft tag with its price, its months and where it grew, plus same-day delivery, weddings by month and an order form.
+
+[Live demo](https://studio.swebsy.com/templates/ottoline/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=ottoline&ref=github) · [Details](https://swebsy.com/templates/ottoline/)
+
+### [Teague](teague/)
+
+[![Teague](teague/thumb.webp)](teague/)
+
+A novelist's site read as the book, outside in: a title spread with a portrait plate and contents list, numbered front-matter pages, and a red back cover.
+
+[Live demo](https://studio.swebsy.com/templates/teague/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=teague&ref=github) · [Details](https://swebsy.com/templates/teague/)
+
 ### [Poplink](poplink/)
 
 [![Poplink](poplink/thumb.webp)](poplink/)
@@ -263,6 +343,14 @@ A bold training website for coaches who build sustainable strength through real 
 A bright, playful link-in-bio template that helps creators collect social profiles, featured content, and essential links on one memorable page.
 
 [Live demo](https://studio.swebsy.com/templates/poplink/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=poplink&ref=github) · [Details](https://swebsy.com/templates/poplink/)
+
+### [Margin](margin/)
+
+[![Margin](margin/thumb.webp)](margin/)
+
+An independent tutor's site set like a marked exam paper: a margin rail, a worked answer marked M1 A0, the mark key, subjects, a free trial, results, fees and a booking form.
+
+[Live demo](https://studio.swebsy.com/templates/margin/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=margin&ref=github) · [Details](https://swebsy.com/templates/margin/)
 
 ### [Varnish](varnish/)
 
@@ -280,6 +368,14 @@ A glass studio that hand-blows lighting, dark by default: a lamp that fades up f
 
 [Live demo](https://studio.swebsy.com/templates/gather/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=gather&ref=github) · [Details](https://swebsy.com/templates/gather/)
 
+### [Ashby](ashby/)
+
+[![Ashby](ashby/thumb.webp)](ashby/)
+
+A newborn and family photographer's dark site: uncropped prints on a darkroom bench, each with a film-edge caption, laid out as one 36-frame roll.
+
+[Live demo](https://studio.swebsy.com/templates/ashby/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=ashby&ref=github) · [Details](https://swebsy.com/templates/ashby/)
+
 ### [Clearcoat](clearcoat/)
 
 [![Clearcoat](clearcoat/thumb.webp)](clearcoat/)
@@ -295,6 +391,14 @@ A paint-care and detailing studio: a before/after slider, treatments with honest
 A premium editorial website for residential landscape design-build studios, with immersive project storytelling, services, studio profile, and direct-contact conversion.
 
 [Live demo](https://studio.swebsy.com/templates/morrow/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=morrow&ref=github) · [Details](https://swebsy.com/templates/morrow/)
+
+### [Khevi](khevi/)
+
+[![Khevi](khevi/thumb.webp)](khevi/)
+
+A two-person trip planner's site where every road is drawn to scale, one tick an hour: the route, regions, three trips and a sample week.
+
+[Live demo](https://studio.swebsy.com/templates/khevi/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=khevi&ref=github) · [Details](https://swebsy.com/templates/khevi/)
 
 ### [Backrow](backrow/)
 
@@ -312,6 +416,14 @@ A refined multi-page designer portfolio for presenting identity work, creative s
 
 [Live demo](https://studio.swebsy.com/templates/imprint/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=imprint&ref=github) · [Details](https://swebsy.com/templates/imprint/)
 
+### [Canal Street](canal-street/)
+
+[![Canal Street](canal-street/thumb.webp)](canal-street/)
+
+A volunteer pickup basketball club drawn on its own court lines: a centre-circle hero, the week as a lane, levels on the three-point arc.
+
+[Live demo](https://studio.swebsy.com/templates/canal-street/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=canal-street&ref=github) · [Details](https://swebsy.com/templates/canal-street/)
+
 ### [Aurora Glass](aurora-glass-link-in-bio/)
 
 [![Aurora Glass](aurora-glass-link-in-bio/thumb.webp)](aurora-glass-link-in-bio/)
@@ -327,6 +439,14 @@ A luminous glass link-in-bio template with social links, featured media, product
 A warm, paper-textured template for a small immigration law practice, with flat fees, partner stories, client outcomes and a consultation form.
 
 [Live demo](https://studio.swebsy.com/templates/kindred/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=kindred&ref=github) · [Details](https://swebsy.com/templates/kindred/)
+
+### [Calder](calder/)
+
+[![Calder](calder/thumb.webp)](calder/)
+
+A neighbourhood church site set as the duplicated order of service: every step of Sunday, timed, with a blue rubric telling newcomers what to do.
+
+[Live demo](https://studio.swebsy.com/templates/calder/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=calder&ref=github) · [Details](https://swebsy.com/templates/calder/)
 
 ### [Vantage](vantage/)
 
@@ -344,6 +464,14 @@ A dog groomer's site built around each coat's routine: how often it comes back, 
 
 [Live demo](https://studio.swebsy.com/templates/undercoat/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=undercoat&ref=github) · [Details](https://swebsy.com/templates/undercoat/)
 
+### [Tenpenny](tenpenny/)
+
+[![Tenpenny](tenpenny/thumb.webp)](tenpenny/)
+
+A tattoo studio page told as a stencil coming into register: off in the hero, nearer each section, and in place at the enquiry form.
+
+[Live demo](https://studio.swebsy.com/templates/tenpenny/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=tenpenny&ref=github) · [Details](https://swebsy.com/templates/tenpenny/)
+
 ### [Marigold](marigold/)
 
 [![Marigold](marigold/thumb.webp)](marigold/)
@@ -351,6 +479,14 @@ A dog groomer's site built around each coat's routine: how often it comes back, 
 A crisp, high-contrast SaaS site for scheduling and practice-management products, pairing deep navy with electric blue across a product tour, pricing tiers and customer stories.
 
 [Live demo](https://studio.swebsy.com/templates/marigold/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=marigold&ref=github) · [Details](https://swebsy.com/templates/marigold/)
+
+### [Hob](hob/)
+
+[![Hob](hob/thumb.webp)](hob/)
+
+A small app's waitlist page set as one week in a shared flat: a rota strip runs through a colour band per day, then proof and an empty Monday.
+
+[Live demo](https://studio.swebsy.com/templates/hob/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=hob&ref=github) · [Details](https://swebsy.com/templates/hob/)
 
 ### [Wren & Wildflower](wren-wildflower/)
 
@@ -375,6 +511,14 @@ A walk-in aperitivo and cocktail bar: a sunlit room, menus by the clock, and cop
 A real estate website for a small agent team: big house numbers, every sale on the record, neighborhood guides and a price-opinion form.
 
 [Live demo](https://studio.swebsy.com/templates/porchlight/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=porchlight&ref=github) · [Details](https://swebsy.com/templates/porchlight/)
+
+### [Long Table](long-table/)
+
+[![Long Table](long-table/thumb.webp)](long-table/)
+
+A couple's wedding site laid like one long dinner table: the table from above with every place, the day as place settings, questions on place cards.
+
+[Live demo](https://studio.swebsy.com/templates/long-table/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=long-table&ref=github) · [Details](https://swebsy.com/templates/long-table/)
 
 ### [Recess](recess/)
 

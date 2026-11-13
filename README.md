@@ -1,6 +1,6 @@
 # Free HTML website templates
 
-73 static HTML/CSS templates made with
+75 static HTML/CSS templates made with
 [Swebsy](https://swebsy.com), a free visual website builder. Each folder's
 `site/` is a complete website: open `index.html`, or upload the folder to
 GitHub Pages, Netlify, Cloudflare Pages or any static host.
@@ -240,6 +240,22 @@ A shop-interview podcast set as its own transcript: timecoded turns, and every e
 
 [Live demo](https://studio.swebsy.com/templates/last-customer/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=last-customer&ref=github) · [Details](https://swebsy.com/templates/last-customer/)
 
+### [Daybook Hair](daybook-hair/)
+
+[![Daybook Hair](daybook-hair/thumb.webp)](daybook-hair/)
+
+A salon home page laid out as the day book: one column per stylist, junior to director, each service block as tall as it takes, priced.
+
+[Live demo](https://studio.swebsy.com/templates/daybook-hair/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=daybook-hair&ref=github) · [Details](https://swebsy.com/templates/daybook-hair/)
+
+### [Eighty Ten](eighty-ten/)
+
+[![Eighty Ten](eighty-ten/thumb.webp)](eighty-ten/)
+
+A massage studio and private bathhouse laid out as the walk through the building, each room its own colour at its own temperature.
+
+[Live demo](https://studio.swebsy.com/templates/eighty-ten/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=eighty-ten&ref=github) · [Details](https://swebsy.com/templates/eighty-ten/)
+
 ### [Clarity](clarity/)
 
 [![Clarity](clarity/thumb.webp)](clarity/)
@@ -308,7 +324,7 @@ A small cliffside guesthouse where every photo is a window cut in a terracotta w
 
 [![Hollis](hollis/thumb.webp)](hollis/)
 
-A small-business site where each section answers the question a client would ask, with a worked monthly bill, plain services, steps, team and a request form.
+An IT firm's site drawn around the client's own office plan: pins show what's covered, lit desks make the price, a route walks the first visit.
 
 [Live demo](https://studio.swebsy.com/templates/hollis/preview/) · [Edit in Swebsy](https://studio.swebsy.com/create?template=hollis&ref=github) · [Details](https://swebsy.com/templates/hollis/)
 

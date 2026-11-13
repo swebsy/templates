@@ -2,9 +2,9 @@
 
 ![Hollis](thumb.webp)
 
-A small-business site where each section answers the question a client would ask, with a worked monthly bill, plain services, steps, team and a request form.
+An IT firm's site drawn around the client's own office plan: pins show what's covered, lit desks make the price, a route walks the first visit.
 
-Good for: IT support firms, Small B2B service companies, Agencies and consultancies.
+Good for: IT support firms, Small B2B service companies, Clinics, law and accounting offices.
 
 - [Live demo](https://studio.swebsy.com/templates/hollis/preview/)
 - [Edit in Swebsy](https://studio.swebsy.com/create?template=hollis&ref=github), the free visual editor, no account needed
